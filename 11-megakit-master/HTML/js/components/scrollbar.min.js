@@ -1,0 +1,1 @@
+var Scrollbar=function(){"use strict";var r=function(){$(".js__scrollbar").mCustomScrollbar({theme:"minimal"})};return{init:function(){r()}}}();$(document).ready(function(){Scrollbar.init()});

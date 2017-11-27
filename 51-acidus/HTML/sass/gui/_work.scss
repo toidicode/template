@@ -1,0 +1,42 @@
+/*------------------------------------------------------------------
+  	[Work]
+------------------------------------------------------------------*/
+
+.work {
+	position: relative;
+	
+	.work-overlay {
+		position: relative;
+
+		&:before {
+	        @include position(absolute, $top: 0, $left: 0);
+	        @include size(100%);
+	        @include bg-opacity(#000, 0);
+	        content: " ";
+	        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+	    }
+	}
+
+	.work-content {
+	    @include position(absolute, $bottom: 0, $left: 0);
+	    opacity: 0;
+		padding: 25px;
+		@include translate3d(0,20px,0);
+	    @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+	}
+
+	&:hover {
+		.work-overlay {
+			&:before {
+		        @include bg-opacity(#000, .5);
+		        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+		    }
+		}
+
+		.work-content {
+			opacity: 1;
+			@include translate3d(0,0,0);
+		    @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.form-wrapper {
+    font-family: $tertiary-font-family;
+    background-color: #fff;
+    color: $secondary-font-color;
+    padding: 20px;
+}
+
+label, input, textarea {
+    display: block;
+    width: 100%;
+    outline: none;
+}
+
+label {
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+input, textarea {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 130px;
+    margin-bottom: 20px;
+}
+
+input.custom-button{
+	border:none;
+	font-family: $tertiary-font-family;
+}
+
+label.local-error{
+    background-color: #FCF8E3;
+    color: #C74581;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top:-10px;
+    margin-bottom: 20px;
+    padding: 3px 20px;
+    border-radius: 2px;
+}

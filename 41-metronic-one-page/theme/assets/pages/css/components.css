@@ -1,0 +1,650 @@
+/* Reset rounded corners for all elements */
+div,
+input,
+select,
+textarea,
+span,
+img,
+table,
+label,
+td,
+th,
+p,
+a,
+button,
+ul,
+code,
+pre,
+li {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+a,
+a:focus,
+a:hover,
+a:active {
+    outline: 0;
+}
+
+/*Fix for Firefox*/
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+}
+
+/* Bootstrap buttons */
+.btn-primary {
+    color: #fff;
+    background-color: #428bca;
+    border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+    color: #fff;
+    background-color: #3379b5;
+    border-color: #2a6496;
+}
+
+.open .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #3379b5;
+    border-color: #2a6496;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+    background-image: none;
+    background-color: #2d6ca2;
+}
+
+.btn-primary:active:hover,
+.btn-primary.active:hover {
+    background-color: #3071a9;
+}
+
+.open .btn-primary.dropdown-toggle {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled],
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary.active {
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+
+.btn-primary .badge {
+    color: #428bca;
+    background-color: #fff;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #45B6AF;
+    border-color: #3ea49d;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active {
+    color: #fff;
+    background-color: #3b9c96;
+    border-color: #307f7a;
+}
+
+.open .btn-success.dropdown-toggle {
+    color: #fff;
+    background-color: #3b9c96;
+    border-color: #307f7a;
+}
+
+.btn-success:active,
+.btn-success.active {
+    background-image: none;
+    background-color: #348a84;
+}
+
+.btn-success:active:hover,
+.btn-success.active:hover {
+    background-color: #37918b;
+}
+
+.open .btn-success.dropdown-toggle {
+    background-image: none;
+}
+
+.btn-success.disabled,
+.btn-success.disabled:hover,
+.btn-success.disabled:focus,
+.btn-success.disabled:active,
+.btn-success.disabled.active,
+.btn-success[disabled],
+.btn-success[disabled]:hover,
+.btn-success[disabled]:focus,
+.btn-success[disabled]:active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success,
+fieldset[disabled] .btn-success:hover,
+fieldset[disabled] .btn-success:focus,
+fieldset[disabled] .btn-success:active,
+fieldset[disabled] .btn-success.active {
+    background-color: #45B6AF;
+    border-color: #3ea49d;
+}
+
+.btn-success .badge {
+    color: #45B6AF;
+    background-color: #fff;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #89C4F4;
+    border-color: #72b8f2;
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active {
+    color: #fff;
+    background-color: #68b4f1;
+    border-color: #43a1ed;
+}
+
+.open .btn-info.dropdown-toggle {
+    color: #fff;
+    background-color: #68b4f1;
+    border-color: #43a1ed;
+}
+
+.btn-info:active,
+.btn-info.active {
+    background-image: none;
+    background-color: #51a8ef;
+}
+
+.btn-info:active:hover,
+.btn-info.active:hover {
+    background-color: #5aadf0;
+}
+
+.open .btn-info.dropdown-toggle {
+    background-image: none;
+}
+
+.btn-info.disabled,
+.btn-info.disabled:hover,
+.btn-info.disabled:focus,
+.btn-info.disabled:active,
+.btn-info.disabled.active,
+.btn-info[disabled],
+.btn-info[disabled]:hover,
+.btn-info[disabled]:focus,
+.btn-info[disabled]:active,
+.btn-info[disabled].active,
+fieldset[disabled] .btn-info,
+fieldset[disabled] .btn-info:hover,
+fieldset[disabled] .btn-info:focus,
+fieldset[disabled] .btn-info:active,
+fieldset[disabled] .btn-info.active {
+    background-color: #89C4F4;
+    border-color: #72b8f2;
+}
+
+.btn-info .badge {
+    color: #89C4F4;
+    background-color: #fff;
+    }
+
+.btn-warning {
+    color: #fff;
+    background-color: #dfba49;
+    border-color: #dbb233;
+}
+
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active {
+    color: #fff;
+    background-color: #daae2b;
+    border-color: #bb9521;
+}
+
+.open .btn-warning.dropdown-toggle {
+    color: #fff;
+    background-color: #daae2b;
+    border-color: #bb9521;
+}
+
+.btn-warning:active,
+.btn-warning.active {
+    background-image: none;
+    background-color: #c89f23;
+}
+
+.btn-warning:active:hover,
+.btn-warning.active:hover {
+    background-color: #d0a625;
+}
+
+.open .btn-warning.dropdown-toggle {
+    background-image: none;
+}
+
+.btn-warning.disabled,
+.btn-warning.disabled:hover,
+.btn-warning.disabled:focus,
+.btn-warning.disabled:active,
+.btn-warning.disabled.active,
+.btn-warning[disabled],
+.btn-warning[disabled]:hover,
+.btn-warning[disabled]:focus,
+.btn-warning[disabled]:active,
+.btn-warning[disabled].active,
+fieldset[disabled] .btn-warning,
+fieldset[disabled] .btn-warning:hover,
+fieldset[disabled] .btn-warning:focus,
+fieldset[disabled] .btn-warning:active,
+fieldset[disabled] .btn-warning.active {
+    background-color: #dfba49;
+    border-color: #dbb233;
+}
+
+.btn-warning .badge {
+    color: #dfba49;
+    background-color: #fff;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #F3565D;
+    border-color: #f13e46;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active {
+    color: #fff;
+    background-color: #f1353d;
+    border-color: #ec111b;
+}
+
+.open .btn-danger.dropdown-toggle {
+    color: #fff;
+    background-color: #f1353d;
+    border-color: #ec111b;
+}
+
+.btn-danger:active,
+.btn-danger.active {
+    background-image: none;
+    background-color: #ef1d26;
+}
+
+.btn-danger:active:hover,
+.btn-danger.active:hover {
+    background-color: #f0262f;
+}
+
+.open .btn-danger.dropdown-toggle {
+    background-image: none;
+}
+
+.btn-danger.disabled,
+.btn-danger.disabled:hover,
+.btn-danger.disabled:focus,
+.btn-danger.disabled:active,
+.btn-danger.disabled.active,
+.btn-danger[disabled],
+.btn-danger[disabled]:hover,
+.btn-danger[disabled]:focus,
+.btn-danger[disabled]:active,
+.btn-danger[disabled].active,
+fieldset[disabled] .btn-danger,
+fieldset[disabled] .btn-danger:hover,
+fieldset[disabled] .btn-danger:focus,
+fieldset[disabled] .btn-danger:active,
+fieldset[disabled] .btn-danger.active {
+    background-color: #F3565D;
+    border-color: #f13e46;
+}
+
+.btn-danger .badge {
+    color: #F3565D;
+    background-color: #fff;
+}
+
+/***
+Social Icons
+***/
+.social-icons {
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons:before,
+.social-icons:after {
+    content: " ";
+    display: table;
+}
+.social-icons:after {
+    clear: both;
+}
+
+.social-icons li {
+    float: left;
+    display: inline;
+    list-style: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-indent: -9999px;
+}
+.social-icons li > a {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    width: 28px;
+    height: 28px;
+    display: block;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.social-icons li:hover > a {
+    background-position: 0 -38px;
+}
+.social-icons li .amazon {
+    background: url(../../pages/img/social/amazon.png) no-repeat;
+}
+.social-icons li .behance {
+    background: url(../../pages/img/social/behance.png) no-repeat;
+}
+.social-icons li .blogger {
+    background: url(../../pages/img/social/blogger.png) no-repeat;
+}
+.social-icons li .deviantart {
+    background: url(../../pages/img/social/deviantart.png) no-repeat;
+}
+.social-icons li .dribbble {
+    background: url(../../pages/img/social/dribbble.png) no-repeat;
+}
+.social-icons li .dropbox {
+    background: url(../../pages/img/social/dropbox.png) no-repeat;
+}
+.social-icons li .evernote {
+    background: url(../../pages/img/social/evernote.png) no-repeat;
+}
+.social-icons li .facebook {
+    background: url(../../pages/img/social/facebook.png) no-repeat;
+}
+.social-icons li .forrst {
+    background: url(../../pages/img/social/forrst.png) no-repeat;
+}
+.social-icons li .github {
+    background: url(../../pages/img/social/github.png) no-repeat;
+}
+.social-icons li .googleplus {
+    background: url(../../pages/img/social/googleplus.png) no-repeat;
+}
+.social-icons li .jolicloud {
+    background: url(../../pages/img/social/jolicloud.png) no-repeat;
+}
+.social-icons li .last-fm {
+    background: url(../../pages/img/social/last-fm.png) no-repeat;
+}
+.social-icons li .linkedin {
+    background: url(../../pages/img/social/linkedin.png) no-repeat;
+}
+.social-icons li .picasa {
+    background: url(../../pages/img/social/picasa.png) no-repeat;
+}
+.social-icons li .pintrest {
+    background: url(../../pages/img/social/pintrest.png) no-repeat;
+}
+.social-icons li .rss {
+    background: url(../../pages/img/social/rss.png) no-repeat;
+}
+.social-icons li .skype {
+    background: url(../../pages/img/social/skype.png) no-repeat;
+}
+.social-icons li .spotify {
+    background: url(../../pages/img/social/spotify.png) no-repeat;
+}
+.social-icons li .stumbleupon {
+    background: url(../../pages/img/social/stumbleupon.png) no-repeat;
+}
+.social-icons li .tumblr {
+    background: url(../../pages/img/social/tumblr.png) no-repeat;
+}
+.social-icons li .twitter {
+    background: url(../../pages/img/social/twitter.png) no-repeat;
+}
+.social-icons li .vimeo {
+    background: url(../../pages/img/social/vimeo.png) no-repeat;
+}
+.social-icons li .wordpress {
+    background: url(../../pages/img/social/wordpress.png) no-repeat;
+}
+.social-icons li .xing {
+    background: url(../../pages/img/social/xing.png) no-repeat;
+}
+.social-icons li .yahoo {
+    background: url(../../pages/img/social/yahoo.png) no-repeat;
+}
+.social-icons li .youtube {
+    background: url(../../pages/img/social/youtube.png) no-repeat;
+}
+.social-icons li .vk {
+    background: url(../../pages/img/social/vk.png) no-repeat;
+}
+.social-icons li .instagram {
+    background: url(../../pages/img/social/instagram.png) no-repeat;
+}
+.social-icons li .reddit {
+    background: url(../../pages/img/social/reddit.png) no-repeat;
+}
+.social-icons li .aboutme {
+    background: url(../../pages/img/social/aboutme.png) no-repeat;
+}
+.social-icons li .flickr {
+    background: url(../../pages/img/social/flickr.png) no-repeat;
+}
+.social-icons li .foursquare {
+    background: url(../../pages/img/social/foursquare.png) no-repeat;
+}
+.social-icons li .gravatar {
+    background: url(../../pages/img/social/gravatar.png) no-repeat;
+}
+.social-icons li .klout {
+    background: url(../../pages/img/social/klout.png) no-repeat;
+}
+.social-icons li .myspace {
+    background: url(../../pages/img/social/myspace.png) no-repeat;
+}
+.social-icons li .quora {
+    background: url(../../pages/img/social/quora.png) no-repeat;
+}
+.social-icons.social-icons-color > li > a {
+    opacity: 0.7;
+    background-position: 0 -38px !important;
+}
+.social-icons.social-icons-color > li > a:hover {
+    opacity: 1;
+}
+.social-icons.social-icons-circle > li > a {
+    border-radius: 25px !important;
+}
+
+/***
+Inline Social Icons
+***/
+.social-icon {
+    display: inline-block !important;
+    width: 28px;
+    height: 28px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.social-icon.social-icon-circle {
+    border-radius: 25px !important;
+}
+
+.social-icon.amazon {
+    background: url(../../pages/img/social/amazon.png) no-repeat;
+}
+.social-icon.behance {
+    background: url(../../pages/img/social/behance.png) no-repeat;
+}
+.social-icon.blogger {
+    background: url(../../pages/img/social/blogger.png) no-repeat;
+}
+.social-icon.deviantart {
+    background: url(../../pages/img/social/deviantart.png) no-repeat;
+}
+.social-icon.dribbble {
+    background: url(../../pages/img/social/dribbble.png) no-repeat;
+}
+.social-icon.dropbox {
+    background: url(../../pages/img/social/dropbox.png) no-repeat;
+}
+.social-icon.evernote {
+    background: url(../../pages/img/social/evernote.png) no-repeat;
+}
+.social-icon.facebook {
+    background: url(../../pages/img/social/facebook.png) no-repeat;
+}
+.social-icon.forrst {
+    background: url(../../pages/img/social/forrst.png) no-repeat;
+}
+.social-icon.github {
+    background: url(../../pages/img/social/github.png) no-repeat;
+}
+.social-icon.googleplus {
+    background: url(../../pages/img/social/googleplus.png) no-repeat;
+}
+.social-icon.jolicloud {
+    background: url(../../pages/img/social/jolicloud.png) no-repeat;
+}
+.social-icon.last-fm {
+    background: url(../../pages/img/social/last-fm.png) no-repeat;
+}
+.social-icon.linkedin {
+    background: url(../../pages/img/social/linkedin.png) no-repeat;
+}
+.social-icon.picasa {
+    background: url(../../pages/img/social/picasa.png) no-repeat;
+}
+.social-icon.pintrest {
+    background: url(../../pages/img/social/pintrest.png) no-repeat;
+}
+.social-icon.rss {
+    background: url(../../pages/img/social/rss.png) no-repeat;
+}
+.social-icon.skype {
+    background: url(../../pages/img/social/skype.png) no-repeat;
+}
+.social-icon.spotify {
+    background: url(../../pages/img/social/spotify.png) no-repeat;
+}
+.social-icon.stumbleupon {
+    background: url(../../pages/img/social/stumbleupon.png) no-repeat;
+}
+.social-icon.tumblr {
+    background: url(../../pages/img/social/tumblr.png) no-repeat;
+}
+.social-icon.twitter {
+    background: url(../../pages/img/social/twitter.png) no-repeat;
+}
+.social-icon.vimeo {
+    background: url(../../pages/img/social/vimeo.png) no-repeat;
+}
+.social-icon.wordpress {
+    background: url(../../pages/img/social/wordpress.png) no-repeat;
+}
+.social-icon.xing {
+    background: url(../../pages/img/social/xing.png) no-repeat;
+}
+.social-icon.yahoo {
+    background: url(../../pages/img/social/yahoo.png) no-repeat;
+}
+.social-icon.youtube {
+    background: url(../../pages/img/social/youtube.png) no-repeat;
+}
+.social-icon.vk {
+    background: url(../../pages/img/social/vk.png) no-repeat;
+}
+.social-icon.instagram {
+    background: url(../../pages/img/social/instagram.png) no-repeat;
+}
+.social-icon.reddit {
+    background: url(../../pages/img/social/reddit.png) no-repeat;
+}
+.social-icon.aboutme {
+    background: url(../../pages/img/social/aboutme.png) no-repeat;
+}
+.social-icon.flickr {
+    background: url(../../pages/img/social/flickr.png) no-repeat;
+}
+.social-icon.foursquare {
+    background: url(../../pages/img/social/foursquare.png) no-repeat;
+}
+.social-icon.gravatar {
+    background: url(../../pages/img/social/gravatar.png) no-repeat;
+}
+.social-icon.klout {
+    background: url(../../pages/img/social/klout.png) no-repeat;
+}
+.social-icon.myspace {
+    background: url(../../pages/img/social/myspace.png) no-repeat;
+}
+.social-icon.quora {
+    background: url(../../pages/img/social/quora.png) no-repeat;
+}
+.social-icon:hover {
+    background-position: 0 -38px;
+}
+
+.social-icon-color {
+    opacity: 0.7;
+    background-position: 0 -38px !important;
+}
+.social-icon-color:hover {
+    opacity: 1;
+}

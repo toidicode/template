@@ -1,0 +1,98 @@
+/***
+Customized Bootstrap Panels
+***/
+
+.panel {  
+
+    @if $theme-type == "default" {
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    .panel-group & {
+        overflow: visible;
+    }
+
+    .panel-body {
+        font-size: 13px; 
+    }
+
+    .panel-title > a:hover {
+        text-decoration: none;
+    }
+
+    .accordion & .panel-heading {
+        padding: 0;
+    }
+
+    .accordion & .panel-title {
+        padding: 0;
+
+        .accordion-toggle {
+            display: block;
+            padding: 10px 15px;
+        }
+
+        .accordion-toggle.accordion-toggle-styled {
+            background: url("../img/accordion-plusminus.png") no-repeat;
+            background-position: right -19px;
+            margin-right: 15px;
+        }
+
+        .accordion-toggle.accordion-toggle-styled.collapsed {
+            background-position: right 12px;
+        }
+    }
+}
+
+
+
+// Contextual variations
+
+.panel-default {
+  @include panel-variant(lighten($state-default-border, 15%), $state-default-text, lighten($state-default-bg, 20%), lighten($state-default-border, 15%));   
+}
+
+.panel-primary {
+  @include panel-variant($state-primary-border, $state-primary-text, $state-primary-bg, $state-primary-border);
+} 
+
+.panel-success {
+  @include panel-variant($state-success-border, $state-success-text, $state-success-bg, $state-success-border);
+}
+
+.panel-info {
+  @include panel-variant($state-info-border, $state-info-text, $state-info-bg, $state-info-border);
+}
+
+.panel-warning {
+  @include panel-variant($state-warning-border, $state-warning-text, $state-warning-bg, $state-warning-border);
+}
+
+.panel-danger {
+  @include panel-variant($state-danger-border, $state-danger-text, $state-danger-bg, $state-danger-border);
+}
+
+/***
+Accordions
+***/
+
+.accordion-heading {
+    background:#eee;
+    
+    a {
+        text-decoration:none;
+    }
+
+    a:hover {
+        text-decoration:none;
+    }
+}
+
+@if $theme-type == "material-design" {
+    .panel {
+        @extend .md-shadow-z-2;        
+        border: 0; 
+    }
+}

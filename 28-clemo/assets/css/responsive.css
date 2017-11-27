@@ -1,0 +1,227 @@
+
+
+/*
+Author: Bootstrapthemes
+Author URI: http://www.bootstrapthemes.co
+*/
+
+/* Portrait tablets and medium desktops */
+@media (max-width: 1199px) {
+    body {
+        font-size: 1rem;
+    }
+    .main_team_area .owl-carousel .owl-controls .owl-nav .owl-next {
+        right: -1085%;
+    }
+
+
+    .main_work1_area .owl-theme .owl-nav {
+        top: -740px;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+    html {
+        font-size: 90%;
+    }
+    .main_events_area .single_events span.separator3 {
+        margin: 10px 25px;
+    }
+    .main_events_area .single_events span.e_text1 {
+        margin-left: 5px;
+    }
+    .main_team_area .owl-carousel .owl-controls .owl-nav .owl-next {
+        right: -970%;
+    }
+
+
+    .main_work1_area .owl-theme .owl-nav {
+        top: -600px;
+    }
+
+}
+/* Landscape phones and portrait tablets */
+@media  (max-width: 768px) {
+    html {
+        font-size: 100%;
+    }
+    h4{
+        font-size:2rem;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: #e7e7e7;
+        margin-top: 53px;
+        background: #ff0000;
+    }
+    .menu-scroll .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        margin-top: 12px;
+    }
+    .btn{
+        padding: 0.5em;
+    }
+    .main_events_area .single_events.events_btn .btn{
+        margin-top:30px;
+    }
+    .main_work1_area .owl-theme .owl-nav {
+        display: none;
+    }
+    .owl-theme .owl-dots{
+        margin-top:20px;
+    }
+    .main_work1_area .main_work1_content{
+        padding-top:0px;
+    }
+    .single_mixi_portfolio img{
+        width:100%;
+    }
+    .main_service_area{
+        text-align: center;
+    }
+    .main_service_area .separator2{
+        margin:20px auto;
+    }
+    .signle_service_left{
+        margin-bottom:40px;
+    }
+    .signle_service_left img{
+        width:100%;
+    }
+
+    .main_team_area .team{
+        margin-bottom:40px;
+    }
+    .slider-pro h4.sp-layer {
+        font-size: 3rem;
+        line-height: 3rem;
+        margin: 0;
+    }
+    .slider-pro p.sp-layer{
+        font-size:1.325rem;
+        line-height: 1.5rem;
+        padding-top:10px;
+    }
+    .slider-pro p.sp-layer.right_sp_layer {
+        padding-top: 10px;
+    }
+
+    .single_contant_left{
+        padding: 0px 20px;
+    }
+
+
+
+
+    .instagram-thumbnails img{
+        width: 17%;
+        display: inline-block;
+        margin: 5px;
+    }
+
+
+    .single_counter_right{
+        margin-bottom:30px;
+    }
+    .main_about_area{
+        text-align: center;
+    }
+    .main_about_area .separator2 {
+        margin-bottom: 40px !important;
+        margin:0 auto;
+    }
+
+    .main_blog_area{
+        text-align: center;
+    }
+    .main_blog_area .separator2{
+        text-align: center;
+        margin:20px auto;
+    }
+    .single_service {
+        min-height: 380px;
+    }
+    .single_work_overlay{
+        padding-top: 35%;
+    }
+    .main_work1_content_area{
+        text-align: center;
+    }
+    .main_work1_content_area .separator2{
+        margin:20px auto;
+    }
+    .contact_socail a i {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-left: 5px;
+    }
+    .work_socail a i {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 5px;
+    }
+
+}
+
+
+
+/* Landscape phones and smaller */
+@media (max-width: 479px) {
+    html {
+        font-size: 100%;
+    }
+    .main_events_area .single_events span.separator3 {
+        margin: 10px 15px;
+    }
+    .main_events_area .single_events span.e_price{
+        font-size:2rem;
+    }
+    .main_events_area .single_events span.e_text1 {
+        margin-left: 5px;
+    }
+    .single_left_text .separator.sp-layer{
+        display: none;
+    }
+
+
+
+
+    .instagram-thumbnails img{
+        width: 15%;
+        display: inline-block;
+    }
+    .single_work_overlay{
+        padding-top: 25%;
+    }
+
+}
+
+
+
+@media (max-width: 320px) {
+
+
+    html {
+        font-size: 90%;
+    }
+    .instagram-thumbnails img{
+        width: 14%;
+        display: inline-block;
+    }
+    .single_work_overlay{
+        padding-top: 15%;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .main_team_area .owl-carousel .owl-controls .owl-nav .owl-next {
+        right: -970%;
+    }
+    .main_team_area .owl-theme .owl-nav{
+        display: none;
+    }
+
+}

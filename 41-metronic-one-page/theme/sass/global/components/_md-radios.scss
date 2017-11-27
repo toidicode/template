@@ -1,0 +1,238 @@
+@mixin radio-variant($box, $check, $label) {
+    label {
+      color: $label;
+    }
+
+    label > .box {
+      border-color: $box;
+    }
+
+    label > .check {
+      background: $check;
+    } 
+}
+
+@mixin radio-label-variant($color) {
+    > label {
+      color: $color;     
+    }   
+}
+
+
+.md-radio {
+    position:relative;
+
+    input[type=radio]   { 
+        visibility: hidden;
+        position: absolute;   
+    }
+
+    label {   
+        cursor:pointer; 
+        padding-left: 30px;  
+    }
+
+    label > span { 
+        display:block;    
+        position:absolute; 
+        left:0; 
+        -webkit-transition-duration:0.3s; 
+        -moz-transition-duration:0.3s; 
+        transition-duration:0.3s;
+    }
+
+    label > span.inc   { 
+      background: #fff;
+      left:-20px;  
+      top:-20px;
+      height:60px;
+      width:60px;
+      opacity:0; 
+      border-radius:50% !important;
+      -moz-border-radius:50% !important;
+      -webkit-border-radius:50% !important;
+    }
+
+    label > .box {
+      top: 0px;
+      border:2px solid $input-md-checkbox-box-color;
+      height:20px;   
+      width:20px;
+       border-radius:50% !important;
+      -moz-border-radius:50% !important;
+      -webkit-border-radius:50% !important;
+      z-index:5;
+    }
+
+    label > .check {
+      top: 5px;
+      left: 5px;   
+      width: 10px;
+      height: 10px;
+      background: $input-md-focus-border;  
+      opacity:0; 
+      z-index:6;  
+
+      border-radius:50% !important;
+      -moz-border-radius:50% !important;
+      -webkit-border-radius:50% !important;
+
+      -webkit-transform   :scale(0);
+      -moz-transform      :scale(0);
+      transform           :scale(0);
+    }
+
+    /* handling click events */
+
+    /* when radio is checked */
+    label > span.inc {
+      -webkit-animation   :growCircleRadio 0.3s ease;
+      -moz-animation      :growCircleRadio 0.3s ease;
+      animation           :growCircleRadio 0.3s ease;   
+    }
+
+    input[type=radio]:checked ~ label > .check {
+      opacity:1; 
+      -webkit-transform   :scale(1);
+      -moz-transform      :scale(1);
+      transform           :scale(1);
+    }
+
+    // Disabled state
+    input[type=radio]:disabled ~ label,
+    input[type=radio][disabled] ~ label {
+        cursor: not-allowed;   
+        @include opacity($input-md-checkbox-disabled-opacity); 
+    }
+   
+    input[type=radio]:disabled ~ label > .box,
+    input[type=radio][disabled] ~ label > .box { 
+        cursor: not-allowed;
+        @include opacity($input-md-checkbox-disabled-opacity);
+    }
+
+    input[type=radio]:disabled:checked ~ label > .check, 
+    input[type=radio][disabled]:checked ~ label > .check {           
+        cursor: not-allowed;
+        @include opacity($input-md-checkbox-disabled-opacity);
+    }
+
+    // Error states
+    &.has-error {
+      @if $theme-type == "material-design" {
+         @include radio-variant($state-danger-border, $state-danger-bg, $state-danger-bg);
+      } @else {
+         @include radio-variant($brand-danger, $brand-danger, $brand-danger);
+      }
+    }
+  
+    &.has-info {
+      @if $theme-type == "material-design" {
+         @include radio-variant($state-info-border, $state-info-bg, $state-info-bg);
+      } @else {
+         @include radio-variant($brand-info, $brand-info, $brand-info);
+      }
+    }
+
+    &.has-success {
+      @if $theme-type == "material-design" {
+         @include radio-variant($state-success-border, $state-success-bg, $state-success-bg);
+      } @else {
+         @include radio-variant($brand-success, $brand-success, $brand-success);
+      }
+    }
+
+    &.has-warning {
+      @if $theme-type == "material-design" {
+         @include radio-variant($state-warning-border, $state-warning-bg, $state-warning-bg);
+      } @else {
+         @include radio-variant($brand-warning, $brand-warning, $brand-warning);
+      }
+    }
+
+}
+
+.form-md-radios {
+    > label {
+        font-size: $input-md-label-font-size;
+        color: $input-md-label-color;     
+        @include opacity($input-md-label-opacity);
+    }  
+
+    &.has-error {
+        @if $theme-type == "material-design" {
+            @include radio-label-variant($state-danger-bg);
+        } @else {
+            @include radio-label-variant($brand-danger);
+        }
+    }
+
+    &.has-info {
+        @if $theme-type == "material-design" {
+            @include radio-label-variant($state-info-bg);
+        } @else {
+            @include radio-label-variant($brand-info);
+        }
+    }
+
+    &.has-success {
+        @if $theme-type == "material-design" {
+            @include radio-label-variant($state-success-bg);
+        } @else {
+            @include radio-label-variant($brand-success);
+        }
+    }
+
+    &.has-warning {
+        @if $theme-type == "material-design" {
+            @include radio-label-variant($state-warning-bg);
+        } @else {
+            @include radio-label-variant($brand-warning);
+        }
+    }
+}
+
+.md-radio-list {
+  margin: 10px 0;
+
+  .form-horizontal & {
+    margin-top: 0px;    
+  }
+
+  .md-radio {
+    display: block;
+    margin-bottom: 10px;
+  }
+}  
+
+.md-radio-inline {
+  margin: 10px 0;
+
+  .form-horizontal & {
+    margin-top: 5px;    
+  }
+
+  .md-radio {
+    display: inline-block;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+     
+/* bubble animation */
+
+@-webkit-keyframes growCircleRadio {
+  0%, 100%   { -webkit-transform:scale(0); opacity: 1}
+  70%        { background:#eee; -webkit-transform:scale(1.25); }
+}
+@-moz-keyframes growCircleRadio {
+  0%, 100%   { -moz-transform:scale(0); opacity: 1}
+  70%        { background:#eee; -moz-transform:scale(1.25); }
+}
+@keyframes growCircleRadio {
+  0%, 100%   { transform:scale(0); opacity: 1}
+  70%        { background:#eee; transform:scale(1.25); }
+}

@@ -1,0 +1,258 @@
+/***
+Fullcalendar
+***/
+
+/* External events */
+
+.external-event {
+  display: inline-block ;
+  cursor:move;
+  margin-bottom: 5px ;  
+  margin-left: 5px ;
+}
+
+.fc-scroller {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.fc-month-view .fc-scroller {
+    height: auto !important;
+}
+
+.portlet {
+
+    .event-form-title {
+      font-size: 14px;
+      margin-top: 4px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    &.calendar {
+        .fc-button {
+            -webkit-box-shadow: none ;
+            -moz-box-shadow: none ;
+            box-shadow: none ;    
+            text-shadow: none;
+            border: 0 ;
+            height: 35px;
+            padding: 6px 8px 7px 8px ; 
+            margin-left:2px;   
+            border-top-style: none;
+            border-bottom-style: none;
+            border-right-style: solid;
+            border-left-style: solid;
+            border-color: #ddd;
+            background: transparent;
+            color: #fff;
+            top: -45px; 
+            outline: none !important;    
+          
+            @include border-radius($general-border-radius $general-border-radius 0 0);    
+        }
+
+        .fc-toolbar {
+          h2 {
+            margin-top: 3px;
+            font-size: 17px;
+          }
+
+           margin-bottom: 0px; 
+        }   
+
+        .fc-header {
+            margin-bottom:-21px;
+        }
+
+        .fc-button-prev {
+          padding-right: 10px;
+          padding-left: 8px;
+        }
+
+        .fc-button-next {
+          padding-right: 8px;
+          padding-left: 10px;
+        }
+
+        .fc-button {
+            &.fc-state-active,
+            &.fc-state-hover {
+                color: #666;
+                background-color: #fff;
+            }
+
+            &.fc-state-disabled {
+                color: #ddd;
+            }
+
+            .fc-icon-left-single-arrow {
+              font-family: FontAwesome; 
+              font-size: 16px;
+
+              &:after {
+                content: "";
+              }
+              &:before {
+                content: "\f104";
+              }
+            }
+
+            .fc-icon-right-single-arrow {
+              font-family: FontAwesome; 
+              font-size: 16px;
+
+              &:after {
+                content: "";
+              }
+              &:before {
+                content: "\f105";
+              }
+            }
+        }
+
+        .fc-text-arrow {
+          font-size: 22px;
+          font-family: "Courier New", Courier, monospace;
+          vertical-align: baseline; 
+        }
+
+        .fc-event {
+          border: 0px;
+          background-color: #69a4e0;
+          color: #fff;
+
+           .fc-content {
+              border: 0px;
+            }
+
+             .fc-time {
+              float: left;
+              text-align: left;
+              color: #fff;
+              font-size: 13px;
+              font-weight: 300;
+            }
+
+            .fc-title {
+              text-align: left;
+              float: left;
+              color: #fff;
+              font-size: 13px;
+              font-weight: 300;
+            }
+        }
+
+        .fc-header-title h2 {
+          font-size: 14px ;
+          line-height: 20px;
+          font-weight: 400;
+          color: #111;
+        }
+
+        .fc-widget-header {
+          background-image: none ;
+          filter:none;
+          background-color: #eee ;
+          text-transform: uppercase;
+          font-weight: 300;
+        }
+
+        &.light {
+          .fc-button {
+            top: -60px;
+            color: #666;
+            text-transform: uppercase;
+            font-size: 12px;
+            padding-bottom: 35px;
+
+            .fc-text-arrow {
+              margin-top: -6px;
+              display: inline-block;
+            }
+
+            &.fc-state-active,
+            &.fc-state-hover {
+                color: #333;
+                border-bottom: 2px solid $brand-success; 
+            }
+
+            &.fc-state-disabled {
+                color: #aaa;
+            }
+          }
+        } 
+
+        .mobile {
+
+            .fc-button { 
+                padding: 0px 6px 20px 6px ;
+                margin-left:2px ;
+                border: 0;    
+                background-color: #ddd ;
+                  background-image: none;
+                  -webkit-box-shadow: none ;
+                     -moz-box-shadow: none ;
+                          box-shadow: none ;
+                  -webkit-border-radius: 0 ;
+                     -moz-border-radius: 0 ;
+                          border-radius: 0 ;
+                  color: #000;
+                  text-shadow: none ;
+                  text-align: center;
+
+                &.fc-state-hover, 
+                &.fc-state-active {
+                    background-color: #eee ;
+                }
+                &.fc-state-disabled {
+                    color: #bbb ;
+                }
+            }
+
+            .fc-button-prev {
+              margin-right: 5px;
+              margin-top: -2px;
+            }
+
+            .fc-button-next {   
+              margin-right: -0px;
+              margin-top: -2px;
+            }
+
+            .fc-header-space {
+              margin: 0px ;
+              padding: 0px ;
+              width: 0px ;
+            }
+
+            .fc-header-left {
+                position: absolute;
+                z-index: 10;
+
+                .fc-button { 
+                    top: -2px ;
+                }
+            }
+            
+            .fc-header-right {
+                position: relative;
+                right:0;
+
+                .fc-button { 
+                    top: 35px ;
+                }
+            }
+
+            .fc-content {
+                margin-top: 53px;
+            }
+        }
+    }
+}
+
+@if $theme-type == "material-design" { 
+  .portlet.calendar.light .fc-button {
+    top: -47px;
+  }
+}

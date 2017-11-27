@@ -1,0 +1,26 @@
+/***
+Bootstrap Datepaginator
+***/
+
+.datepaginator a {
+  font-family: 'Open Sans';
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.datepicker .today {
+  background-image: none !important;
+  filter: none !important;
+}
+
+#dp-calendar {
+  right: 4px !important;
+}
+
+.datepaginator .fa-angle-right:before {
+	content: "\f105";
+}
+
+.datepaginator .fa-angle-left:before {
+	content: "\f104";
+}

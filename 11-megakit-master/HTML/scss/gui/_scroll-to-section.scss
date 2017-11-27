@@ -1,0 +1,11 @@
+/*----------------------------------
+  Scroll To Section
+------------------------------------*/
+
+/* Scroll To Section v1 */
+.s-scroll-to-section-v1--bc {
+  @include position(absolute, $bottom: .625rem, $left: 50%);
+  z-index: 1;
+  @include translate3d(-50%,0,0);
+  text-align: center;
+}

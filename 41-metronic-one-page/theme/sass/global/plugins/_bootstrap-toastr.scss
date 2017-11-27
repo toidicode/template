@@ -1,0 +1,58 @@
+/***
+Toastr Notifications
+***/
+.toast {
+    -webkit-box-shadow: none !important;
+     -moz-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.toast {
+  background-color: #030303;
+}
+.toast-success {
+  background-color: #51a351;
+}
+.toast-error {
+  background-color: #bd362f;
+}
+.toast-info {
+  background-color: #2f96b4;
+}
+.toast-warning {
+  background-color: #f89406;
+}
+
+.toast .toast-close-button {
+  display: inline-block;
+  margin-top: 0px;
+  margin-right: 0px;
+  text-indent: -100000px;
+  width: 11px;
+  height: 16px;
+  background-repeat: no-repeat !important;
+  background-image: url("../img/portlet-remove-icon-white.png") !important;
+}
+
+.toast-top-center {
+  top: 12px;
+  margin: 0 auto;
+  left: 50%;
+  margin-left: -150px;
+
+  .toast {
+    margin: 0 !important;
+  }
+}
+
+.toast-bottom-center {
+  bottom: 12px;
+  margin: 0 auto;
+  left: 50%;
+  margin-left: -150px;
+
+  .toast {
+    margin: 0 !important;
+  }
+}
+

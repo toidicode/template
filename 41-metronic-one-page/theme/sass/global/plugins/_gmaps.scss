@@ -1,0 +1,27 @@
+/***
+Google Maps
+***/
+
+.gmaps {
+  	height: 300px;
+  	width: 100%;
+
+  	/* important!  bootstrap sets max-width on img to 100% which conflicts with google map canvas*/
+	img {
+  		max-width: none; 
+	}
+}
+
+
+#gmap_static div{
+  background-repeat: no-repeat ;
+  background-position: 50% 50% ;
+  height:100%;
+  display:block;
+  height: 300px;
+}
+
+#gmap_routes_instructions {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}

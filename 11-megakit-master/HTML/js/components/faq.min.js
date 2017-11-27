@@ -1,0 +1,1 @@
+var Portfolio=function(){"use strict";var t=function(){$(".js__grid-faq").cubeportfolio({filters:".js__filters-faq",defaultFilter:"*",animationType:"sequentially",gridAdjustment:"default",displayType:"default",caption:"expand",gapHorizontal:0,gapVertical:0})};return{init:function(){t()}}}();$(document).ready(function(){Portfolio.init()});

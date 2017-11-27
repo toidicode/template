@@ -1,0 +1,105 @@
+/*------------------------------------------------------------------
+  	[Work]
+------------------------------------------------------------------*/
+
+/* Overlay */
+.work {
+	@include position(relative);
+	display: block;
+	
+	.work-overlay {
+		@include position(relative);
+		cursor: pointer;
+
+		&:before {
+	        @include position(absolute, $top: 0, $left: 0);
+	        @include size(100%);
+	        @include bg-opacity(#000, 0);
+	        content: " ";
+	        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+	    }
+	}
+
+	&:hover {
+		.work-overlay {
+			&:before {
+		        @include bg-opacity(#000, .5);
+		        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+		    }
+		}
+	}
+}
+
+/* Popup */
+.work {
+	.work-popup {
+		&-overlay {
+			@include position(fixed, $top: 0, $left: 0, $right: 0);
+			@include size(100%);
+		    z-index: 99999;
+		    opacity: 0;
+		    visibility: hidden;
+		    @include visibility-backface(hidden);
+		    overflow-x: hidden;
+		    @include bg-opacity($color-heading, .4);
+			@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+			&-show {
+		    	opacity: 1;
+		    	visibility: visible;
+		    	@include visibility-backface(visible);
+				@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));		
+			}
+		}
+
+		&-content {
+			@include position(absolute, $top: 50%, $left: 0, $right: 0);
+		    @include size(730px, auto);
+		    display: block;
+		    background: $color-white;
+		    padding: 30px;
+		    margin: 0 auto;
+		    @include translate3d(0,-50%,0);
+
+			&-divider {
+				border-right: 1px solid lighten($color-subtitle, 15%);
+			}
+
+			@media (max-width: $screen-sm-min) {
+				width: 95%;
+
+				&-divider {
+					border-right: none;
+					border-bottom: 1px solid lighten($color-subtitle, 15%);
+				}
+			}
+		}
+
+		&-close {
+			float: right;
+			@include font($size: 13px, $weight: 700);
+			color: lighten($color-link, 25%);
+			@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+			&:hover {
+				color: lighten($color-link, 15%);
+				@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+			}
+		}
+	}
+}
+
+/* Tag */
+.work {
+	.work-popup-tag {
+		margin: 0;
+
+		&-item {
+			padding: 0 2px;
+		}
+
+		&-link {
+			@include font($size: 13px);
+		}
+	}	
+}

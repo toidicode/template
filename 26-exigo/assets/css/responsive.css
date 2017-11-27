@@ -1,0 +1,114 @@
+
+
+/*
+Author: XpeedStudio
+Author URI: http://www.Xpeedstudio.com
+*/
+
+/* Portrait tablets and medium desktops */
+@media (max-width: 1199px) {
+
+    .main_contactus_area input[type=submit] {
+        width: 30%;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+    html {
+        font-size: 90%;
+    }
+    .list-inline>li {
+        display: inline-block;
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+
+    .main_service_content .single_service {
+        margin-top: 0%;
+    }
+
+
+    .main_contactus_area input[type=submit] {
+        width: 35%;
+    }
+    .ourmap {
+        height: 653px;
+    }
+    .main_footer .footer_logo a img {
+        width: 100%;
+    }
+
+}
+
+
+
+
+/* Landscape phones and portrait tablets */
+@media  (max-width: 768px) {
+    html {
+        font-size: 90%;
+    }
+    .cd-header a.brand-logo img {
+        width: 10%;
+    }
+    #main-nav li a{
+        padding: 2% 10%;
+    }
+    .main_service_content img{
+        width:100%;
+    }
+    .main_service_content .single_service {
+        margin-top: 5%;
+        padding: 0% 2%;
+    }
+    .single_service.single_service_left_text {
+        margin-left: 0%;
+    }
+
+    .main_blog_area .single_blog_menu ul {
+        margin-top: 10%;
+    }
+    .single_blog_img img{
+        width:100%;
+    }
+
+    .main_footer .footer_logo a img {
+        width: 20%;
+    }
+
+}
+
+
+/* Landscape phones and smaller */
+@media (max-width: 479px) {
+    html {
+        font-size: 85%;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 320px) {
+
+    html {
+        font-size: 70.5%;
+    }
+    .main_contactus_area input[type=submit] {
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 852px){
+    .ourmap {
+        height: 680px;
+    }
+}
+
+
+
+

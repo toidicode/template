@@ -1,0 +1,96 @@
+// Shadows
+.md-shadow-z-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0, .10), 0 1px 2px rgba(0,0,0, .18);
+}
+
+.md-shadow-z-1-i {
+    box-shadow: 0 1px 3px rgba(0,0,0, .10), 0 1px 2px rgba(0,0,0, .18) !important;
+}
+
+.md-shadow-z-1-hover {
+    box-shadow: 0 1px 3px rgba(0,0,0, .14), 0 1px 2px rgba(0,0,0, .22);
+}
+
+.md-shadow-z-2 {
+    box-shadow: 0 3px 6px rgba(0,0,0, .16), 0 3px 6px rgba(0,0,0, .22);
+}
+
+.md-shadow-z-2-i {
+    box-shadow: 0 3px 6px rgba(0,0,0, .16), 0 3px 6px rgba(0,0,0, .22) !important;
+}
+
+.md-shadow-z-2-hover {
+    box-shadow: 0 3px 6px rgba(0,0,0, .20), 0 3px 6px rgba(0,0,0, .26);
+}
+
+.md-shadow-z-3 {
+    box-shadow: 0 8px 18px rgba(0,0,0, .18), 0 6px 6px rgba(0,0,0, .23);
+}
+
+.md-shadow-z-3-i {
+    box-shadow: 0 8px 18px rgba(0,0,0, .18), 0 6px 6px rgba(0,0,0, .24) !important;
+}
+
+.md-shadow-z-3-hover {
+    box-shadow: 0 8px 18px rgba(0,0,0, .22), 0 6px 6px rgba(0,0,0, .26);
+}
+
+.md-shadow-z-4 {
+    box-shadow: 0 14px 28px rgba(0,0,0, .26), 0 10px 10px rgba(0,0,0, .22);
+}
+
+.md-shadow-z-4-i {
+    box-shadow: 0 14px 28px rgba(0,0,0, .26), 0 10px 10px rgba(0,0,0, .22) !important;
+}
+
+.md-shadow-z-5 {
+    box-shadow: 0 19px 38px rgba(0,0,0, .28), 0 15px 12px rgba(0,0,0, .22); 
+}
+
+.md-shadow-z-5-i {
+    box-shadow: 0 19px 38px rgba(0,0,0, .28), 0 15px 12px rgba(0,0,0, .22) !important; 
+}
+
+.md-shadow-none {
+    box-shadow: none !important;
+}
+
+// Click effects
+
+.md-click-circle {       
+    display: block; 
+    position: absolute;
+    background: rgba(0,0,0,.2);
+    border-radius: 50%;
+
+    -webkit-animation: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+  
+    &.md-click-animate {   
+        -webkit-animation: mdClickEffect 0.55s linear;
+        -moz-animation: mdClickEffect 0.55s linear;
+        animation: mdClickEffect 0.55s linear;
+    }
+}
+
+@-webkit-keyframes mdClickEffect {
+    100% {     
+     opacity: 0;        
+     -webkit-transform: scale(1.5);
+  }
+}
+
+@-moz-keyframes mdClickEffect {
+    100% {
+     opacity: 0; 
+     -moz-transform: scale(2.5);
+  }
+}
+
+@keyframes mdClickEffect {
+    100% {
+     opacity: 0; 
+     transform: scale(2.5);
+  }
+}

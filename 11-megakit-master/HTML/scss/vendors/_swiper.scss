@@ -1,0 +1,84 @@
+/*----------------------------------
+  Swiper
+------------------------------------*/
+
+.s-swiper {
+	@include position(relative);
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Arrows v1
+------------------------------ */
+.s-swiper__arrow-v1 {
+	&--left,
+	&--right {
+		@include position(absolute, $top: 50%);
+		z-index: 1;
+		@include translate3d(0,-50%,0);
+		
+		@include media-breakpoint-down(sm) {
+			opacity: 0;
+		}
+	}
+	
+	&--left { left: 2rem; }
+	&--right { right: 2rem; }
+}
+
+.s-swiper {
+	@include hover {
+		.s-swiper__arrow-v1 {
+			&--left,
+			&--right {
+				@include media-breakpoint-down(sm) {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+/* Pagination v1
+------------------------------ */
+.s-swiper__pagination-v1 {
+	&--bc {
+		position: absolute;
+		bottom: 1.875rem !important;
+		text-align: center;
+		z-index: 1;
+	}
+
+	.swiper-pagination-bullet {
+		@include size(1rem, .5625rem);
+		@include border-radius(.9375rem);
+		opacity: .7;
+		@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+	}
+
+	.swiper-pagination-bullet-active {
+		width: 1.875rem;
+		background: $color-primary;
+		opacity: 1;
+	}
+
+	&--white {
+		.swiper-pagination-bullet {
+			background: $color-white; 
+		}
+
+		.swiper-pagination-bullet-active {
+			background: $color-primary;
+		}
+	}
+
+	&--dark {
+		.swiper-pagination-bullet {
+			background: lighten($color-text, 30%); 
+		}
+
+		.swiper-pagination-bullet-active {
+			background: $color-primary;
+		}
+	}
+}

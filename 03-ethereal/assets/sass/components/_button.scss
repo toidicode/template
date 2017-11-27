@@ -1,0 +1,156 @@
+///
+/// Ethereal by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		@include vendor('appearance', 'none');
+		@include vendor('transition', (
+			'background-color #{_duration(transition)} ease-in-out',
+			'box-shadow #{_duration(transition)} ease-in-out',
+			'color #{_duration(transition)} ease-in-out'
+		));
+		background-color: transparent;
+		border: 0;
+		border-radius: _size(border-radius);
+		box-shadow: inset 0 0 0 2px _palette(border);
+		color: _palette(fg-bold) !important;
+		cursor: pointer;
+		display: inline-block;
+		font-family: _font(family-heading);
+		font-size: 0.6rem;
+		font-weight: _font(weight-heading);
+		height: _size(element-height) * 1.1;
+		letter-spacing: 0.15rem;
+		line-height: _size(element-height) * 1.1;
+		padding: 0 1.5rem 0 (1.5rem + 0.15rem);
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+
+		&:hover {
+			box-shadow: inset 0 0 0 2px _palette(accent3);
+			color: _palette(accent3) !important;
+		}
+
+		&:active {
+			background-color: transparentize(_palette(accent3), 0.875);
+		}
+
+		&.icon {
+			&:before {
+				display: inline-block;
+				position: relative;
+				top: -0.075rem;
+				vertical-align: middle;
+				font-size: 0.8rem;
+				margin: 0 0.375rem 0 -0.325rem;
+			}
+
+			&.circle {
+				position: relative;
+				width: _size(element-height) * 1.25;
+				height: _size(element-height) * 1.25;
+				line-height: _size(element-height) * 1.25;
+				text-indent: _size(element-height) * 1.25;
+				border-radius: 100%;
+				overflow: hidden;
+				padding: 0;
+				letter-spacing: 0;
+
+				&:before {
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: inherit;
+					height: inherit;
+					font-size: 1.25rem;
+					line-height: inherit;
+					margin: 0;
+					text-indent: 0;
+				}
+
+				&.fa-angle-left {
+					&:before {
+						position: relative;
+						left: -0.1rem;
+						font-size: 1.75rem;
+					}
+				}
+
+				&.fa-angle-right {
+					&:before {
+						position: relative;
+						left: 0.1rem;
+						font-size: 1.75rem;
+					}
+				}
+			}
+		}
+
+		&.fit {
+			display: block;
+			margin: 0 0 (_size(element-margin) * 0.5) 0;
+			width: 100%;
+		}
+
+		&.small {
+			font-size: 0.4rem;
+			height: _size(element-height) * 0.75;
+			line-height: _size(element-height) * 0.75;
+			padding: 0 1.25rem 0 (1.25rem + 0.15rem);
+		}
+
+		&.large {
+			font-size: 0.8rem;
+			height: _size(element-height) * 1.325;
+			line-height: _size(element-height) * 1.325;
+			padding: 0 2rem 0 (2rem + 0.15rem);
+		}
+
+		&.special {
+			background-color: rgba(_palette(fg-bold), 1);
+			box-shadow: none;
+			color: _palette(bg) !important;
+
+			&.color1 {
+				color: _palette(accent1) !important;
+			}
+
+			&.color2 {
+				color: _palette(accent2) !important;
+			}
+
+			&.color3 {
+				color: _palette(accent3) !important;
+			}
+
+			&.color4 {
+				color: _palette(accent4) !important;
+			}
+
+			&:hover {
+				background-color: _palette(accent3);
+			}
+
+			&:active {
+				background-color: desaturate(darken(_palette(accent3), 6), 3);
+			}
+		}
+
+		&.disabled,
+		&:disabled {
+			@include vendor('pointer-events', 'none');
+			cursor: default;
+			opacity: 0.5;
+		}
+	}

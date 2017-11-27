@@ -1,0 +1,314 @@
+/***
+Customized Bootstrap Tables
+***/
+
+/***
+Default table
+***/
+
+.table {
+
+	&.table-bordered {
+    thead > tr > th {
+  	  border-bottom: 0;
+	  }
+  }
+  
+	tr.heading > th {
+  		background-color: #eee !important;
+	}
+
+	td .img-responsive  {
+		width:100%;
+	}
+}
+
+/* Contextual table row variants */
+
+@include table-row-variant('active', lighten($state-primary-bg, 25%), darken($state-primary-text, 75%));     
+@include table-row-variant('success', $state-success-bg, $state-success-text);
+@include table-row-variant('info', $state-info-bg, $state-info-text);
+@include table-row-variant('warning', $state-warning-bg, $state-warning-text);
+@include table-row-variant('danger', $state-danger-bg, $state-danger-text);
+
+/***
+Responsive & Scrollable Tables
+***/
+
+.table-scrollable {
+  	width: 100%;
+  	overflow-x: auto;
+  	overflow-y: hidden;
+  	border: 1px solid #dddddd;
+  	margin: 10px 0 !important;
+
+    &.table-scrollable-borderless {
+        border: 0;
+    }
+
+  	> .table {
+  		width: 100% !important;
+  		margin: 0 !important;
+  		margin-bottom: 0;
+  		background-color: #fff;
+
+  		> thead > tr > th,
+  		> tbody > tr > th,
+  		> tfoot > tr > th,
+  		> tfoot > tr > th,
+  		> tfoot > tr > td {
+  			white-space: nowrap;
+  		}
+	}
+
+	> .table-bordered {
+  		border: 0;
+
+  	> thead > tr > th:first-child,
+		> tbody > tr > th:first-child,
+		> tfoot > tr > th:first-child,
+		> thead > tr > td:first-child,
+		> tbody > tr > td:first-child,
+		> tfoot > tr > td:first-child {
+		  border-left: 0;
+		}
+
+		> thead > tr > th:last-child,
+		> tbody > tr > th:last-child,
+		> tfoot > tr > th:last-child,
+		> thead > tr > td:last-child,
+		> tbody > tr > td:last-child,
+		> tfoot > tr > td:last-child {
+		  border-right: 0;
+		}
+
+		> thead > tr:last-child > th,
+		> tbody > tr:last-child > th,
+		> tfoot > tr:last-child > th,
+		> thead > tr:last-child > td,
+		> tbody > tr:last-child > td,
+		> tfoot > tr:last-child > td {
+		  border-bottom: 0;
+		}
+	}
+}
+
+/***
+Responsive Flip Scroll Tables
+***/
+
+.flip-scroll table { 
+	width: 100%; 
+}
+
+@media only screen and (max-width: $screen-sm-min) { /* 768px */
+  
+    .flip-scroll .flip-content:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+    .flip-scroll * html .flip-content { zoom: 1; }
+    .flip-scroll *:first-child+html .flip-content { zoom: 1; }
+  
+    .flip-scroll table { width: 100%; border-collapse: collapse; border-spacing: 0; }
+ 
+    .flip-scroll th,
+    .flip-scroll td { margin: 0; vertical-align: top; }
+    .flip-scroll th { 
+        text-align: left; 
+        border: 0 !important; 
+        border-bottom: 1px solid #ddd !important; 
+        border-right: 1px solid #ddd !important; 
+        font-size: 13px !important;
+        padding: 5px;
+        width: auto !important;
+    }
+  
+    .flip-scroll table { display: block; position: relative; width: 100%; }
+    .flip-scroll thead { 
+        display: block; 
+        float: left; 
+    }
+    .flip-scroll tbody { 
+        display: block; 
+        width: auto; 
+        position: relative; 
+        overflow-x: auto; 
+        white-space: nowrap;     
+    }
+
+    .flip-scroll thead tr { display: block; }
+    .flip-scroll th { display: block; text-align: right; }
+    .flip-scroll tbody tr { display: inline-block; vertical-align: top; margin-left: -5px; }
+    .flip-scroll td { display: block; min-height: 1.25em; text-align: left; border-top: 0 !important; border-left: 0 !important; border-right: 0 !important} 
+ 
+    /* sort out borders */
+ 
+    .flip-scroll th { border-bottom: 0; border-left: 0; }
+    .flip-scroll td { border-left: 0; border-right: 0; border-bottom: 0; }
+    .flip-scroll tbody tr { border-left: 1px solid #ddd; }
+    .flip-scroll th:last-child,
+    .flip-scroll td:last-child { border-bottom: 1px solid #ddd; }
+}
+
+/***
+Custom tables
+***/
+
+.table-toolbar {
+    margin-bottom: 15px;
+
+    @include clearfix();
+}
+
+.table.table-full-width {
+    width: 100% !important;
+}
+
+.table .btn {
+    margin-top: 0px;
+    margin-left: 0px; 
+    margin-right: 5px;
+}
+
+.table thead tr th {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.table-advance {
+    margin-bottom: 10px !important;
+}
+
+.table-advance thead { 
+    color: #999; 
+}
+
+.table-advance thead tr th{
+    background-color: #DDD; 
+    font-size: 14px;
+    font-weight: 400; 
+    color: #666;
+}
+
+.table-advance div.success, 
+.table-advance div.info, 
+.table-advance div.important, 
+.table-advance div.warning, 
+.table-advance div.danger {
+    position: absolute;
+    margin-top:-5px;
+    float: left;
+    width: 2px;
+    height: 30px;
+    margin-right: 20px !important;
+}
+
+.table-advance tr td {
+    border-left-width: 0px; 
+}
+
+.table-advance tr td:first-child {
+    border-left-width: 1px !important; 
+}
+
+.table-advance tr td.highlight:first-child a {
+    margin-left: 15px;
+}
+
+.table-advance td.highlight div.primary {  
+    border-left: 2px solid $brand-primary;
+}
+
+.table-advance td.highlight div.success {  
+    border-left: 2px solid $brand-success;
+}
+
+.table-advance td.highlight div.info {  
+    border-left: 2px solid $brand-info;
+}
+
+.table-advance td.highlight div.warning {  
+    border-left: 2px solid $brand-warning;
+}
+
+.table-advance td.highlight div.danger {  
+    border-left: 2px solid $brand-danger;
+}
+
+@media (max-width: $screen-xs-max) { /* 767px */
+    .table-advance {
+        tr {
+            > td.highlight:first-child a {
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+
+/***
+Light Table
+***/
+
+.table.table-light {
+    border: 0 !important; 
+
+    > thead {
+        > tr {
+            &:hover {
+                > th {
+                    background: none;
+                }
+            }
+
+            &.uppercase {
+                text-transform: uppercase;
+            }
+
+            > th {
+                font-weight: 600;
+                font-size: 13px;
+                color: darken(#B5BFC4, 12%);  
+                font-family: $font-family-primary;
+                border: 0;
+                border-bottom:1px solid #F2F5F8; 
+            }
+        }
+    }
+
+    > tbody {
+        > tr {
+            &:last-child {
+                > td {
+                    border: 0;
+                }
+            }
+
+            > td {
+                border: 0;
+                border-bottom:1px solid #F2F5F8;   
+                color: darken(#AAB4BB, 12%);
+                vertical-align: middle;
+
+                &.fit {
+                    width: 1px;
+                    padding-right: 3px;
+                }
+
+                .user-pic {
+                    display: inline-block;
+                    vertical-align: middle;
+                    height: 30px;
+                    @include border-radius(100%);
+                }
+            }
+        }
+    }
+
+    &.table-hover > tbody > tr {
+        > td:hover,
+        > th:hover, 
+        &:hover > td,
+        &:hover > th { 
+            background: lighten(#94A0B2, 34%);
+        }
+    }
+}

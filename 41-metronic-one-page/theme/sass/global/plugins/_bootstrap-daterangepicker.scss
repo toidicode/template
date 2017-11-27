@@ -1,0 +1,76 @@
+/***
+Bootstrap Daterangepicker
+***/
+
+.modal-open .daterangepicker {
+  z-index: 10055 !important;
+}
+
+.daterangepicker {
+  margin-top: 4px;
+}
+
+.daterangepicker td {
+  text-shadow: none ;
+}
+
+.daterangepicker td.active {
+  background-color: #4b8df8 ;
+  background-image: none ;
+  filter:none ;
+}
+
+.daterangepicker th {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.daterangepicker .ranges input[type="text"]  {
+  width: 70px !important;
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+.daterangepicker .ranges label {
+  font-weight: 300;
+  display: block;
+}
+
+.daterangepicker .ranges {
+  width: 170px;
+
+  ul > li.active {
+    @include border-radius($general-border-radius);
+  }
+}
+
+.daterangepicker .ranges .btn {
+  margin-top: 10px;
+}
+
+.daterangepicker.dropdown-menu {
+  padding: 5px;
+}
+
+.daterangepicker .ranges li {
+  color: #333;
+}
+
+.daterangepicker .ranges li.active, 
+.daterangepicker .ranges li:hover {
+  background: #4b8df8 !important;
+  border: 1px solid #4b8df8 !important;
+  color: #fff;
+}
+
+.daterangepicker .range_inputs input {
+  margin-bottom: 0 !important;
+}
+
+.daterangepicker .fa-angle-right:before {
+  content: "\f105";
+}
+
+.daterangepicker .fa-angle-left:before {
+  content: "\f104";
+}

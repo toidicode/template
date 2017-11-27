@@ -1,0 +1,22 @@
+/*----------------------------------
+  Team v1
+------------------------------------*/
+
+.s-team-v1 {
+	@include position(relative);
+	cursor: pointer;
+
+	@include before {
+		@include position(absolute, $top: 0, $left: 0);
+		z-index: 1;
+		@include size(100%);
+		content: " ";
+		@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+	}
+
+	@include hover {
+		@include before {
+			box-shadow: 0 0 1.25rem .3125rem rgba($color-dark,.07);
+		}
+	}
+}

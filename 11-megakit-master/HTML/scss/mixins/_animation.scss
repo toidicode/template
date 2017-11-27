@@ -1,0 +1,13 @@
+// Animation
+@mixin animation(
+	$name,											// none | keyframe at-rule name
+	$duration,									// <time>
+	$timing-function,						// ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(<number>, <number>, <number>, <number>)
+	$delay,											// <time>
+	$iteration-count,   				// infinite | number
+	$direction,									// normal | alternate
+	$fill-mode									// none | both
+	) {
+  -webkit-animation: $name $duration $timing-function $iteration-count $direction $fill-mode;
+  animation: $name $duration $timing-function $iteration-count $direction $fill-mode;
+}

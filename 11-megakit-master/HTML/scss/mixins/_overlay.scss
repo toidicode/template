@@ -1,0 +1,19 @@
+// Overlay
+@mixin overlay {
+	@include position(relative);
+  z-index: 1;
+  
+  @include before {
+  	@include position(absolute, $top: 0, $left: 0, $right: 0);
+    z-index: -1;
+    height: 100%;
+    content: " ";
+  }
+}
+
+// Overlay Style
+@mixin overlay-style($color, $opacity) {
+  @include before {
+    background: rgba($color, $opacity);
+  }
+}

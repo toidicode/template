@@ -1,0 +1,18 @@
+// Selection
+@mixin selection($text-color, $bg-color) {
+  ::selection {
+	  color: $text-color;
+	  background: $bg-color;
+	  text-shadow: none;
+	}
+	::-webkit-selection {
+	  color: $text-color;
+	  background: $bg-color;
+	  text-shadow: none;
+	}
+
+	:active,
+	:focus {
+	  outline: none;
+	}
+}

@@ -1,0 +1,36 @@
+/*----------------------------------
+  Plan
+------------------------------------*/
+
+/* Plan v1 */
+.s-plan-v1 {
+	box-shadow: .625rem .625rem .9375rem 0 rgba(#1f1f1f,.075);
+
+	&__price-mark,
+	&__price-tag {
+		color: $color-primary;
+	}
+
+	&__price-mark {
+		@include font($size: $font-size-22);
+		vertical-align: top;
+	}
+
+	&__price-tag {
+		@include font($size: $font-size-30);
+		line-height: 1.1;
+	}
+}
+
+
+/* Plan v2 */
+.s-plan-v2 {
+	&__main {
+		@include media-breakpoint-up(lg) {
+			@include position(relative);
+			z-index: 1;
+			box-shadow: 0 -1.25rem 3.125rem 0 rgba($color-dark,.05);
+			margin-top: -.4375rem;
+		}
+	}
+}

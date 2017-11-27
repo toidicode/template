@@ -1,0 +1,300 @@
+///
+/// Ethereal by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Panel */
+
+	$pad: _size(pad);
+	$pad-small-tb: _size(pad-small-tb);
+	$pad-small-lr: _size(pad-small-lr);
+
+	@mixin panel-colors {
+		$opacity: 0.175;
+		$darken: 3;
+		$desaturate: 3;
+
+		&.color0 {
+			@include gradient-background(false, 1, 20%, 60%);
+		}
+
+		&.color1 {
+			@include gradient-background;
+			background-color: _palette(accent1);
+		}
+
+		&.color2 {
+			@include gradient-background;
+			background-color: _palette(accent2);
+		}
+
+		&.color3 {
+			@include gradient-background;
+			background-color: _palette(accent3);
+		}
+
+		&.color4 {
+			@include gradient-background;
+			background-color: _palette(accent4);
+		}
+
+		&.color1-alt {
+			@include gradient-background(false, $opacity);
+			background-color: desaturate(darken(_palette(accent1), $darken), $desaturate);
+		}
+
+		&.color2-alt {
+			@include gradient-background(false, $opacity);
+			background-color: desaturate(darken(_palette(accent2), $darken), $desaturate);
+		}
+
+		&.color3-alt {
+			@include gradient-background(false, $opacity);
+			background-color: desaturate(darken(_palette(accent3), $darken), $desaturate);
+		}
+
+		&.color4-alt {
+			@include gradient-background(false, $opacity);
+			background-color: desaturate(darken(_palette(accent4), $darken), $desaturate);
+		}
+	}
+
+	.panel {
+		@include vendor('display', 'flex');
+		@include vendor('flex-grow', '0');
+		@include vendor('flex-shrink', '0');
+		@include vendor('justify-content', 'center');
+		@include vendor('align-items', 'stretch');
+		height: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+
+		> * {
+			position: relative;
+			min-width: 10rem;
+
+			@include panel-colors;
+		}
+
+		> .intro {
+			@include padding($pad, $pad);
+			@include vendor('display', 'flex');
+			@include vendor('flex-grow', '0');
+			@include vendor('flex-shrink', '0');
+			@include vendor('justify-content', 'center');
+			@include vendor('align-items', 'flex-start');
+			@include vendor('flex-direction', 'column');
+			width: 22rem;
+
+			&.joined {
+				width: (22rem - $pad);
+				padding-right: 0;
+
+				& + .inner {
+					padding-left: ($pad * 0.75);
+				}
+			}
+		}
+
+		> .inner {
+			@include padding($pad, $pad);
+			@include vendor('display', 'flex');
+			@include vendor('flex-grow', '1');
+			@include vendor('flex-shrink', '1');
+			@include vendor('justify-content', 'center');
+			@include vendor('align-items', 'flex-start');
+			@include vendor('flex-direction', 'column');
+			position: relative;
+			width: 100%;
+
+			&.columns {
+				@include vendor('display', 'flex');
+				@include vendor('justify-content', 'center');
+				@include vendor('align-items', 'center');
+				@include vendor('flex-direction', 'row');
+
+				> * {
+					@include vendor('flex-grow', '0');
+					@include vendor('flex-shrink', '0');
+					margin-left: $pad;
+				}
+
+				> :first-child {
+					margin-left: 0;
+				}
+
+				&.divided {
+					> * {
+						margin-left: ($pad * 2);
+
+						&:before {
+							content: '';
+							position: absolute;
+							top: $pad;
+							width: 2px;
+							height: calc(100% - #{$pad * 2});
+							margin-left: ($pad * -1);
+							background-color: _palette(border);
+						}
+					}
+
+					> :first-child {
+						margin-left: 0;
+
+						&:before {
+							display: none;
+						}
+					}
+				}
+
+				&.aligned {
+					@include vendor('align-items', 'flex-start');
+				}
+			}
+		}
+
+		@include spans(_size(span-fixed));
+
+		&.small {
+			width: 35rem;
+		}
+
+		&.medium {
+			width: 50rem;
+		}
+
+		&.large {
+			width: 65rem;
+		}
+
+		&.small,
+		&.medium,
+		&.large {
+			@include spans(_size(span-variable));
+		}
+
+		@include panel-colors;
+	}
+
+	@mixin panel-colors-small {
+		$opacity: 0.175;
+		$darken: 3;
+		$desaturate: 3;
+
+		&.color1 {
+			@include gradient-background-small;
+			background-color: _palette(accent1);
+		}
+
+		&.color2 {
+			@include gradient-background-small;
+			background-color: _palette(accent2);
+		}
+
+		&.color3 {
+			@include gradient-background-small;
+			background-color: _palette(accent3);
+		}
+
+		&.color4 {
+			@include gradient-background-small;
+			background-color: _palette(accent4);
+		}
+
+		&.color1-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent1), $darken), $desaturate);
+		}
+
+		&.color2-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent2), $darken), $desaturate);
+		}
+
+		&.color3-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent3), $darken), $desaturate);
+		}
+
+		&.color4-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent4), $darken), $desaturate);
+		}
+	}
+
+	@include breakpoint(small) {
+		.panel {
+			@include vendor('flex-direction', 'column');
+			height: auto;
+
+			> * {
+				@include panel-colors-small;
+			}
+
+			> .intro {
+				@include padding($pad-small-tb, $pad-small-lr);
+				width: 100% !important;
+
+				&.joined {
+					padding-bottom: 0;
+					padding-right: $pad-small-lr;
+
+					& + .inner {
+						padding-top: 0;
+						padding-left: $pad-small-lr;
+					}
+				}
+			}
+
+			> .inner {
+				@include padding($pad-small-tb, $pad-small-lr);
+
+				&.columns {
+					@include vendor('flex-direction', 'column');
+
+					> * {
+						margin-left: 0;
+						margin-top: 0;
+					}
+
+					> :first-child {
+						margin-top: 0;
+					}
+
+					&.divided {
+						> * {
+							margin-left: 0;
+							margin-top: ($pad-small-lr * 2);
+
+							&:before {
+								content: '';
+								position: absolute;
+								top: auto;
+								left: $pad-small-lr;
+								width: calc(100% - #{$pad-small-lr * 2});
+								height: 2px;
+								margin-left: 0;
+								margin-top: ($pad-small-lr * -1);
+							}
+						}
+
+						> :first-child {
+							margin-top: 0;
+						}
+					}
+				}
+			}
+
+			@include spans-small(_size(span-fixed));
+
+			&.small,
+			&.medium,
+			&.large {
+				@include spans-small(_size(span-variable));
+				width: 100% !important;
+			}
+
+			@include panel-colors-small;
+		}
+	}

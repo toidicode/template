@@ -1,0 +1,28 @@
+/*----------------------------------
+  Video
+------------------------------------*/
+
+.s-video__bg {
+	@include position(relative);
+
+	@include before {
+		@include position(absolute, $top: 0, $left: 0);
+		@include size(100%);
+		z-index: 1;
+		@include gradient-horizontal($direction: 145deg, $start-color: rgba(#67b5f1,.8), $end-color: rgba($color-blueviolet,.8), $start-percent: 0, $end-percent: 100%);
+		content: " ";
+	}
+}
+
+/* Video v2 */
+.s-video-v2__bg {
+	@include position(relative);
+
+	@include before {
+		@include position(absolute, $top: 0, $left: 0);
+		@include size(100%);
+		z-index: 1;
+		background: rgba($color-dark, .85);
+		content: " ";
+	}
+}

@@ -1,0 +1,39 @@
+/***
+Customized Bootstrap Alerts
+***/
+
+.alert {
+	border-width: 1px;
+	
+	&.alert-borderless {
+		border: 0;
+	}
+}
+
+/***
+Bootstrap Alerts
+***/
+
+.alert-success {
+  @include alert-variant($state-success-bg, $state-success-border, $state-success-text);
+}
+
+.alert-info {
+  @include alert-variant($state-info-bg, $state-info-border, $state-info-text);
+}
+
+.alert-warning {
+  @include alert-variant($state-warning-bg, $state-warning-border, $state-warning-text);
+}
+
+.alert-danger {
+  @include alert-variant($state-danger-bg, $state-danger-border, $state-danger-text);
+}
+
+@if $theme-type == "material-design" {  
+	.alert {
+		@include border-radius($general-border-radius);  
+		border-width: 0;  
+		@extend .md-shadow-z-1;               
+	}
+}

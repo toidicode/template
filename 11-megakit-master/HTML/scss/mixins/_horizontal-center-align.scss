@@ -1,0 +1,11 @@
+// Horizontal Center Align
+@mixin hor-center-align-row() {
+	width: 100%;
+	display: table;
+}
+
+@mixin hor-center-align-col() {
+	display: table-cell;
+  float: none;
+  vertical-align: middle;
+}

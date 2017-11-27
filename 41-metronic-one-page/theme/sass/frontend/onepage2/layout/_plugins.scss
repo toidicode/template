@@ -1,0 +1,94 @@
+/*--------------------------------------------------
+	[CUBEPORTFOLIO]
+----------------------------------------------------*/
+/* Popup Wrap */
+.cbp-popup-wrap {
+	z-index: 9999 !important;
+}
+
+.cube-portfolio {
+
+	/* Filter */
+	.cbp-l-filters-alignCenter {
+		.cbp-filter-item {
+			font-size: 14px;
+			padding: 6px 15px;
+			text-transform: uppercase;
+			color: $text-dark-blue-color;
+
+			&:hover {
+				color: $text-white-color;
+				background: $background-dark-blue-color;
+			}
+		}
+
+		.cbp-filter-item-active {
+			color: $text-white-color;
+			background: $background-dark-blue-color;
+		}
+	}
+
+	/* Caption Effects */
+	.cbp-caption {
+		.cbp-caption-hover-gradient {
+			position: relative;
+
+			&:before {
+				width: 100%;
+				height: 100%;
+				content: " ";
+				position: absolute;
+				@include cubic-transition($delay: 0, $duration:300ms, $property: (all));
+			}
+
+			&:after {
+				top: 10px;
+				left: 10px;
+				right: 10px;
+				bottom: 10px;
+				content: " ";
+				position: absolute;
+				@include cubic-transition($delay: 0, $duration:300ms, $property: (all));
+			}
+		}
+
+		&:hover .cbp-caption-hover-gradient:before {
+			opacity: .8;
+			background: #3f5263;
+		}
+
+		&:hover .cbp-caption-hover-gradient:after {
+			border: 2px solid $text-white-color;
+		}
+
+		.cbp-caption-activeWrap {
+			background: inherit;
+		}
+	}
+
+	/* Portfolio Icons */
+	.portfolio-icons i {
+		width: 40px;
+		height: 40px;
+		padding: 10px;
+		margin: 5px;
+		font-size: 16px;
+		text-align: center;
+		border-radius: 50%;
+		display: inline-block;
+		color: $text-dark-blue-color;
+		background: $background-white-color;
+		@include cubic-transition($delay: 0, $duration:300ms, $property: (all));
+
+		&:hover {
+			color: $text-white-color;
+			background: $background-dark-red-color;
+			@include cubic-transition($delay: 0, $duration:300ms, $property: (all));
+		}
+	}
+}
+
+
+
+
+

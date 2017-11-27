@@ -1,0 +1,10 @@
+.header{
+	background: url('../images/header.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	color: #fff;
+	text-transform: uppercase;
+}

@@ -1,0 +1,36 @@
+@media(min-width: 992px){
+
+h1{
+	font-size:62px;
+}
+
+.banner-item img {
+    margin-top: -25px;
+}
+
+.about-us h1 {
+    margin-bottom: 60px;
+}
+
+.page-top {
+    padding: 200px 0 60px;
+}
+
+.navbar-default {
+
+	.navbar-nav>li>a {
+	    padding-top: 40px;
+	    padding-bottom: 40px;
+	};
+
+	.navbar-brand{
+            font-size: 48px;
+            padding: 40px;
+    }
+}
+
+.team-member-img,.team-member-contact{
+	max-width: 350px;
+}
+
+}

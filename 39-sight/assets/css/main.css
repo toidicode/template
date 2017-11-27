@@ -1,0 +1,489 @@
+/*=================================================
+||				1. Imports 
+==================================================*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:200,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+body
+{
+	font-family: 'Roboto', 'Open-Sans', sans-serif;
+	overflow-x: hidden;
+	color: #313131;
+}
+.black{
+	color: #313131;
+}
+.white{
+	background: #fff ;
+}
+.purple{
+	background: #4a148c;
+}
+.section-wrapper{
+	padding-top: 90px;
+	padding-bottom: 80px;
+}
+.section-title{
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.section-item-title{
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+.section-item-detail{
+	font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    color: #999;
+    letter-spacing: .39px;
+}
+.underline{
+	height: 2px;
+	width: 50px;
+	margin: 0px auto 60px;
+}
+/*=================================================
+||				3. Header
+==================================================*/
+.header
+{
+	background: url('../images/multipage-header.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+	color: #fff;
+	text-transform: uppercase;
+
+}
+			/*navbar*/
+.navbar-default .navbar-brand{
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 30px;
+	padding: 10px 20px;
+	height: auto;
+	font-weight: 200;
+	letter-spacing: 5px;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+	color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+.navbar-fixed-top .navbar-toggle .icon-bar {
+    background-color: #313131;
+}
+.navbar-fixed-top .navbar-toggle{
+	border-color: #313131;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    padding-top: 50px;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #fff;
+    /*text-transform: uppercase;*/
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 1px solid transparent;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.navbar-default .navbar-toggle{
+	border-radius: 0px;
+}
+.navbar-default .navbar-nav>li>a:hover{
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	color: #fff;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	color: #fff;
+}
+.navbar-nav>li>a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+	background: transparent;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: #fff;
+}
+		/*Home*/
+.header-wrapper{
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+}
+.header-table{
+	display: table;
+	height: 70vh;
+	width: 100%;
+}
+.header-title{
+	font-size: 50px;
+	letter-spacing: 10px;
+	font-weight: 200;
+}
+.header-subtitle{
+	font-size: 20px;
+	letter-spacing: 3px;
+}
+/*=================================================
+||				4. Our Service
+==================================================*/
+.service{
+	background: #ededed;
+	position: relative;
+}
+.service .section-title{
+	margin-top: 110px;
+}
+.services{
+	margin-bottom: 100px;
+}
+.service .underline{
+	margin-bottom: 75px;
+}
+.service-img{
+	position: absolute;
+	bottom: 0px;
+}
+
+.twitter-feed{
+	color: #fff;
+}
+.item{
+	text-align: center;
+}
+.owl-prev, .owl-next
+{
+	position: absolute;
+	top: 10%;
+}
+.owl-next
+{
+	right: -10px;
+}
+.owl-prev
+{
+	left: -10px;
+}
+.owl-prev:before
+{
+    /*content: "\f3d2";*/
+    /*font-family: 'ionicons';*/
+    content: url("../images/left.png");
+}
+.owl-next:before
+{
+    /*content: "\f3d3";*/
+    /*font-family: "ionicons";*/
+    content: url("../images/right.png");
+}
+
+/*=================================================
+||				5. Twitter Feed
+==================================================*/
+.day, .feed{
+	font-size: 15px;
+	font-weight: 200;
+}
+.feed{
+	font-style: italic;
+	margin: 30px 0px;
+}
+.options a{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding: 0px 20px;
+}
+.options a i{
+	padding-right: 10px;
+}
+.options a:hover{
+	text-decoration: none;
+}
+.item:hover{
+	cursor: w-resize;
+}
+/*=================================================
+||				7. Portfolio
+==================================================*/
+.porfolio{
+	background: #f9f9f9;
+}
+.portfolio-img{
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.portfolio-img .port-item{
+	width: 100%;
+	height: auto;
+	transition: all .6s ease-in-out;
+}
+.portfolio-img:hover .portfolio-img-hover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all .6s ease-in-out;
+	background: rgba(0, 0, 0, 0.5);
+}
+.portfolio-img-hover{
+
+}
+.plus{
+	display: none;
+}
+.portfolio-img:hover .plus{
+	display: inline-block;
+	padding-top: 25%;
+}
+.portfolio-img:hover .port-item{
+	transform: scale(1.1);
+}
+.portfolio-item-details{
+	margin: 20px 0px 50px; 
+}
+.portfolio-item-name{
+	display: inline-block;
+	font-size: 15px;
+}
+.port-heart, .portfolio-item-name small{
+	font-size: 13px;
+	color: #969595;
+}
+.port-heart{
+	float: right;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+
+/*=================================================
+||				8. Note
+==================================================*/
+.note{
+	color: #dadada;
+}
+.quote{
+	font-style: italic;
+	font-size: 16px;
+	font-weight: 200;
+	padding: 0px 145px;
+}
+.quoter{
+	font-size: 20px;
+	font-weight: 400;
+	margin-top: 20px;
+}
+
+/*=================================================
+||				9. Fun Facts
+==================================================*/
+.fun{
+	background: #f3f3f3;
+}
+.fun-box{
+	border: 2px solid #313131;
+	text-align: center;
+	padding: 40px 0px;
+	font-size: ;
+}
+.number{
+	font-weight: 700;
+	font-size: 25px;
+}
+.number-title{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 400;
+}
+.col-sm-6 .fun-box{
+	margin-bottom: 20px;
+}
+/*=================================================
+||				10. Footer
+==================================================*/
+footer{
+	background: #eaeaea;
+	padding: 20px 0px;
+}
+.copy{
+	font-size: 14px;
+	font-weight: 300;
+	color: #929292;
+	padding: 10px 0px;
+	display: inline-block;
+}
+.fb{
+	background: #1976d2;
+}
+.twitter{
+	background: #2CAAE1;
+}
+.google{
+	background: #c62828;
+}
+.rss{
+	background: #ff8f00;
+}
+
+.icon{
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	padding: 8px;
+	display: inline-block;
+	border: 1px solid transparent;
+	font-size: 18px;
+}
+a .icon{
+	color: #dadada;
+}
+/*.social-icon{
+	float: right;
+}*/
+a .icon:hover{
+	background: transparent;
+}
+a .fb:hover{
+	color: #1976d2;
+	border-color: #1976d2;
+}
+a .twitter:hover{
+	color: #2CAAE1;
+	border-color: #2CAAE1;
+}
+a .google:hover{
+	color: #c62828;
+	border-color: #c62828;
+}
+a .rss:hover{
+	color: #ff8f00;
+	border-color: #ff8f00;
+}
+
+/*=================================================
+||				11. Others
+==================================================*/
+/*Testimonial*/
+.testimonial{
+	background: url('../images/testimonial.png');
+	color: #fff;
+}
+.testimonial .section-title{
+	color: #fff;
+}
+.testimonial-detail{
+	font-style: italic;
+	font-size: 15px;
+	font-weight: 200;
+	margin-bottom: 50px;
+}
+.test-name {
+    margin-bottom: 40px;
+}
+/*Owl carousel*/
+.owl-theme .owl-controls .owl-nav [class*=owl-]{
+	background: transparent;
+}
+.owl-theme .owl-dots .owl-dot span{
+	width: 20px;
+	height: 8px;
+	border-radius: 0px;
+	background: transparent;
+	border: 1px solid #fff;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+	background: #fff;
+}
+.owl-theme .owl-controls .owl-nav [class*=owl-]:hover{
+	background: transparent;
+}
+/*Add*/
+.add .owl-prev:before
+{
+    content: url("../images/bleft.png");
+}
+.add .owl-next:before
+{
+    content: url("../images/bright.png");
+}
+.owl-next
+{
+	right: -90px;
+}
+.owl-prev
+{
+	left: -90px;
+}
+.add .owl-prev, .add .owl-next
+{
+	top: 25%;
+}
+.add-item{
+	padding: 20px;
+}
+@media (max-width: 960px){
+	.nav>li{
+		text-align: center;
+	}
+	.service-img{
+		opacity: .2;
+	}
+	.fun-box{
+		margin: 15px;
+	}
+	.quote{
+		padding: 0 50px;
+	}
+	.portfolio .portfolio-item{
+		margin: 15px;
+	}
+	.price-title, .price-list{
+		text-align: center;
+	}
+	.options a{
+		padding: 0 5px;
+	}
+	footer{
+		text-align: center;
+	}
+	footer .text-right{
+		text-align: center;
+	}
+	.navbar-default .navbar-brand{
+		margin-left: 15px;
+	}
+		img.about-img {
+	    width: 100%;
+	    padding: 15px 15px 0px;
+	}
+	.quote{
+		padding: 0 15px;
+	}
+} 
+@media (max-width: 480px){
+	.header-table{
+		max-height: 627px;
+	}
+}

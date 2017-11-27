@@ -1,0 +1,162 @@
+
+
+
+
+/* COUNTDOWN - Inspiration http://fff.cmiscm.com/#!/section/flipclock */
+/* ----------------------------------------------------------------------------------------- */
+
+.countdown .item {
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    font-family: 'Lato', cursive;
+    font-weight: 700;
+    font-size: 160px;
+    line-height: 180px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    margin: 50px 10px 50px 0;
+    padding: 0 10px;
+    background: #6D868F;
+    background: -webkit-linear-gradient(#2A2A2A, #000);
+    background: linear-gradient(#2A2A2A, #000);
+    overflow: hidden;
+    background: #6D868F !important;
+}
+.countdown .item-ss {
+    font-size: 50px;
+    line-height: 70px;
+}
+.countdown .item:after {
+    content: '';
+    display: block;
+    height: 1px;
+    /*border-top: 3px solid #111; */
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.countdown .label {
+    text-transform: uppercase;
+    display: block;
+    position: absolute;
+    font-weight: 700;
+    line-height: normal;
+    right: 6px;
+    bottom: 4px;
+    font-size: 14px;
+    color: #B9B9B9;
+}
+.countdown .item-hh .label,
+.countdown .item-mm .label,
+.countdown .item-ss .label {
+    display: none;
+}
+
+/* COUNTDOWN-ALT-1 */
+/* ----------------------------------------------------------------------------------------- */
+.countdown-alt-1 {
+    display: block;
+    font-size: 0;  /* Hack for inline and inline-block extra markup generated spaces */
+    margin: 100px 0;
+    color: #000;
+}
+.countdown-alt-1 .item {
+    position: relative;
+}
+.countdown-alt-1 .dd,
+.countdown-alt-1 .hh-1,
+.countdown-alt-1 .hh-2,
+.countdown-alt-1 .mm-1,
+.countdown-alt-1 .mm-2,
+.countdown-alt-1 .ss-1,
+.countdown-alt-1 .ss-2 {
+    font-family: 'Righteous', cursive;
+    background: #F6F6F6;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 60px;
+    margin: 1px 2px;
+    min-width: 40px;
+    padding: 5px 16px;
+    text-align: center;
+}
+.countdown-alt-1 .hh-1,
+.countdown-alt-1 .hh-2,
+.countdown-alt-1 .mm-1,
+.countdown-alt-1 .mm-2,
+.countdown-alt-1 .ss-1,
+.countdown-alt-1 .ss-2 {
+    width: 40px;
+    max-width: 40px;
+}
+.countdown-alt-1 .label {
+    font-style: italic;
+    text-transform: capitalize;
+    background: #F6F6F6;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 1px 2px;
+    padding: 2px 5px;
+    position: absolute;
+    left: 0;
+    bottom: -44px;
+}
+.countdown-alt-1 .separator-dd,
+.countdown-alt-1 .separator {
+    color: #FFF;
+    font-size: 40px;
+    position: relative;
+}
+
+/* COUNTDOWN-ALT-2 - Inspiration http://goo.gl/hRfsc */
+/* ----------------------------------------------------------------------------------------- */
+.countdown-alt-2 {
+    font-size: 0;  /* Hack for inline and inline-block extra markup generated spaces */
+    display: block;
+    overflow: auto;
+    padding: 20px 0;
+    margin: 50px 0;
+    font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+    color: #333;
+    -webkit-transform: skew(-2deg, -2deg);
+    transform: skew(-2deg, -2deg);
+}
+.countdown-alt-2 .item {
+    display: block;
+    float: left;
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 36px 20px 10px 20px;
+    margin: 0 10px;
+    min-width: 100px;
+    max-width: 100px;
+    text-align: center;
+    background: #FFF;
+    border: 2px solid #FFF;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.countdown-alt-2 .dd,
+.countdown-alt-2 .hh-1,
+.countdown-alt-2 .hh-2,
+.countdown-alt-2 .mm-1,
+.countdown-alt-2 .mm-2,
+.countdown-alt-2 .ss-1,
+.countdown-alt-2 .ss-2 {
+    font: italic;
+    text-shadow: 1px 1px 10px #FFF, 1px 1px 3px #333;
+}
+.countdown-alt-2 .label {
+    font-weight: normal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    width: 120px;
+    padding: 5px 10px;
+    background: #0B81BC;
+    color: #FFF;
+}

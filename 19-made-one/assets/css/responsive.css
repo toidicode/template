@@ -1,0 +1,143 @@
+
+
+/*
+Author: Bootstrapthemes
+Author URI: http://www.xpeedstudio.com
+*/
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        font-size: 1rem;
+    }
+    
+
+
+
+}
+
+
+
+/* Portrait tablets and small desktops */
+/*@media (max-width: 992px) {
+
+}*/
+
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+
+    .sm-text-center{
+        text-align: center !important;
+    }
+    .sm-pull-none{
+        float: none !important;
+    }
+    .sm-m-top-10{
+        margin-top:10px;
+    }
+    .sm-m-top-20{
+        margin-top:20px;
+    }
+    .sm-m-top-30{
+        margin-top:30px;
+    }
+    .sm-m-top-40{
+        margin-top:40px;
+    }
+    .sm-m-top-50{
+        margin-top:50px;
+    }
+    .item_img i{
+        right:0%;
+    }
+
+
+
+}
+
+
+
+/* Landscape phones and portrait tablets */
+@media  (max-width: 768px) {
+    h2{
+        font-size:2rem;
+    }
+    p{
+        font-size:90%;
+        line-height: 2rem;
+    }
+    .xs-pull-none{
+        float: none !important;
+    }
+    .xs-text-center{
+        text-align: center !important;
+    }
+    .xs-m-top-10{
+        margin-top:10px;
+    }
+    .xs-m-top-30{
+        margin-top:30px;
+    }
+    .xs-m-bottom-10{
+        margin-bottom:10px;
+    }
+    .xs-m-bottom-20{
+        margin-bottom:20px;
+    }
+
+
+    .main_home .home_text h2{
+        font-size:24px;
+    }
+    .main_home .home_text h1{
+        font-size:32px;
+    }
+    .main_home .home_text h3{
+        font-size:18px;
+    }
+    .main_product .carousel-control{
+        display: none;
+    }
+
+}
+
+
+
+
+/* Landscape phones and smaller */
+@media (max-width: 479px) {
+    html {
+        font-size: 85%;
+    }
+    .main_home .home_text h1{
+        font-size:28px;
+    }
+    .main_home .home_text h3{
+        font-size:17px;
+    }
+
+
+}
+
+
+
+
+
+@media (max-width: 400px) {
+
+
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 60.5%;
+    }
+
+
+
+
+}
+
+
+

@@ -1,0 +1,15 @@
+/*----------------------------------
+  Media Queries
+------------------------------------*/
+
+.g-full-width--xs {
+	@include media-breakpoint-down(xs) {
+  	width: 100%;
+  }
+}
+
+.g-full-width-offset-0--xs {
+	@include media-breakpoint-down(xs) {
+    margin-left: 0;
+  }
+}

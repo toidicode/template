@@ -1,0 +1,25 @@
+/***
+NoUIRangeSlider
+***/
+
+.noUi-control {
+	margin: 9px 0; 
+}
+
+/***
+Color variants
+***/
+
+@mixin noui-rangeslider-variant($state, $background) {
+	.noUi-#{$state}.noUi-connect,
+	.noUi-#{$state} .noUi-connect {
+		background: $background;           
+	}
+}
+
+@include noui-rangeslider-variant("primary", $btn-primary-bg);
+@include noui-rangeslider-variant("info", $btn-info-bg);
+@include noui-rangeslider-variant("success", $btn-success-bg); 
+@include noui-rangeslider-variant("warning", $btn-warning-bg);
+@include noui-rangeslider-variant("danger", $btn-danger-bg);
+@include noui-rangeslider-variant("default", $brand-default); 

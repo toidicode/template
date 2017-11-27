@@ -1,0 +1,71 @@
+.head-bar{
+    padding-top: 13px;
+}
+.wow-logo{
+    padding-bottom: 30px;
+    padding-top: 100px;
+}
+button {
+    background-color: #fefefe;
+    border-color: black;
+    color: black;
+    padding: 18px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+    border-width: 1px;
+    letter-spacing: 2px;
+
+}
+.wow-btn{
+     padding-top:60px;
+     padding-bottom:10px;
+}
+
+
+
+    <section class="head-bar">
+      <div class="head-image">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6">
+              <a href="index.html"><img class="img-logo img-responsive" src="assets/img/logo.png"></a>
+            </div>
+            <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6" style="text-align:right">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
+                    <center><a href="index.html">Home</a></center><hr>
+                    <center><a href="generic.html">Generic</a></center><hr>
+                    <center><a href="element.html">Element</a></center>               
+                </div>
+                <div class="main" id="main">
+                  <span style="font-size: 16px;" onclick="openNav()">MENU &#9776;</span>
+                </div>
+            </div>
+          </div>
+          <hr style="transform:translateY(-700%)">
+      </div>
+      <div class="container">
+        <div class="row">
+           <div class="wow-logo">
+            <center>
+              <img class="img-responsive" src="assets/img/wow_logo.png">
+            </center>
+           </div> 
+           <div class="lora">
+             <center><p>An <strong>immersive</strong> vertual reality helmet.</p></center>
+           </div>
+           <div class="wow-btn">
+              <center >
+                 <button>GET WOW NOW</button>
+              </center>
+           </div>
+           <div>
+              <center><img src="assets/img/1.jpg" class="img-responsive"></center>
+           </div>
+        </div>
+      </div>
+      </div>
+    </section>

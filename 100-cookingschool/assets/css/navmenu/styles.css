@@ -1,0 +1,292 @@
+/*html,body {
+  width:100%
+}
+
+body {
+  font-family:"Roboto Condensed",sans-serif;
+  color:#000;
+  background-color:#f1f1f1;
+  font-size:15px;
+  padding-bottom:50px
+}*/
+
+/*h1 {
+  font-size:60px;
+  letter-spacing:-.03em
+}
+
+p {
+  margin-bottom:15px
+}
+
+a {
+  color:#55acee
+}
+
+a:hover {
+  color:#000;
+  text-decoration:none
+}*/
+
+nav {
+    height:80px;
+    background:#fff;
+    border-bottom:1px solid #ccc;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:10;
+    -webkit-transition:all .3s;
+    -moz-transition:all .3s;
+    transition:all .3s
+}
+
+nav .wrapper {
+    width:960px;
+    margin:0 auto
+}
+
+nav h1 {
+    margin:0;
+    padding:0;
+    line-height:36px;
+    font-size:36px;
+    margin-left:10px
+}
+
+.logo {
+    float:left;
+    
+}
+
+.nav-top {
+    height:90px;
+    padding-top:25px;
+    margin-top:0;
+    -webkit-transition:all .3s;
+    -moz-transition:all .3s;
+    transition:all .3s
+}
+
+.nav-top .logo {
+    margin-top:-2px
+}
+
+.nav-top .search {
+    float:right;
+    width:40%;
+    position:relative
+}
+
+.nav-top .search input[type="text"] {
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:20px;
+    color:#333;
+    font-size:17px;
+    height:40px;
+    outline:0;
+    padding:0 50px 0 15px;
+    transition:background-color .15s;
+    width:100%
+}
+
+.nav-top .search .search-submit {
+    cursor:pointer;
+    height:40px;
+    position:absolute;
+    right:0;
+    top:-2px;
+    width:50px;
+    background:none;
+    border:0;
+    font-size:20px;
+    color:#333;
+    opacity:.5
+}
+
+.nav-top .search .search-submit:hover {
+    color:#55acee;
+    opacity:1
+}
+
+.nav-top .navbar-toggle {
+    margin-top:-2px;
+    margin-right:0
+}
+
+.nav-top .navbar-toggle .fa {
+    color:#888;
+    font-size:28px
+}
+
+.navbar-collapse {
+    padding:0
+}
+
+.navbar-collapse.in {
+    overflow:visible
+}
+
+.main-nav {
+    width:100%;
+    box-shadow:inset 0 1px #e2e2e2;
+    background: #032f3e;
+    height: 80px;
+}
+
+.main-nav .container {
+    position:relative
+}
+
+.main-nav .minilogo {
+    position:relative;
+    position:absolute;
+    top:0px;
+    left:-100%;
+    -webkit-transition:all .3s;
+    -moz-transition:all .3s;
+    transition:all .3s
+}
+
+.main-nav .minilogo h1 {
+    font-size:20px
+}
+
+.main-nav ul.nav {
+    list-style-type:none;
+    background-color:transparent;
+    -webkit-transition:padding .3s;
+    -moz-transition:padding .3s;
+    transition:padding .3s
+}
+
+.main-nav ul.nav > li {
+    vertical-align:top;
+    border-left:1px solid #0d3948;
+        
+}
+.main-nav ul.nav > li:last-child {
+    border-right:1px solid #0d3948;
+        
+}
+
+.main-nav ul.nav > li > a {
+    border-top:2px solid #000;
+    height:80px;
+    line-height:80px;
+    font-size:16px;
+    background-color:transparent;
+    padding:0;
+    color:#fff;
+    margin:0;
+    text-transform: uppercase;
+}
+
+.main-nav ul.nav > li > a.active,.main-nav ul.nav > li > a:hover {
+
+    color:#ab987a;
+}
+/*
+.main-nav ul.nav > li:nth-child(1) > a {
+    border-color:#55acee
+}
+
+.main-nav ul.nav > li:nth-child(2) > a {
+    border-color:#fc5e6a
+}
+
+.main-nav ul.nav > li:nth-child(3) > a {
+    border-color:#b9de7f
+}
+
+.main-nav ul.nav > li:nth-child(4) > a {
+    border-color:#4e4e93
+}
+
+.main-nav ul.nav > li:nth-child(5) > a {
+    border-color:#fe9e69
+}
+
+.main-nav ul.nav > li:nth-child(6) > a {
+    border-color:#5fd5c0
+}
+
+.main-nav ul.nav > li:nth-child(7) > a {
+    border-color:#bf8dc8
+}*/
+
+section.stretch {
+    height:1600px;
+    width:100%
+}
+
+section.stretch p {
+    font-size:80px;
+    color:#d2d2d2;
+    text-align:center;
+    position:relative;
+    margin-top:320px
+}
+
+section.stretch p.bottom {
+    top:100%
+}
+
+nav.small {
+    height:51px
+}
+
+nav.small .nav-top {
+    margin-top:-90px
+}
+
+nav.small .main-nav {
+    box-shadow:none
+}
+
+nav.small ul.nav {
+    padding-left:150px
+}
+
+nav.small .minilogo {
+    left:15px;
+}
+
+@media (max-width: 992px) {
+    nav.small .minilogo {
+        left:10px
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        height:81px!important
+    }
+
+    nav .nav-top {
+        padding-top:20px;
+        height:80px
+    }
+
+    .main-nav .container {
+        padding:0
+    }
+
+    .main-nav .container ul.nav {
+        border-bottom:1px solid #ccc
+    }
+
+    nav.small .nav-top {
+        margin-top:0
+    }
+
+    nav.small ul.nav {
+        padding-left:0
+    }
+
+    nav.small .minilogo {
+        display:none
+    }
+}

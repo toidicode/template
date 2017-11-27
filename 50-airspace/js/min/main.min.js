@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#portfolio-contant-active").mixItUp(),$("#owl-example").owlCarousel({paginationSpeed:500,singleItem:!0}),$("#features-section").owlCarousel({autoPlay:3e3,items:5,itemsDesktop:[1199,5],itemsDesktopSmall:[979,5]})});

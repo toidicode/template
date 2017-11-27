@@ -1,0 +1,31 @@
+/* 
+ * 7.0 Site-footer
+ */
+
+.site-footer {
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	padding: 30px 0;
+
+	.site-info {
+		font-weight: 400;
+		margin-bottom: 10px;
+		a {
+			color: #fff;
+		}
+	}
+
+  	.social-block {
+	    li {
+		    a {
+		    	color: #fff;
+
+		    	&:hover,
+		    	&:focus {
+		    		opacity: 0.8;
+		    	}
+		    }
+		}
+	}
+}

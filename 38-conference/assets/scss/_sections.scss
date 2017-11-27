@@ -1,0 +1,244 @@
+/* 
+ * 6.0 Section
+ */
+
+/* 
+ * 6.1 Section: About 
+ */
+
+.about {
+	.section-title {
+		margin: 0 0 25px;
+	}
+
+	figure {
+		margin-bottom: 25px;
+	}
+}
+
+/* 
+ * 6.2 Section: Facts
+ */
+
+.facts {
+	i {
+		color: #fff;
+		font-size: 3em;
+	}
+
+	h3 {
+		color: #fff;
+		text-align: center;
+		font-weight: 400;
+	}
+}
+
+/* 
+ * 6.3 Section: Speaker
+ */
+
+.speaker {
+	text-align: center;
+	color: #313131;
+	text-transform: uppercase;
+	margin: 25px 0;
+	h4 {
+		margin-top: 15px;
+  		margin-bottom: 5px;
+	}
+	p {
+		margin-bottom: 5px;
+	}
+
+	img:hover {
+		opacity: .7;
+	}
+}
+
+/* 
+ * 6.4 Section: Registration & Pricing
+ */
+
+/* 
+ * 6.5 Section: Contribution
+ */
+
+.contribution {
+	text-align: center;
+	color: #fff;
+}
+
+/* 
+ * 6.6 Section: Schedule
+ */
+
+.schedule-box {
+	position: relative;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	padding: 50px 0;
+	margin: 25px 0 0;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		bottom: 5px;
+		left: 5px;
+		border: 1px solid #fff;
+	}
+}
+
+/* 
+ * 6.7 Section: Schedule
+ */
+
+.partner {
+	background-color: #f8f8f8;
+
+	.partner-box {
+		display: block;
+		opacity: 0.3;
+		height: 150px;
+		width: 150px;
+		margin: 25px auto;
+		transition: 0.5s all linear;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.partner-box-1 {
+		background: url(../images/partner/partner-1.png) no-repeat center center / contain;
+	}
+
+	.partner-box-2 {
+		background: url(../images/partner/partner-2.png) no-repeat center center / contain;
+	}
+
+	.partner-box-3 {
+		background: url(../images/partner/partner-3.png) no-repeat center center / contain;
+	}
+
+	.partner-box-4 {
+		background: url(../images/partner/partner-4.png) no-repeat center center / contain;
+	}
+
+	.partner-box-5 {
+		background: url(../images/partner/partner-5.png) no-repeat center center / contain;
+	}
+
+	.partner-box-6 {
+		background: url(../images/partner/partner-6.png) no-repeat center center / contain;
+	}
+
+	.partner-box-7 {
+		background: url(../images/partner/partner-7.png) no-repeat center center / contain;
+	}
+
+	.partner-box-8 {
+		background: url(../images/partner/partner-8.png) no-repeat center center / contain;
+	}
+}
+
+/* 
+ * 6.8 Section: FAQ
+ */
+
+.faq {
+	.panel-heading {
+	    cursor: pointer;
+	}
+
+	.faq-toggle.collapsed::before {
+		font-family: "Ionicons";
+		content: "\f218";
+		transition: 0.5s linear ease-out;
+		position: absolute;
+		left: 15px;
+	}
+
+	.faq-toggle::before {
+		position: absolute;
+		left: 15px;
+		font-family: "Ionicons";
+		content: "\f209";
+	}
+
+	.panel-group .panel+.panel {
+		margin-top: 15px;
+	}
+
+	.panel-default>.panel-heading {
+		color: #FFF;
+		background-color: #000000;
+		border-color: #000;
+		border-radius: 0;
+		padding: 0;
+
+		a {
+			position: relative;
+			display: block;
+			text-decoration: none;
+			padding: 15px 15px 15px 35px;
+		}
+	}
+}
+
+/* 
+ * 6.9 Section: photos
+ */
+
+.grid {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+.grid-item {
+	float: left;
+	overflow: hidden;
+	padding: 3px;
+	margin: 0;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.grid-item-sm-6 {
+		width: 50%;
+	}
+
+	.grid-item-sm-3 {
+		width: 25%;
+	}
+
+	.section-title {
+		margin: 0 0 30px;
+	}
+
+	figure {
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 992px) {
+	.schedule-box {
+		margin: 0;
+	}
+
+	.grid-item-md-6 {
+		width: 50%;
+	}
+
+	.grid-item-md-3 {
+		width: 25%;
+	}
+}

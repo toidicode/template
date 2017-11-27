@@ -1,0 +1,94 @@
+/***
+Metro icons
+***/
+
+[class^="m-icon-"] {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: 3px;
+    line-height: 14px;  
+    vertical-align: top;
+    background-image: url(../img/syncfusion-icons.png);
+    background-position: 0 0;
+    background-repeat: no-repeat; 
+}
+
+[class^="m-icon-big-"] {
+    display: inline-block;
+    width: 30px;
+    height: 30px; 
+    margin: 6px;
+    vertical-align: middle;
+    background-image: url(../img/syncfusion-icons.png);
+    background-position: 0 0px;
+    background-repeat: no-repeat; 
+}
+
+/* large icons */
+.btn.m-icon-big {
+    padding: 9px 16px 8px 16px; 
+}
+
+.btn.m-icon-big.m-icon-only{
+    padding: 9px 8px 8px 0px;
+}
+
+.btn.m-icon-big [class^="m-icon-big-"] {
+    margin: 0 0 0 10px;
+}
+
+.btn.m-icon-ony > i {
+    margin-left: 0px;
+}
+
+/* default icons */
+.btn.m-icon {
+    padding: 7px 14px 7px 14px; 
+}
+
+.btn.m-icon [class^="m-icon-"] {
+    margin: 4px 0 0 5px;
+}
+
+.btn.m-icon.m-icon-only {
+    padding: 7px 10px 7px 6px;
+}
+
+/* white icon */
+.m-icon-white {
+    background-image: url(../img/syncfusion-icons-white.png);
+}
+
+/*  Misc */
+.m-icon-swapright {
+    background-position: -27px -10px;
+}
+
+.m-icon-swapdown {
+    background-position: -68px -10px;
+}
+
+.m-icon-swapleft {
+    background-position: -8px -10px;
+}
+
+.m-icon-swapup {
+    background-position: -46px -10px;
+}
+
+.m-icon-big-swapright{
+    background-position: -42px -28px;
+}
+
+.m-icon-big-swapdown{
+    background-position: -115px -28px;
+}
+
+.m-icon-big-swapleft{
+    background-position: -6px -28px;
+}
+
+.m-icon-big-swapup{
+    background-position: -78px -28px;
+}

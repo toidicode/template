@@ -1,0 +1,254 @@
+@mixin checkbox-variant($box, $check, $label) {
+    label {
+      color: $label;
+    }
+
+    label > .box {
+      border-color: $box;
+    }
+
+    label > .check {
+      border-color: $check;
+    }    
+}
+
+@mixin checkbox-label-variant($color) {         
+    > label {
+      color: $color;     
+    }   
+}
+
+
+.md-checkbox {
+    position:relative;
+
+    // Inline checkbox
+
+    &.md-checkbox-inline {
+      display: inline-block;    
+    }
+
+    .form-inline &.md-checkbox-inline {
+      margin-right: 20px;
+      top: 3px;
+    }
+
+    input[type=checkbox]   { 
+        visibility: hidden;
+        position: absolute;   
+    }
+
+    label {   
+        cursor:pointer; 
+        padding-left: 30px;  
+    }
+
+    label > span { 
+        display:block;    
+        position:absolute; 
+        left:0; 
+        -webkit-transition-duration:0.3s; 
+        -moz-transition-duration:0.3s; 
+        transition-duration:0.3s;
+    }
+
+    label > span.inc   { 
+      background: #fff;
+      left:-20px;  
+      top:-20px;
+      height:60px;
+      width:60px;
+      opacity:0; 
+      border-radius:50% !important; 
+      -moz-border-radius:50% !important; 
+      -webkit-border-radius:50% !important;
+    }
+
+    label > .box {
+      top:0px;
+      border:2px solid $input-md-checkbox-box-color;
+      height:20px;   
+      width:20px;
+      z-index:5;
+      -webkit-transition-delay:0.2s; -moz-transition-delay:0.2s; transition-delay:0.2s;
+    }
+
+    label > .check {
+      top: -4px;
+      left: 6px;
+      width: 10px;
+      height: 20px;
+      border:2px solid $input-md-focus-border;  
+      border-top: none;
+      border-left: none;
+      opacity:0; 
+      z-index:5;
+      -webkit-transform:rotate(180deg); 
+      -moz-transform:rotate(180deg); 
+      transform:rotate(180deg);
+      -webkit-transition-delay:0.3s; 
+      -moz-transition-delay:0.3s; transition-delay:0.3s;
+    }
+
+    /* handling click events */
+
+    /* when checkbox is checked */
+    label > span.inc {
+      -webkit-animation   :growCircle 0.3s ease;
+      -moz-animation      :growCircle 0.3s ease;
+      animation           :growCircle 0.3s ease;   
+    }
+
+    input[type=checkbox]:checked ~ label > .box { 
+      opacity:0;
+      -webkit-transform   :scale(0) rotate(-180deg);
+      -moz-transform        :scale(0) rotate(-180deg);
+      transform                 :scale(0) rotate(-180deg);
+    }
+
+    input[type=checkbox]:checked ~ label > .check {
+      opacity:1; 
+      -webkit-transform   :scale(1) rotate(45deg);
+      -moz-transform      :scale(1) rotate(45deg);
+      transform           :scale(1) rotate(45deg);
+    }
+
+    // Disabled state
+    input[type=checkbox]:disabled ~ label,
+    input[type=checkbox][disabled] ~ label {
+        cursor: not-allowed;   
+        @include opacity($input-md-checkbox-disabled-opacity); 
+    }
+   
+    input[type=checkbox]:disabled ~ label > .box,
+    input[type=checkbox][disabled] ~ label > .box { 
+        cursor: not-allowed;
+        @include opacity($input-md-checkbox-disabled-opacity);
+    }
+
+    input[type=checkbox]:disabled:checked ~ label > .check, 
+    input[type=checkbox][disabled]:checked ~ label > .check {           
+        cursor: not-allowed;
+        @include opacity($input-md-checkbox-disabled-opacity);
+    } 
+
+    // Error states
+    //checkbox-variant($box, $check, $label)
+
+    &.has-error {
+      @if $theme-type == "material-design" {
+         @include checkbox-variant($state-danger-border, $state-danger-bg, $state-danger-bg);
+      } @else {
+         @include checkbox-variant($brand-danger, $brand-danger, $brand-danger);
+      }
+    }
+  
+    &.has-info {
+      @if $theme-type == "material-design" {
+         @include checkbox-variant($state-info-border, $state-info-bg, $state-info-bg);
+      } @else {
+         @include checkbox-variant($brand-info, $brand-info, $brand-info);
+      }
+    }
+
+    &.has-success {
+      @if $theme-type == "material-design" {
+         @include checkbox-variant($state-success-border, $state-success-bg, $state-success-bg);
+      } @else {
+         @include checkbox-variant($brand-success, $brand-success, $brand-success);
+      }
+    }
+
+    &.has-warning {
+      @if $theme-type == "material-design" {
+         @include checkbox-variant($state-warning-border, $state-warning-bg, $state-warning-bg);
+      } @else {
+         @include checkbox-variant($brand-warning, $brand-warning, $brand-warning);
+      }
+    }
+}
+
+.form-md-checkboxes {
+    > label {
+        font-size: $input-md-label-font-size;
+        color: $input-md-label-color;     
+        @include opacity($input-md-label-opacity);
+    }  
+
+    &.has-error {
+        @if $theme-type == "material-design" {
+            @include checkbox-label-variant($state-danger-bg);
+        } @else {
+            @include checkbox-label-variant($brand-danger);
+        }
+    }
+
+    &.has-info {
+        @if $theme-type == "material-design" {
+            @include checkbox-label-variant($state-info-bg);
+        } @else {
+            @include checkbox-label-variant($brand-info);
+        }
+    }
+
+    &.has-success {
+        @if $theme-type == "material-design" {
+            @include checkbox-label-variant($state-success-bg);
+        } @else {
+            @include checkbox-label-variant($brand-success);
+        }
+    }
+
+    &.has-warning {
+        @if $theme-type == "material-design" {
+            @include checkbox-label-variant($state-warning-bg);
+        } @else {
+            @include checkbox-label-variant($brand-warning);
+        }
+    }
+}
+
+.md-checkbox-list {
+  margin: 10px 0;
+
+  .form-horizontal & {
+    margin-top: 0px;    
+  }   
+
+  .md-checkbox {
+    display: block;
+    margin-bottom: 10px;
+  }
+}  
+
+.md-checkbox-inline {
+  margin: 10px 0;
+
+  .form-horizontal & {
+    margin-top: 5px;    
+  }
+
+  .md-checkbox {
+    display: inline-block;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+     
+/* bubble animation */
+
+@-webkit-keyframes growCircle {
+  0%, 100%   { -webkit-transform:scale(0); opacity: 1}
+  70%        { background:#eee; -webkit-transform:scale(1.25); }
+}
+@-moz-keyframes growCircle {
+  0%, 100%   { -moz-transform:scale(0); opacity: 1}
+  70%        { background:#eee; -moz-transform:scale(1.25); }
+}
+@keyframes growCircle {
+  0%, 100%   { transform:scale(0); opacity: 1}
+  70%        { background:#eee; transform:scale(1.25); }
+}

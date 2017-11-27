@@ -1,0 +1,51 @@
+// Befor & After
+@mixin before {
+  @if $enable-before-after-media-query {
+    @media (before: before) {
+      &:before { @content }
+    }
+  }
+  @else {
+    &:before { @content }
+  }
+}
+
+@mixin after {
+  @if $enable-before-after-media-query {
+    @media (after: after) {
+      &:after { @content }
+    }
+  }
+  @else {
+    &:after { @content }
+  }
+}
+
+@mixin before-after {
+  @if $enable-before-after-media-query {
+    &:before { @content }
+    @include before { @content }
+  }
+  @else {
+    &:before,
+    &:after {
+      @content
+    }
+  }
+}
+
+@mixin plain-before-after {
+  @if $enable-before-after-media-query {
+    &,
+    &:before {
+      @content
+    }
+  }
+  @else {
+    &,
+    &:before,
+    &:after {
+      @content
+    }
+  }
+}

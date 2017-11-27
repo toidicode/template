@@ -1,0 +1,144 @@
+/*--------------------------------------------------
+    [Bootstrap Carousel]
+----------------------------------------------------*/
+
+/* Set displays an element as in inline-level flex container */
+.center-block {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.center-block-wrap {
+    width: 100%;
+    height: 100%;
+    display: table;
+    vertical-align: middle;
+}
+
+.center-block-body {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.carousel {
+    .carousel-indicators {
+        bottom: 0;
+    }
+
+    .carousel-caption {
+        left: auto;
+        right: auto;
+        bottom: auto;
+        text-shadow: none;
+        text-align: inherit;
+        padding: 0;
+    }
+    
+    .carousel-control {
+        &.right,
+        &.left {
+            background-image: none;
+        }
+    }
+
+    .item {
+        width: 100%;
+        height: 100%;
+        min-height: 580px;
+    }
+
+    /* Carousel Item Background Images */
+    .carousel-item-one {
+        background: url(../../../assets/onepage2/img/bg/bg_slider1.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    .carousel-item-two {
+        background: url(../../../assets/onepage2/img/bg/bg_slider2.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    .carousel-item-three {
+        background: url(../../../assets/onepage2/img/bg/bg_slider3.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    /* Carousel Titles */
+    .carousel-title-v1 {
+        @extend %carousel-title;
+        color: $text-white-color;
+    }
+
+    .carousel-title-v2 {
+        @extend %carousel-title;
+        color: $text-white-color;
+    }
+
+    .carousel-title-v3 {
+        @extend %carousel-title;
+        color: $text-red-color;
+    }
+    
+    /* Carousel Subtitles */
+    .carousel-subtitle-v1 {
+        @extend %carousel-subtitle;
+        color: #80d0de;
+    }
+
+    .carousel-subtitle-v2 {
+        @extend %carousel-subtitle;
+        color: #a8c6d6;
+    }
+
+    .carousel-subtitle-v3 {
+        @extend %carousel-subtitle;
+        color: #a8c6d6;
+    }
+
+    /* Carousel Positions */
+    .carousel-position-one {
+        @extend %carousel-position-left;
+        top: 25%;
+    }
+    .carousel-position-two {
+        @extend %carousel-position-left;
+        top: 45%;
+    }
+    .carousel-position-three {
+        @extend %carousel-position-left;
+        top: 62%;
+    }
+
+    /* Carousel Animation Delay */
+    .carousel-caption {
+        .animate-delay {
+            animation-delay: 1s;
+        }
+    }
+}
+
+/* Stylesheet design for under max-width: 768px */
+@media (max-width: $screen-sm-min) {  /* 768px */
+    .carousel {
+        .carousel-title-v1 {
+            font-size: 40px;
+        }
+
+        .carousel-title-v2,
+        .carousel-title-v3 {
+            font-size: 30px;
+        }
+
+        .carousel-subtitle-v1 {
+            font-size: 18px;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,383 @@
+//##  Flat UI Color Variations
+//
+// Color variations can be used for Metronic components, such as portlets, buttons, dashboard stats.
+
+@mixin flatui-color-variant($name, $color, $text-color) {
+	
+	/* Button */
+	.#{$name} {
+		&.btn {
+			@include button-variant($text-color, $color, "");
+		}
+	}
+
+	/* Button Strip */
+	.btn.#{$name}-stripe {
+		border-left: 3px solid $color;
+	}  
+
+	/* Portlet */
+	@include porlet-background($name, $color);
+	@include porlet-solid($name, $text-color);
+	@include porlet-box($name, $color, $text-color); 
+
+	/* Statistic Block */
+	.dashboard-stat {
+		@include dashboard-stat-variant($name, $color, $text-color);
+	}
+
+	/* General Element */
+	.bg-#{$name} {
+		border-color: $color !important;
+		background-image: none !important;
+	    background-color: $color !important;
+	    color: $text-color !important;
+	}
+
+	/* General Text & Icon Font Colors */
+	.font-#{$name} {
+		color: $color !important;
+	}
+
+	.progress-bar.#{$name} {
+		background: $color !important;
+		color: $text-color !important;
+	}
+}
+
+/* Button */
+.btn.default {
+	@include button-variant(#333333, #E5E5E5, ""); 
+}
+
+/**********
+Blue Colors
+***********/
+
+/***
+Blue Default
+***/
+
+@include flatui-color-variant("blue", #3598dc, #FFFFFF);
+
+/***
+Blue Madison
+***/
+
+@include flatui-color-variant("blue-madison", #578ebe, #FFFFFF);
+
+/***
+Blue Chambray
+***/
+
+@include flatui-color-variant("blue-chambray", #2C3E50, #FFFFFF);
+
+/***
+Blue Ebonyclay
+***/
+
+@include flatui-color-variant("blue-ebonyclay", #22313F, #FFFFFF);
+
+/***
+Blue Hoki
+***/
+
+@include flatui-color-variant("blue-hoki", #67809F, #FFFFFF);
+
+/***
+Blue Stell
+***/
+
+@include flatui-color-variant("blue-steel", #4B77BE, #FFFFFF);
+
+/***
+Blue Soft
+***/
+
+@include flatui-color-variant("blue-soft", #4c87b9, #FFFFFF);
+
+/***
+Blue Dark
+***/
+
+@include flatui-color-variant("blue-dark", #5e738b, #FFFFFF);
+
+/***
+Blue Sharp
+***/
+
+@include flatui-color-variant("blue-sharp", #5C9BD1, #FFFFFF);
+
+
+/***********
+Green Colors
+************/
+
+/***
+Green Default
+***/
+
+@include flatui-color-variant("green", #26a69a, #FFFFFF);
+
+/***
+Green Meadow
+***/
+
+@include flatui-color-variant("green-meadow", #1BBC9B, #FFFFFF);
+
+/***
+Green Seagreen
+***/
+
+@include flatui-color-variant("green-seagreen", #1BA39C, #FFFFFF);
+
+/***
+Green Turquoise
+***/
+
+@include flatui-color-variant("green-turquoise", #36D7B7, #FFFFFF);
+
+/***
+Green Haze
+***/
+
+@include flatui-color-variant("green-haze", #44b6ae, #FFFFFF);
+
+/***
+Green Jungle
+***/
+
+@include flatui-color-variant("green-jungle", #26C281, #FFFFFF);
+
+/***
+Green Sharp
+***/
+
+@include flatui-color-variant("green-sharp", #4DB3A2, #FFFFFF);
+
+/***
+Green Sharp
+***/
+
+@include flatui-color-variant("green-soft", #3faba4, #FFFFFF);
+
+
+/***********
+Grey Colors
+************/
+
+/***
+Grey Default
+***/
+
+@include flatui-color-variant("grey", #E5E5E5, #333333);
+
+/***
+Grey Steel
+***/
+
+@include flatui-color-variant("grey-steel", #e9edef, #80898e);      
+
+/***
+Grey Cararra
+***/
+
+@include flatui-color-variant("grey-cararra", #fafafa, #333333);
+
+/***
+Grey Gallery
+***/
+
+@include flatui-color-variant("grey-gallery", #555555, #ffffff); 
+
+/***
+Grey Cascade
+***/
+
+@include flatui-color-variant("grey-cascade", #95A5A6, #FFFFFF);
+
+/***
+Grey Silver
+***/
+
+@include flatui-color-variant("grey-silver", #BFBFBF, #FAFCFB);
+ 
+/***
+Grey Salsa
+***/
+
+@include flatui-color-variant("grey-salsa", #ACB5C3, #FAFCFB);
+
+/***
+Grey Salt
+***/
+
+@include flatui-color-variant("grey-salt", #bfcad1, #FAFCFB);
+
+/***
+Grey Mint
+***/
+
+@include flatui-color-variant("grey-mint", #9eacb4, #FAFCFB);
+
+
+/***********
+Red Colors
+************/
+
+/***
+Red Default
+***/
+
+@include flatui-color-variant("red", #cb5a5e, #FFFFFF); 
+
+/***
+Red Pink
+***/
+
+@include flatui-color-variant("red-pink", #E08283, #FFFFFF);
+
+/***
+Red Sunglo
+***/
+
+@include flatui-color-variant("red-sunglo", #E26A6A, #FFFFFF);
+
+/***
+Red Intense
+***/
+
+@include flatui-color-variant("red-intense", #e35b5a, #FFFFFF);
+
+/***
+Red Thunderbird
+***/
+  
+@include flatui-color-variant("red-thunderbird", #D91E18, #FFFFFF);
+
+/***
+Red Flamingo
+***/
+
+@include flatui-color-variant("red-flamingo", #EF4836, #FFFFFF);
+
+/***
+Red Flamingo
+***/
+
+@include flatui-color-variant("red-soft", #d05454, #FFFFFF);
+
+/***
+Red Haze
+***/
+
+@include flatui-color-variant("red-haze", #f36a5a, #FFFFFF);
+
+
+/***********
+Yellow Colors
+************/
+
+/***
+Yellow Default
+***/
+
+@include flatui-color-variant("yellow", #c49f47, #FFFFFF);
+
+/***
+Yellow Gold
+***/
+
+@include flatui-color-variant("yellow-gold", #E87E04, #FFFFFF);
+
+/***
+Yellow Casablanca
+***/
+
+@include flatui-color-variant("yellow-casablanca", #f2784b, #FFFFFF);    
+
+/***
+Yellow Crusta
+***/
+
+@include flatui-color-variant("yellow-crusta", #f3c200, #FFFFFF);
+
+/***
+Yellow Lemon
+***/
+
+@include flatui-color-variant("yellow-lemon", #F7CA18, #FFFFFF);
+
+/***
+Yellow Saffron
+***/
+
+@include flatui-color-variant("yellow-saffron", #F4D03F, #FFFFFF);
+
+
+/***********
+Purple Colors
+************/
+
+/***
+Purple Default
+***/
+
+@include flatui-color-variant("purple", #8e5fa2, #FFFFFF);
+
+/***
+Purple Plum
+***/ 
+
+@include flatui-color-variant("purple-plum", #8775a7, #FFFFFF);
+
+/***
+Purple Medium
+***/
+
+@include flatui-color-variant("purple-medium", #BF55EC, #FFFFFF);
+
+/***
+Purple Studio
+***/
+
+@include flatui-color-variant("purple-studio", #8E44AD, #FFFFFF);
+
+/***
+Purple Wisteria
+***/
+
+@include flatui-color-variant("purple-wisteria", #9B59B6, #FFFFFF);
+
+/***
+Purple Seance
+***/
+
+@include flatui-color-variant("purple-seance", #9A12B3, #FFFFFF);
+
+/***
+Purple Intense
+***/
+
+@include flatui-color-variant("purple-intense", #8775a7, #FFFFFF);
+
+/***
+Purple Sharp
+***/
+
+@include flatui-color-variant("purple-sharp", #796799, #FFFFFF);
+
+/***
+Purple Soft
+***/
+
+@include flatui-color-variant("purple-soft", #8877a9, #FFFFFF);
+
+/***
+Transparent Button
+***/
+
+.btn-transparent.btn {
+  background: transparent;   
+  color: #888;
+}

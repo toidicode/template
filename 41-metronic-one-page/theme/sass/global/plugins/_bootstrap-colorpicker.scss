@@ -1,0 +1,21 @@
+/***
+Bootstrap Colorpicker
+***/
+
+.input-group.color .input-group-btn i {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  right: 6px;
+} 
+
+.colorpicker.dropdown-menu {
+  padding: 5px;
+}
+
+/* change z-index when opened in modal */
+.modal-open .colorpicker {
+  z-index: 10055 !important;
+}

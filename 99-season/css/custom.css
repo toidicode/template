@@ -1,0 +1,474 @@
+@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Coda);
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+@import url(http://fonts.googleapis.com/css?family=Alegreya);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Marck+Script);
+/*----------------------------------------------------------------------------------------------
+ global
+-----------------------------------------------------------------------------------------------*/
+h1{ 
+    font-weight: 400;
+    font-family: 'Marck Script', cursive;
+    color: #E7F0FF;
+    font-size: 73px;
+    margin-top: 0;
+ }
+p
+{
+    text-align: center;
+}
+img
+{
+    max-width: 100%;
+}
+
+.body-content
+{
+    background-color: #ecf0f1;
+}
+.container
+{
+    width: 100%;
+}
+.after-slide, .share-icons {
+    background: url(../img/00.png);
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+h2.top-text {
+    font-family: "Lato";
+    font-weight: 600;
+    color: white;
+    font-size: 40px;
+}
+h2.sub-text {
+    position: relative;
+    top: 5px;
+    bottom: 37px;
+    background: rgb(39, 64, 55);
+    color: white;
+    font-size: 30px;
+    font-family: "Lato";
+    padding: 8px 12px 12px 12px;
+    width: 226px;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+.main-text {
+    margin-top: -30px;
+    position: relative;
+    top: -15px;
+}
+
+/*-------------------------------------------------------------------------------------------
+header
+---------------------------------------------------------------------------------------------*/
+.logo.text-center {
+    margin: 15px 0 29px 0;
+}
+
+.timer
+{
+    position:absolute;
+    width:100%;
+    left:0;
+    top:0;
+    text-align:center;
+    z-index:99;
+}
+.timer-circle
+{
+    padding-top: 50px;
+}
+.timer-circle h1 {
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    color: rgb(234, 238, 236);
+    text-shadow: 2px 3px 3px #427B7A;
+    padding-bottom: 20px;
+}
+.logo h1 {
+    font-weight: 400;
+    font-family: 'Marck Script', cursive;
+    color: #E7F0FF;
+    font-size: 73px;
+}
+.circle {
+    width: 175px;
+    height: 175px;
+    line-height: 50px;
+    display: inline-block;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 5px white dotted;
+    color: white;
+    background-color: rgb(23, 67, 72);
+    opacity: 0.6;
+}
+#spacer1 
+{
+    font-size: 35px;
+    padding-top: 35px;
+}
+#spacer2 
+{
+    font-size: 35px;
+}
+/*-------------------------------------------------------------------------------------------
+ Carousel base class 
+----------------------------------------------------------------------------------------------*/
+.carousel 
+{
+    height: 660px;
+}
+.carousel .item 
+{
+    height: 660px;
+    background-color: #777;
+}
+.carousel-inner > .item > img 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 660px;
+}
+
+/*@media (min-width: 300px) and (max-width:480px){
+    .caption {
+       padding-bottom: 0px;
+       background:none;
+       border-radius: 0px;
+    }
+
+}*/
+@media (min-width: 500px){
+.caption {
+    padding-bottom: 40px;
+    background: rgba(121, 154, 134, 0.35);
+    border-radius: 5px;
+    border-bottom: 3px solid ghostwhite;
+}
+}
+@media (max-width: 500px){
+.caption h1 {
+    font-size: 16px !important;
+}
+}
+.caption h1 
+{
+    font-size: 29px;
+}
+/*----------------------------------------------------------------------------------------------------
+subscribe
+-----------------------------------------------------------------------------------------------------*/
+.after-slide-text
+{
+    padding: 35px;
+    font-size: 35px;
+    font-family: 'Old Standard TT', serif;
+    color: darkslategrey;
+}
+.subscribe-form {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.form
+{
+    padding: 20px;
+}
+/*----------------------------------------------------------------------------------------------------
+Our service
+-----------------------------------------------------------------------------------------------------*/
+.services
+{
+    background: url(../img/services.jpg);
+    padding: 50px 0px;
+    background-size: cover;
+}
+.service, .share, .subscribe {
+    background-color: rgba(79, 151, 138, 1);
+}
+.service-text h3, .share-text h3, .subscribe-text h3 {
+    padding: 30px 0 0 20px;
+    font-size: 45px;
+    font-family: 'Coda', cursive;
+    text-shadow: 1px 1px 1px #ABAFAE;
+    color: rgb(255, 252, 252);
+}
+.service-text p , .share-text p, .subscribe-text p
+{
+    font-size: 25px;
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+.about-service 
+{
+    font-family: 'Old Standard TT', serif;
+    font-size: 19px;
+    padding-top: 25px;
+    background: url(../img/00.png);
+}
+.about-service p
+{
+    font-family: 'Alegreya', serif;
+}
+.service-icon h3 
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 33px;
+    text-shadow: 1px 1px 1px #FFF;
+    color: rgb(179, 179, 179);
+}
+.service-icon i 
+{
+    padding-top: 12px;
+    padding-bottom: 0px;
+    color: lightseagreen;
+}
+hr {
+border-color: rgb(255, 255, 251);
+}
+.full
+{
+    width: 50%;
+}
+.half
+{
+    width: 25%;
+}
+/*
+ ---------------------------------------------------------------------------------------------------
+share
+ ---------------------------------------------------------------------------------------------------*/
+.share-icons {
+    padding: 50px;
+    background: rgba(79, 151, 138, 0.93);
+}
+.socials-icons {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    display: block;
+    width: 100%;
+}   
+.socials-icons li 
+{
+    margin: 0 15px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.socials-icons li a 
+{
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    opacity: 0.8;
+}
+.socials-icons li a i.fa 
+{
+    color: #fff;
+    line-height: 50px;
+    font-size: 21px;
+}
+.socials-icons li a:hover 
+{
+    opacity: 1;
+}
+.facebook
+{
+    background-color: #3acab1;
+}
+.facebook:hover
+{
+    background-color: #46629E;
+}
+.twitter
+{
+    background-color: #3acab1;
+}
+.twitter:hover
+{
+    background-color: #0EAACE;
+}
+.google-plus
+{
+    background-color: #3acab1;
+}
+.google-plus:hover
+{
+    background-color: #DD4C39;
+}
+.instagram
+{
+    background-color: #3acab1;
+}
+.instagram:hover
+{
+    background-color: #4A789E;
+}
+.pinterest
+{
+    background-color: #3acab1;
+}
+.pinterest:hover
+{
+    background-color: #CB2027;
+}
+.skype
+{
+    background-color: #3acab1;
+}
+.skype:hover
+{
+    background-color: #01AEF2;
+}
+/*----------------------------------------------------------------------------------------------------
+FOOTER
+-----------------------------------------------------------------------------------------------------*/
+.footer {
+    background: rgba(54, 75, 63, 0.97);
+    color: rgba(255,255,255,0.8);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.name
+{
+    font-family: 'Coda', cursive;
+    color: rgb(173, 200, 248);
+    font-size: 45px;
+}
+.copyright 
+{
+    text-align:center;
+    padding:30px;
+    font-size: 14px;
+}
+/*---------------------------------------------------------------------------------------------------
+back to top
+---------------------------------------------------------------------------------------------------*/
+#back-top a 
+{
+    width:45px;
+    display:block;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#bbb;
+    -webkit-transition:1s;
+    -moz-transition:1s;
+    -o-transition:1s;
+    -ms-transition:1s;
+    transition:1s;
+}
+#back-top a:hover 
+{
+    color: #bbb;
+}
+#back-top span 
+{
+    width:45px;
+    height:45px;
+    display:block;
+    margin-bottom:7px;
+    background:rgba(0,0,0,0.2) url(../img/arrow-top.png) no-repeat center center;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+    -webkit-transition:1s;
+    -moz-transition:1s;
+    -o-transition:1s;
+    -ms-transition:1s;
+    transition:1s;
+}
+#back-top a:hover span 
+{
+    background-color: #777;
+}
+#back-top 
+{
+    padding-top: 16px;
+}
+/*-------------------------------------------------------------------------------------------------
+media query for responsive
+---------------------------------------------------------------------------------------------------*/
+@media (max-width: 758px) and (min-width: 580px)
+{
+    .circle
+    {
+        width:130px;
+        height:130px;
+    }
+    #spacer1
+    {
+        font-size: 30px;
+        padding-top: 17px;
+    }
+    #spacer2
+    {
+        font-size: 30px;
+    }
+}
+@media (max-width: 579px) and (min-width: 400px)
+{
+    .carousel 
+    {
+        height: 750px;
+    }
+
+    .carousel .item 
+    {
+        height: 750px;
+    }
+    .carousel-inner > .item > img 
+    {
+        height: 750px;
+    }
+}
+@media all and (max-width: 399px)
+{
+    .timer-circle h1 
+    {
+        font-size: 30px;
+    }
+    .circle 
+    {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+    #spacer1 
+    {
+        font-size: 25px;
+        padding-top: 15px;
+    }
+    #spacer2 
+    {
+        font-size: 25px;
+    }
+    .title 
+    {
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+}

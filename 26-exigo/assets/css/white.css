@@ -1,0 +1,152 @@
+/* 
+    Created on : May 18, 2016, 6:34:50 PM
+    Author     : Bootstrapthemes
+    Colors     : white
+*/
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+    background-color: #fafafa;
+    color:#333;
+}
+
+.form-control {
+    background-color: #fafafa;
+    color:#333;
+}
+
+.colorsbg {
+    background: #fff;
+}
+.lightbg {
+    background-color: #f1f1f1;
+}
+/*================================================
+        Button
+===================================================*/
+
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open > .dropdown-toggle.btn-primary.focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary.disabled,
+.btn-primary.disabled:hover {
+    color: #fff;
+    background-color: #1470a5;
+    border-color: transparent;
+}
+.btn {
+    display: inline-block;
+    padding: .4em;
+    text-align: center;
+    color: #333;
+    letter-spacing: 1px;
+    margin: 0;
+    border-radius: 0px;
+    background-color: #fff;
+    transition: .5s;
+    border: 0px;
+    font-size:1rem;
+    height: 50px;
+}
+.btn:hover {
+    background-color: #f1f1f1;
+    color: #222;
+    text-decoration: none;
+}
+.btn-primary {
+    color: #333;
+    background-color: #f1f1f1;
+    transition: .5s;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    border:1px solid #f1f1f1;
+    display: inline-block;
+}
+.btn-primary:hover {
+    color: #333;
+    background-color: #f2f2f2;
+    border:1px solid #f1f1f1;
+}
+.btn-default {
+    border: 3px solid #ddd;
+    padding: 1rem 2rem;
+}
+.btn-larg{
+    color: #333;
+    background-color: #fafafa;
+    width: 185px;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.btn-larg:hover{
+    background-color: #fefefe;
+    color:#222;
+}
+.colorstext{
+    color:#343434;
+}
+.colorstext2 {
+    color: #fff;
+}
+
+.cd-header{
+    position: fixed;
+    top: 0;
+}
+.cd-header.small{
+    background: #f1f1f1;
+}
+
+#main-nav li a {
+    color: #3a393f;
+}
+
+.head_title h2{
+    color:#333;
+}
+.main_about_area .head_title{
+    background: url(../images/headingbg1.png) no-repeat top center;
+}
+.main_service_area .head_title{
+    background: url(../images/headingbg21.png) no-repeat top center;
+}
+/*#d3dd89*/
+.main_about_area .single_about_right_img {
+    border: 10px solid #333;
+}
+.about_bottom {
+    background: #f1f1f1;
+}
+.about_bottom .bottom_single_about.bottom_single_about_left_img {
+    border: 3px solid #d1d1d1;
+}
+.about_bottom .bottom_single_about.s_bootom_right_area {
+    border: 3px solid #d1d1d1;
+}
+.main_service_area .single_service {
+    border: 2px solid #333;
+}
+.main_service_area .single_service .single_service_img {
+    border: 2px solid #333;
+}
+
+.main_contactus_area input[type=submit] {
+    background: #fafafa;
+}
+.main_contactus_area .contact_us_right .single_map_bottom {
+    background: #fafafa;
+}
+.main_contactus_area .contact_us_right .single_map_bottom p {
+    color: #333;
+}
+.footer {
+    background: #f1f1f1;
+}

@@ -1,0 +1,41 @@
+/*------------------------------------------------------------------
+  	[Promo Section]
+------------------------------------------------------------------*/
+
+.promo-section {
+	@media (max-width: $screen-sm-max) {
+		.promo-section-col {
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
+	}
+
+	@media (min-width: $screen-md-min) {
+		@include position(relative);
+		height: $ver-center-block-height;
+		
+		.promo-section {
+			&-col {
+				width: 45%;
+			}
+
+			&-img-left {
+				@include position(absolute, $top: 0, $right: 50%);
+			}
+
+			&-img-right {
+				@include position(absolute, $top: 0, $left: 50%);
+			}
+		}
+		
+		.ver-center {
+			display: table;
+			height: $ver-center-block-height;
+			
+			&-aligned {
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+// Cubic Transition
+@mixin cubic-transition($delay, $duration, $property) {
+  transition: {
+    duration: $duration;
+    property: $property;
+    timing-function: cubic-bezier(.7,1,.7,1);
+  }
+}

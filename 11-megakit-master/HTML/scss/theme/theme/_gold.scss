@@ -1,0 +1,230 @@
+/*----------------------------------
+  Colors
+------------------------------------*/
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	a {
+		@include hover-focus {
+			color: $color-gold;
+		}
+	}
+}
+
+em,
+li {
+  > a {
+  	@include hover {
+  		color: $color-gold;
+  	}
+  }
+}
+
+/* Links */
+a {
+	color: $color-gold;
+
+	@include hover-focus {
+		color: darken($color-gold, 7%);
+	}
+}
+
+
+/*----------------------------------
+  Selection
+------------------------------------*/
+
+@include selection($color-white, $color-gold);
+
+
+/*----------------------------------
+  Button
+------------------------------------*/
+
+.s-btn--white-bg { @include btn-style($color: $color-dark, $hvr-color: $color-gold, $bg: $color-white, $hvr-bg: $color-white); }
+.s-btn--dark-bg { @include btn-style($color: $color-white, $hvr-color: $color-white, $bg: $color-dark, $hvr-bg: $color-gold, $brd-width: .0625rem, $brd-style: solid, $brd-color: $color-dark, $hvr-brd-color: $color-gold); }
+.s-btn--primary-bg { @include btn-style($color: $color-white, $hvr-color: $color-white, $bg: $color-gold, $hvr-bg: $color-gold, $brd-width: .0625rem, $brd-style: solid, $brd-color: $color-gold, $hvr-brd-color: $color-gold); }
+.s-btn--primary-brd { @include btn-style($color: $color-gold, $hvr-color: $color-white, $bg: transparent, $hvr-bg: $color-gold, $brd-width: .0625rem, $brd-style: solid, $brd-color: $color-gold, $hvr-brd-color: $color-gold); }
+
+
+/*----------------------------------
+  Theme Icons
+------------------------------------*/
+
+.s-icon--white-brd { @include icon-style($color: $color-white, $hvr-color: $color-white, $bg: transparent, $hvr-bg: $color-gold, $brd-width: .0625rem, $brd-style: solid, $brd-color: $color-white, $brd-hvr-color: $color-gold, $line-height: 1.4); }
+.s-icon--white-bg { @include icon-style($color: $color-dark, $hvr-color: $color-gold, $bg: $color-white, $hvr-bg: $color-white, $brd-width: .0625rem, $brd-style: solid, $brd-color: $color-white, $brd-hvr-color: $color-white, $line-height: 1.4); }
+.s-icon--primary-brd { @include icon-style($color: $color-gold, $hvr-color: $color-white, $bg: transparent, $hvr-bg: $color-gold, $brd-width: .0625rem, $brd-style: solid, $brd-color: $color-gold, $brd-hvr-color: $color-gold, $line-height: 1.4); }
+.s-icon--base-bg { @include icon-style($color: $color-white, $bg: $color-gold, $line-height: 1.6); }
+
+/*----------------------------------
+  Plan v1
+------------------------------------*/
+
+.s-plan-v1 {
+	&__price-mark,
+	&__price-tag {
+		color: $color-gold;
+	}
+}
+
+/*----------------------------------
+  Promo Block
+------------------------------------*/
+
+/* Promo Block v2 */
+.s-promo-block-v2 {
+	@include before {
+		@include gradient-horizontal($direction: 145deg, $start-color: rgba($color-blueviolet,.7), $end-color: $color-gold, $start-percent: -25%, $end-percent: 100%);
+	}
+}
+
+/* Promo Block v3 */
+.s-promo-block-v3 {
+	&__divider {
+		@include before {
+			@include gradient-horizontal($direction: 145deg, $start-color: rgba($color-blueviolet,.9), $end-color: $color-gold, $start-percent: -25%, $end-percent: 100%);
+		}
+	}
+}
+
+
+/*----------------------------------
+  Video
+------------------------------------*/
+
+.video-bg {
+	@include before {
+		@include gradient-horizontal($direction: 145deg, $start-color: rgba($color-gold,.8), $end-color: rgba($color-blueviolet,.8), $start-percent: 0, $end-percent: 100%);
+	}
+}
+
+
+/*----------------------------------
+  Back To Top
+------------------------------------*/
+
+.s-back-to-top {
+	background: $color-gold;
+
+  @include hover {
+    @include before {
+	    color: $color-gold;
+	  }
+  }
+}
+
+
+/*----------------------------------
+  Cubeportfolio
+------------------------------------*/
+
+.s-portfolio__filter-v1 {
+	&-item {
+		&.cbp-filter-item-active {
+			color: $color-gold !important;
+		}
+	}
+}
+
+/* Image Effect
+------------------------------ */
+.s-portfolio {
+	&__img-effect {
+		@include after {
+			background: rgba($color-gold, .95);
+		}
+	}
+}
+
+/* Arrows
+------------------------------ */
+
+.s-portfolio__arrow-v1 {
+	.cbp-nav {
+		&-prev,
+		&-next {
+			background: $color-gold;
+		}
+
+		&-pagination {
+			&-active {
+				background: $color-gold;
+			}
+		}
+	}
+}
+
+/* Tab v1
+------------------------------ */
+.s-tab__filter-v1 {
+	&.cbp-filter-item-active {
+		color: $color-gold !important;
+	}
+}
+
+
+/*----------------------------------
+  Swiper
+------------------------------------*/
+
+.s-swiper__pagination-v1 {
+	.swiper-pagination-bullet-active {
+		background: $color-gold;
+	}
+
+	&--white {
+		.swiper-pagination-bullet-active {
+			background: $color-gold;
+		}
+	}
+
+	&--dark {
+		.swiper-pagination-bullet-active {
+			background: $color-gold;
+		}
+	}
+}
+
+
+/*----------------------------------
+  Border
+------------------------------------*/
+
+.g-hor-border-1__solid--primary { border-color: $color-gold; }
+
+
+/*----------------------------------
+  Box Shadow
+------------------------------------*/
+
+.g-box-shadow__primary-v1 { box-shadow: 0 .3125rem 1rem 0 rgba($color-gold,.2); }
+
+
+/*----------------------------------
+  Colors
+------------------------------------*/
+
+.g-color--primary {
+	color: $color-gold !important;
+}
+
+.g-color--text[href] {
+	@include hover {
+		color: $color-gold !important;
+	}
+}
+
+.g-color--white-opacity[href] {
+	@include hover {
+		color: $color-gold !important;
+	}
+}
+
+.g-bg-color--primary {
+	background: $color-gold !important;
+}

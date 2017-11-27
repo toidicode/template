@@ -1,0 +1,17 @@
+// Rotate
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+  transform: rotate($degrees);
+}
+
+// RotateY
+@mixin rotateY($degrees) {
+  -webkit-transform: rotateY($degrees);
+  transform: rotateY($degrees);
+}
+
+// RotateX
+@mixin rotateX($degrees) {
+  -webkit-transform: rotateX($degrees);
+  transform: rotateX($degrees);
+}

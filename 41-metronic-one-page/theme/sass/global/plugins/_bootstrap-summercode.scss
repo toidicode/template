@@ -1,0 +1,57 @@
+/***
+Error state for WYSIWYG Editors
+***/
+.note-editor {
+	border: 1px solid $input-border;
+
+	@include border-radius($general-border-radius); 
+
+	.note-toolbar {
+		border-bottom: 1px solid $input-border;
+
+		@include border-radius($general-border-radius $general-border-radius 0 0); 
+	}   
+
+	.note-statusbar {
+		@include border-radius(0 0 $general-border-radius $general-border-radius);   
+
+		.note-resizebar {
+			border-top: 1px solid $input-border; 
+		}		
+	}
+
+	&.fullscreen {
+		z-index: 11000;   
+		width: 100% !important; 
+	}
+
+	.dropdown-menu {
+		&:before {
+	        left: 9px;
+	        right: auto;
+	    }
+
+	    &:after {
+	        left: 10px;
+	        right: auto;
+	    }
+	}
+}
+
+.note-link-dialog {
+	.checkbox {
+		margin-left: 20px;
+	}
+}
+
+.has-error .note-editor {
+  border: 1px solid $state-danger-border !important;
+}
+
+.has-success .note-editor {
+  border: 1px solid $state-success-border !important;
+} 
+
+.has-warning .note-editor {
+  border: 1px solid $state-warning-border !important;
+} 

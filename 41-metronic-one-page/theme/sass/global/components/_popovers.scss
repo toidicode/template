@@ -1,0 +1,53 @@
+/***
+Customized Bootstrap Popover
+***/
+
+.popover {
+    @if $theme-type == "default" {
+        box-shadow: 5px 5px rgba(#666, 0.1);
+    }
+
+    padding: 0;
+
+    .popover-title {  
+        margin: 0 !important;
+    }
+}
+
+@mixin popover-variant($name, $color) {
+    .popover.#{name} .popover-title,
+    #{name} .popover .popover-content,
+    .popover.#{name} .popover-content {
+        color: $color;
+    }
+} 
+
+@include popover-variant("info", $brand-info);
+@include popover-variant("primary", $brand-primary);
+@include popover-variant("success", $brand-success);
+@include popover-variant("warning", $brand-warning);
+@include popover-variant("danger", $brand-danger);
+
+
+@if $theme-type == "material-design" {
+    .popover {
+        @include border-radius($general-border-radius);
+        @extend .md-shadow-z-2;        
+        border: 0;
+        background: #fff; 
+
+        > .popover-title {
+            background: #fff;
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            padding: 10px 14px 6px 14px;
+            border: 0;
+        }
+
+        .arrow,
+        .arrow:after {
+            display: none !important;
+        }
+    }
+}

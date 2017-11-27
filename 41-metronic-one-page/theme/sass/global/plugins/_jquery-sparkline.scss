@@ -1,0 +1,54 @@
+/***
+jQuery Sparkline
+***/
+
+.jqstooltip {
+  width: auto !important;
+  height: auto !important;
+}
+
+
+.easy-pie-chart,
+.sparkline-chart {
+   text-align: center;
+}
+
+.sparkline-chart {
+  margin-top: 15px;
+  position:relative ;
+}
+
+.easy-pie-chart .number {
+    font-size: 16px;
+    font-weight: 300;
+    width: 85px;
+    margin: 0 auto;
+}
+
+.sparkline-chart .number {  
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.sparkline-chart .title,
+.easy-pie-chart .title {
+    display: block;
+    text-align: center;
+    color: #333;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.sparkline-chart .title:hover,
+.easy-pie-chart .title:hover {
+  color: #666;
+  text-decoration: none;
+}
+
+.sparkline-chart .title > i,
+.easy-pie-chart .title > i {
+  margin-top: 5px;
+}

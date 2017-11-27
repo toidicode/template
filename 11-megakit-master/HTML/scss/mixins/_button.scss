@@ -1,0 +1,54 @@
+// Base Style
+@mixin btn {
+  @include display-center;
+  border: none;
+  white-space: nowrap;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+  @include hover-focus {
+    text-decoration: none;
+    @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+  }
+  &.focus {
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    background-image: none;
+    outline: 0;
+  }
+
+  &.disabled,
+  &:disabled,
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+    opacity: .65;
+  }
+}
+
+// Size
+@mixin btn-size($fsize: null, $fweight: null, $padding: null) {
+  @include font($size: $fsize, $weight: $fweight);
+  padding: $padding;
+}
+
+// Style
+@mixin btn-style($color: null, $hvr-color: null, $bg: null, $hvr-bg: null, $brd-width: null, $brd-style: null, $brd-color: null, $hvr-brd-color: null, $hvr-opacity: null, $line-height: null) {
+  color: $color;
+  background: $bg;
+  border-width: $brd-width;
+  border-style: $brd-style;
+  border-color: $brd-color;
+  line-height: $line-height;
+
+  @include hover-focus {
+    color: $hvr-color;
+    background: $hvr-bg;
+    border-color: $hvr-brd-color;
+    opacity: $hvr-opacity;
+  }
+}

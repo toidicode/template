@@ -1,0 +1,59 @@
+/*********************************
+ METRONIC SQUARE STYLE COMPONENTS 
+*********************************/
+    
+// Global settings
+@import '_variables';              
+@import 'components/_mixins';  
+
+$theme-style: 'square';         
+$theme-type:  'default';
+
+// General CSS Reset
+@import 'components/_reset-rounds'; 
+@import 'components/_reset-general';  
+    
+// Material Desing Components
+@import 'components/_md-base';
+@import 'components/_md-inputs';
+@import 'components/_md-checkboxes';
+@import 'components/_md-radios';                                
+                      
+// General Components  
+@import 'components/_typography';      
+@import 'components/_utils';       
+@import 'components/_font-icons';           
+@import 'components/_alerts';              
+@import 'components/_badges';        
+@import 'components/_buttons';                             
+@import 'components/_carousel';           
+@import 'components/_charts';                     
+@import 'components/_chats';                
+@import 'components/_close';                            
+@import 'components/_dropdowns';       
+@import 'components/_feeds';               
+@import 'components/_form-layouts';                 
+@import 'components/_inputs';    
+@import 'components/_icon-buttons';    
+@import 'components/_input-icons'; 
+@import 'components/_labels';    
+@import 'components/_list-groups';  
+@import 'components/_loaders';  
+@import 'components/_metro-icons';        
+@import 'components/_modals';  
+@import 'components/_notes';    
+@import 'components/_pagination';   
+@import 'components/_panels'; 
+@import 'components/_popovers';  
+@import 'components/_portlets'; 
+@import 'components/_progress-bars'; 
+@import 'components/_statistic-blocks'; 
+@import 'components/_social-icons'; 
+@import 'components/_tables'; 
+@import 'components/_tabs'; 
+@import 'components/_tiles';  
+@import 'components/_wells'; 
+@import 'components/_animate'; 
+
+// Apply flat UI colors to all components
+@import 'components/_flatui-color-variants';

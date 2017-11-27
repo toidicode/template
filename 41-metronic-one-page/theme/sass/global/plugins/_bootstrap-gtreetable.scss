@@ -1,0 +1,30 @@
+/***
+Bootstrap GtreeTable
+***/
+
+.gtreetable {
+
+	.dropdown-menu {
+		margin-top: 0px;
+
+		&:after,
+		&:before {    
+			display: none !important; 
+		}
+	}   
+
+	.node-action {
+		.form-control {
+			position: relative;
+			top: 2px;
+			display: inline-block;
+		}
+	}
+
+	.node-icon-selected,
+	.node-icon-handle,
+	.node-icon-ce,
+	.node-icon-type {
+		@include opacity(0.6);
+	}
+}

@@ -1,0 +1,20 @@
+/*------------------------------------------------------------------
+  	[Blockquote]
+------------------------------------------------------------------*/
+
+.blockquote {
+	position: relative;
+	@include font($size: 17px, $weight: 400, $family: $font-family-base);
+	color: $color-subtitle;
+    line-height: 1.4;
+	border-left: none;
+	margin-left: 20px;
+
+	&:before {
+		@include position(absolute, $top: 0, $left: -20px);
+		@include font($size: 60px);
+		display: inline-block;
+		color: $color-base;
+		content: '“';
+	}
+}

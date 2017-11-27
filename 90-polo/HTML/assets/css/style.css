@@ -1,0 +1,877 @@
+/*
+Theme Name: Polo
+Theme URI: http://themewagon.com/demo/polo-responsive-app-landing-page-template
+Author: ThemeWagon
+Author URI: http://themewagon.com/
+Description: One page app landing HTML5 CSS3 template powered by Bootstrap 3.
+Version: 2.0
+License: MPL v2.0
+License URI: https://www.mozilla.org/MPL/2.0/
+Tags: green, white, responsive-layout, one page, full-width-template
+Text Domain: polo
+*/
+
+/**
+* Table of Contents:
+*
+* 01.0 - Custom Fonts
+* 02.0 - Global
+* 03.0 - Side Menu
+* 04.0 - Preloader
+* 05.0 - Header
+* 06.0 - Banner
+* 07.0 - Features
+* 08.0 - Gallery
+* 09.0 - Team Member
+* 10.0 - Testimonial
+* 11.0 - Subscribe
+* 12.0 - Contact us
+* 13.0 - Footer
+* 14.0 - Responsive Fixes
+* -----------------------------------------------------------------------------
+*/
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  01 - Custom Fonts 
+/////////////////////////////////////////////////////////////////////*/
+
+
+@font-face {
+    font-family: 'caviar_dreams';
+    src: url('../fonts/CaviarDreams-webfont.woff2') format('woff2'),
+         url('../fonts/CaviarDreams-webfont.woff') format('woff'),
+         url('../fonts/CaviarDreams-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  02 - Global 
+/////////////////////////////////////////////////////////////////////*/
+
+* {
+    outline: none !important;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #222;
+
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+}
+p, a, li{
+    font-family: 'Oxygen', sans-serif;
+}
+a {
+    transition: all 0.3s ease-out;
+    position: relative;
+    padding: .5em;
+    margin: -.5em;
+}
+
+a:focus, 
+a:hover {
+    text-decoration: none;
+    color: #00ceb8;
+}
+
+.img_res{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.block-title {
+    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3.8em;
+    padding: 0 40px;
+    margin: 0;
+    line-height: 1.6;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.block {
+    padding: 80px 0px 50px 0px;
+    overflow: hidden;
+}
+.title-box{
+    text-align: center;
+    
+    margin-bottom: 50px;
+}
+.bb-top-left {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 0;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.bb-bottom-left {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.bb-top-right {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    right: 0;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.bb-bottom-right {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.polo-btn {
+    display: block;
+    color: #fff;
+    border: 1px solid;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 100;
+    padding: 15px 0px;
+    margin: 0px 0px 20px 0px;
+    transition: 0.4s ease all;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  03 - Side Menu
+/////////////////////////////////////////////////////////////////////*/
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 260px;
+    height: 100%;
+    margin-right: -260px;
+    overflow-y: auto;
+    background: #00967f;
+    z-index: 99999999;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.27);
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    padding: 15px 15px;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #81F89D;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 260px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+.close-btn {
+    display: block;
+    color: #FFFFFF;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    width: 100%;
+    padding-right: 25px;
+}
+.close-btn:hover {
+    color: #84FFB0;
+}
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  04 - Preloader
+/////////////////////////////////////////////////////////////////////*/
+
+#preloader { 
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    z-index: 99999999999; 
+    width: 100%; 
+    height: 100%; 
+    overflow: visible; 
+    background: #fff url('../img/preloader.gif') 
+    no-repeat center center; 
+}
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  05 - Header
+/////////////////////////////////////////////////////////////////////*/
+
+.sticky{
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    padding: 15px 0px;
+    transition: all 0.5s;
+    z-index: 99999;
+}
+.fixed {
+    position: fixed;
+    top:0; 
+    left:0;
+    width: 100%; 
+    background-color: #00967f;
+    padding: 0px;
+}
+.logo {
+    font-family: 'caviar_dreams';
+    color: #fff;
+    font-size: 2.5em;
+    line-height: 1.6;
+}
+#logo_menu {
+    padding: 5px 0px;
+}
+#menu-toggle {
+    z-index: 1;
+    font-size: 35px;
+    float: right;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 5px 0px;
+    padding: 2px 10px;
+    line-height: 0;
+}
+.store-btn-container {
+    padding-top: 15px;
+}
+.store-btn:hover,#menu-toggle:hover {
+    background: #00ceb8;
+    border-color: #00ceb8;
+    color: #fff;
+}
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  06 - Banner
+/////////////////////////////////////////////////////////////////////*/
+
+#banner {
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    padding-top: 80px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.headings {
+    padding: 25% 0 30% 0;
+    color: #fff;
+}
+.headings h1 {
+    font-size: 40px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.headings p {
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.hand-container {
+    max-height: 630px;
+    overflow: hidden;
+}
+.iphone-hand {
+    padding: 20px 30px 0px 30px;
+}
+.store:hover{
+    background: #00ceb8;
+    border-color: #00ceb8;
+    color: #fff; 
+}
+.polo-btn i {
+    padding-right: 6px;
+}
+.slidedown {
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    z-index: 99;
+    cursor: pointer;
+}
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  07 - Features
+/////////////////////////////////////////////////////////////////////*/
+
+.feature-box {
+    padding: 30px 0px;
+    text-align: center;
+    max-width: 360px;
+    margin: 0 auto;
+}
+.feature-box i {
+    font-size: 7em;
+    line-height: 0 !important;
+    margin: 0;
+    padding: 0;
+}
+.feature-box p {
+    padding: 0px 20px;
+}
+.feature-box h2 {
+    margin: 0;
+    padding: 20px 0px;
+    font-weight: 300;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  08 - Gallery
+/////////////////////////////////////////////////////////////////////*/
+
+
+#gallery{
+    background: url(../img/gallery-bg.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#screenshots .item{
+  padding: 0px 0px;
+  margin: 10px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+.customNavigation{
+  text-align: center;
+}
+/*use styles below to disable ugly selection*/
+.customNavigation a{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.gallery-nav {
+    color: #6ecba9;
+    font-size: 2em;
+    margin: 0 1em;
+    padding: 10px 19px;
+    line-height: 0;
+    border: 1px solid #6ecba9;
+    border-radius: 50%;
+}
+
+.gallery-nav:hover,.gallery-nav:focus,.gallery-nav:active {
+    color: #fff;
+    background:#6ecba9;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  09 - Team Member
+/////////////////////////////////////////////////////////////////////*/
+
+.team-social {
+    margin: 0;
+    padding: 8px 0px;
+    list-style: none;
+    text-align: center;
+}
+.team-social li {
+    display: inline-block;
+    font-size: 24px;
+    padding: 0px 3px;
+    color: #fff;
+}
+.team-social li a {
+    display: inline-block;
+}
+.team-member {
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 360px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.team-member p {
+    padding: 10px 10px 15px 10px;
+}
+.team-member h2 {
+    font-size: 25px;
+}
+.team-social li a i {
+    border: 1px solid;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 1.6;
+    border-radius: 50%;
+    transition: 0.5s ease all;
+}
+.facebook a i {
+    color: #3B5998;
+    border-color: #3B5998;
+}
+.facebook a i:hover {
+    color: #fff;
+    background-color: #3B5998;
+}
+.linkedin a i {
+    color: #007bb6;
+    border-color: #007bb6;
+}
+.linkedin a i:hover {
+    color: #fff;
+    background-color: #007bb6;
+}
+.googleplus a i {
+    color: #dd4b39;
+    border-color: #dd4b39;
+}
+.googleplus a i:hover {
+    color: #fff;
+    background-color: #dd4b39;
+}
+.github a i {
+    color: #444;
+    border-color: #444;
+}
+.github a i:hover {
+    color: #fff;
+    background-color: #444;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  10 - Testimonial
+/////////////////////////////////////////////////////////////////////*/
+
+
+#testimonial {
+    background: url(../img/testi-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.review-star {
+    text-align: center;
+    color: rgb(255, 214, 0);
+    font-size: 30px;
+    padding-top: 20px;
+}
+.client-pic {
+    padding: 0em 2em;
+    max-width: 360px;
+    margin: 0 auto;
+}
+.client-pic img {
+    border-radius: 50%;
+}
+
+.review-desc {
+    font-size: 24px;
+    line-height: 1.8;
+    font-weight: 100;
+    font-style: italic;
+    padding-top: 20px;
+    color: #fff;
+}
+#testimonial .block-title {
+    color: #fff;
+}
+#testimonial .block-title span {
+    border-color: #fff;
+}
+p.client-name {
+    float: right;
+    font-size: 30px;
+    color: #fff;
+    display: inline-block;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 5px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  11 - Subscribe Section
+/////////////////////////////////////////////////////////////////////*/
+
+
+
+#subscribe {
+    background: url(../img/subs-bg.jpg);
+    padding: 100px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.susbcribe-text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+.container.subscribe-wrap {
+    max-width: 600px;
+}
+#exampleInputEmail1 {
+    font-size: 20px;
+    padding: 15px 30px;
+    height: auto;
+    border: 2px solid #01bc85;
+    border-radius: 0px;
+    box-shadow: none;
+}
+.btn-custom {
+    width: 100%;
+    padding: 5px 15px;
+    font-size: 34px;
+    margin-top: 0px;
+    background: #01bc85;
+    box-shadow: none;
+    border: 2px solid #01bc85;
+    margin-left: -16px;
+    color: #fff;
+}
+.subscribe-wrap .form-group {
+    margin-right: -16px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  12 - Contact us Section
+/////////////////////////////////////////////////////////////////////*/
+
+
+.address {
+    width: 30%;
+    float: left;
+    background: url(../img/gmap-bg.jpg);
+    height: 640px;
+}
+.mailbox {
+    width: 70%;
+    float: left;
+    background-image: url(../img/map-image.png);
+    background-color: #222;
+    padding-bottom: 111px;
+    height: 640px;
+}
+.address .container {
+    max-width: 100%;
+}
+.mailbox .container {
+    max-width: 90%;
+}
+.address-list {
+    list-style: none;
+    padding: 160px 0px 70px 0px;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: table;
+}
+.address-list li {
+    font-size: 22px;
+    padding: 0.5em 0;
+    color: #fff;
+    font-weight: 100;
+}
+.address-list li i {
+    display: table-cell;
+    background-color: blue;
+    line-height: 1.8;
+    width: 81px;
+    height: 70px;
+    text-align: center;
+    font-size: 45px;
+    border-radius: 50%;
+    margin: 0;
+    vertical-align: middle;
+}
+.address-list li span {
+    padding: 0px 0px 0px 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.mailbox .container {
+    margin-top: 225px;
+    margin-bottom: 0px;
+}
+#contactForm input,#contactForm textarea {
+    border-radius: 0px;
+    box-shadow: none;
+    border: 2px solid #C2C2C2;
+    font-size: 18px;
+}
+#contactForm input:active,#contactForm textarea:active,#contactForm input:hover,#contactForm textarea:hover {
+    border: 2px solid #00ceb8;
+}
+
+#contactForm #name, #contactForm #email, #contactForm #phone {
+    padding: 20px;
+    height: auto;
+}
+#contactForm .form-group {
+    margin-bottom: 25px;
+}
+#contactForm #message {
+    height: 258px;
+    padding-bottom: 40px;
+}
+.contact-submit {
+    margin: 0 auto;
+    margin-top: -38px;
+    width: 160px;
+    background: #fff;
+    color: #00ceb8;
+    border: 2px solid #00ceb8;
+    font-size: 46px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: -46px;
+}
+.contact-submit:hover {
+    background: #00ceb8;
+    color: #fff;
+}
+#contact {
+    position: relative;
+}
+.contact-wrap {
+    position: absolute;
+    z-index: 9999;
+    color: #fff;
+    width: 100%;
+    top: 50px;
+}
+
+#contact .block-title span {
+    border-color: #fff;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #6ecba9;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #6ecba9;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  13 - Footer Section
+/////////////////////////////////////////////////////////////////////*/
+
+
+#footer {
+    background: #00967f;
+    padding: 20px 0px 22px 0px;
+}
+.footer-logo {
+    font-size: 27px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer-logo a:hover {
+    color: #00ceb8;
+}
+
+.footer-logo a {
+    color: #dadada;
+}
+
+.copyright {
+    color: #fff;
+    text-align: right;
+    font-size: 18px;
+    margin-top: 40px;
+}
+#footer span{
+    color: #e9e9e9;
+    display: block;
+    font-size: 20px;
+    margin-bottom: -15px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  14 - Responsive Fixes
+/////////////////////////////////////////////////////////////////////*/
+
+
+/*1340px - 1170px*/
+
+@media all and (max-width: 1340px) and (min-width: 1170px;) {
+    .address-list li {
+        font-size: 18px;
+    }
+    .address-list li i {
+        width: 60px;
+        height: 60px;
+        font-size: 34px;
+
+    }
+}
+
+/*1170px - 992px*/
+
+@media all and (max-width: 1170px) and (min-width: 992px) {
+    .address{
+        width: 100%;
+    }
+    .mailbox{
+        width: 100%;
+    }
+    .address-list {
+    padding: 200px 0px 70px 0px;
+    width: 100%;
+    max-width: 100%;
+    }
+    .address {
+    height: 340px;
+    }
+    .mailbox .container{
+        margin-top: 100px;
+        height: auto;
+    }
+    .address-list {
+        padding: 200px 0px 70px 0px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .address-list li {
+        font-size: 16px;
+        padding: 1em;
+        display: inline-block;
+    }
+    .address-list li i {
+        display: table-cell;
+        line-height: 42px;
+        width: 42px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+/*1170px*/
+
+@media all and (max-width: 1170px) {
+    .address{
+        width: 100%;
+    }
+    .mailbox{
+        width: 100%;
+    }
+    .mailbox {
+        padding-bottom: 111px;
+        height: auto;
+    }
+    .mailbox .container {
+        margin-top: 130px;
+        margin-bottom: 0px;
+    }
+}
+
+/*992px*/
+
+@media all and (max-width: 992px) {
+    .headings h1,.headings p{
+        text-align: center;
+    }
+    .block-title {
+        font-size: 2.8em;
+    }
+}
+
+/*768px*/
+
+@media all and (max-width: 768px) {
+    #footer , .copyright{
+        text-align: center;
+    }
+}
+
+
+/*480px*/
+
+@media all and (max-width: 480px) {
+    .btn-custom {
+        padding: 5px 0px;
+    }
+}

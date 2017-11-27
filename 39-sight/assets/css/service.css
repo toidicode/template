@@ -1,0 +1,60 @@
+.section-background{
+	background: url('../images/services.png');
+}
+
+.price-table{
+	background: #ededed;
+}
+.price-table .col-sm-3{
+	padding: 0px;
+}
+.price-table .col-sm-3:hover .price-title{
+	color: #4a148c;
+}
+.price-title{
+	background: #f9f9f9;
+	padding: 20px;
+	font-size: 24px;
+}
+.price-title span{
+	font-size: 16px;
+}
+.price-list{
+	list-style-type: none;
+	margin-left: -40px;
+}
+.price-list li{
+
+	background: #fff;
+	border-left: 1px solid rgba(229, 229, 229, 0.4);
+	border-right: 1px solid rgba(229, 229, 229, 0.4);
+	border-bottom: 1px dashed #f1f1f1;
+	padding: 20px 0px;
+	padding-left: 20px;
+	font-size: 13px;
+	color: #969595;
+}
+.price-list li:first-child{
+	border-top: 1px solid #ccc;
+}
+.price-list li:last-child{
+	border-bottom: 1px solid #ccc;
+	padding-left: 0px;
+}
+.price-table .col-sm-3:first-child .price-list li{
+	border-left: 1px solid #ccc;
+}
+.price-table .col-sm-3:last-child .price-list li{
+	border-right: 1px solid #ccc;
+}
+.custom-btn-default{
+    background-color: #fff;
+    border-color: #ccc;
+    border-radius: 0px;
+	color: #969595;
+}
+.price-table .col-sm-3:hover .custom-btn-default{
+	color: #fff;
+	background: #4a148c;
+	transition: all .4s ease-in-out;
+}

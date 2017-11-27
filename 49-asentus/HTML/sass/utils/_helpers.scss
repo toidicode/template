@@ -1,0 +1,199 @@
+/*------------------------------------------------------------------
+    [Row]
+------------------------------------------------------------------*/
+
+.row-space-1 {
+    margin-right: -1px;
+    margin-left: -1px;
+
+    > [class*="col-"] {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
+
+
+/*------------------------------------------------------------------
+  	[Content]
+------------------------------------------------------------------*/
+
+.content {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.content-sm {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.content-md {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.content-lg {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+
+/*------------------------------------------------------------------
+    [Parallax Content]
+------------------------------------------------------------------*/
+
+.parallax-content {
+    padding-top: 220px;
+    padding-bottom: 120px;
+}
+
+
+/*------------------------------------------------------------------
+    [Full Width]
+------------------------------------------------------------------*/
+
+.full-width {
+    @include size(100%, auto);
+}
+
+
+/*------------------------------------------------------------------
+    [Container Full Width]
+------------------------------------------------------------------*/
+
+.container-full-width {
+    width: 100%;
+    @include clearfix;
+}
+
+
+/*------------------------------------------------------------------
+    [Overflow]
+------------------------------------------------------------------*/
+
+.overflow-h {
+    overflow: hidden
+}
+
+
+/*--------------------------------------------------
+    [Font Weight]
+----------------------------------------------------*/
+
+.fweight-300 { @include font($weight: 300 !important); }
+.fweight-400 { @include font($weight: 400 !important); }
+.fweight-500 { @include font($weight: 500 !important); }
+.fweight-600 { @include font($weight: 600 !important); }
+.fweight-700 { @include font($weight: 700 !important); }
+
+
+/*------------------------------------------------------------------
+    [Left margin]
+------------------------------------------------------------------*/
+
+.margin-l-0 { margin-left: 0 !important; }
+.margin-l-5 { margin-left: 5px !important; }
+.margin-l-10 { margin-left: 10px !important; }
+.margin-l-20 { margin-left: 20px !important; }
+
+
+/*------------------------------------------------------------------
+    [Right margin]
+------------------------------------------------------------------*/
+
+.margin-r-0 { margin-right: 0 !important; }
+.margin-r-5 { margin-right: 5px !important; }
+.margin-r-10 { margin-right: 10px !important; }
+.margin-r-20 { margin-right: 20px !important; }
+
+
+/*------------------------------------------------------------------
+    [Bottom margin]
+------------------------------------------------------------------*/
+
+.margin-b-0 { margin-bottom: 0 !important; }
+.margin-b-2 { margin-bottom: 2px !important; }
+.margin-b-5 { margin-bottom: 5px !important; }
+.margin-b-10 { margin-bottom: 10px !important; }
+.margin-b-20 { margin-bottom: 20px !important; }
+.margin-b-30 { margin-bottom: 30px !important; }
+.margin-b-40 { margin-bottom: 40px !important; }
+.margin-b-50 { margin-bottom: 50px !important; }
+.margin-b-60 { margin-bottom: 60px !important; }
+.margin-b-70 { margin-bottom: 70px !important; }
+.margin-b-80 { margin-bottom: 80px !important; }
+.margin-b-90 { margin-bottom: 90px !important; }
+.margin-b-100 { margin-bottom: 100px !important; }
+
+
+/*------------------------------------------------------------------
+    [Top margin below 992px]
+------------------------------------------------------------------*/
+
+@media (max-width: $screen-md-min) {
+    .md-margin-b-0 { margin-bottom: 0 !important; }
+    .md-margin-b-2 { margin-bottom: 2px !important; }
+    .md-margin-b-5 { margin-bottom: 5px !important; }
+    .md-margin-b-10 { margin-bottom: 10px !important; }
+    .md-margin-b-20 { margin-bottom: 20px !important; }
+    .md-margin-b-30 { margin-bottom: 30px !important; }
+    .md-margin-b-40 { margin-bottom: 40px !important; }
+    .md-margin-b-50 { margin-bottom: 50px !important; }
+    .md-margin-b-60 { margin-bottom: 60px !important; }
+    .md-margin-b-70 { margin-bottom: 70px !important; }
+    .md-margin-b-80 { margin-bottom: 80px !important; }
+    .md-margin-b-90 { margin-bottom: 90px !important; }
+    .md-margin-b-100 { margin-bottom: 100px !important; }
+}
+
+
+/*------------------------------------------------------------------
+    [Top margin below 768px]
+------------------------------------------------------------------*/
+
+@media (max-width: $screen-sm-min) {
+    .sm-margin-b-0 { margin-bottom: 0 !important; }
+    .sm-margin-b-2 { margin-bottom: 2px !important; }
+    .sm-margin-b-5 { margin-bottom: 5px !important; }
+    .sm-margin-b-10 { margin-bottom: 10px !important; }
+    .sm-margin-b-20 { margin-bottom: 20px !important; }
+    .sm-margin-b-30 { margin-bottom: 30px !important; }
+    .sm-margin-b-40 { margin-bottom: 40px !important; }
+    .sm-margin-b-50 { margin-bottom: 50px !important; }
+    .sm-margin-b-60 { margin-bottom: 60px !important; }
+    .sm-margin-b-70 { margin-bottom: 70px !important; }
+    .sm-margin-b-80 { margin-bottom: 80px !important; }
+    .sm-margin-b-90 { margin-bottom: 90px !important; }
+    .sm-margin-b-100 { margin-bottom: 100px !important; }
+}
+
+
+/*------------------------------------------------------------------
+    [Top margin below 480px]
+------------------------------------------------------------------*/
+
+@media (max-width: $screen-xs-min) {
+    .xs-margin-b-0 { margin-bottom: 0 !important; }
+    .xs-margin-b-2 { margin-bottom: 2px !important; }
+    .xs-margin-b-5 { margin-bottom: 5px !important; }
+    .xs-margin-b-10 { margin-bottom: 10px !important; }
+    .xs-margin-b-20 { margin-bottom: 20px !important; }
+    .xs-margin-b-30 { margin-bottom: 30px !important; }
+    .xs-margin-b-40 { margin-bottom: 40px !important; }
+    .xs-margin-b-50 { margin-bottom: 50px !important; }
+    .xs-margin-b-60 { margin-bottom: 60px !important; }
+    .xs-margin-b-70 { margin-bottom: 70px !important; }
+    .xs-margin-b-80 { margin-bottom: 80px !important; }
+    .xs-margin-b-90 { margin-bottom: 90px !important; }
+    .xs-margin-b-100 { margin-bottom: 100px !important; }
+}
+
+
+/*--------------------------------------------------
+    [Height]
+----------------------------------------------------*/
+
+.height-100 { height: 100px !important; }
+.height-200 { height: 200px !important; }
+.height-300 { height: 300px !important; }
+.height-400 { height: 400px !important; }

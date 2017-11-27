@@ -1,0 +1,55 @@
+/***
+Bootstrap Markdown
+***/
+
+.md-input {
+  padding: 5px !important;
+  border-bottom: 0 !important;
+
+  @include border-radius(0 0 $general-border-radius $general-border-radius);
+}
+
+.md-editor {    
+  
+  @include border-radius($general-border-radius);   
+
+    .btn-toolbar {
+      margin-left: 0px;
+
+      @include border-radius($general-border-radius $general-border-radius 0 0); 
+      
+      .btn-group {
+        .btn-sm.btn {
+           padding-bottom: 3px;
+        }
+
+        .btn-primary {
+          padding-top: 5px;
+          padding-bottom: 7px; 
+        }
+      }
+    }
+}
+
+.md-editor.active {
+  border: 1px solid #999999;
+  -webkit-box-shadow: none !important;
+     -moz-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+/***
+Error state for WYSIWYG Editors
+***/
+
+.has-error .md-editor {
+  border: 1px solid $state-danger-border !important;
+}
+
+.has-success .md-editor {
+  border: 1px solid $state-success-border !important;
+}
+
+.has-warning .md-editor {
+  border: 1px solid $state-warning-border !important;
+}

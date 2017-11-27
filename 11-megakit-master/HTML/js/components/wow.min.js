@@ -1,0 +1,1 @@
+var Wow=function(){"use strict";var n=function(){var n=new WOW({mobile:!1});n.init()};return{init:function(){n()}}}();$(document).ready(function(){Wow.init()});

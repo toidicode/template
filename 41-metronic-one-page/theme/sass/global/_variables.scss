@@ -1,0 +1,186 @@
+//##  Direction
+//
+// Scripting direction
+
+$direction:  						ltr !default;
+
+//##  Colors
+$color-blue:            			#009dc7 !default;
+ 
+// Bootstrap brand colors
+
+$brand-default:         			#c6c6c6 !default;  
+$brand-primary:         		 	#428bca !default;  
+$brand-success:         		 	#45B6AF !default;   
+$brand-info:            		 	#89C4F4 !default;  
+$brand-warning:         		 	#dfba49 !default;         
+$brand-danger:          		 	#F3565D !default;       
+ 
+// Bootstrap Components states
+
+$state-default-text:             	#333333 !default;  
+$state-default-bg:           	 	$brand-default !default; 
+$state-default-border:       	 	darken(adjust-hue($state-default-bg, -10), 5%) !default;
+
+$state-primary-text:          	 	#D8E3F2 !default;
+$state-primary-bg:        		 	$brand-primary !default;
+$state-primary-border:    	 	 	darken(adjust-hue($state-primary-bg, -10), 5%) !default;
+
+$state-success-text:             	#3c763d !default;
+$state-success-bg:               	#dff0d8 !default;
+$state-success-border:           	darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:                	#31708f !default;
+$state-info-bg:                  	#d9edf7 !default;
+$state-info-border:              	darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:             	#8a6d3b !default;
+$state-warning-bg:               	#fcf8e3 !default;
+$state-warning-border:           	darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:              	#a94442 !default;
+$state-danger-bg:                	#f2dede !default;
+$state-danger-border:            	darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+// Bootstrap Buttons
+
+$btn-font-weight:                	normal !default;
+
+$btn-default-color:              	#333 !default;
+$btn-default-bg:                 	#fff !default;
+$btn-default-border:             	#ccc !default;
+
+$btn-primary-color:              	#fff !default;
+$btn-primary-bg:                 	$brand-primary !default;
+$btn-primary-border:             	darken($btn-primary-bg, 5%) !default;
+
+$btn-success-color:              	#fff !default;
+$btn-success-bg:                 	$brand-success !default;
+$btn-success-border:             	darken($btn-success-bg, 5%) !default;
+
+$btn-info-color:                	#fff !default;
+$btn-info-bg:                    	$brand-info !default;
+$btn-info-border:                	darken($btn-info-bg, 5%) !default;
+
+$btn-warning-color:              	#fff !default;
+$btn-warning-bg:                 	$brand-warning !default;
+$btn-warning-border:             	darken($btn-warning-bg, 5%) !default;
+
+$btn-danger-color:               	#fff !default;
+$btn-danger-bg:                  	$brand-danger !default;
+$btn-danger-border:              	darken($btn-danger-bg, 5%) !default;
+
+$btn-link-disabled-color:        	#eee !default;
+
+//##  Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-primary:  	  		 	"Open Sans", sans-serif !default;
+$font-family-default:  	  		 	"Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+$font-size-base:          		 	13px !default;
+$font-size-normal:        		 	14px !default;
+$font-size-large:         		 	ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         		 	ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$icon-size-base:          		 	13px !default;
+$icon-size-normal:        		 	14px !default;
+$icon-size-large:         		 	ceil(($icon-size-base * 1.25)) !default; // ~18px
+$icon-size-small:         		 	ceil(($icon-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            		 	floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:            			floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:            			ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:            			ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:            			$font-size-base !default;
+$font-size-h6:            			ceil(($font-size-base * 0.85)) !default; // ~12px
+
+// Global text color on <body>
+$text-color:            			#333333 !default;      
+
+// Global light text color on <body>
+$text-light-color:     	 			#ffffff !default;
+
+// Global muted text color on <body>
+$text-muted-color:      			#444444 !default;
+
+// Global textual link color.
+$link-color:            			#5b9bd1 !default;
+
+// Link hover color.
+$link-hover-color:      			darken($link-color, 15%) !default;
+
+$primary-link-color:                #65A0D0;
+
+//== Forms Controls
+$input-md-label-color:        		#888888;
+$input-md-input-border:        		#e5e5e5;
+$input-md-label-opacity:      		1;
+$input-md-label-font-size: 			13px;
+$input-md-placeholder:	 			#999;
+$input-md-color:		 			#333;
+$input-md-focus-border:				$brand-success;
+$input-md-checkbox-box-color:  		#666;
+$input-md-checkbox-disabled-opacity:0.7;
+
+$input-bg:                       	#fff !default;
+$input-bg-disabled:              	#eeeeee !default;
+
+$input-color:                    	#333 !default;
+$input-border:                   	#e5e5e5 !default;
+$input-border-focus:             	#999 !default;
+
+$input-color-placeholder:        	lighten($input-color, 50%) !default;  
+$input-icon-color:               	#999 !default;
+
+//## Border radius
+$general-border-radius:             4px !default;
+$form-control-border-radius:        4px !default;
+$portlet-border-radius:             4px !default;
+
+
+//## Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+//
+// Note: These variables are not generated into the Customizer.
+
+$zindex-navbar:            			9995 !default;
+$zindex-navbar-above:      			9999 !default;
+$zindex-dropdown:          			1000 !default;
+$zindex-popover:           			1010 !default;
+$zindex-tooltip:           			1030 !default;
+$zindex-navbar-fixed:      			1030 !default;
+$zindex-modal-background:  			10049 !default;
+$zindex-modal:             			10050 !default;
+$zindex-top:						10100 !default;
+
+//## Media queries breakpoints
+//
+//Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs-min:              		480px !default;
+
+// Small screen / tablet
+$screen-sm-min:              		768px !default;
+
+// Medium screen / desktop
+$screen-md-min:              		992px !default;
+
+// Large screen / wide desktop
+$screen-lg-min:             	 	1200px !default;
+
+// Large scree / wider desktop      
+$screen-lg-med:                     1260px !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              		($screen-sm-min - 1) !default;
+$screen-sm-max:              		($screen-md-min - 1) !default;
+$screen-md-max:              		($screen-lg-min - 1) !default;
+
+//## Img path settings
+
+$general-img-path:                  '../img/'; 

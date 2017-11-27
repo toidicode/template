@@ -1,0 +1,562 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+body{
+	font-family: 'Lora';
+}
+section{
+	padding: 100px 0 70px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.title-box{
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 60px;
+}
+.title-box:after{
+	content: '';
+	width: 50px;
+	height: 3px;
+	position: absolute;
+	bottom: -20px;
+	left: calc(50% - 25px);
+	background-color: #30ADDD;
+}
+.section-title{
+	margin-top: 0;
+}
+.section-subtitle{
+	/*margin-bottom: 0;*/
+}
+
+.c-table{
+	width: 100%;
+	height: 100%;
+	display: table;
+	text-align: center;
+}
+.ct-cell{
+	color: #fff;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.overlay-light, .overlay-dark{
+	position: relative;
+}
+.overlay-light div, .overlay-dark div{
+	z-index: 2;
+}
+.overlay-light:after, .overlay-dark:after{
+	top: 0;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+}
+.overlay-light:after{
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.overlay-dark:after{
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-full{
+	width: 100%;
+}
+
+
+
+
+
+/*navbar*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	color: #fff;
+	background-color: #1E2942;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #fff;
+	text-transform: uppercase;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	color: #fff;
+}
+.navbar-default{
+	background-color: #31436b;
+	border-color: transparent;
+}
+.navbar-brand img{
+	width: 60px;
+	transition: all 0.4s ease-in-out;
+}
+.navbar-toggle{
+	border-radius: 0;
+}
+@media (min-width: 768px){
+	.navbar-brand img{
+		width: 110px;
+	}
+	.navbar-nav>li>a{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}	
+}
+
+
+
+
+
+/**********************
+		Header
+**********************/
+.header{
+	background-image: url(../images/header.jpg);
+	height: 100vh;
+	position: relative;
+}
+.intro-box{
+	height: 100vh;
+}
+.intro h1{
+	position: relative;
+	color: #fff;
+	font-size: 90px;
+	text-transform: uppercase;
+	line-height: 1;
+}
+.intro h1:after, .intro h1:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background-color: #fff;
+}
+.intro h1:after{
+	bottom: 0;
+}
+.intro h1:before{
+	top: 0;
+}
+.btn-header{
+	position: absolute;
+	bottom: 100px;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 12px 50px;
+	left: calc(50% - 89px);
+	border-radius: 0;
+}
+@media (max-width: 991px){
+	.btn-header{
+		bottom: 30px;
+	}
+}
+
+
+
+
+
+/**********************
+		Fun
+**********************/
+.fun{
+	text-align: center;
+	text-transform: uppercase;
+}
+.fun-box{
+	margin-bottom: 30px;
+}
+.fun-number{
+	font-size: 50px;
+}
+.fun-title{
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+/**********************
+		CTA
+**********************/
+.cta{
+	color: #fff;
+	text-align: center;
+	padding: 0;
+}
+.cta-bg{
+	background-color: #253250;
+	padding: 100px 0;
+}
+.cta h1{
+	text-transform: uppercase;
+}
+.cta-btn{
+	margin-top: 20px;
+	display: inline-block;
+	font-size: 30px;
+	padding: 10px 30px;
+	border: 3px solid #fff;
+}
+.cta-btn a{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/**********************
+		Choose
+**********************/
+.choose{
+	text-align: center;
+	background-image: url(../images/choose.jpg);
+}
+.choose-box{
+	margin-bottom: 30px;
+}
+.choose-icon{
+	color: #4c4c4c;
+	font-size: 72px;
+}
+.choose-title{
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 2px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.choose-detail{
+
+}
+
+
+
+
+
+
+/**********************
+		Practice
+**********************/
+.practice{
+	text-transform: uppercase;
+}
+.practice-box{
+	position: relative;
+	margin-bottom: 30px;
+	font-family: 'Roboto';
+}
+.practice-box:hover .overlay{
+	opacity: 1;
+}
+.overlay{
+	top: 0;
+	left: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: all 0.4s ease-in-out;
+	background-color: rgba(0, 84, 166, 0.7);
+}
+.paractice-icon{
+	font-size: 72px;
+}
+.practice-title{
+	font-size: 20px;
+	margin: 0;	
+}
+
+
+
+
+
+
+/**********************
+		Consultation
+**********************/
+.consultation{
+	background-color: #F2EEED;
+}
+.consultation-form .form-control{
+	margin-bottom: 30px;
+	border-radius: 0;
+}
+.consultation-form  .bootstrap-select .btn, .consultation-form .dropdown-menu{
+	border-radius: 0;
+}
+.btn-cn{
+	background-color: #455579;
+	border-radius: 0;
+	color: #fff;
+}
+.btn-cn:hover{
+	border-color: #455579;
+	background-color: transparent;
+	color: #455579;
+}
+
+
+
+
+
+
+
+
+/**********************
+		Slider
+**********************/
+.slider-1{
+	text-align: center;
+	background-image: url(../images/familly-back.jpg);
+}
+#slider_1{
+	background-color: #39496D;
+}
+.slider-1-item-box{
+	color: #fff;
+	padding: 50px;
+}
+.slider-1-item-box h2{
+	margin:10px auto 20px;
+	text-transform: uppercase;
+}
+.slider-icon{
+	font-size: 72px;
+}
+.slider-1-item-box p{
+	line-height: 1.5;
+	font-size: 16px;
+}
+.slider_1{
+	position: relative;
+}
+.slider_1 .owl-controls .owl-dots{
+	bottom: 40px;
+    position: relative;
+}
+.mb0{
+	margin-bottom: -70px;
+}
+
+
+/**********************
+		Team
+**********************/
+.team{
+	background-color: #F2EEED;
+}
+.team-box{
+	padding: 10px;
+	margin-bottom: 30px;
+	/*background-color: #fff;*/
+	transition: all 0.4s ease-in-out;
+}
+.team-box:hover{
+	box-shadow: 2px 2px 5px #0054A6;
+}
+.team-detail{
+	background-color: #e1e1e1;
+	color: #4b4b4b;
+	padding: 20px;
+}
+.team-box ul{
+	text-align: center;
+	padding-left: 0;
+}
+.team-box ul li{
+	list-style-type: none;
+}
+.team-box h3{
+	/*font-weight: 700;*/
+}
+
+
+
+
+
+/**********************
+		Clients
+**********************/
+.client-box{
+	margin-bottom: 30px;
+}
+.client-box img{
+	opacity: 0.5;
+	transition: all 0.4s ease-in-out;
+}
+@media (min-width: 768px){
+	.client-box img{
+		padding: 50px 0;
+	}
+}
+.client-box:hover img{
+	opacity: 1;
+}
+
+
+
+
+
+
+
+/**********************
+		Testimonial
+**********************/
+.testimonial{
+	padding: 0;
+}
+#test-slider{
+	background-color: #455579;
+	color: #fff;
+	padding: 60px;
+}
+.testimonial p{
+	position: relative;
+	padding: 0 20px 0 40px;
+	font-style: italic;
+	margin: 100px 0;
+	line-height: 2;
+}
+.testimonial .item span{
+	padding-left: 40px;
+}
+.testimonial p:after, .testimonial p:before{
+	position: absolute;
+	font-size: 24px;
+}
+.testimonial p:after{
+	content: '"';
+	right: 20px;
+	bottom: -10px;
+}
+.testimonial p:before{
+	content: '"';
+	left: 20px;
+	top: -10px;
+}
+
+
+
+/**********************
+		FAQ
+**********************/
+.faq{
+	background-image: url(../images/faq.jpg);
+}
+.faq .panel-group .panel{
+	margin-bottom: 20px;
+}
+.faq .panel-default>.panel-heading{
+	background-color: #455579;
+}
+.faq .panel-body{
+	background-color: #5B6B8D;
+	color: #bcbcbc;
+}
+.faq .panel-default>.panel-heading a{
+	color: #fff;
+	text-transform: uppercase;
+}
+.faq .panel-heading, .faq .panel-body, .faq .panel-group .panel{
+	border-radius: 0;
+}
+
+
+
+/**********************
+		Contact
+**********************/
+.contact{
+	background-color: #F2EEED;
+	color: #969595;
+}
+.contact-logo{
+	margin-bottom: 30px;
+}
+.contact ul{
+	padding-left: 0;
+}
+.contact ul li{
+	list-style-type: none;
+}
+.contact ul li span{
+	padding-right: 10px;
+}
+.contact ul, .contact p{
+	line-height: 1.7;
+	font-family: 'Roboto';
+}
+.input-group-addon, .form-control{
+	background-color: #fff;
+	border-color: transparent;
+}
+.contact .input-group{
+	padding-bottom: 20px;
+}
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:first-child>.btn-group:not(:first-child)>.btn, .input-group-btn:first-child>.btn:not(:first-child), .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group>.btn, .input-group-btn:last-child>.dropdown-toggle{
+	border-radius: 0;
+}
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle){
+	border-radius: 0;
+}
+.contact button{
+	background-color: #435174;
+	border-radius: 0;
+	color: #fff;
+}
+.contact button{
+	padding: 8px;
+}
+
+
+
+
+
+.subscribe{
+	border-bottom: 3px solid #2C3447;
+	background-color: #10182D;
+	color: #969595;
+}
+.subscribe h2{
+	color: #fff;
+}
+.subscribe-form{
+	margin-top: 30px;
+}
+
+
+
+
+/*Footer*/
+.footer{
+	background-color: #10182D;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	color: #969595;
+}
+
+.footer .footer-social {
+  font-size: 24px;
+}
+.footer .footer-social a {
+  color: #969595;
+  margin: 8px;
+}
+@media (min-width: 768px){
+	.footer .footer-social{
+		float: right;
+	}
+}
+@media (max-width: 767px){
+	footer, .subscribe{
+		text-align: center;
+	}
+}

@@ -1,0 +1,15 @@
+/*------------------------------------------------------------------
+  	[Button]
+------------------------------------------------------------------*/
+
+.btn-theme {
+	@include button();
+}
+
+.btn-base-bg {
+	@include button-color($color-white, $color-white, $color-base, #63cbd7, 0, transparent, transparent);
+}
+
+.btn-theme-sm {
+	@include button-size(13px, 600, 15px 40px);
+}

@@ -1,0 +1,21 @@
+/*------------------------------------------------------------------
+  	[Form Control]
+------------------------------------------------------------------*/
+
+.form-control {
+	height: 50px;
+    @include font($size: 14px, $weight: 400);
+    color: $color-subtitle;
+    @include placeholder($color-subtitle);
+    background: $color-sky-light;
+    border: none;
+    box-shadow: none;
+    @include border-radius(0);
+    padding-left: 15px;
+
+    &:focus {
+    	color: $color-heading;
+        @include placeholder($color-heading);
+        box-shadow: none;
+    }
+}

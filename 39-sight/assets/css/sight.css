@@ -1,0 +1,65 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+
+body{
+	font-family: 'Roboto';
+	font-weight: 200;
+}
+.section-background{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	text-transform: uppercase;
+	background: url('../images/showcase.png');
+	margin-bottom: 100px;
+}
+.sight
+{
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	padding: 66px 0px;
+}
+.title{
+	letter-spacing: 8px;
+	font-size: 30px;
+}
+.subtitle{
+	letter-spacing: 5px;
+	font-size: 12px;
+}
+.pages{
+	text-align: center;
+	text-transform: uppercase;
+}
+.page-title{
+	font-size: 20px;
+	letter-spacing: 5px;
+	color: #444;
+	padding: 0px 0px 20px 0px;
+	margin: 0px;
+}
+.page-img{
+	width: 100%;
+	transition: all .4s ease-in-out;
+}
+.page-img:hover{
+	box-shadow: 0px 0px 20px #000;
+}
+footer{
+	background: #ededed;
+	text-align: center;
+	margin: 200px 0px 0px;
+}
+.copy{
+	padding: 30px 0px;
+	color: #999;
+	margin: 0px;
+	font-size: 14px;
+}
+
+
+@media (max-width: 992px){
+	.page-img{
+		margin-bottom: 50px;
+	}
+} 

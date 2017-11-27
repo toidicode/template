@@ -1,0 +1,50 @@
+/*----------------------------------
+  Back To Top
+------------------------------------*/
+
+.s-back-to-top {
+  @include position(fixed, $bottom: -3.125rem, $right: 3.125rem);
+  display: block;
+  @include size(1.875rem, 3rem);
+  z-index: 9;
+  background: $color-primary;
+  @include border-radius(3.125rem);
+  text-align: center;
+  @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+  @include before {
+    display: block;
+    @include font($size: $font-size-12, $style: normal, $family: $font-family-themify);
+    color: $color-white;
+    line-height: 3rem;
+    content: "\e627";
+    @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+  }
+
+  @include hover {
+    background: $color-white;
+
+    @include before {
+      color: $color-primary;
+    }
+  }
+
+  @include hover-focus {
+    text-decoration: none;
+  }
+}
+
+/* The button becomes visible */
+.s-back-to-top.-is-visible {
+  bottom: 3.125rem;
+  opacity: .8;
+
+  @include hover {
+    opacity: 1;
+  }
+}
+
+/* If the user keeps scrolling down, the button is out of focus and becomes less visible */
+.s-back-to-top.-zoom-out {
+  opacity: .6;
+}

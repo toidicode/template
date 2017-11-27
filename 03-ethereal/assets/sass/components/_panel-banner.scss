@@ -1,0 +1,90 @@
+///
+/// Ethereal by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Panel (Banner) */
+
+	$pad: _size(pad);
+	$pad-small-tb: _size(pad-small-tb);
+	$pad-small-lr: _size(pad-small-lr);
+
+	.panel.banner {
+		@include vendor('align-items', 'stretch');
+
+		.content {
+			@include padding($pad, $pad);
+			@include vendor('display', 'flex');
+			@include vendor('flex-direction', 'column');
+			@include vendor('justify-content', 'center');
+			@include vendor('flex-grow', '0');
+			@include vendor('flex-shrink', '0');
+
+			> .actions:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.image {
+			@include vendor('flex-grow', '0');
+			@include vendor('flex-shrink', '0');
+			position: relative;
+
+			img {
+				@include vendor('object-fit', 'cover');
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&.left {
+			@include vendor('flex-direction', 'row');
+		}
+
+		&.right {
+			@include vendor('flex-direction', 'row-reverse');
+		}
+	}
+
+	@include breakpoint(small) {
+		.panel.banner {
+			.content {
+				@include padding($pad-small-tb, $pad-small-lr);
+				@include vendor('flex-basis', '60%');
+
+				> .actions:last-child {
+					margin-bottom: _size(element-margin);
+				}
+			}
+
+			.image {
+				@include vendor('flex-basis', '40%');
+			}
+		}
+
+		@include orientation(portrait) {
+			.panel.banner {
+				.content {
+					@include vendor('flex-basis', 'auto');
+				}
+
+				.image {
+					@include vendor('flex-basis', 'auto');
+					height: 18rem;
+				}
+
+				&.left {
+					@include vendor('flex-direction', 'column');
+				}
+
+				&.right {
+					@include vendor('flex-direction', 'column-reverse');
+				}
+			}
+		}
+	}

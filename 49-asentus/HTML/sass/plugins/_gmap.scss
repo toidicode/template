@@ -1,0 +1,42 @@
+/*----------------------------------
+  Custome Style of Info Window
+------------------------------------*/
+
+/* White background and box outline */
+.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div {
+  background-color: $color-white !important;
+  box-shadow: none !important;
+}
+
+/* Arrow colour */
+.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div > div > div {
+  background-color: $color-white !important;
+  box-shadow: none !important;
+}
+
+.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div:first-child {
+  display: none;
+}
+
+/* Let's remove image icon inside close button */
+.gm-style > div:first-child > div + div > div:last-child > div > div:last-child > img {
+  display: none;
+}
+
+/* New arrow style */
+.gm-style > div:first-child > div + div > div:last-child > div > div:last-child {
+  overflow: inherit !important;
+}
+
+.gm-style > div:first-child > div + div > div:last-child > div > div:last-child:after {
+  @include position(absolute, $top: 0, $right: 0);
+  @include font($size: 15px, $family: $font-family-sl-icons);
+  color: $color-heading;
+  content: "\e082";
+}
+
+/* Positioning of infowindow */
+.gm-style-iw {
+  top: 22px !important;
+  left: 22px !important;
+}

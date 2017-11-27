@@ -1,0 +1,53 @@
+/*----------------------------------
+  Colors
+------------------------------------*/
+
+$utils-colors: (
+	primary:              	(color: #13b1cd),
+	blueviolet:           	(color: #9877ea),
+	red:                  	(color: #c54041),
+	gold:                 	(color: #b99769),
+	body:             			(color: #fff),
+	dark:                 	(color: #222324),
+	dark-light:           	(color: #242526),
+	heading:              	(color: #242424),
+	white:                	(color: #fff),
+	text:            		  	(color: #656565),
+	gray-light:           	(color: #cecece),
+	gray-lighter:         	(color: #aeaeae),
+	white-opacity:        	(color: rgba($color-white,.8)),
+	white-opacity-light:  	(color: rgba($color-white,.5)),
+	white-opacity-lighter:	(color: rgba($color-white,.3)),
+	white-opacity-lightest:	(color: rgba($color-white,.1)),
+	sky-light:            	(color: #f5f8f9)
+);
+
+/* Text Colors */
+@each $color-name, $color in $utils-colors {
+	.g-color--#{$color-name} {
+  	color: map-get($color, color) !important;
+  }
+}
+
+/* Hover Colors */
+.g-color--text[href] {
+	@include hover {
+		color: $color-primary !important;
+	}
+}
+
+.g-color--white-opacity[href] {
+	@include hover {
+		color: $color-primary !important;
+	}
+}
+
+/* Background Colors */
+@each $color-name, $color in $utils-colors {
+	.g-bg-color--#{$color-name} {
+  	background-color: map-get($color, color) !important;
+  }
+}
+
+.g-bg-color--primary-to-blueviolet-ltr { @include gradient-horizontal($direction: 145deg, $start-color: rgba($color-primary,.95), $end-color: rgba($color-blueviolet,.95)); }
+.g-bg-color--primary-ltr { @include gradient-horizontal($direction: 145deg, $start-color: rgba($color-primary,.6), $end-color: $color-primary); }

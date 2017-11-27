@@ -1,0 +1,105 @@
+///
+/// Ethereal by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Page */
+
+	@include keyframes('load-spinner') {
+		0% {
+			@include vendor('transform', 'rotate(0deg)');
+		}
+
+		100% {
+			@include vendor('transform', 'rotate(360deg)');
+		}
+	}
+
+	@-ms-viewport {
+		width: device-width;
+	}
+
+	html {
+		width: 100%;
+		height: 100%;
+	}
+
+	body {
+		@include vendor('display', 'flex');
+		@include vendor('align-items', 'center');
+		@include vendor('justify-content', 'flex-start');
+		-ms-overflow-style: scrollbar;
+		width: 100%;
+		height: 100%;
+		min-height: 30rem;
+		overflow: hidden;
+
+		&:before {
+			@include vendor('animation', 'load-spinner 1s infinite linear');
+			@include vendor('transition', 'opacity 0.25s ease');
+			@include vendor('transition-delay', '0s');
+			@include vendor('pointer-events', 'none');
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 4rem;
+			height: 4rem;
+			margin: -2rem 0 0 -2rem;
+			background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96px" height="96px" viewBox="0 0 96 96" zoomAndPan="disable"><style>circle {fill: transparent; stroke: #{_palette(bg)}; stroke-width: 1.5px; }</style><defs><clipPath id="corner"><polygon points="0,0 48,0 48,48 96,48 96,96 0,96" /></clipPath></defs><g clip-path="url(#corner)"><circle cx="48" cy="48" r="32"/></g></svg>');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 4rem;
+			opacity: 0;
+		}
+
+		&:after {
+			@include vendor('pointer-events', 'none');
+			content: '';
+			display: block;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			background-attachment: fixed;
+			background-color: _palette(bg-alt);
+			background-image: url('../../images/overlay.png'), url('../../images/bg.jpg');
+			background-repeat: repeat, repeat-x;
+			background-size: 128px 128px, cover;
+		}
+
+		&.is-loading {
+			*, *:before, *:after {
+				@include vendor('animation', 'none !important');
+				@include vendor('transition', 'none !important');
+			}
+
+			&:before {
+				@include vendor('transition', 'opacity 1s ease');
+				@include vendor('transition-delay', '0.75s');
+				opacity: 0.25;
+			}
+		}
+	}
+
+	@include breakpoint(small) {
+		html {
+			height: auto;
+		}
+
+		body {
+			height: auto;
+			overflow-x: hidden;
+			overflow-y: auto;
+		}
+	}
+
+	@include breakpoint(xsmall) {
+		html, body {
+			min-width: 320px;
+		}
+	}

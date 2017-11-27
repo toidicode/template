@@ -1,0 +1,71 @@
+.who{
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+.who h3{
+	color: #313131;
+	font-size: 15px;
+	padding: 15px 30px;
+	text-transform: capitalize;
+}
+.who-detail{
+	font-size: 13px;
+	color: #969595;
+	line-height: 200%;
+	padding: 0 30px 20px;
+}
+.who-img{
+	width: 100%;
+}
+.story-and-client .section-title{
+	text-align: left;
+}
+.story-img{
+	float: left;
+	width: 131px;
+	margin: 10px 30px 20px 0;
+}
+.story-detail{
+	line-height: 180%;
+	padding: 5px 10px 0px 0px;
+	font-size: 13px;
+}
+.table{
+	margin-top: 22px;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	padding: 14px 0;
+}
+tbody tr{
+	border: 1px solid #ddd;
+}
+tbody tr td{
+	text-align: center;
+}
+tbody tr td:nth-child(1){
+	width: 15%;
+}
+tbody tr td:nth-child(2){
+	width: 75%;
+}
+tbody tr td:nth-child(3){
+	width: 10%;
+}
+tbody{
+	color: #969595;
+}
+.progress{
+	margin-bottom: 0;
+	background: #fff;
+	height: 10px;
+	margin: 6px 0;
+}
+.progress-bar{
+	background: #60c9eb;
+	border-radius: 10px;
+	width: 10px;
+}
+.video-frame{
+	width: 100%;
+	height: 100%;
+}

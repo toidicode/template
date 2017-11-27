@@ -1,0 +1,126 @@
+//##  Direction
+//
+// Scripting direction
+
+$direction:  						ltr !default;
+
+// Bootstrap brand colors
+
+$brand-default:         			#c6c6c6 !default;  
+$brand-primary:         		 	#00BCD4 !default;  
+$brand-success:         		 	#26A69A !default;   
+$brand-info:            		 	#89C4F4 !default;  
+$brand-warning:         		 	#ff5722 !default;           
+$brand-danger:          		 	#F3565D !default;       
+ 
+// Bootstrap Components states
+
+$state-default-text:             	#666666 !default;    
+$state-default-bg:           	 	$brand-default !default; 
+$state-default-border:       	 	darken(adjust-hue($state-default-bg, -10), 5%) !default;
+
+$state-primary-text:          	 	lighten($brand-primary, 50%) !default;
+$state-primary-bg:        		 	$brand-primary !default;
+$state-primary-border:    	 	 	darken(adjust-hue($state-primary-bg, -10), 5%) !default;
+
+$state-success-text:             	lighten($brand-success, 50%) !default;
+$state-success-bg:               	$brand-success !default;
+$state-success-border:           	darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:                	lighten($brand-info, 50%) !default;
+$state-info-bg:                  	$brand-info !default;
+$state-info-border:              	darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:             	lighten($brand-info, 50%) !default;
+$state-warning-bg:               	$brand-warning !default;
+$state-warning-border:           	darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:              	lighten($brand-danger, 50%) !default;
+$state-danger-bg:                	$brand-danger !default;
+$state-danger-border:            	darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+// Bootstrap Buttons
+
+$btn-font-weight:                	normal !default;
+
+$btn-default-color:              	#666666 !default;
+$btn-default-bg:                 	#E6E6E6 !default;     
+$btn-default-border:             	#ccc !default;
+
+$btn-primary-color:              	#fff !default;
+$btn-primary-bg:                 	$brand-primary !default;
+$btn-primary-border:             	darken($btn-primary-bg, 5%) !default;
+
+$btn-success-color:              	#fff !default;
+$btn-success-bg:                 	$brand-success !default;
+$btn-success-border:             	darken($btn-success-bg, 5%) !default;
+
+$btn-info-color:                	#fff !default;
+$btn-info-bg:                    	$brand-info !default;
+$btn-info-border:                	darken($btn-info-bg, 5%) !default;
+
+$btn-warning-color:              	#fff !default;
+$btn-warning-bg:                 	$brand-warning !default;
+$btn-warning-border:             	darken($btn-warning-bg, 5%) !default;
+
+$btn-danger-color:               	#fff !default;  
+$btn-danger-bg:                  	$brand-danger !default;
+$btn-danger-border:              	darken($btn-danger-bg, 5%) !default;
+
+$btn-link-disabled-color:        	#eee !default;
+
+//##  Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-size-base:          		 	13px !default;
+$font-size-normal:        		 	14px !default;
+$font-size-large:         		 	ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         		 	ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$icon-size-base:          		 	13px !default;
+$icon-size-normal:        		 	14px !default;
+$icon-size-large:         		 	ceil(($icon-size-base * 1.25)) !default; // ~18px
+$icon-size-small:         		 	ceil(($icon-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            		 	floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:            			floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:            			ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:            			ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:            			$font-size-base !default;
+$font-size-h6:            			ceil(($font-size-base * 0.85)) !default; // ~12px
+
+// Global text color on <body>
+$text-color:            			#333333 !default;      
+
+// Global light text color on <body>
+$text-light-color:     	 			#ffffff !default;
+
+// Global muted text color on <body>
+$text-muted-color:      			#444444 !default;
+
+// Global textual link color.
+$link-color:            			#444444 !default;
+
+// Link hover color.
+$link-hover-color:      			darken($link-color, 15%) !default;
+
+$primary-link-color:                #65A0D0;
+
+//== Forms Controls
+$input-md-label-opacity:      		0.8;
+
+$input-bg:                       	#fff !default;
+$input-bg-disabled:              	#eeeeee !default;
+
+$input-color:                    	#333 !default;
+$input-border:                   	#e5e5e5 !default;
+$input-border-focus:             	#999 !default;
+
+$input-color-placeholder:        	lighten($input-color, 50%) !default;  
+$input-icon-color:               	#999 !default;
+
+//## Border radius
+$general-border-radius:             2px !default;
+$form-control-border-radius:        2px !default;
+$portlet-border-radius:             2px !default;

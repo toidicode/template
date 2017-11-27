@@ -1,0 +1,394 @@
+/*
+Theme Name:    Photographer
+Theme URI:     http://ThemeWagon.com/photographer
+Author:        ThemeWagon
+Author URI:    http://ThemeWagon.com/
+Description:   Photographer is a single page html template based on bootstrap 3
+Version:       1.0.0
+License:       GNU General Public License v2 or later
+License URI:   http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+
+
+/* ========================================================================== 
+    General 
+========================================================================== */
+h1,h2,h3,h4,h5,h6,.navbar {
+    /*font-family:'Oswald';*/
+    font-family: 'News Cycle', sans-serif;
+    /*font-weight:100;*/
+    font-weight: 400;
+}
+
+body {
+    padding-top: 70px;
+}
+
+a {
+    /*transition*/
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    transition:all 0.3s;
+}
+
+a {
+    color:#34c8b2;
+}
+
+a:hover {
+    color:#ec343c;
+    text-decoration: none;
+}
+.btn-o {
+    border:1px solid #34c8b2;
+    /*border-radius*/
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+    color:#34c8b2;
+}
+
+.btn-o:hover {
+    color:white;
+    background:#34c8b2;
+}
+
+img {
+    max-width:100%;
+    max-height: 100%;
+}
+
+.hexagon {
+    width:100px;
+    height:55px;
+    background:#3acab1;
+    position:relative;
+    /*transition*/
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    transition:all 0.3s;
+}
+
+.hexagon:before {
+    content:"";
+    position:absolute;
+    top:-25px;
+    left:0;
+    width:0;
+    height:0;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent;
+    border-bottom:25px solid #3acab1;
+    /*transition*/
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    transition:all 0.3s;
+}
+
+.hexagon:after {
+    content:"";
+    position:absolute;
+    bottom:-25px;
+    left:0;
+    width:0;
+    height:0;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent;
+    border-top:25px solid #3acab1;
+    /*transition*/
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    transition:all 0.3s;
+}
+
+.hexagon:hover {
+    background:#ec343c;
+}
+
+.hexagon:hover:before {
+    border-bottom-color:#ec343c;
+}
+
+.hexagon:hover:after {
+    border-top-color: #ec343c;
+}
+
+
+/* ========================================================================== 
+Navigation 
+========================================================================== */
+.navbar-dark {
+    background:#222222;
+    z-index: 99999;
+}
+
+.navbar-dark a {
+    /*color:rgb(153,160,162);*/
+    color: rgb(205, 209, 210);
+}
+
+.navbar-brand {
+    height:70px;
+    padding:25px 15px;
+}
+
+.navbar-nav>li>a {
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+.navbar-brand strong {
+    color:white;
+    margin-right:2px;
+}
+
+.navbar-brand:hover {
+    color:#ec343c;
+    text-decoration:none;
+}
+
+.nav>li>a:hover,.nav>li>a:focus {
+    background-color:#ec343c;
+    color: white;
+}
+
+
+/* ========================================================================== 
+Caurosel
+========================================================================== */
+.carousel-control {
+    z-index:9999;
+}
+
+.carousel-control>img {
+    position:absolute;
+    top:42%;
+    width:30%;
+}
+
+.left.carousel-control>img {
+    left:30%;
+}
+
+.right.carousel-control>img {
+    right:30%;
+}
+
+.camera-icon {
+    position:absolute;
+    width:100%;
+    left:0;
+    top:0;
+    text-align:center;
+    z-index:99;
+    padding-top: 9%;
+}
+
+.camera-icon .circle {
+    width:200px;
+    height:200px;
+    line-height:200px;
+    display:inline-block;
+    /*border-radius*/
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+    border:1px solid white;
+    position:relative;
+    color:white;
+    opacity:.85;
+}
+
+.camera-icon .circle i {
+    color:white;
+    position:absolute;
+    z-index:1;
+    left:28px;
+    top:8px;
+    font-size:38px;
+}
+
+.camera-icon .circle .hexagon {
+    display:inline-block;
+    margin-top:75px;
+    position: relative;
+}
+
+
+/* ========================================================================== 
+content-block 
+========================================================================== */
+.content-block {
+    padding:60px 0;
+    width:100%;
+}
+
+.content-block-cyan {
+    background:#34c8b2;
+    color:#ECF0F1;
+}
+
+.content-block-cyan h1 {
+    font-weight:100;
+    text-transform:uppercase;
+    margin-bottom: 30px;
+}
+
+
+/* ========================================================================== 
+Recent works
+========================================================================== */
+.recent-projects-title {
+    background: rgba(236, 240, 241, 1);
+    color: #333;
+    text-transform: uppercase;
+    padding: 40px 0px;
+    text-align: center;
+    font-size: 62px;
+    font-family: 'News Cycle', sans-serif;
+    word-spacing: 17px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.owl-carousel .owl-item img {
+    height:auto;
+    width:100%;
+    display:block;
+    position:relative;
+}
+
+.owl-carousel .item {
+    margin:0px;
+}
+
+.owl-item>div {
+    position:relative;
+}
+
+.owl-item>div a {
+    position:absolute;
+    bottom:0px;
+    padding:8px;
+    background:rgba(0,0,0,0.75);
+    right:0;
+    color:white;
+    text-transform:uppercase;
+    z-index: 2;
+}
+
+.owl-carousel .owl-item div:before {
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    position:absolute;
+    content:'';
+    background:rgba(5,27,26,1);
+    z-index:1;
+    opacity:0.5;
+    /*transition*/
+    -webkit-transition:opacity 0.4s;
+    -moz-transition:opacity 0.4s;
+    -o-transition:opacity 0.4s;
+    transition:opacity 0.4s;
+}
+
+.owl-carousel .owl-item:hover div:before {
+    opacity: 0;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    background: #34C8B2;
+}
+
+
+/* ========================================================================== 
+blog 
+========================================================================== */
+.block-heading h1 {
+    margin-top:0;
+}
+
+.content-block-gray {
+    background:#ECF0F1;
+}
+
+.block-heading {
+    margin-bottom: 60px;
+}
+
+
+/* ========================================================================== 
+Social
+========================================================================== */
+#social {
+    padding:110px 0;
+}
+
+#social .hexagon {
+    display:inline-block;
+}
+
+#social .hexagon i {
+    font-size:36px;
+    color:white;
+    line-height:55px;
+    position:relative;
+    z-index: 1;
+}
+
+
+/* ========================================================================== 
+footer
+========================================================================== */
+footer.content-block {
+    padding: 60px 0 38px;
+    width: 100%;
+}
+
+.content-block-dark {
+    background:#222222;
+}
+
+footer {
+    text-align:center;
+    color: rgb(153,160,162);
+}
+
+
+/* ========================================================================== 
+Responsive styles
+========================================================================== */
+
+@media (max-width:768px) {
+    .navbar-nav>li>a {
+        padding-top:10px;
+        padding-bottom:10px;
+        text-align:center;
+    }
+    .navbar-toggle i {
+        color:rgb(153,160,162);
+    }
+    .navbar-toggle {
+        margin-top:14px;
+    }
+    .recent-projects-title {
+        font-size:32px;
+    }
+    .blog-post {
+        margin-bottom:40px;
+    }
+    #social .hexagon {
+        margin-bottom:60px;
+    }
+    #social {
+        padding-bottom: 70px;
+    }
+}

@@ -1,0 +1,22 @@
+.one-page-nav{
+	padding: 10px 0px;
+	background: #eaeaea;
+}
+.one-page-nav .navbar-nav>.active>a, .one-page-nav .navbar-nav>.active>a:focus, .one-page-nav .navbar-nav>.active>a:hover{
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+	color: #313131;
+}.one-page-nav .navbar-nav>li>a{
+	color: #313131;
+}
+.one-page-nav .navbar-nav>li>a:hover{
+	border: 1px solid rgba(0, 0, 0, 0.6);
+	color: #313131;
+}
+.one-page-nav .navbar-nav>li>a:focus, .one-page-nav .navbar-nav>li>a:hover{
+	color: #313131;
+}
+.one-page-nav .navbar-brand{
+	border: 1px solid #313131;
+	color: #313131;
+}

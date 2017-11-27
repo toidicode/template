@@ -1,0 +1,79 @@
+/***
+iCheck
+***/
+
+.icheck-list {
+	> label {
+		display: block;
+		margin-bottom: 8px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.icheck-inline {
+
+	.form-horizontal & {
+		margin-top: 8px;
+	}
+
+	> label {
+		display: inline-block;
+		margin-left: 15px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+div[class*='icheckbox_'],
+div[class*='iradio_'] {
+	margin-right: 5px;
+	top: -1px !important;
+}
+
+.icheck-colors {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	> li {
+		padding: 0;
+		margin: 4px;
+		float: left;
+		display: inline-block;
+		height: 20px;
+		width: 20px;
+		background:#000000;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		@include opacity(0.6);
+
+		&:hover {
+			@include opacity(1);
+			cursor: pointer;
+		}
+
+		&.active {
+			height:26px;
+			margin-top:0;
+			@include opacity(0.6);
+		}
+
+		&.red{background:#d54e21;}
+		&.green{background:#78a300;}
+		&.blue{background:#0e76a8;}
+		&.aero{background:#9cc2cb;}
+		&.grey{background:#73716e;}
+		&.orange{background:#f70;}
+		&.yellow{background:#fc0;}
+		&.pink{background:#ff66b5;}
+		&.purple{background:#6a5a8c;}
+	}
+}

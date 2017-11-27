@@ -1,0 +1,87 @@
+.features{
+	background: #f9f9f9;
+}
+.features .custom-button{
+	display: inline;
+}
+.table-cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+ul.features-list li {
+    padding: 0;
+    margin-left: -15px;
+    list-style-type: none;
+    color: #969595;
+}
+ul.features-list {
+    color: black;
+    margin: 30px 0 50px;
+}
+ul.features-list li:before
+{
+    content: "\f24e";
+    font-family: 'ionicons';
+ 	color: #60c9eb;
+ 	margin-left: -25px;
+ 	padding-right: 10px;
+}
+.features-bg{
+	background: url('../images/features-bg.png');
+	padding: ;
+}
+.grid-50{
+	width: 50%;
+	padding: 15px;
+	margin: -15px;
+	position: relative;
+	height: auto;
+}
+.pos-abs{
+	position: absolute;
+}
+.grid-50 img.pos-abs:nth-child(2){
+	right: 0;
+	top: 0;
+	/*top: 200px;*/
+}
+.grid-50 img.pos:nth-child(1){
+	right: 200px;
+	top: 0;
+	z-index: 1;
+}
+.grid-50 img.pos-abs:hover{
+	z-index: 222;
+}
+.services-owl{
+	background: url('../images/service-owl-bg.png');
+	text-align: center;
+}
+.item-name{
+	background: #fff;
+	padding: 5px 30px;
+	color: #366BB0;
+	display: inline-block;
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+.item-detail{
+	font-size: 20px;
+	font-style: italic;
+	color: #fff;
+}
+.owl-theme .owl-controls .owl-nav [class*=owl-]{
+	background: transparent;
+	padding: 8px;
+	border-radius: 100%;
+	border: 1px solid #fff;
+	width: 50px;
+	height: 50px;
+	font-size: 22px;
+	transition: all .2s ease-in-out;
+	font-weight: 700;
+}
+.owl-theme .owl-controls .owl-nav [class*=owl-]:hover{
+	background: #fff;
+	color: #366BB0;
+}

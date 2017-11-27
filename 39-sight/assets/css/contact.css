@@ -1,0 +1,76 @@
+.section-background{
+	background: url('../images/contact.png');
+}
+.contact{
+    text-align: left;
+}
+.contact i {
+    width: 60px;
+    height: 80px;
+    border-radius: 30px;
+    border: 2px solid #b1b1b1;
+    color: #b1b1b1;
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px 0;
+    text-align: center;
+    float: left;
+    transition: all .6s ease-in-out;
+}
+.contact-item:hover i{
+    background-color: #4a148c;
+    border: 2px solid #4a148c !important;
+    color: #fff;
+}
+.contact h3{
+	padding-bottom: 20px;
+	font-size: 15px;
+}
+.contact p{
+	font-size: 13px;
+	color: #969595;
+}
+
+.form{
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.form h3{
+    margin-left: 15px;
+    font-size: 25px;
+}
+.form .message{
+    margin: 0px 15px;
+    height: 180px;
+    width: 98%;
+}
+.btn-sub {
+    border-radius: 0px;
+    color: white;
+    background-color: #4a148c;
+    padding: 10px 25px;
+    margin: 10px 30px;
+    border-color: #4a148c;
+    text-transform: uppercase;
+    transition: all .4s ease-in-out;
+}
+.btn-sub:hover{
+    background-color: #fff;
+    border-color: #4a148c;
+    color: #4a148c;
+}
+input[type="username"], input[type="email"], input[type="text"], .message{
+	border-color: transparent;
+	background: #fff;
+	font-size: 13px;
+	color: #969595;
+}
+input[type="username"]:focus, input[type="email"]:focus, input[type="text"]:focus, .message:focus{
+    border-color: #4a148c;
+    box-shadow: 0 0 8px rgba(74,20,140,.1) !important;
+}
+input.form-control, .message {
+    border-radius: 0px;
+}

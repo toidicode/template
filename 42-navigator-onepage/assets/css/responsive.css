@@ -1,0 +1,247 @@
+
+@media only screen 
+and (max-width : 320px) {
+    
+    
+    .header .intro-text h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+    
+    .header .intro-text p {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .header .intro-text .btn-primary {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+    
+    .call-to-action h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .call-to-action .btn-primary {
+        padding: 15px;
+        font-size: 13px;
+    }
+    
+    .about-text p {
+        margin-top: 20px;
+    }
+    
+    .skill-shortcode {
+        margin-bottom: 30px;
+    }
+    
+    
+}
+
+
+@media only screen 
+and (min-width : 321px) 
+and (max-width : 480px) {
+    
+    
+    .header .intro-text h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+    
+    .header .intro-text p {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .header .intro-text .btn-primary {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+    
+    .call-to-action h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .call-to-action .btn-primary {
+        padding: 15px;
+        font-size: 13px;
+    }
+    
+    .about-text p {
+        margin-top: 20px;
+    }
+    
+    .skill-shortcode {
+        margin-bottom: 30px;
+    }
+    
+    .footer-link ul {
+        float: left !important;
+        margin-top: 30px;
+    }
+    
+    .footer-social {
+        margin-top: 30px;
+    }
+    
+    
+}
+
+@media only screen 
+and (min-width : 481px) 
+and (max-width : 600px) {
+    
+    
+    .header .intro-text h1 {
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 25px;
+    }
+    
+    .header .intro-text p {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .header .intro-text .btn-primary {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+    
+    .call-to-action h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    
+    .call-to-action .btn-primary {
+        padding: 18px;
+        font-size: 15px;
+    }
+    
+    .about-text p {
+        margin-top: 20px;
+    }
+    
+    .skill-shortcode {
+        margin-bottom: 30px;
+    }
+    
+    .footer-link ul {
+        float: left !important;
+        margin-top: 30px;
+    }
+    
+    .footer-social {
+        margin-top: 30px;
+    }
+    
+    .copyright {
+        text-align: center;
+    }
+    
+    
+}
+
+
+@media only screen 
+and (min-width : 601px) 
+and (max-width : 800px) {
+    
+    
+    .header .intro-text h1 {
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 25px;
+    }
+    
+    .header .intro-text p {
+        font-size: 22px;
+        line-height: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .header .intro-text .btn-primary {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+    
+    .call-to-action h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    
+    .call-to-action .btn-primary {
+        padding: 18px;
+        font-size: 15px;
+    }
+    
+    .about-text p {
+        margin-top: 20px;
+    }
+    
+    .skill-shortcode {
+        margin-bottom: 30px;
+    }
+    
+    .footer-link ul {
+        float: left !important;
+        margin-top: 30px;
+    }
+    
+    .footer-social {
+        margin-top: 30px;
+    }
+    
+}
+
+@media only screen 
+and (min-width : 801px) 
+and (max-width : 991px) {
+    
+    
+    .header .intro-text h1 {
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .header .intro-text p {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .header .intro-text .btn-primary {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    
+    .footer-link ul {
+        float: left !important;
+        margin-top: 30px;
+    }
+    
+    .footer-social {
+        margin-top: 30px;
+    }
+    
+    
+}
+
+
+@media only screen 
+and (min-width : 992px) 
+and (max-width : 1100px) {
+    
+}
+
+
+

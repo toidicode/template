@@ -1,0 +1,48 @@
+/*------------------------------------------------------------------
+  	[Pricing]
+------------------------------------------------------------------*/
+
+.pricing {
+	padding: 70px 45px;
+	background: $color-white;
+	margin-top: 50px;
+
+	@media (max-width: $screen-sm-min) {
+		margin-top: 0;
+	}
+
+	&.pricing-active {
+		padding-top: 110px;
+		padding-bottom: 110px;
+		margin-top: 10px;
+
+		@media (max-width: $screen-sm-min) {
+			margin-top: 0;
+		}
+	}
+
+	.pricing {
+		&-icon {
+			display: block;
+			@include font($size: 30px);
+			color: $color-link-hover;
+			margin-bottom: 30px;
+		}
+
+		&-list-item {
+			@include position(relative);
+			@include font($size: 13px);
+			color: $color-link;
+			padding-left: 20px;
+			margin-bottom: 10px;
+
+			&:before {
+				@include position(absolute, $top: 7px, $left: 0);
+				@include size(9px, 2px);
+		        background: $color-base;
+		        content: " ";
+		        margin-right: 10px;
+			}
+		}
+	}
+}

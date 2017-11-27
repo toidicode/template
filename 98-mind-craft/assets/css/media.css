@@ -1,0 +1,176 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Medium devices (desktops, 992px and up) */
+/* Small devices (tablets, 768px and up) */
+/* Large devices (large desktops, 1200px and up) */
+
+
+@media (min-width: 300px) 
+{
+	iframe{
+		height: 200px;
+		width: 280px;
+	}
+	.carousel-view{
+		color: black;
+		background-color: white;
+		padding: 2% 5%;
+		margin:1% 6%;
+		border-radius: 5px;
+	}
+	.form-inline .form-control{
+		width: 120px;
+		height: 30px;
+		font-size: 14px;
+	}
+	p{
+		font-style: italic;
+		font-size: 13px;
+	}
+	h1{
+		font-size: 28px;
+	}
+	h2{
+	    font-size: 20px;
+	}
+	h3{
+		font-size: 18px;
+	}
+	.fun-text{
+		letter-spacing: 0px;
+		font-size: 16px;
+	}
+	.craft-btn{
+		margin-bottom: 0px;
+	}
+	.head-items{
+		padding-top: 10vh;
+		padding-bottom: 5vh;
+	}
+	.icon-circle{
+		height: 70px;
+		width: 70px;
+		font-size: 20px;
+		line-height: 70px;
+	}
+	.form-inline .form-control{
+		width: 280px;
+		height: 40px;
+		font-size: 16px;
+	}
+	.newsletter input{
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+	.newsletter button{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.footer-text{
+		margin-top: 6px;
+		font-size: 10px;
+	}
+	.footer-social a{
+		padding: 6px;
+	}
+	.footer-social li{
+		margin-right: 2px;
+	}
+}
+
+
+@media (min-width: 600px) 
+{
+	.explore-mindcraft .row{
+		display: table;
+	}
+	iframe{
+		height: 400px;
+		width: 550px;
+	}
+	.carousel-view{
+		color: black;
+		background-color: white;
+		padding: 2% 5%;
+		margin:1% 25%;
+		border-radius: 5px;
+	}
+	.form-inline .form-control{
+		width: 420px;
+		height: 40px;
+		font-size: 16px;
+	}
+	p{
+		font-style: italic;
+		font-size: 16px;
+	}
+	h1{
+		font-size: 45px;
+	}
+	h2{
+	    font-size: 32px;
+	}
+	h3{
+		font-size: 21px;
+	}
+	.icon-circle{
+		height: 90px;
+		width: 90px;
+		font-size: 30px;
+		line-height: 90px;
+	}
+	.footer-social a{
+		padding: 10px;
+	}
+	.footer-social li{
+		margin-right: 20px;
+	}
+	.footer-text{
+		margin-top: 18px;
+	}
+	.fun-text{
+		letter-spacing: 1px;
+		font-size: 21px;
+	}
+	.craft-btn{
+		margin-bottom: 30px;
+	}
+	.head-items{
+		padding-top: 10vh;
+		padding-bottom: 5vh;
+	}
+	.newsletter input{
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: auto;
+	}
+	.newsletter button{
+		margin-left: 12px;
+		margin-right: auto;
+	}
+	.footer-text{
+		margin-top: 10px;
+		font-size: 16px;
+	}
+	.footer-social a{
+		padding: 10px;
+	}
+	.footer-social li{
+		margin-right: 20px;
+	}
+}
+
+
+@media (min-width: 950px) 
+{
+	.explore-mindcraft .row [class*="col-"]{
+		display: table-cell;
+		vertical-align: middle;
+		float: none;
+	}
+	iframe{
+		height: 500px;
+		width: 800px;
+	}
+}

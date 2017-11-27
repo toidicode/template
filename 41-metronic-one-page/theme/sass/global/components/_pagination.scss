@@ -1,0 +1,31 @@
+/***
+Customized Bootstrap Pagination
+***/
+
+.pagination {
+	margin: 10px 0;
+
+	&.pagination-circle {
+	    > li {
+
+	        &:first-child {
+	            > a {
+	            	border-radius: 25px 0 0 25px !important;
+	        	}
+	        }
+
+	        &:last-child {
+	            > a {
+	            	border-radius: 0 25px 25px 0 !important;
+	        	}
+	        }
+	    }
+	}
+
+ 	.active > a,
+	.active > a:hover {
+  		background: #eee;
+ 	 	border-color: #dddddd;
+ 	 	color: #333;
+	}
+}

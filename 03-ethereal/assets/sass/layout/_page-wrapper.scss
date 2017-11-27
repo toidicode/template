@@ -1,0 +1,43 @@
+///
+/// Ethereal by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Page Wrapper */
+
+	#page-wrapper {
+		@include vendor('display', 'flex');
+		@include vendor('align-items', 'center');
+		@include vendor('justify-content', 'flex-start');
+		@include vendor('flex-grow', '1');
+		@include vendor('flex-shrink', '1');
+		height: 100%;
+		padding: 5rem;
+
+		@include orientation(portrait) {
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+
+		@include breakpoint(short) {
+			padding: 6vh;
+		}
+
+		@include breakpoint(xshort) {
+			padding: 0;
+		}
+	}
+
+	@include breakpoint(small) {
+		#page-wrapper {
+			height: auto;
+			padding: 1rem;
+		}
+	}
+
+	@include breakpoint(xsmall) {
+		#page-wrapper {
+			padding: 0;
+		}
+	}

@@ -1,0 +1,75 @@
+/***
+Bootstrap Select
+***/
+.bootstrap-select .btn {
+  border-color: $input-border;
+}
+
+.has-error {
+  .bootstrap-select .btn {
+    border-color: $state-danger-border;
+  }
+}
+
+.has-success {
+  .bootstrap-select .btn {
+    border-color: $state-success-border;
+  }
+}
+
+.has-warning {
+  .bootstrap-select .btn {
+    border-color: $state-warning-border;
+  }
+}
+
+.bootstrap-select.open .btn {
+  border-color: $input-border-focus;
+}
+
+.bootstrap-select.open.dropup .btn {
+  border-color: $input-border-focus;
+}
+
+.bootstrap-select .btn:focus {
+    outline: none !important;
+    outline-offset: 0;
+}
+
+.bootstrap-select.btn-group .dropdown-menu {
+  margin-top: 1px;
+}
+
+.bootstrap-select.btn-group .dropdown-menu > li > dt > .text {
+  font-weight: 600;
+  font-family: 'Open Sans';
+  font-size: 14px;
+}
+
+.bootstrap-select.btn-group .dropdown-menu .text-muted {
+  color: #999 !important;
+}
+
+.bootstrap-select .caret {
+  border: 0;
+  width: auto;
+  height: auto;
+  margin-top: -10px !important;
+}
+
+.bootstrap-select .caret:before {
+    content: "\f107";
+    display: inline-block;
+    border: 0; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.bootstrap-select .selected i {
+  color: #aaa;
+}
+
+.bootstrap-select .dropdown-menu {
+  z-index: $zindex-navbar-above !important;
+}

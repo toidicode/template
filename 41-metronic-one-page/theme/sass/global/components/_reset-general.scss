@@ -1,0 +1,49 @@
+/***
+General reset
+***/
+
+/* Set default body */
+
+body { 
+    color: $text-color; 
+    font-family: $font-family-primary;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: $font-size-base; 
+    direction: $direction;
+}
+
+/*
+ Internet Explorer 10 doesn't differentiate device width from viewport width, and thus doesn't 
+ properly apply the media queries in Bootstrap's CSS. To address this, 
+ you can optionally include the following CSS and JavaScript to work around this problem until Microsoft issues a fix.
+*/
+
+@-webkit-viewport { 
+    width: device-width; 
+}
+
+@-moz-viewport { 
+    width: device-width; 
+}
+
+@-ms-viewport { 
+    width: device-width; 
+}
+
+@-o-viewport { 
+    width: device-width; 
+}
+
+@viewport { 
+    width: device-width; 
+}
+
+/*
+ Internet Explorer 10 doesn't differentiate device width from viewport width, 
+ and thus doesn't properly apply the media queries in Bootstrap's CSS. To address this, following CSS code applied 
+*/
+
+@-ms-viewport { 
+    width: auto !important; 
+}  

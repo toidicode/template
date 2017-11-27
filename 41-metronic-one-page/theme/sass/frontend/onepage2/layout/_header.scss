@@ -1,0 +1,224 @@
+/*--------------------------------------------------
+	[PAGE HEADER]
+----------------------------------------------------*/
+
+/* Page on Scroll */
+.page-on-scroll .page-header {
+	background: $background-white-color;
+	@include cubic-transition($delay: 0, $duration:100ms, $property: (all));
+
+	.navbar {
+		background: inherit;
+	}
+}
+
+.page-header {
+	padding: 0;
+	margin: 0;
+	border-bottom: none;
+
+	/* Navbar */
+	.navbar {
+		border-radius: 0;
+		margin-bottom: 0;
+		background: transparent;
+		@include cubic-transition($delay: 0, $duration:100ms, $property: (all));
+	}
+
+	/* Navbar Toggle */
+	.navbar-toggle {
+		border: none;
+		margin: 25px 15px 25px 0;
+
+		.icon-bar {
+			background: #3f5263;
+		}
+	}
+
+	/* Navbar Brand */
+	.navbar-brand {
+		height: 82px;
+		max-height: 82px;
+		line-height: 50px;
+		display: inline-block;
+		vertical-align: middle;
+		@include cubic-transition($delay: 0, $duration:400ms, $property: (all));
+
+		img {
+			width: 115px;
+			height: auto;
+			max-width: 100%;
+			max-height: 100%;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	/* Navbar Nav */
+	.navbar-nav {
+		li {
+			padding: 25px 1px;
+			line-height: 20px;
+			@include cubic-transition($delay: 0, $duration:400ms, $property: (all));
+		}
+
+		li > a {
+			font-size: 14px;
+			font-weight: 600;
+			letter-spacing: 1px;
+			border: 1px solid transparent;
+			text-transform: uppercase;
+			color: $text-white-color;
+		}
+
+		li.active > a,
+		li > a:hover {
+			border: 1px solid rgba(255,255,255,0.10);
+		}
+
+		li > a:focus,
+		li > a:hover {
+			background: inherit;
+		}
+	}
+}
+
+/* Responsive code for max-width: 991px */
+@media (max-width: $screen-sm-max) {  /* 991px */
+	.page-header {
+	    .navbar-header {
+	        float: none;
+	    }
+    
+	    .navbar-toggle {
+	        display: block;
+	    }
+    
+	    .navbar-collapse.collapse {
+	        display: none !important;
+	    }
+    
+	    .navbar-collapse.collapse.in {
+	        display: block !important;
+	  		overflow-y: auto !important;
+    	}
+    
+	    .navbar-nav {
+	        margin: 0;
+	        float: none !important; 
+
+	        > li {
+			    float: none;
+			}
+		}
+	}
+}
+
+/* Stylesheet design for under max-width: 991px */
+@media (max-width: $screen-sm-max) {  /* 991px */
+	body {
+		padding-top: 80px;
+	}
+
+	.page-header {
+		background: $background-white-color;
+
+		.navbar-fixed-top {
+			background: $background-white-color;
+
+			.navbar-collapse {
+				max-height: 100%;
+
+				/* Navbar */
+			    .navbar-nav {
+				    li {
+				    	padding: 0;
+				        float: none;
+				    }
+
+				    li > a {
+				    	font-weight: 700;
+						color: $text-dark-blue-color;
+					}
+
+					li.active > a,
+					li > a:hover {
+						color: $text-red-color;
+					}
+				}
+			}
+		}
+
+		/* Navbar Brand */
+		img.logo-default {
+			display: none;
+		}
+	}
+}
+
+/* Stylesheet design for above 992px */
+@media (min-width: $screen-md-min) {  /* 992px */
+	.page-header {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		z-index: 9999;
+		position: fixed;	
+
+		/* Navbar Brand */
+		.navbar-brand {
+			img.logo-scroll {
+				display: none;
+			}
+		}
+
+		/* Navbar Nav */
+		.navbar-nav {
+			float: right;
+			
+			li > a {
+				padding: 5px 12px;
+			}
+		}
+	}
+}
+
+/* Stylesheet design on Scroll (Fixed Header) 992px */
+@media (min-width: $screen-md-min) {  /* 992px */
+	.page-on-scroll .page-header {
+		/* Navbar Brand */
+		.navbar-brand {
+			height: 70px;
+			max-height: 70px;
+			line-height: 49px;
+			@include cubic-transition($delay: 0, $duration:400ms, $property: (all));
+
+			img.logo-scroll {
+				display: block;
+			}
+
+			img.logo-default {
+				display: none;
+			}
+		}
+
+		/* Navbar Nav */
+		.navbar-nav {
+			li {
+				padding: 19px 1px;
+				@include cubic-transition($delay: 0, $duration:400ms, $property: (all));
+			}
+
+			li > a {
+				color: $text-dark-blue-color;
+			}
+
+			li.active > a,
+			li > a:hover {
+				border: 1px solid #e5e5e5;
+			}
+		}
+	}
+}
+

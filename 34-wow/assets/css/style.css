@@ -1,0 +1,601 @@
+html, body{
+  min-height: 100%;
+}
+body{
+  position: relative;
+}
+*{
+    outline: none;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  z-index: 9;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5%;
+}
+.main a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    cursor:pointer;
+    word-spacing: 10px;
+    font-weight: 600;
+
+}
+.sidenav a {
+    padding: 5%;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.sidenav hr{
+    margin-bottom: 5px;
+    margin-top: 6px;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #2c2b2b;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding-right: 6px;
+    padding-top: 15px;
+}
+
+/*@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}*/
+
+.menu-ul{
+    text-align: center;
+}
+.menu-ul li{
+    list-style-type: none;
+}
+body {
+    background-color: #fefefe;
+    transition: background-color .5s;
+    font-family: monospace; 
+}
+.head-bar{
+    padding-top: 1vh;
+    max-height: 10vh;
+}
+.wow-logo{
+    padding-bottom: 2vh;
+    padding-top:10vh;
+}
+.img-logo{
+    max-height: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.helmet{
+    max-height: 5vh;
+}
+.head{
+    min-height: 100vh;
+    background-image: url('../img/1.jpg');
+    position: relative;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:53vh;
+}
+.fix-bottom{
+    text-align: bottom;
+
+}
+/*button {
+    background-color: #fefefe;
+    border-color: black;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+    border-width: 1px;
+    letter-spacing: 2px;
+
+}*/
+.wow-button{
+    padding: 16px 60px;
+    border: solid 1px black;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+}
+.wow-button:hover{
+    color: #ffffff;
+    background-color: #2d2d2d;
+    transition: .5s;
+}
+.font-1{
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 21px;
+}
+.hr-social{
+    margin:0px;
+    margin-top: 30px;
+}
+.index-part-2,.index-part-4,.index-part-3{
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+.index-part-2,.index-part-4{
+    background-color: #f7f7f7;
+}
+hr{
+    background-color: #c7c7c7; height: 1px; border: 0;
+    margin-top: 1vh;
+}
+h1,h2,h4,h3,h5,a,button{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 55px;
+}
+h2{
+    font-size:45px;
+}
+h3{
+    font-size: 32px;
+}
+h4{
+    font-size: 21px;
+}
+h5{
+    font-size: 100%;
+}
+h6{
+    font-size: 100%;
+}
+.sub-text{
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-bottom: 3%;   
+}
+.block{
+    border-style: solid;
+    border-color: #dcd9d9;
+    border-width: 1px;
+    margin-right: 0px;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.block-first{
+    border-right: none;
+    border-bottom: none;
+}
+.block-second{
+    border-bottom: none;
+}
+.block-third{
+    border-right: none;
+}
+.block p{
+    line-height: 28px;
+    padding-top: 10px;
+}
+.icon{
+    background-color: #2d2d2d;
+    color: white;
+    display: table;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+i{
+        display: table-cell; 
+        vertical-align: middle;
+        position: relative;
+        top: 50%;
+        transform: translateY(50%);
+        
+}
+.font-2{
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    line-height: 30px;
+}
+.round-img{
+    display: table;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.social{
+    text-align: center;
+    display: block;
+    padding-top: 6%;
+    padding-bottom: 5%;
+}
+.social ul{
+    padding-left: 0px;
+}
+.social li{
+    list-style-type: none;
+    display: inline-block;
+    border:1px solid #c8c2c2;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.social a{
+    padding: 10px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.social a:hover{
+    color: #ffffff;
+    background-color: #2d2d2d;
+    transition: .5s;
+}
+.footer-p1,.footer-p2{
+    padding-top: 10px;
+    font-style: italic;
+    font-size: 16px; 
+}
+.footer-p2{
+    display: inline-block;
+    text-align: right;
+    padding-right: 0px;
+    width: 100%;
+}
+i.fa-heart{
+    transform:translateY(-20%);
+    margin-bottom: 0px;
+}
+.footer{
+    padding-top: 35px;
+    padding-bottom: 45px;
+    border-top: 1px solid #cccccc;
+}
+.generic-page{
+    background-color: #f7f7f7; 
+    padding-bottom: 30px;
+}
+.generic{
+    padding-top: 25px;
+}
+.img-generic{
+    padding-top: 15px;
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 60px;
+}
+.generic-p{
+    padding-bottom: 20px;
+    font-size: 18px;
+
+}
+.element-full{
+    background-color: #f7f7f7; 
+}
+.element-page{
+    padding-top: 25px;
+}
+.Element-heading{
+    padding-top: 15px;
+}
+.Element-heading-para{
+    padding-right: 380px;
+}
+.call-btn-1{
+    border:1px solid black;
+    border-radius: 30px;
+    width:100%;
+    margin-top: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 12px;
+}
+.call-btn-2{
+    border:1px solid black;
+    border-radius: 25px;
+    width:100%;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+}
+.call-btn-3{
+    border:1px solid black;
+    border-radius: 25px;
+    width:100%;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+.btn-line{
+    padding-top: 5px;
+}
+.btn-line a:hover{
+    color:white;
+    background-color: black;
+    transition: .5s;
+}
+.form-section{
+    padding-top: 56px;
+}
+.col-block{
+     padding-left:0px;padding-right:0px;
+}
+
+input,select,textarea{
+     width: 100%;
+    border:1px solid black;
+    border-radius: 30px;
+    font-family: 'Lora', serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    margin-bottom: 30px;
+}
+textarea{
+    padding-top: 28px;
+}
+.form-section h3{
+    padding-bottom: 35px;
+}
+.form-section button{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 28px;
+    padding-right: 28px;
+    font-size: 13px;
+    letter-spacing: 0px;
+    margin-right: 5px;
+    margin-bottom: 60px;
+    border-radius: 50px;
+    border:solid 1px black;
+}
+.form-section button:hover{
+    color: #ffffff;
+    background-color: #2d2d2d;
+    transition: .5s;
+}
+.E-image img{
+    padding-top: 50px;
+}
+.wow-btn{
+     padding-top:4vh;
+     padding-bottom:2vh;
+}
+.foot-img{
+    margin-right: auto;
+    margin-left: auto;
+}
+.why-div{
+    margin-bottom:35px;
+}
+.line-full{
+    margin-top:50px;margin-bottom:50px;
+}
+.hr-short{
+     width:5%;
+     margin-left: 0px;
+}
+.hr-mid{
+    width: 6%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blockquote-row{
+ padding-left:2%;
+ padding-right: 18%;
+}
+.blockquote-side{
+     border-left:thick solid black;padding-top:8px;
+}
+.blockquote-side.font-1{
+    margin-left:12px;
+}
+.E-social{
+    text-align:left;padding-top:36px;padding-bottom:0px;
+}
+.footer-p2 a{
+    color: black;
+    font-size: 14px;
+}
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+
+   .block{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+   }
+   .Element-heading-para{
+    padding-right: 80px;
+   }
+   .footer-p1,.footer-p2{
+    padding-top: 0px;
+    font-size: 10px; 
+    }
+    .footer{
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+    .footer-p2 a{
+    font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .font-1{
+        font-size: 18px;
+    }
+/*   .block{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+   }*/
+   .Element-heading-para{
+    padding-right: 60px;
+  }
+    .footer-p1 p,.footer-p2 p{
+    padding-top: 0px;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 14px; 
+    }
+    .footer-p2 p{
+        line-height: 8px;
+    }
+    .footer-p2 a{
+    font-size: 10px;
+    }
+    .footer{
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+/*    .wow-logo{
+    padding-bottom: 10px;
+    padding-top: 40px;
+    }*/
+    .wow-btn{
+     padding-top:20px;
+     padding-bottom:5px;
+    }
+    input,select,textarea{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    }
+    textarea{
+        padding-top: 15px;
+    }
+    .call-btn-1{
+    margin-top: 12px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    font-size: 10px;
+    }
+    .call-btn-2{
+        margin-top: 12px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 10px;
+    }
+    .call-btn-3{
+        margin-top: 12px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 10px;
+    }
+    .head-bar{
+    padding: auto;
+    }
+    /*.wow-logo{
+        padding: auto;
+    }*/
+    button {
+        padding: auto;
+
+    }
+    .generic{
+    padding-top: 15px;
+    }
+    .generic img{
+    padding-top: 10px;
+    }
+    h1{
+    font-size: 38px;
+    }
+    h2{
+        font-size:33px;
+    }
+    h3{
+        font-size: 23px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    h5{
+        font-size: 100%;
+    }
+    h6{
+        font-size: 100%;
+    }
+}
+
+/*This section for small height device*/
+@media only screen and (max-height: 400px){
+    .head-bar{
+        padding-top: 1vh;
+        max-height: 10vh;
+    }
+    .wow-logo{
+        padding-bottom: 2vh;
+        padding-top:10vh;
+    }
+    .img-logo{
+        max-height: 30vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .helmet{
+        max-height: 20vh;
+    }
+    .btn-1{
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+    .head{
+        min-height: 150vh;
+        background-size:60vh;
+    }
+        .wow-btn{
+         padding-top:10vh;
+         padding-bottom:4vh;
+    }
+    
+}

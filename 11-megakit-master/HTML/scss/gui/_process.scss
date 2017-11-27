@@ -1,0 +1,25 @@
+/*----------------------------------
+  Process v1
+------------------------------------*/
+
+.s-process-v1 {
+	@include position(relative);
+
+	@include before {
+		@include position(absolute, $top: 3.125rem, $left: 60%);
+		@include size(80%, .0625rem);
+		background: rgba($color-white, .2);
+		content: " ";
+		margin-top: -.03125rem;
+
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
+	}
+
+	@include last-child {
+		@include before {
+			display: none;
+		}
+	}
+}

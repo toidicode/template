@@ -1,0 +1,312 @@
+/***
+Datatables Plugin(in v1.3)
+***/
+.dataTable {  
+  width: 100%;
+  clear: both;
+  margin-top: 5px;
+}
+
+.dataTables_filter {
+  .form-control {
+     margin-left: 4px;
+  }
+
+  label {
+    line-height: 32px ;
+  }
+}
+
+.dataTable .row-details {  
+  margin-top: 3px;
+  display: inline-block;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+}
+
+.dataTable .row-details.row-details-close {
+  background: url("../img/datatable-row-openclose.png") no-repeat 0 0;
+}
+
+.dataTable .row-details.row-details-open {  
+  background: url("../img/datatable-row-openclose.png") no-repeat 0 -23px ;
+}
+
+.dataTable .details {
+  background-color: #eee ;
+}
+
+.dataTable .details td,
+.dataTable .details th {
+  padding: 4px;
+  background: none ;
+  border: 0;
+}
+
+.dataTable .details tr:hover td,
+.dataTable .details tr:hover th {
+  background: none ;
+}
+
+.dataTable .details tr:nth-child(odd) td,
+.dataTable .details tr:nth-child(odd) th {
+  background-color: #eee ;
+}
+
+.dataTable .details tr:nth-child(even) td,
+.dataTable .details tr:nth-child(even) th {
+  background-color: #eee ;
+}
+
+.dataTable > thead > tr > th.sorting,
+.dataTable > thead > tr > th.sorting_asc,
+.dataTable > thead > tr > th.sorting_desc {
+ padding-right: 18px;
+}
+
+.dataTable .table-checkbox {
+  width: 8px !important;
+}
+
+@media (max-width: 768px) {  
+  .dataTables_wrapper .dataTables_length .form-control,
+  .dataTables_wrapper .dataTables_filter .form-control {
+    display: inline-block;
+}
+
+.dataTables_wrapper .dataTables_info {
+    top: 17px;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+    margin-top: -15px;
+}
+}
+
+@media (max-width: 480px) {  
+  .dataTables_wrapper .dataTables_filter .form-control {
+    width: 175px !important;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+    float: left;
+    margin-top: 20px;
+}
+}
+
+.dataTables_processing {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 125px;
+  margin-left: 0;
+  padding: 7px;
+  text-align: center;
+  color: #333;
+  font-size: 13px;
+  border: 1px solid #ddd;
+  background-color: #eee;  
+  vertical-align: middle;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);  
+}
+
+.dataTables_processing span {
+  line-height:15px;
+  vertical-align: middle;
+}
+
+.dataTables_empty {
+  text-align: center; 
+}
+
+/***
+TableTools
+***/
+.tabletools-btn-group {
+  margin: 0 0 10px 0;
+
+  > .btn {
+    margin-right: 5px;
+  
+    &:last-child {
+        margin-right: 0;
+    }
+  }
+}
+
+.tabletools-dropdown-on-portlet {
+    margin-top: -45px;
+    float: right;  
+
+    > .btn {
+    margin-right: 5px;
+  
+    &:last-child {
+        margin-right: 0;
+    }
+  }  
+}
+
+.DTTT_Print {
+    background-color: #fff; 
+
+    .DTTT_PrintMessage {
+       display: none;    
+    }
+
+    @media print {
+
+      .DTTT_PrintMessage {
+        display: inline-block;    
+      }
+
+    }
+
+    .DTTT_Print_Info {
+        display: block;
+        position: fixed;
+        top: 35px;
+        font-size: 18px;
+        width: 700px;
+        left: 50%;
+        margin-left: -350px;
+        text-align: center;
+    }
+
+    .page-sidebar,
+    .page-header,
+    .page-footer {
+        display: none;  
+    }
+
+    .page-content-wrapper {
+        float: none;
+    }
+
+    .row,
+        [class*="col-"] { 
+           padding: 0;
+           margin: 0;
+    }
+  
+    .page-content {
+        margin: 50px auto !important;
+        border: 0 !important;
+        width: 800px !important;
+        padding: 0 !important; 
+
+        .portlet {
+            border: 0;
+            padding:0;
+
+            .portlet-body {
+                padding: 0;
+            }
+        }
+
+        .dataTables_wrapper {
+            padding: 0;
+            margin: 0;
+            box-shadow: 5px 5px rgba(#666, 0.1);
+
+            @media print {
+              box-shadow: none;
+            }
+        }
+    }
+}
+
+/***
+Extended pagination
+***/
+
+.paging_bootstrap_extended {
+  margin: 0 !important;
+  padding: 0 !important;
+  float: none !important;
+  font-size: 13px;
+}
+
+.dataTables_extended_wrapper .seperator {
+  padding: 0 2px;
+}
+
+.dataTables_extended_wrapper div.dataTables_paginate,
+.dataTables_extended_wrapper div.dataTables_length,
+.dataTables_extended_wrapper div.dataTables_info {
+  display: inline-block;
+  float: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: static !important;
+}
+
+@media (max-width: 480px) { 
+
+  .dataTables_extended_wrapper div.dataTables_paginate,
+  .dataTables_extended_wrapper div.dataTables_length,
+  .dataTables_extended_wrapper div.dataTables_info {
+    display: block;
+    margin-bottom: 10px !important;
+  }
+
+  .dataTables_extended_wrapper .seperator {
+      display: none !important;
+  }
+}
+
+.dataTables_extended_wrapper div.dataTables_length label {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 13px;
+  float: none !important;
+  display: inline-block !important;
+}
+
+.table-container .table-actions-wrapper {
+  display: none;
+}
+
+/***
+Scroller Extension
+***/
+
+.dataTables_scroll {
+  margin-bottom: 10px;
+}
+
+.dataTables_scrollHead {
+  border-bottom: 2px solid #ddd !important;
+
+  thead {   
+    th {
+      border-bottom: 0 !important;
+    }
+  }
+}
+
+.dataTables_scrollBody {
+  border-bottom: 1px solid #ddd !important;   
+}
+
+// popup message for copy function of the tabletools
+
+.DTTT_Print_Info {
+  width: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -150px;
+  background: #eee;
+  padding: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.2);
+
+  > h6 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

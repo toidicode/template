@@ -1,0 +1,49 @@
+// Layout Settings & Variables
+
+// Header
+$header-height:             				            				46px  !default; // header height on table and desktop view. default: 42px
+$header-height-xs:             											($header-height * 2) !default; // header height on mobile view
+
+
+//##  Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$text-white-color:            											#fff !default;
+$text-red-color:            											#bf5757 !default;
+$text-dark-red-color:            										#d15d5d !default;
+$text-dark-blue-color:            										#3f5263 !default;
+$text-light-blue-color:            										#8693a7 !default;
+$text-red-color:            										    #c75b5b !default;
+$background-white-color:            									#fff !default;
+$background-snow-color:            									    #f7fafd !default;
+$background-dark-blue-color:            								#3f5263 !default;
+$background-red-color:            										#bf5757 !default;
+$background-dark-red-color:            									#d15d5d !default;
+
+$page-content-padding-top-bottom:		                                100px 0 100px 0 !default;  // adjust top & bottom general elements padding. default: 70px 0 70px 0
+
+
+//## Media queries breakpoints
+//
+//Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs-min:                											480px !default;
+
+// Small screen / tablet
+$screen-sm-min:                											768px !default;
+
+// Medium screen / desktop
+$screen-md-min:                											992px !default;
+
+// Large screen / wide desktop
+$screen-lg-min:                											1200px !default;
+
+// Large scree / wider desktop      
+$screen-lg-med:                     									1260px !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:             											($screen-sm-min - 1) !default;
+$screen-sm-max:                											($screen-md-min - 1) !default;
+$screen-md-max:                											($screen-lg-min - 1) !default;

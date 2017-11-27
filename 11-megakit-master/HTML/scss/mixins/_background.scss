@@ -1,0 +1,5 @@
+// Background
+@mixin bg($position) {
+	background-size: cover !important;
+	background-position: $position !important;
+}

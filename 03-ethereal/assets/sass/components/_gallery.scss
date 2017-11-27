@@ -1,0 +1,218 @@
+///
+/// Ethereal by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Gallery */
+
+	$pad: _size(pad);
+	$pad-small-tb: _size(pad-small-tb);
+	$pad-small-lr: _size(pad-small-lr);
+
+	@include keyframes('gallery-modal-spinner') {
+		0% {
+			@include vendor('transform', 'rotate(0deg)');
+		}
+
+		100% {
+			@include vendor('transform', 'rotate(360deg)');
+		}
+	}
+
+	.gallery {
+		@include vendor('align-items', 'stretch');
+		@include vendor('display', 'flex');
+		height: 100%;
+
+		> * {
+			width: 20rem;
+			height: 100%;
+		}
+
+		.image {
+			display: block;
+			position: relative;
+			border-bottom: 0;
+			overflow: hidden;
+
+			img {
+				@include vendor('transition', 'transform #{_duration(transition)} ease-in-out');
+			}
+
+			&:after {
+				@include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
+			}
+
+			&:hover {
+				img {
+					@include vendor('transform', 'scale(1.025)');
+				}
+
+				&:after {
+					opacity: 0;
+				}
+			}
+		}
+
+		.group {
+			@include vendor('display', 'flex');
+			@include vendor('flex-wrap', 'wrap');
+
+			> * {
+				height: 50%;
+			}
+		}
+
+		.modal {
+			@include vendor('display', 'flex');
+			@include vendor('align-items', 'center');
+			@include vendor('justify-content', 'center');
+			@include vendor('pointer-events', 'none');
+			@include vendor('user-select', 'none');
+			@include vendor('transition', (
+				'opacity #{_duration(gallery-lightbox-fadein)} ease',
+				'visibility #{_duration(gallery-lightbox-fadein)}',
+				'z-index #{_duration(gallery-lightbox-fadein)}'
+			));
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: transparentize(_palette(bg), 1 - _misc(gallery-lightbox-opacity));
+			opacity: 0;
+			outline: 0;
+			visibility: none;
+			z-index: 0;
+
+			&:before {
+				@include vendor('animation', 'gallery-modal-spinner 1s infinite linear');
+				@include vendor('transition', 'opacity #{_duration(gallery-lightbox-fadein) * 0.5} ease');
+				@include vendor('transition-delay', '#{_duration(gallery-lightbox-fadein)}');
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 4rem;
+				height: 4rem;
+				margin: -2rem 0 0 -2rem;
+				background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96px" height="96px" viewBox="0 0 96 96" zoomAndPan="disable"><style>circle {fill: transparent; stroke: #{_palette(fg-bold)}; stroke-width: 1.5px; }</style><defs><clipPath id="corner"><polygon points="0,0 48,0 48,48 96,48 96,96 0,96" /></clipPath></defs><g clip-path="url(#corner)"><circle cx="48" cy="48" r="32"/></g></svg>');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 4rem;
+				opacity: 0;
+			}
+
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0.5rem;
+				right: 0.5rem;
+				width: 4rem;
+				height: 4rem;
+				background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" zoomAndPan="disable"><style>line {stroke: #{_palette(fg-bold)};stroke-width: 1.5px;}</style><line x1="20" y1="20" x2="44" y2="44" /><line x1="20" y1="44" x2="44" y2="20" /></svg>');
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 3rem;
+				cursor: pointer;
+			}
+
+			.inner {
+				@include vendor('transform', 'translateY(0.75rem)');
+				@include vendor('transition', (
+					'opacity #{_duration(gallery-lightbox-fadein) * 0.5} ease',
+					'transform #{_duration(gallery-lightbox-fadein) * 0.5} ease'
+				));
+				opacity: 0;
+
+				img {
+					display: block;
+					max-width: 90vw;
+					max-height: 85vh;
+					box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.35);
+				}
+			}
+
+			&.visible {
+				@include vendor('pointer-events', 'auto');
+				opacity: 1;
+				visibility: visible;
+				z-index: _misc(z-index-base) + 1000;
+
+				&:before {
+					opacity: 1;
+				}
+			}
+
+			&.loaded {
+				.inner {
+					@include vendor('transform', 'translateY(0)');
+					@include vendor('transition', (
+						'opacity #{_duration(gallery-lightbox-fadein)} ease',
+						'transform #{_duration(gallery-lightbox-fadein)} ease'
+					));
+					opacity: 1;
+				}
+
+				&:before {
+					@include vendor('transition-delay', '0s');
+					opacity: 0;
+				}
+			}
+		}
+	}
+
+	@include breakpoint(medium) {
+		.gallery {
+			.modal {
+				.inner {
+					img {
+						max-width: 100vw;
+					}
+				}
+			}
+		}
+	}
+
+	@include breakpoint(small) {
+		.gallery {
+			@include vendor('flex-direction', 'column');
+			height: auto;
+
+			> * {
+				height: auto;
+				width: 100%;
+			}
+
+			.image {
+				width: 100%;
+				height: 40rem;
+			}
+
+			.group {
+				@include spans(33.33333%);
+
+				.image {
+					height: 20rem;
+				}
+			}
+		}
+	}
+
+	@include breakpoint(xsmall) {
+		.gallery {
+			.image {
+				height: 30rem;
+			}
+
+			.group {
+				.image {
+					height: 12.5rem;
+				}
+			}
+		}
+	}

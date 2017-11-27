@@ -1,0 +1,98 @@
+a, a:focus, a:hover, a:active {
+  color: #E18604;
+}
+a:hover {
+  color: #E18604;
+}
+::-moz-selection {
+  color: #fff;
+  background: #E18604;
+}
+::selection {
+  color: #fff;
+  background: #E18604;
+}
+.header-navigation a:hover,
+.header-navigation li.current a {
+  color: #E18604;
+}
+.tb-socio .fa:hover {
+  color: #E18604;
+  border: solid 1px #E18604;
+}
+.carousel-indicators li.active {
+  background: #E18604;
+}
+.go2top:hover {
+  border: solid 2px #E18604;
+  color: #E18604;
+}
+.content h1 strong, .content h2 strong, .content h3 strong, .content h4 strong {
+  color: #E18604;
+}
+.slider-item-1 .large_bold_white span,
+.slider-item-2 .large_bold_white span {
+  color: #E18604;
+}
+.tp-caption a {
+    color: #E18604;
+}
+.services-block .fa {
+  background: #E18604;
+}
+.services-block .fa:after {
+  border-top: 9px solid #E18604;
+}
+.team-block em {
+  color: #E18604;
+}
+.portfolio-block .item > a {
+  background: rgba(225, 134, 4, 0.85);
+}
+.choose-us-block .panel-default .accordion-toggle:before {
+  background-color: #E18604;
+}
+.choose-us-block .panel-default .collapsed:before {
+  background-color: #495764;/* black */
+}
+.choose-us-block .panel-default .panel-title:hover .collapsed:before {
+  background-color: #E18604;
+}
+.btn-primary {
+  background: #E18604;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background: #b96e04;
+}
+.facts-block .item {
+  background: rgba(225, 134, 4, 0.92);
+}
+.pi-price strong {
+  background: #E18604;
+}
+.pi-price strong:after {
+  border-top: 9px solid #E18604;
+}
+.pricing-content .list-unstyled li i {
+  color: #E18604;
+}
+.pricing-footer .btn-default:hover,
+.pricing-footer .btn-default:active {
+  background: #E18604;
+}
+.portfolio-block .item b:hover {
+  color: #E18604;
+}
+@media (max-width: 1024px) {
+  .header-mobi-ext .header-navigation a:hover,
+  .header-mobi-ext .header-navigation li.current a{
+    background-color: #E18604;
+    color: #fff !important;
+  }
+}
+.header .mobi-toggler:hover {
+  background-color: #E18604;
+  border-color: #E18604;
+}

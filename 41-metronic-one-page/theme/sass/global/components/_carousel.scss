@@ -1,0 +1,84 @@
+/***
+Image Carousel
+***/
+
+.carousel.image-carousel { 
+
+    .carousel-inner {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .carousel-control i {
+        position: absolute;
+        top:40%;
+    }
+
+    &.image-carousel-hoverable .carousel-control i { 
+        display: none;
+    }
+
+    &.image-carousel-hoverable:hover .carousel-control i {
+        display: inline-block;
+    }
+
+    .carousel-control {
+        &.left i {
+            left:10px;
+        }
+
+        &.right i {
+            right:10px;    
+        }
+    }
+
+    .carousel-indicators {
+        margin-top: 10px;
+        bottom: -7px;
+
+        li {
+            background-color: #666;
+
+            &.active {
+                background-color: #666;    
+            }
+        }
+    }
+
+    .carousel-caption {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 15px 15px 25px 15px;
+        background: #333333;
+        background: rgba(0, 0, 0, 0.75);
+    
+        h4,
+        h3,
+        h2,
+        p {
+            text-align: left;
+            line-height: 20px;
+            color: #ffffff;
+        }
+
+        h4,
+        h3,
+        h2 {
+            margin: 0 0 5px;
+
+            a {
+                color: #aaa;
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .item {
+            margin: 0;
+        }
+    }
+} 

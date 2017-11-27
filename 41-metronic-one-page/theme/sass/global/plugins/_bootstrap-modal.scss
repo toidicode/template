@@ -1,0 +1,50 @@
+/***
+Bootstrap Modal
+***/
+/* fix: content shifting to the right on modal open */
+
+.modal-open.page-overflow .page-container,
+.modal-open.page-overflow .page-container .navbar-fixed-top,
+.modal-open.page-overflow .page-container .navbar-fixed-bottom,
+.modal-open.page-overflow .modal-scrollable {
+  overflow-y: auto !important;
+}
+
+.modal-scrollable {
+  overflow: hidden !important;
+}
+
+/* BS 3.3.1 fix */
+
+.modal-backdrop { 
+	position: fixed; 
+	bottom: 0; 
+}
+
+@if $theme-type == "material-design" { 
+
+    .modal {
+        @extend .md-shadow-z-3;
+    	@include border-radius($general-border-radius);
+    	border: 0 !important;   
+
+        .modal-body {
+            @include border-radius($general-border-radius);
+            border: 0;
+        }
+
+        .modal-title {   
+            font-weight: 400;           
+        }
+   
+        .modal-footer {
+            border: 0 !important;
+        }
+    }
+
+    .modal-backdrop, 
+    .modal-backdrop.fade.in {
+    	@include opacity(0.2);           
+    }  
+
+}

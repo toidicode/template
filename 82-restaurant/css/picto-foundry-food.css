@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "picto-foundry-food";
+  src: url("../fonts/picto-foundry-food.eot");
+  src: url("../fonts/picto-foundry-food.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/picto-foundry-food.woff") format("woff"),
+       url("../fonts/picto-foundry-food.ttf") format("truetype"),
+       url("../fonts/picto-foundry-food.svg#picto-foundry-food") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "picto-foundry-food";
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-apple:before,
+.icon-bacon:before,
+.icon-beer:before,
+.icon-bread:before,
+.icon-cake:before,
+.icon-candy-sucker:before,
+.icon-candy:before,
+.icon-cheese:before,
+.icon-chef-hat:before,
+.icon-cherries:before,
+.icon-chicken-leg:before,
+.icon-chop-sticks:before,
+.icon-coffee-mug-fill:before,
+.icon-coffee-mug-heart:before,
+.icon-coffee-mug:before,
+.icon-cooked-eggs:before,
+.icon-cookie:before,
+.icon-cooking-pan:before,
+.icon-covered-platter:before,
+.icon-cracked-egg:before,
+.icon-cup-of-tea:before,
+.icon-cupcake:before,
+.icon-drink:before,
+.icon-fork-knife:before,
+.icon-fountain-drink:before,
+.icon-grapes:before,
+.icon-grill:before,
+.icon-hamburger:before,
+.icon-hard-liquor:before,
+.icon-hotdog:before,
+.icon-icecream-cone:before,
+.icon-kabobs:before,
+.icon-latte:before,
+.icon-lollypop:before,
+.icon-martini:before,
+.icon-orange:before,
+.icon-oven:before,
+.icon-pie:before,
+.icon-pizza:before,
+.icon-soda-can:before,
+.icon-soup:before,
+.icon-steak:before,
+.icon-strawberry:before,
+.icon-sushi:before,
+.icon-tomato:before,
+.icon-turkey-dinner:before,
+.icon-watermelon:before,
+.icon-wheat:before,
+.icon-wine-bottle:before,
+.icon-wine-glass-1:before,
+.icon-wine-glass-2:before {
+  font-family: "picto-foundry-food";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.icon-apple:before { content: "\f100"; }
+.icon-bacon:before { content: "\f101"; }
+.icon-beer:before { content: "\f102"; }
+.icon-bread:before { content: "\f103"; }
+.icon-cake:before { content: "\f104"; }
+.icon-candy-sucker:before { content: "\f105"; }
+.icon-candy:before { content: "\f106"; }
+.icon-cheese:before { content: "\f107"; }
+.icon-chef-hat:before { content: "\f108"; }
+.icon-cherries:before { content: "\f109"; }
+.icon-chicken-leg:before { content: "\f10a"; }
+.icon-chop-sticks:before { content: "\f10b"; }
+.icon-coffee-mug-fill:before { content: "\f10c"; }
+.icon-coffee-mug-heart:before { content: "\f10d"; }
+.icon-coffee-mug:before { content: "\f10e"; }
+.icon-cooked-eggs:before { content: "\f10f"; }
+.icon-cookie:before { content: "\f110"; }
+.icon-cooking-pan:before { content: "\f111"; }
+.icon-covered-platter:before { content: "\f112"; }
+.icon-cracked-egg:before { content: "\f113"; }
+.icon-cup-of-tea:before { content: "\f114"; }
+.icon-cupcake:before { content: "\f115"; }
+.icon-drink:before { content: "\f116"; }
+.icon-fork-knife:before { content: "\f117"; }
+.icon-fountain-drink:before { content: "\f118"; }
+.icon-grapes:before { content: "\f119"; }
+.icon-grill:before { content: "\f11a"; }
+.icon-hamburger:before { content: "\f11b"; }
+.icon-hard-liquor:before { content: "\f11c"; }
+.icon-hotdog:before { content: "\f11d"; }
+.icon-icecream-cone:before { content: "\f11e"; }
+.icon-kabobs:before { content: "\f11f"; }
+.icon-latte:before { content: "\f120"; }
+.icon-lollypop:before { content: "\f121"; }
+.icon-martini:before { content: "\f122"; }
+.icon-orange:before { content: "\f123"; }
+.icon-oven:before { content: "\f124"; }
+.icon-pie:before { content: "\f125"; }
+.icon-pizza:before { content: "\f126"; }
+.icon-soda-can:before { content: "\f127"; }
+.icon-soup:before { content: "\f128"; }
+.icon-steak:before { content: "\f129"; }
+.icon-strawberry:before { content: "\f12a"; }
+.icon-sushi:before { content: "\f12b"; }
+.icon-tomato:before { content: "\f12c"; }
+.icon-turkey-dinner:before { content: "\f12d"; }
+.icon-watermelon:before { content: "\f12e"; }
+.icon-wheat:before { content: "\f12f"; }
+.icon-wine-bottle:before { content: "\f130"; }
+.icon-wine-glass-1:before { content: "\f131"; }
+.icon-wine-glass-2:before { content: "\f132"; }

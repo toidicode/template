@@ -1,0 +1,907 @@
+/*=================================================
+||				Useful Links
+==================================================*/
+/*
+|||||||||	Slider	|||||||||
+|	http://www.jssor.com/demos/image-gallery.html
+|	http://www.jssor.com/development/index.html
+|	http://www.jssor.com/development/define-slides-html-code.html
+|	file:///G:/Technext/Helper/Jssor.Slider.FullPack/demos-no-jquery/introduction-slider.source.html
+|	file:///G:/Technext/Helper/Jssor.Slider.FullPack/demos-no-jquery/image-gallery.source.html
+|	http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html
+|||||||||	Others	|||||||||
+|	Fonts: 1. Roboto[Section-title] 2. Open-Sans[body]
+|
+|
+*/
+
+/*=================================================
+||				Index 
+==================================================*/
+/*
+|	1. Imports
+|	2. Global
+|	3. Colors
+|
+|	=============
+|	SECTIONS
+|	=============
+|	4. Navigation
+|	5. Header
+|	6. About us
+|	7. Affordable pricing
+|	8. Great Place to enjoy
+|	9. Our Beer
+|	10. Our Breakfast Menu
+|	11. Our Bread
+|	12. Catagories-1
+|	13. Our Featured Dishes Menu
+|	14. Catagories-2
+|	15. Reserve A Table!
+|	16. Contact With us
+|	17. Footer
+*/
+
+
+/*=================================================
+||				1. Imports 
+==================================================*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,400);
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,400,700);
+/*=================================================
+||				2. Global 
+==================================================*/
+body
+{
+	font-family: 'Raleway', 'Open-Sans', sans-serif;
+	overflow-x: hidden;
+	font-size: 14px;
+}
+
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: none; 
+}
+
+.btn {
+  border-radius: 0; 
+  letter-spacing: 2px; 
+}
+
+.btn:hover {
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+.btn-middle {
+	background-color: transparent;
+	padding: 15px 30px;
+	border: 1px solid #8bc34a;
+	color: #5c9233;
+	margin: 25px 0px;
+}
+
+.btn-middle:hover {
+	background-color: #8bc34a;
+	color: #fff;
+	box-shadow: 0px 2px 5px #948E8E;
+}
+
+.btn-send,
+.btn-reservation {
+	background-color: #8bc34a;
+	padding: 10px 50px;
+	box-shadow: 0px 2px 5px #948E8E;
+	color: #fff;
+	margin: 20px 0px;
+}
+
+.btn-send:hover,
+.btn-reservation:hover {
+	background-color: #5c9233;
+	color: #eee;
+
+}
+
+.btn-reservation {
+	width: 100%;
+	margin: 0px;
+}
+
+.section-title
+{
+	/*padding: 310px 0px;
+	margin: 0px 130px 0px 250px;*/
+	padding: 20%;
+	text-align: right;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 60px;
+	color: #fff;
+}
+.section-content-title
+{
+	font-family: 'Roboto';
+	font-weight: 100;
+	font-size: 60px;
+}
+.section-content-para
+{
+	margin: 30px 0px;
+}
+.section-content
+{
+	padding: 15% 25% 15% 20%;
+}
+/*.custom-row
+{
+	width: 100vw;
+}*/
+.dis-table
+{
+	display: table;
+	/*width: 100vw;*/
+}
+.dis-table .dis-table-cell
+{
+	display: table-cell;
+	padding: 0;
+	float: none;
+	/*width: 50vw;*/
+	/*position: relative;*/
+}
+.color-bg
+{
+	background: #8bc34a;
+}
+.section-bg
+{
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-control {
+	border-radius: 0px;
+	margin-bottom: 25px;
+}
+
+input.empty, textarea.empty {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+.section-icon
+{
+	position: absolute;
+	left: 47%;
+	margin-left: -21px;
+	margin-top: 58px;
+	z-index: 999;
+}
+/*.wrapper
+{
+	margin-top: 50px;
+}*/
+/*=================================================
+||				3. Colors 
+==================================================*/
+/*=================================================
+||				4. Navigation 
+==================================================*/
+.custom-navbar-default
+{
+	background-color: #8bc34a;
+	border: 0px;
+	margin: 0px;
+	border-radius: 0px;
+	color: #5c9233;
+	padding: 50px 0px;
+	box-shadow: 0px 2px 7px #000; /*rgb(139, 195, 74)*/
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover
+{
+	color: #5c9233;
+}
+.navbar-default .navbar-nav>li>a
+{
+	color: #5c9233;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	margin: 0px 18px;
+	padding: 18px 0px;
+	font-size: 14px;
+	text-align: center;
+
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover
+{
+	color: #fff;
+}
+.navbar-default .navbar-toggle
+{
+	border-color: #fff;
+}
+.navbar-toggle
+{
+	color: #fff;
+	border-radius: 0px;
+}
+.navbar-default .navbar-toggle .icon-bar
+{
+	background-color: #fff;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover
+{
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: transparent;
+	color: #fff;
+}
+
+.navbar-brand {
+	margin-top: -25px;
+  	width: 205px;
+}
+
+.navbar-default .navbar-collapse {
+	border-color: #669D38;
+	background-color: #8BC34A;
+}
+
+/*-----------------------------------------------
+		navbar shrinking
+-----------------------------------------------*/
+
+nav.navbar.shrink {
+	max-height: 62px;
+  	padding: 12px 0px;
+  	transition: all 0.3s ease-in-out;
+  	-webkit-transition: all 0.3s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-ms-transition: all 0.3s ease-in-out;
+  	-o-transition: all 0.3s ease-in-out;
+}
+
+nav.shrink a {
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+	font-size: 15px;
+}
+
+nav.shrink .navbar-brand {
+	margin-top: -19px;
+}
+
+nav.shrink .navbar-toggle {
+	padding: 4px 5px;
+	margin: 8px 15px 8px 0;
+}
+
+.navbar-default.shrink .navbar-collapse {
+    border-color: transparent;
+}
+
+/*=================================================
+||				5. Header
+==================================================*/
+.owl-carousel
+{
+	margin-top: 156px;
+}
+.header-content
+{
+	margin-top: 30vh;
+	display: inline-block;
+}
+.header-title, .header-sub-title
+{
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	color: #333;
+}
+.header-title
+{
+	font-size: 112px;
+	font-weight: 100;
+	margin-bottom: 0px;
+	line-height: 1;
+}
+.header-sub-title
+{
+	font-size: 16px;
+	margin-left: 10px;
+}
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item .item
+{
+	height: 80vh;
+	background-repeat: no-repeat;
+}
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item:nth-child(1) .item
+{
+	background: url('../images/1.jpg');
+	background-size: cover;
+	background-position: bottom;
+}
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item:nth-child(2) .item
+{
+	background: url('../images/2.jpg');
+	background-size: cover;
+}
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item:nth-child(3) .item
+{
+	background: url('../images/3.jpg');
+	background-size: cover;
+}
+.owl-theme .owl-controls .owl-buttons div
+{
+	position: absolute;
+	bottom: -25px;
+	color: #000;
+	padding: 15px;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	font-size: 15px;
+	opacity: 1;
+	margin: 0px;
+	transition: all .4s;
+	background: #8bc34a;
+	color: #fff;
+}
+.owl-theme .owl-controls .owl-buttons div:hover
+{
+	color: #000;
+	background: #fff;
+}
+.owl-prev
+{
+	right: 25%;
+}
+.owl-next
+{
+	right: 21%;
+}
+/*=================================================
+||				6. About us
+==================================================*/
+.about-bg
+{
+	background: url('../images/About-C-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: 85%;
+  	background-position-x: 15%;
+  	background-position-y: 80%;
+}
+#about 
+{
+	margin-top: -10px;
+}
+/*=================================================
+||				7. Affordable pricing
+==================================================*/
+/*=================================================
+||				8. Great Place to enjoy
+==================================================*/
+.great-place-to-enjoy .section-bg
+{
+	background-image: url('../images/GPtE-bg.jpg');
+}
+/*=================================================
+||				9. Our Beer
+==================================================*/
+.beer .section-bg
+{
+	/*background: url('../images/beer-bg1.png'), url('../images/beer-bg2.png');
+	background-position-x: 58%, 80%;
+	background-position-y: 50%, 50%;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 300px,240px;*/
+
+    background: url("../images/beer-bg1.png"), url("../images/beer-bg2.png");
+    background-repeat: no-repeat, no-repeat;
+	
+    background-position: 51% 58%, 75% 58%;
+	
+    background-size: 300px 300px, 240px 240px;
+}
+/*=================================================
+||				10. Our Breakfast Menu
+==================================================*/
+.breakfast .section-bg
+{
+	background-image: url('../images/OBM-bg.jpg');
+}
+/*=================================================
+||				11. Our Bread
+==================================================*/
+
+.bread .section-bg 
+{
+	/*background: url('../images/bread-bg1.png'), url('../images/bread-bg2.png');
+	background-position-x: 58%, 80%;
+	background-position-y: 50%, 50%;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 300px,240px;*/
+
+	background: url("../images/bread-bg1.png"), url("../images/bread-bg2.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 51% 58%, 75% 58%;
+    background-size: 300px 300px, 240px 240px;
+}
+/*=================================================
+||				12. menu
+==================================================*/
+.menu 
+{
+    padding: 50px 0px;
+}
+
+.menu-catagory h2 
+{
+    font-size: 51px;
+    font-weight: 100;
+    margin-bottom: 27px;
+}
+
+.menu-system {
+    width: 100%;
+    color: #8bc34a;
+}
+
+.half 
+{
+    width: 50%;
+    position: relative;
+}
+
+.per-head
+{
+    float: left;
+}
+
+.per-head span {
+    margin-right: 5px;
+}
+
+.price {
+	float: right;
+	margin-bottom: 18px;
+}
+
+
+
+/*=================================================
+||				13. Our Featured Dishes Menu
+==================================================*/
+.featured-dish .section-bg
+{
+	background-image: url('../images/OFDM-bg.jpg');
+}
+/*=================================================
+||				14. Have a look to our dishes
+==================================================*/
+
+
+/*=================================================
+||				15. Reserve A Table!
+==================================================*/
+.reserve .section-bg
+{
+	background-image: url('../images/RaT-bg.jpg');
+}
+
+.reservation .section-content
+{
+	padding: 15% 15% 10% 15%;
+}
+
+.reservation-form 
+{
+	margin-top: -20px;
+}
+
+.opening-time 
+{
+	background-color: rgb(139, 195, 74);
+	color: #fff;
+	margin-top: -50px;
+	padding: 20px 40px;
+	border-radius: 4px;
+}
+
+.opening-time-title 
+{
+	margin-top: 0px;
+	margin-bottom: 25px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.opening-time p 
+{
+    margin-bottom: 2px;
+}
+
+.opening-time h4 
+{
+    margin-bottom: 6px;
+    margin-top: 12px;
+    font-weight: 600;
+}
+/*=================================================
+||				16. Contact With us
+==================================================*/
+
+.contact .section-content
+{
+	color: #fff;
+}
+.contact .section-title 
+{
+	padding: 10% 20%;
+}
+.social-media
+{
+	position: absolute;
+	width: 100%;
+	left: 5%;
+	margin-top: -58px;
+	z-index: 999;
+}
+
+.social-media li
+{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.fb, .twit, .g-plus, .link
+{
+	float: left;
+	height: 126px;
+	width: 126px;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+		-mz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		 -o-transition: all 0.3s ease-in-out;
+}
+
+.fb
+{
+	background: url(../images/social/facebook_color.png);
+}
+
+.fb:hover
+{
+	background: url(../images/social/facebook_black.png);
+}
+
+.twit {
+	background: url(../images/social/twitter_color.png);
+}
+
+.twit:hover {
+	background: url(../images/social/twitter_black.png);
+}
+
+.g-plus {
+	background: url(../images/social/g-plus_color.png);
+}
+
+.g-plus:hover {
+	background: url(../images/social/g-plus_black.png);
+}
+
+.link {
+	background: url(../images/social/linkedin_color.png);
+}
+
+.link:hover {
+	background: url(../images/social/linkedin_black.png);
+}
+
+#map-canvas {
+    width: 100%;
+    height: 350px;
+}
+
+.contact-form
+{
+	padding: 50px 0px;
+}
+/*=================================================
+||				17. Footer
+==================================================*/
+
+footer
+{
+	background-color: #8BC34A;
+	color: #ffffff;
+	padding: 30px 0px;
+}
+
+footer a
+{
+	color: #5C9233;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+		-mz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		 -o-transition: all 0.3s ease-in-out;
+}
+
+footer a:hover
+{
+	color: #00710A;
+	text-decoration: none;
+}
+/*=================================================
+||				18. Media Query
+==================================================*/
+
+
+
+/*=========================   for extra-large screen  =============================*/
+
+@media (min-width: 1366px){
+	.section-title
+	{
+		/*padding: 190px 0px;
+		margin: 0px 90px 0px 140px;*/
+		font-size: 90px;
+	}
+	.custom-navbar-default
+	{
+		padding: 18px 0px;
+	}
+	.owl-carousel
+	{
+		margin-top: 94px;
+	}
+}
+
+@media (min-width: 1500px) {
+	.section-icon {
+		left: 48%;
+		margin-left: -25px;
+	}
+
+	.section-title {
+		padding: 20% 10% 20% 25%;
+	}
+
+	.section-content {
+		padding: 10% 40% 10% 12%;
+	}
+
+	.bread .section-bg,
+	.beer .section-bg {
+		background-position-x: 62%, 80%;
+		background-size: 330px, 264px;
+	}
+}
+
+
+
+
+/*------------------------------  for small (tab) screen -------------------------*/
+
+@media (max-width: 991px) and (min-width: 768px){
+
+	.custom-navbar-default {
+		padding: 15px 0px;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		margin: 0px 10px;
+		font-size: 12px;
+	}
+
+	nav.shrink .navbar-brand {
+		font-size: 22px;
+	}
+
+	.owl-carousel {
+		margin-top: 85px;
+	}
+
+	.owl-theme .owl-controls .owl-buttons .owl-prev {
+		right: 20%;
+	}
+
+	.owl-theme .owl-controls .owl-buttons .owl-next {
+		right: 12%;
+	}
+
+	.about-bg {
+		background-size: 98%;
+  		background-position-x: 100%;
+  		background-position-y: 68%;
+	}
+
+	.header-title {
+		font-size: 62px;
+	}
+
+	.section-header {
+		padding-top: 0px;
+	}
+
+	.pricing-title {
+		margin-bottom: 15px;
+		font-size: 25px;
+	}
+
+	#filter-list li {
+		font-size: 14px;
+	}
+
+	.section-title {
+		font-size: 58px;
+		padding: 20% 15%;
+	}
+
+	.contact .section-title {
+		padding: 10% 20% 20% 20%;
+	}
+
+	.section-content {
+		padding: 10% 12%;
+	}
+
+	.section-content-title {
+		font-size: 45px;
+	}
+
+	.btn-reservation {
+		padding: 10px;
+	}
+
+}
+
+
+
+/*@media (max-width: 960px){
+	.navbar-default .navbar-brand
+	{
+		font-size: 24px;
+	}
+	.header-sub-title {
+		font-size: 12px;
+	}
+}*/
+
+
+/*------------------------------  for extra-small (mobile) screen -------------------------*/
+
+@media (max-width: 767px) {
+	.custom-navbar-default {
+		padding: 15px 0px;
+	}
+
+	.navbar-default .navbar-brand {
+		font-size: 30px;
+	}
+
+	.owl-carousel {
+		margin-top: 80px;
+	}
+
+	.owl-carousel .owl-wrapper, .owl-carousel .owl-item:nth-child(1) .item,
+	.owl-carousel .owl-wrapper, .owl-carousel .owl-item:nth-child(2) .item,
+	.owl-carousel .owl-wrapper, .owl-carousel .owl-item:nth-child(3) .item {
+		background-position: center;
+	}
+
+	.owl-theme .owl-controls .owl-buttons .owl-prev {
+		right: 20%;
+	}
+
+	.owl-theme .owl-controls .owl-buttons .owl-next {
+		right: 5%;
+	}
+
+	.header-title {
+		font-size: 45px;
+		margin-bottom: 5px;
+	}
+
+	.header-sub-title {
+		margin-left: 3px;
+	}
+
+	.section-content {
+		padding: 12% 15%;
+	}
+
+	.section-content-title {
+		font-size: 45px;
+	}
+
+	.section-header {
+		padding-top: 0px;
+	}
+
+	.pricing-title {
+		margin-bottom: 15px;
+		font-size: 25px;
+	}
+
+	#filter-list li {
+		font-size: 14px;
+	}
+
+	#menu-pricing .item {
+		width: 40%;
+	}
+
+	#menu-pricing .item h2 {
+		margin: 0px;
+		padding: 0px;
+		font-size: 27px;
+	}
+
+	.menu-price li a:hover .menu-desc span {
+		padding: 0px;
+		line-height: 18px;
+		font-size: 12px;
+	}
+
+	.menu-price li a .menu-desc span h3 {
+		font-size: 19px;
+		margin-bottom: 12px;
+	}
+
+	.section-title {
+		font-size: 40px;
+  		padding: 18% 10%;
+	}
+
+	.contact .section-title {
+		padding: 10% 20% 20% 20%;
+	}
+
+	.menu {
+		text-align: center;
+	}
+
+	.half {
+		width: 100%;
+	}
+
+	.per-head, .price {
+		float: none;
+	}
+
+	.opening-time {
+		margin-top: 25px;
+	}
+
+	.contact .section-content {
+		padding: 70px 0px;
+	}
+
+	.g-map img {
+		height: 137px;
+	}
+
+	.btn-reservation {
+		padding: 10px;
+	}
+}

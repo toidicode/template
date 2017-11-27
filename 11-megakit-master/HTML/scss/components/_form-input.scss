@@ -1,0 +1,129 @@
+/*----------------------------------
+  Form Input
+------------------------------------*/
+
+/* Form Input v1 */
+.s-form-v1__input {
+	height: 3.375rem;
+	color: $color-white;
+	@include font($size: $font-size-14, $weight: 300);
+  @include placeholder($color-white);
+	background: transparent;
+	border-color: $color-white;
+	border-right: none;
+	box-shadow: none;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	padding: .625rem 2.5rem;
+
+	@include focus {
+		box-shadow: none;
+		border-color: $color-white;
+		background: rgba($color-white, .1);
+	}
+}
+
+
+/* Form Input v2 */
+.s-form-v2__input {
+	height: 3.5rem;
+	@include font($size: $font-size-14, $weight: 300);
+	color: $color-text;
+  @include placeholder($color-text);
+	border: none;
+	box-shadow: none;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	padding: .625rem 1.25rem;
+	@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+	@include focus {
+		@include font($weight: 400);
+		color: $color-text;
+  	@include placeholder($color-text);
+		box-shadow: none;
+		@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+	}
+}
+
+/* Form Input v3 */
+.s-form-v3__input {
+	@include position(relative);
+	height: 3.125rem;
+	@include font($size: $font-size-13, $weight: 400);
+	color: rgba($color-white, .7);
+  @include placeholder(rgba($color-white,.7));
+	border: none;
+	border-bottom: .0625rem solid rgba($color-white, .5);
+	background: transparent;
+	box-shadow: none;
+	@include border-radius(0);
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	padding: 0 1.25rem 0 0;
+	@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+	@include focus {
+		color: $color-white;
+  	@include placeholder($color-white);
+		border-color: rgba($color-white, .99);
+		box-shadow: none;
+	}
+}
+
+/* Form Input v4 */
+.s-form-v4 {
+	&__input {
+		@include position(relative);
+		height: 3.125rem;
+		@include font($size: $font-size-13, $weight: 400);
+		color: rgba($color-dark, .5);
+	  @include placeholder(rgba($color-dark,.5));
+		border: none;
+		border-bottom: .0625rem solid;
+		background: rgba($color-dark, .3);
+		background: transparent;
+		box-shadow: none;
+		@include border-radius(0);
+		letter-spacing: .1rem;
+		text-transform: uppercase;
+		padding: 0 1.25rem .3125rem 1rem;
+		@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+		@include focus {
+			color: $color-dark;
+	  	@include placeholder($color-dark);
+			border-color: rgba($color-dark, 1);
+			box-shadow: none;
+		}
+	}
+
+	&__icon {
+		@include font($size: $font-size-18);
+		color: rgba($color-dark, .7);
+		border-bottom: .0625rem solid $color-dark;
+		padding: 0 .75rem .95rem;
+	}
+}
+
+/* Form Input v5 */
+.s-form-v5__input {
+	height: 3.375rem;
+	color: $color-text;
+  @include placeholder($color-text);
+	@include font($size: $font-size-14, $weight: 300);
+	background: transparent;
+	border-color: $color-dark;
+	border-right: none;
+	box-shadow: none;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	padding: .625rem 2.5rem;
+
+	@include focus {
+		color: $color-dark;
+  	@include placeholder($color-dark);
+		box-shadow: none;
+		border-color: $color-dark;
+	}
+}

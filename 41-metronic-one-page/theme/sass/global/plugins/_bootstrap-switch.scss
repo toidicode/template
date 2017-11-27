@@ -1,0 +1,44 @@
+/***
+Bootstrap Switch 
+***/
+
+.bootstrap-switch {
+  border-color: $input-border;
+  
+  &.bootstrap-switch-focused {
+     box-shadow: none;
+     border-color: $input-border; 
+  }
+}
+
+/***
+Color variants
+***/
+
+@mixin bootstrap-switch-variant($state, $background, $text) {
+  
+  .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-#{$state},
+  .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-#{$state} {  
+    color: $text;
+    background: $background;
+  } 
+}
+
+@include bootstrap-switch-variant("primary", $btn-primary-bg, $btn-primary-color);
+@include bootstrap-switch-variant("info", $btn-info-bg, $btn-info-color);
+@include bootstrap-switch-variant("success", $btn-success-bg, $btn-success-color); 
+@include bootstrap-switch-variant("warning", $btn-warning-bg, $btn-warning-color);
+@include bootstrap-switch-variant("danger", $btn-danger-bg, $btn-danger-color);
+@include bootstrap-switch-variant("default", lighten($brand-default, 15%), #444);    
+ 
+/* Bootstrap switch on portlet headers */
+.portlet > {
+    .portlet-title { 
+    	> .actions {
+            > .bootstrap-switch {
+                border-color: transparent;
+                margin-top: 0px;
+            }
+        }
+    }
+}

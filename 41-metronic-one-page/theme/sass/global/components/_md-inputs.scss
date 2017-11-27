@@ -1,0 +1,454 @@
+// Floating & Form Line Input
+
+@mixin input-variant($color) {
+	
+	.form-control {
+
+		&.edited:not([readonly]),
+		&.form-control-static,
+		&:focus:not([readonly]),
+		&.focus:not([readonly]) {  
+			~ label,
+			~ .form-control-focus {
+				&:after {
+					background: $color; 
+				}        
+			}
+
+			~ label {				   
+				color: $color;   
+			}  
+
+			~ i {
+				color: $color;
+			}
+
+			~ .help-block {
+				color: $color;
+			}
+		}
+	}   	
+
+	.input-group-addon {
+		color: $color;
+	}
+
+	.form-horizontal & > label {
+		color: $color;     
+  	}
+}
+
+.form-group.form-md-line-input {  
+	position: relative;    
+  	margin: 0 0 35px 0;  
+  	padding-top: 20px;     
+
+	.form-horizontal & {
+		padding-top: 10px;
+		margin-bottom: 20px;  
+		margin: 0 -15px 20px -15px; 
+	}	
+
+  	.form-horizontal & > label {
+  		padding-top: 5px;
+  		font-size: $input-md-label-font-size;
+		color: $input-md-label-color;     
+		@include opacity($input-md-label-opacity);	
+  	}
+
+	.form-control {     
+		background: none;
+		border: 0;
+		border-bottom: 1px solid $input-md-input-border; 
+		@include placeholder($input-md-placeholder);  
+		@include border-radius(0);   
+		color: $input-md-color;  
+		box-shadow: none;
+		
+		&.form-control-static {
+			border-bottom: 0;
+		}
+
+		padding-left: 0;     
+		padding-right: 0;   
+		font-size: 16px;
+
+		&.input-sm {  
+			font-size: 14px;
+			padding: 6px 0;
+		}   
+
+		&.input-lg {   
+			font-size: 20px;	
+			padding: 14px 0;
+		}
+
+		~ label,   
+		~ .form-control-focus {
+			width: 100%;
+			position: absolute;  
+			left: 0;       
+			bottom: 0;  
+			pointer-events: none;
+
+			.form-horizontal & {
+				width: auto;
+				left: 15px;
+				right: 15px; 
+			}
+
+			&:after {
+				content: '';  
+			  	position: absolute;
+			  	z-index: 5;
+			  	bottom: 0;
+			  	left: 50%;
+			  	width: 0;   
+			  	height: 2px;
+			  	width: 0;  
+			  	visibility: hidden;
+			  	transition: 0.2s ease all;
+			}
+		}   
+
+		~ label {    
+			top: 0;  
+			margin-bottom: 0;
+			font-size: $input-md-label-font-size;
+			color: $input-md-label-color;     
+			@include opacity($input-md-label-opacity);  
+		}     
+   
+   		&.edited:not([readonly]),
+		&:focus:not([readonly]),  
+		&.focus:not([readonly]) {
+			~ label,   
+			~ .form-control-focus {
+				color: $input-md-label-color;  
+				   
+				&:after {
+					visibility: visible;  
+					left: 0;
+					width: 100%; 
+			  		background: $input-md-focus-border;
+				}  
+			}
+   
+			~ label {
+				@include opacity(1);
+			}
+
+			~ .help-block {
+				color: $input-md-focus-border;     
+				@include opacity(1);
+			}
+		}  
+
+	 	&[readonly], 
+		&[disabled],   
+	    fieldset[disabled] & {
+	    	background: none;
+	        cursor: not-allowed;
+  			border-bottom: 1px dashed $input-border;
+	    }   
+	}
+
+	&.form-md-floating-label {
+		.form-control {
+
+		   	~ label {          
+		   		font-size: 16px;
+				top: 25px;       
+				transition: 0.2s ease all;
+				color: $input-md-placeholder;
+		   	}   
+
+			&[readonly],
+		   	&.edited,
+		   	&.form-control-static,   
+		   	&:focus:not([readonly]),  
+			&.focus:not([readonly]) {			 
+				~ label {
+					top: 0; 
+					font-size: 13px;            
+				}   
+			}     
+
+			&.input-sm {
+				~ label {     
+			   		font-size: 14px;
+					top: 24px;  
+			   	}  
+
+				&[readonly],
+				&.form-control-static,  
+			   	&.edited,
+			   	&:focus:not([readonly]),  
+				&.focus:not([readonly]) {			   
+					~ label {      
+						top: 0; 
+						font-size: 13px;            
+					}
+				}  
+			}
+
+			&.input-lg {
+				~ label {     
+			   		font-size: 20px;
+					top: 30px;      
+			   	}     
+
+				&[readonly],
+			   	&.edited,
+			   	&.form-control-static,
+			   	&:focus:not([readonly]),        
+				&.focus:not([readonly]) {			        
+					~ label {
+						top: 0;       
+						font-size: 13px;                 
+					}
+				}  
+			}
+		}
+
+		.input-icon > label {
+			padding-left: 34px;
+		}   
+
+		.input-icon.right > label {
+			padding-left: 0;
+			padding-right: 34px;
+		}
+
+		.input-group.left-addon {
+			label {
+				padding-left: 34px;   
+			}
+		}
+     
+		.input-group.right-addon {
+			label {
+				padding-right: 34px;
+			}   
+		} 
+	}  
+  
+  	& + .input-icon {
+  		padding-top: 0;
+  	}
+
+
+	// Help block
+
+	.help-block { 
+		position: absolute;
+	  	margin: 2px 0 0 0;   
+	  	@include opacity(0);   
+	  	font-size: 13px;
+	}
+
+	// Input icons
+
+	> .input-icon {
+
+		> i {
+			left: 0;
+        	bottom: 0;
+        	margin: 9px 2px 10px 10px; 
+			color: $input-md-label-color;
+		}  
+
+		&.input-icon-lg > i {
+			top: 6px;
+		}
+
+		&.input-icon-sm > i {
+			top: -1px;
+		}
+
+		.form-control {
+			padding-left: 34px;      
+		}
+
+		> label {
+			margin-top: -20px;  
+		}
+
+		&.right {
+			.form-control {
+				padding-left: 0;
+				padding-right: 34px;        
+			}
+
+			> i {
+				left: auto;
+				right: 8px;
+				margin: 11px 2px 10px 10px;
+			}
+		}
+	}
+
+	// Input groups
+  
+	& + .input-group {
+  		padding-top: 0;
+  	} 
+
+	.input-group {
+		padding-top: 0;
+
+		> label {
+			margin-top: -20px;  
+		}
+
+		.input-group-addon {
+			@include border-radius(0);  
+			background: none;
+			border: 0;    
+			border-bottom: 1px solid $input-border;     		
+		}
+
+		& + .input-group-control {
+  			padding-top: 0;
+  		}	
+
+		.input-group-control {  
+			padding-top: 0;
+			position: relative;
+			display: table-cell;
+  			vertical-align: bottom;
+
+  			> label {
+  				margin-top: -20px;
+  			}
+		}
+
+		.input-group-btn {
+			.btn {
+				@include border-radius($general-border-radius);
+			}
+		}
+
+		.input-group-btn.btn-left .btn {
+			margin-right: 10px;
+		}
+
+		.input-group-btn.btn-right .btn {
+			margin-left: 10px;
+		}
+
+		.help-block {
+			margin-top: 35px;
+		}
+
+		&.input-group-sm .help-block {
+			margin-top: 30px;  
+		}
+
+		&.input-group-lg .help-block {
+			margin-top: 47px;  
+		}
+	}
+
+	// States
+
+	&.has-success {   
+		@if $theme-type == "material-design" {
+			@include input-variant($state-success-bg);
+		} @else {
+			@include input-variant($state-success-text);
+		}
+	}
+
+	&.has-warning {
+		@if $theme-type == "material-design" {
+			@include input-variant($state-warning-bg);
+		} @else {
+			@include input-variant($state-warning-text);
+		}
+	}
+
+	&.has-error {
+		@if $theme-type == "material-design" {
+			@include input-variant($state-danger-bg);
+		} @else {
+			@include input-variant($state-danger-text);
+		}
+	}   
+
+	&.has-info {
+		@if $theme-type == "material-design" {
+			@include input-variant($state-info-bg);
+		} @else {
+			@include input-variant($state-info-text);
+		}
+	}
+} 
+
+// Inline forms
+
+.form-inline {
+	.form-md-line-input {
+		margin: 0;
+		padding-top: 0;
+		margin-right: 20px;
+
+		> .input-icon {
+			padding: 0;
+		}
+	}
+}
+
+// Horizontal forms
+
+.form-horizontal {
+	.form-group.form-md-line-input {
+		.input-icon {
+			.form-control {
+				padding-left: 33px;
+			}
+
+			> i {
+				top: 0;
+			}
+
+			&.right {
+				.form-control {
+					padding-left: 0;
+					padding-right: 33px;
+				}
+			}
+
+			> .form-control-focus {
+				left: 0 !important;
+				right: 0 !important;
+			}
+		}
+	}
+
+	.form-group.form-md-line-input {
+		.input-group {
+	  		padding-top: 0;
+
+	  		> .input-group-btn {
+	  			.btn {
+	  				margin-bottom: 0 !important;  
+	  			}
+	  		}
+
+	  		> .input-group-control {
+				padding-top: 0;
+
+	  			> .form-control-focus {
+	  				left: 0 !important;
+					right: 0 !important;
+	  			}
+	  		}
+
+			> .form-control-focus {
+				left: 0 !important;
+				right: 0 !important;
+			}
+		}
+	}
+}

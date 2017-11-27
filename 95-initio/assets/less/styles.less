@@ -1,0 +1,412 @@
+@import "3rd-party/bootstrap/mixins.less";
+@import "3rd-party/lesshat.less";
+@import "mixins.less";
+
+
+
+// Theme settings
+//////////////////////////////////////////////////////////////////////
+
+@color-default         : #666666;
+@color-contrast        : #333333;
+@color-dimmed          : lighten(@color-default, 30%);
+@color-action          : #bd1550;
+@color-caption         : @color-contrast;
+@color-meta            : #a5a5a5;
+
+@font-sans             : "Open sans", Helvetica, Arial, sans-serif;
+@font-utilities        : "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-serif            : Georgia, serif;
+@font-special          : Alice, Georgia, serif;
+
+@header-bg             : #f4f4f4 url(../images/bg_head.jpg) top center;
+@header-bg-size        : cover;
+
+
+
+html { font-size: 100%; }
+body { .font-size(1.5); font-family:@font-sans; color:@color-default; padding:0; }
+.topspace { margin-top:40px; }
+
+
+
+/*********************************************************************
+
+
+                            Navigation in header
+
+
+**********************************************************************/
+@import "navbar.less";
+
+
+
+/*********************************************************************
+
+
+                                TYPOGRAPHY
+
+
+**********************************************************************/
+p { line-height:1.6em; margin:0 0 30px 0; }
+ul, ol { line-height:1.6em; margin:0 0 30px 0; }
+blockquote { padding: 10px 20px; margin: 0 0 30px; border-left: 5px solid #eee; }
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+	font-family:@font-sans;
+	font-weight:400;
+	color:@color-caption;
+}
+h1 { .font-size(4); }
+h2 { .font-size(3.6); }
+h3 { .font-size(3); }
+h4 { .font-size(2.4); }
+h5 { .font-size(2); }
+
+a {
+	color: @color-action;
+
+	&:hover { color:lighten(@color-action, 15%); }
+}
+
+.lead { font-weight:300; .font-size(2.1); }
+.text-msg{ line-height:1.7em; color:@color-dimmed; font-weight:300; text-transform: capitalize; margin-top:-0.23em; }
+
+.size-auto, .size-full, .size-large, .size-medium, .size-thumbnail { max-width: 100%; height: auto; }
+
+
+
+/*********************************************************************
+
+
+                                HEADER
+
+
+**********************************************************************/
+#head {
+	background:@header-bg;
+	background-size: @header-bg-size;
+	color:#7C7C7C; padding:30px 0 35px 0;
+
+	img.img-circle {
+		display:block; width:140px; height:140px; overflow:hidden;
+		border:9px solid rgba(0,0,0,.05); margin:0 auto;
+	}
+	.title {
+		font-family:@font-special; .font-size(4.9);
+		a { text-decoration: none; color: @color-caption; }
+	}
+
+	.tagline {
+		display:block; .font-size(1.4); line-height:1.2em; color:#7C7C7C; margin:5px 0 0;
+		b { font-weight: normal; }
+		a { color:#5E5E5E; }
+	}
+}
+
+
+// on homepage header is a bit different
+.home {
+	#head { padding:90px 0;
+		.title { .font-size(4.9); }
+		.tagline { .font-size(1.6); margin:15px 0 0; }
+	}
+}
+
+
+/*********************************************************************
+
+
+                                CONTENT
+
+
+**********************************************************************/
+img { max-width: 100%; }
+
+// buttons & panels
+.btn {
+	.font-size(1.2); text-decoration:none; text-transform:uppercase;
+	font-family:@font-utilities;
+	color:#333;
+	.border-radius( 0px );
+	.transition-property( all );
+	.transition-duration( .2s );
+	border:0 none;
+	padding:12px 35px;
+	text-shadow: 0 1px 0px darken( @color-action, 15% );
+}
+
+.btn-primary {
+	color: #fff; background-color: @color-action;
+
+	&:hover, &:focus, &:active, &.active {  color: #fff; background-color: lighten(@color-action, 10%); }
+}
+
+.btn-action {
+	font-weight:bold; background:transparent!important; border:1px solid #333; text-shadow: none;
+	&:hover, &:focus, &:active, &.active { color:@color-action; border-color:@color-action; }
+}
+
+.btn-lg { padding: 15px 60px; font-size: 12px; line-height: 1.33; font-weight: bold; }
+
+
+.panel-cta {
+	box-shadow: 0 0 0 1px #e1e1e1, 0 0 0 3px #fff, 0 0 0 4px #e1e1e1; background:#f3f3f3; .border-radius( 0 );
+
+	p, h3, h4, h5, h6 { margin:0; }
+	.panel-body { padding:35px; }
+}
+
+
+/* Section - Featured */
+.featured {
+	.font-size(1.3);
+
+	h3 {
+		font-weight:bold; font-family:@font-utilities; .font-size( 2.4 );
+		text-transform:uppercase; line-height:1.4em; vertical-align:middle;
+		margin:0 0 25px 0;
+	}
+}
+
+
+/* Section - Recent works */
+.thumbnails {
+	padding: 0;
+
+	li{ margin-bottom:30px; }
+	.details { display:block; text-align: center; .font-size( 1.2 ); }
+}
+
+.thumbnail {
+	display:block; .border-radius( 0 ); border:0 none; margin-bottom:10px; padding:0;
+	text-align: center; text-decoration: none; color:#333;
+
+	.img { display:block; width:100%; overflow: hidden; height:180px; margin:0 0 20px; position:relative; }
+	.title { text-transform: uppercase; margin:0 2em; display: block; text-indent: 0;}
+	.cover {
+		position: absolute; display: block; opacity:0; width:100%; height:180px;
+		background-color:rgba( 255, 255, 255, 0.8 );
+		.transition-property(all); .transition-duration( 550ms );
+
+		.more {
+			position:absolute; bottom:15px; right: 0; height: 32px; line-height: 32px; padding:0 20px; .border-radius( 1px 0 0 1px );
+			.font-size( 1.2 ); text-transform: uppercase; text-shadow: 0 1px 0px darken( @color-action, 15% );
+			background:@color-action; color:white;
+		}
+	}
+
+	img { width: 100%; position:absolute; top:0; left:0; }
+
+	// and mouseover effects for thumbnail
+	&:hover{
+		color: #333; text-decoration: none;
+
+		img { -webkit-filter: ~"saturate(0%)"; }
+		.cover { opacity:1; }
+	}
+
+}
+
+/* pagination */
+.pagination {
+	> li > a {
+		color: lighten(@color-contrast, 30%); border:0 none;
+		.font-size( 2 );
+		font-family: @font-serif;
+
+		&:hover { color: darken(@color-contrast, 30%); background:none; }
+	}
+	> li.active > a {
+		color: @color-contrast; background:none;
+		&:hover { color: darken(@color-contrast, 30%); background:none; }
+	}
+}
+
+
+/*********************************************************************
+
+
+                                 BLOG
+
+
+**********************************************************************/
+.section-title,
+.entry-title {
+	display:block; width:100%; overflow:hidden; margin:0px 0 25px;
+	text-align:center; font-weight:300; text-transform:uppercase; .font-size(3.6); letter-spacing:1px;
+
+	a { color: @color-caption; }
+
+	span {
+		display:inline-block; position:relative;
+
+		&:before, &:after {
+			content:""; position:absolute; height:4px; top:.53em; width:400%;
+			border-bottom:1px solid #ccc; border-top:1px solid #ccc;
+		}
+
+		&:before { right:100%; margin-right:45px; }
+		&:after { left:100%; margin-left:45px; }
+	}
+}
+
+
+.entry-header {
+	.entry-meta {
+		text-align: center;
+		font-family: @font-serif;
+		.font-size(1.8);
+		font-style:italic;
+		font-weight: normal;
+		color: @color-meta;
+		margin:0 0 15px 0;
+
+		a { color:@color-meta; }
+	}
+}
+
+
+.entry-content {
+	margin: 0 0 60px 0;
+	h2 { line-height:1.2; .font-size ( 3 ); padding-top:20px; margin-bottom:20px; }
+}
+
+.meta-nav, .more-link{
+	font-family: @font-serif; font-style: italic; font-weight:bold; color: lighten(@color-contrast, 20%); text-decoration: none;
+
+	&:hover{ color:@color-contrast; text-decoration: underline; }
+}
+.more-link{ display: block; width:100%; text-align: right; }
+
+
+/* Posts navigation */
+#nav-below { position:fixed; top:48%;
+	.meta-nav { display:block; padding:27px 7px; background:#444; color:#fff; .border-radius ( 3px );
+		font-family: @font-sans; font-style: normal; font-weight: normal; text-decoration: none; opacity: 0.2;
+
+		&:hover{ text-decoration: none; color:#333; }
+	}
+	.nav-next { position:fixed; right:-3px; }
+	.nav-previous { position:fixed; left:-3px; }
+	b { display:none; }
+}
+
+footer.entry-meta {
+	border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin:0 0 35px 0;
+	padding:2px 0; color: #888888; .font-size( 1.2 );
+
+	a { color:#333333; }
+	.meta-in { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding:10px 0; }
+}
+
+.page-header {
+	padding-bottom: 0;
+	margin: 0;
+	border-bottom: none;
+	text-align: left;
+
+	.page-title {
+		margin-top:0; margin-bottom:30px;
+	}
+}
+
+
+
+
+/*********************************************************************
+
+
+                                COMMENTS
+
+
+**********************************************************************/
+#comments {
+
+	.font-size( 1.3 );
+
+	.comments-title{ margin:0 0 5px 0; }
+	.leave-comment { display:block; margin:0 0 40px 0; }
+
+	ul,ol { margin:0; padding: 0; }
+
+	.comment{ margin:0; padding:0; list-style: none; clear:both; }
+	.comments-title{ text-shadow: none; margin-bottom: 0; }
+
+	.avatar { float:left; width:70px; height:70px; margin-bottom:30px; border: 5px solid #eeeeee; .border-radius(50%); }
+	.children { margin: 0 0 0 90px; }
+
+	.comment-meta {
+		margin: 0 0 0 90px;
+
+		a { color:@color-caption; }
+		a:hover { color: @color-action; }
+		.author { margin:0 20px 0 0; font-weight:bold; }
+		.date{
+			margin:0 20px 0 0;
+
+			a { color:@color-default; }
+		}
+		.reply { float: right; }
+	}
+	.comment-body { margin: 0 0 35px 90px; }
+}
+
+.comment-navigation {
+	width:100%;
+	border-top:1px solid #ccc;
+	padding:2px 0 0 0;
+	.nav-content { border-top:1px solid #ccc; width:100%; padding:10px 0 0 0; }
+	.nav-previous { float:left; width:50%; }
+	.nav-next { float:right; width: 50%; text-align:right; }
+}
+
+#respond {
+	margin:55px 0 0 0;
+}
+
+
+
+/*********************************************************************
+
+
+                                FOOTER
+
+
+**********************************************************************/
+#footer {
+	background:#232323; padding:30px 0 0 0; font-size:12px; color: #999;
+	a {
+		color:#ccc;
+		&:hover { color: #fff; }
+	}
+	h3.widget-title { .font-size( 1.5 ); text-transform: uppercase; color:#ccc; margin:0 0 20px; }
+}
+
+#underfooter {
+	background: #191919; padding:15px 0; color: #777; font-size: 12px;
+	a {
+		color:#aaa;
+		&:hover { color: #fff; }
+	}
+	p { margin:0; }
+}
+
+.follow-me-icons {
+	font-size:30px;
+
+	i { float:left; margin:0 10px 0 0; }
+}
+
+
+
+
+
+
+/* Max page width
+/////////////////////////////////////////////////////////////////////*/
+@media (min-width: 1200px) {
+	.container {
+		max-width:1080px;
+	}
+}

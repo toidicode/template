@@ -1,0 +1,11 @@
+//## Main Layout CSS Builder
+
+@import '_variables'; // layout settings
+@import '_placeholder'; // placeholder settings
+@import '_mixins'; // layout settings
+
+@import 'layout/_header'; // header part
+@import 'layout/_content'; // content part
+@import 'layout/_plugins'; // plugins part
+@import 'layout/_footer'; // footer part
+@import 'include/_slider'; // slider part

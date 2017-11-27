@@ -1,0 +1,334 @@
+/***
+Form Layouts
+****/
+
+/* Static info */
+
+.static-info {
+  margin-bottom: 10px;
+
+  .name {
+    font-size: 14px;
+  }
+
+  .value {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &.align-reverse .name,
+  &.align-reverse .value {
+    text-align: right;
+  }
+}
+
+/* Help blocks */
+
+.help-block {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.help-inline {
+  font-size: 13px;
+  color: #737373;
+  display: inline-block;
+  padding: 5px;
+}
+
+.form-inline {
+    input {
+        margin-bottom: 0px !important;
+    }
+}
+
+
+/* Control Label */
+
+.control-label {
+  margin-top: 1px;
+
+  .required {
+    color: #e02222;
+    font-size: 12px;
+    padding-left: 2px;
+  }
+}
+
+.form {
+    padding: 0 !important;
+
+    .form-body {
+        padding: 10px;
+
+        .portlet.light & {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .form-actions {
+        padding: 20px 10px; 
+        margin: 0;
+        background-color: #f5f5f5;
+
+        @if $theme-type == "default" {
+            border-top: 1px solid #e5e5e5;
+        }
+        
+        *zoom: 1;
+
+        .portlet.light & {
+            background: none;   
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &.noborder {
+            border-top: 0;
+        }
+
+        .portlet & {
+            @include border-radius(0 0 $portlet-border-radius $portlet-border-radius);   
+        }
+
+        @include clearfix(); 
+
+        &.right {
+            padding-left: 0;
+            padding-right: 10px;
+            text-align: right;
+
+            .portlet.light & {
+                padding-right: 0;
+            }
+        }
+
+        &.left {
+            padding-left: 10px;
+            padding-right: 0;
+            text-align: left;
+            
+            .portlet.light & {
+                padding-left: 0;
+            }
+        }
+
+        &.nobg {
+            background-color: transparent;
+        }
+
+        &.top {
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-top: 0;
+
+            @if $theme-type == "default" {
+                border-bottom: 1px solid #e5e5e5;
+            }
+
+            .portlet.light & {
+                background: none;
+            }
+        }
+
+        .btn-set {
+            display: inline-block;
+        }
+
+        @media (max-width: $screen-xs-max) { /* 767px */
+            .btn-set {
+                margin-bottom: 3px;
+                margin-top: 3px;
+                float: left !important;
+            }
+        }    
+    }
+
+    .form-section {
+        margin: 30px 0px 25px 0px;
+        padding-bottom: 5px;
+
+        @if $theme-type == "default" {
+            border-bottom: 1px solid #eee;
+        }
+        
+        &:first-child {
+            margin-top: 5px;
+        }
+    }
+}
+
+/* Checkboxes */
+
+.checkbox,
+.form-horizontal .checkbox {
+    padding: 0;   
+
+    > label {
+        padding-left: 0;
+    }
+}
+
+.checkbox-list > label {
+    display: block;
+
+    &.checkbox-inline {
+        display: inline-block;
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+}
+
+/* Radio buttons */
+
+.radio-list > label {
+    display: block;
+
+    &.radio-inline {
+        display: inline-block;
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+}
+
+/* Radio buttons in horizontal forms */
+
+.form-horizontal {
+
+    .radio-list {
+        .radio {
+            padding-top: 1px;
+        }
+
+        > label {
+            margin-bottom: 0;
+        }
+    }
+
+    .radio {
+        > span {
+            margin-top: 2px;
+        }
+    }
+}
+
+/* Rows seperated form layout */
+
+.form .form-row-seperated  {
+    .portlet-body {
+        padding: 0;
+    }
+
+    .form-group {
+        margin: 0; 
+        border-bottom: 1px solid #efefef;
+        padding: 15px 0;
+
+        &.last {
+            border-bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 13px;
+        }
+
+        .help-block {
+            margin-bottom: 0;
+        }
+    }
+
+    .form-body {
+        padding: 0;    
+    }
+
+    .form-actions {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+/* Form bordered */
+
+.form .form-bordered {
+
+    .form-group {
+        margin: 0;
+        border-bottom: 1px solid #efefef;
+
+        > div {  
+            padding: 15px; 
+            border-left: 1px solid #efefef;
+
+            @media (max-width: $screen-sm-max) { /* 991px */
+                border-left: 0;  
+            }    
+        }
+
+        &.last {
+            border-bottom: 0;
+        }
+
+        .control-label {
+            padding-top: 20px;
+
+            @media (max-width: $screen-sm-max) { /* 991px */
+                padding-top: 10px;
+            }
+        }
+
+        .help-block {
+            margin-bottom: 0;
+        }
+
+        .form-control {
+            margin: 0;
+        }
+    }
+
+    .form-body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-actions {
+        margin-top: 0;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+
+        @media (max-width: $screen-sm-max) { /* 991px */
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+        }
+    }
+}
+
+/* Horizontal bordered form */
+
+.form .form-horizontal.form-bordered {
+    &.form-row-stripped {
+        .form-group:nth-child(even) {
+            background-color: #fcfcfc;
+        }
+
+        .form-control {
+            background: #fff !important;
+        }
+    }
+
+    &.form-label-stripped  {
+        .form-group:nth-child(even) {
+            background-color: #fcfcfc;
+
+            > div {
+                background-color: #ffffff;
+            }
+        }
+
+        .form-group:nth-child(even) {
+            background-color: #fcfcfc;
+        } 
+    }
+}

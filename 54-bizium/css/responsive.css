@@ -1,0 +1,86 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+ .featured-list #grid .thumb {
+	  width: 50%;
+	}
+	
+	.carousel-caption h1 {
+	  font-size: 15px;
+	  text-transform: uppercase;
+	  line-height:auto !important;
+	}
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+	.featured-list #grid .thumb {
+	  width: 50%;
+	}
+	.carousel-caption {
+	  top: 5px;
+	}
+	
+	.carousel-caption h1 {
+	  font-size: 15px;
+	  text-transform: uppercase;
+	  line-height:auto !important;
+	}
+	
+	.btn.btn-learn {
+	  font-size: 10px;
+	  font-weight: 500;
+	  padding: 5px 7px;
+	  text-align: center;
+	  text-transform: uppercase;
+	}
+	
+	.about-text{
+		text-align:center;
+	}
+	
+	.single-feature{
+		text-align:center;
+	}
+	
+	.feature-icon{
+		margin-bottom:8px;
+	}
+	
+	.feature-text h4{
+		line-height:25px;
+	}
+	
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+	.featured-list #grid .thumb {
+	  width: 50%;
+	}
+	
+	.carousel-caption {
+	  top: 5px;
+	}
+	
+	.carousel-caption h1 {
+	  font-size: 15px;
+	  text-transform: uppercase;
+	  line-height:auto !important;
+	}
+	
+	.btn.btn-learn {
+	  font-size: 10px;
+	  font-weight: 500;
+	  padding: 5px 7px;
+	  text-align: center;
+	  text-transform: uppercase;
+	}
+	
+	.about-text{
+		text-align:center;
+	}
+	
+}

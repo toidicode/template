@@ -1,0 +1,106 @@
+/***
+Bootstrap Wizard
+***/
+
+.form-wizard {
+	
+	.progress {
+  		margin-bottom: 30px;
+	}
+
+	.steps {
+		padding: 10px 0;
+	  	margin-bottom: 15px;
+	  	background-color: #fff ;
+	 	background-image: none ;
+	  	filter:none ;
+	  	border: 0px;
+	  	box-shadow: none ;
+
+	  	> li {
+	  		> a.step {
+		  		background-color: #fff ;
+		  		background-image: none ;
+		  		filter:none;
+		  		border: 0px;
+		  		box-shadow: none ;
+
+		  		&:hover {
+  					background: none;
+				}			
+
+				> .number {
+					  background-color: #eee;
+					  display: inline-block;
+					  text-align: center !important;
+					  font-size: 16px;
+					  font-weight: 300;
+					  padding: 11px 15px 13px 15px;
+					  margin-right: 10px;
+					  height: 45px;
+					  width: 45px;
+					  -webkit-border-radius: 50% !important;
+					     -moz-border-radius: 50% !important;
+					          border-radius: 50% !important;
+				}
+
+				> .desc {
+				  	display: inline-block;
+				  	font-size: 16px; 
+				  	font-weight: 300;
+
+				  	> i {
+  						display: none;
+					}
+				}
+
+			}
+
+			&.active {
+				> a.step {
+					.number {
+						background-color: $brand-success;
+	  					color: #fff;
+	  				}
+
+	  				.desc {
+	  					color: #333;
+	  				}
+				}
+			}
+
+			&.done {
+				> a.step {
+					.number {
+						background-color: $brand-warning;
+  						color: #fff;
+  					}
+
+  					.desc {
+  						color: #333; 					
+
+	  					i {
+	  						font-size: 12px;
+							font-weight: normal;
+							color: #999;
+							display: inline-block;  
+	  					}
+	  				}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-lg-min) { /* 768px & 1200px */
+  .form-wizard .step .desc {
+    margin-top: 10px;
+    display: block;
+  }
+} 
+
+@media (max-width: $screen-sm-min) { /* 768px */
+  .form-wizard .steps > li > a {
+    text-align: left;
+  }
+}

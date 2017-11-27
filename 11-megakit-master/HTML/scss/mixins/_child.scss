@@ -1,0 +1,35 @@
+// Child
+@mixin last-child {
+  @if $enable-child-media-query {
+    @media (last-child: last-child) {
+      &:last-child { @content }
+    }
+  }
+  @else {
+    &:last-child { @content }
+  }
+}
+
+@mixin first-child {
+  @if $enable-child-media-query {
+    @media (first-child: first-child) {
+      &:first-child { @content }
+    }
+  }
+  @else {
+    &:first-child { @content }
+  }
+}
+
+@mixin first-last-child {
+  @if $enable-child-media-query {
+    &:first-child { @content }
+    &:last-child { @content }
+  }
+  @else {
+    &:first-child,
+    &:last-child {
+      @content
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@media(min-width: 768px){
+
+body {
+ 
+    font-size:$base-font-size+2;
+    line-height: $base-line-height+2;
+}
+
+h2 {
+    font-family: $secondary-font-family;
+    font-size: 26px;
+    font-weight: 800;
+    line-height:1.5;
+}
+
+.page {
+    padding: 80px 0;
+}
+
+.navbar-default{
+background-color: transparent;
+    .navbar-brand{
+            padding: 20px 40px;
+    }
+}
+
+
+.banner-item{
+    top:35%;
+
+    img {
+    margin-top: -10px;
+    }
+}
+
+.about-us p {
+    color: #e6e6e6;
+}
+
+.service-number {
+    font-size: 140px;
+}
+
+.address-wrapper,
+.email-wrapper,
+.form-wrapper,
+.map-wrapper,
+.footer-wrapper{
+    max-width: 100%;
+    margin: 0;
+}
+
+.address-table{
+	max-width:350px;
+}
+
+.form-wrapper {
+    padding: 40px;
+}
+
+.email-us h1{
+	margin-bottom:100px;
+}
+
+
+}

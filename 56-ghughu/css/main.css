@@ -1,0 +1,882 @@
+/*
+	GhuGhu Agency
+	Author: Wahid Polin
+	Version: 0.0.1
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, ../scss/base/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../scss/base/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../scss/base/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../scss/base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../scss/base/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, ../scss/base/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../scss/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*font*/
+/* line 1, ../scss/base/_base.scss */
+body {
+  font-family: "Merriweather", "Serif";
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* line 9, ../scss/base/_base.scss */
+a {
+  color: white;
+}
+
+/* line 13, ../scss/base/_base.scss */
+span.thin {
+  font-weight: 300;
+}
+
+/* line 17, ../scss/base/_base.scss */
+.page {
+  padding: 60px 0;
+}
+
+/* line 21, ../scss/base/_base.scss */
+.page-top {
+  padding: 110px 0 60px;
+}
+
+/* line 25, ../scss/base/_base.scss */
+h1 {
+  font-family: "Abril Fatface";
+  font-size: 52px;
+  line-height: 1;
+}
+
+/* line 31, ../scss/base/_base.scss */
+h2 {
+  font-family: "Open sans", "Sans Serif";
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+/* line 38, ../scss/base/_base.scss */
+h3 {
+  font-family: "Open sans", "Sans Serif";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #090909;
+}
+
+/* line 48, ../scss/base/_base.scss */
+h4 {
+  font-family: "Open sans", "Sans Serif";
+  font-weight: 800;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+/* line 56, ../scss/base/_base.scss */
+p {
+  margin-bottom: 15px;
+}
+
+/* line 1, ../scss/layout/_nav.scss */
+.navbar {
+  font-family: "Open sans", "Sans Serif";
+}
+
+/* line 4, ../scss/layout/_nav.scss */
+.navbar-default {
+  background-color: #090909;
+  border: none;
+}
+/* line 8, ../scss/layout/_nav.scss */
+.navbar-default .navbar-brand {
+  font-family: "Abril Fatface";
+  font-weight: 800;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px 0;
+}
+/* line 15, ../scss/layout/_nav.scss */
+.navbar-default .navbar-brand:hover {
+  color: #f2013f;
+}
+/* line 19, ../scss/layout/_nav.scss */
+.navbar-default .navbar-brand span.thin {
+  font-family: "Open sans", "Sans Serif";
+}
+/* line 24, ../scss/layout/_nav.scss */
+.navbar-default .navbar-toggle {
+  border: none;
+  background-color: #f2013f;
+}
+/* line 28, ../scss/layout/_nav.scss */
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #d90138;
+}
+/* line 32, ../scss/layout/_nav.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+/* line 37, ../scss/layout/_nav.scss */
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 800;
+  transition: all 0.3s;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 47, ../scss/layout/_nav.scss */
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: transparent;
+  color: #f2013f;
+}
+/* line 52, ../scss/layout/_nav.scss */
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+}
+/* line 57, ../scss/layout/_nav.scss */
+.navbar-default .navbar-nav > li.active > a {
+  background-color: #090909;
+  color: #f2013f;
+}
+/* line 61, ../scss/layout/_nav.scss */
+.navbar-default .navbar-nav > li.active > a:hover {
+  background-color: transparent;
+  color: #f2013f;
+}
+/* line 67, ../scss/layout/_nav.scss */
+.navbar-default .navbar-collapse {
+  background-color: #090909;
+  border: none;
+  padding-right: 40px;
+}
+
+/* line 1, ../scss/layout/_footer.scss */
+.footer {
+  background-color: #090909;
+  font-family: "Roboto Mono";
+  font-size: 12px;
+}
+/* line 6, ../scss/layout/_footer.scss */
+.footer h4 {
+  font-family: "Roboto Mono";
+  text-transform: none;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+/* line 14, ../scss/layout/_footer.scss */
+.footer ul {
+  margin-bottom: 40px;
+}
+
+/* line 20, ../scss/layout/_footer.scss */
+.footer-wrapper {
+  border-top: 1px solid #222;
+  padding: 60px 0;
+}
+
+/* line 1, ../scss/modules/_blocks.scss */
+.service {
+  padding: 35px 0 40px;
+  border-top: 1px solid #d00136;
+}
+/* line 5, ../scss/modules/_blocks.scss */
+.service h2 {
+  margin-bottom: 15px;
+}
+
+/* line 10, ../scss/modules/_blocks.scss */
+.service-number {
+  font-family: "Abril Fatface";
+  font-size: 100px;
+  color: #090909;
+  margin-top: -30px;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/*section snippets*/
+/* line 24, ../scss/modules/_blocks.scss */
+.section-snippet {
+  margin-bottom: 20px;
+}
+/* line 27, ../scss/modules/_blocks.scss */
+.section-snippet span {
+  font-family: "Open sans", "Sans Serif";
+  font-weight: 400;
+  display: block;
+  color: #f2013f;
+  margin-left: 5px;
+}
+/* line 34, ../scss/modules/_blocks.scss */
+.section-snippet span.snippet-heading {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #bbb;
+  letter-spacing: 1px;
+}
+/* line 41, ../scss/modules/_blocks.scss */
+.section-snippet span:last-child {
+  margin-bottom: 40px;
+}
+
+/* team member */
+/* line 52, ../scss/modules/_blocks.scss */
+.team-member {
+  padding: 40px 0;
+}
+/* line 55, ../scss/modules/_blocks.scss */
+.team-member::first-of-type {
+  padding-top: 0;
+  border: none;
+}
+
+/* line 61, ../scss/modules/_blocks.scss */
+.team-member-img {
+  width: 100%;
+  height: 230px;
+  background-image: url("../images/about-us/5.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+  border-top: 5px solid #090909;
+}
+
+/* line 73, ../scss/modules/_blocks.scss */
+.team-member-contact {
+  margin-bottom: 40px;
+}
+
+/* line 78, ../scss/modules/_blocks.scss */
+.team-member-desc-heading {
+  margin-bottom: 20px;
+}
+/* line 81, ../scss/modules/_blocks.scss */
+.team-member-desc-heading h4 {
+  margin-bottom: 10px;
+}
+/* line 85, ../scss/modules/_blocks.scss */
+.team-member-desc-heading span {
+  font-size: 18px;
+  color: #F2013F;
+}
+
+/*map*/
+/* line 93, ../scss/modules/_blocks.scss */
+#map {
+  height: 350px;
+  color: #090909;
+  box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.1), 0px 0px 45px rgba(0, 0, 0, 0.2);
+}
+
+/* line 1, ../scss/modules/_buttons.scss */
+.custom-button {
+  font-family: "Open sans", "Sans Serif";
+  border-radius: 0;
+  height: 60px;
+  background-color: #f2013f;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+/* line 12, ../scss/modules/_buttons.scss */
+.custom-button:hover {
+  background-color: #d90138;
+}
+
+/* line 1, ../scss/modules/_sections.scss */
+.page {
+  padding: 60px 0;
+}
+
+/* line 5, ../scss/modules/_sections.scss */
+.main-heading {
+  margin-bottom: 40px;
+}
+
+/* banner section */
+/* line 11, ../scss/modules/_sections.scss */
+.banner {
+  background-color: #f2013f;
+}
+/* line 14, ../scss/modules/_sections.scss */
+.banner .container {
+  position: relative;
+}
+/* line 18, ../scss/modules/_sections.scss */
+.banner h1 {
+  margin-bottom: 20px;
+}
+/* line 22, ../scss/modules/_sections.scss */
+.banner p {
+  max-width: 470px;
+}
+
+/*who are we section*/
+/* line 30, ../scss/modules/_sections.scss */
+.who-are-we {
+  background-color: #090909;
+}
+/* line 33, ../scss/modules/_sections.scss */
+.who-are-we h1 {
+  margin-bottom: 40px;
+}
+
+/* line 38, ../scss/modules/_sections.scss */
+.services {
+  background-color: #f2013f;
+}
+
+/*cta*/
+/* line 44, ../scss/modules/_sections.scss */
+.cta {
+  background-color: #090909;
+}
+
+/* line 49, ../scss/modules/_sections.scss */
+.cta h1 {
+  margin-bottom: 40px;
+}
+
+/*about banner*/
+/* line 55, ../scss/modules/_sections.scss */
+.about-banner {
+  background-color: #f2013f;
+}
+
+/* line 59, ../scss/modules/_sections.scss */
+.about-heading {
+  position: absolute;
+  top: 35%;
+}
+
+/* line 64, ../scss/modules/_sections.scss */
+.about-heading h3 {
+  margin-bottom: 10px;
+}
+
+/*about-us*/
+/* line 71, ../scss/modules/_sections.scss */
+.about-us {
+  background-color: #090909;
+}
+/* line 74, ../scss/modules/_sections.scss */
+.about-us h1 {
+  margin-bottom: 40px;
+}
+
+/* team members */
+/* line 82, ../scss/modules/_sections.scss */
+.team-members {
+  background-color: #fff;
+  color: #444;
+}
+
+/*address*/
+/* line 89, ../scss/modules/_sections.scss */
+.address {
+  background-color: #f2013f;
+}
+/* line 92, ../scss/modules/_sections.scss */
+.address h1 {
+  margin-bottom: 30px;
+}
+
+/* line 97, ../scss/modules/_sections.scss */
+.address-table {
+  color: #fff;
+  border-top: 1px solid #d00136;
+  margin-bottom: 60px;
+}
+/* line 102, ../scss/modules/_sections.scss */
+.address-table td {
+  border-bottom: 1px solid #d00136;
+}
+
+/*email us*/
+/* line 113, ../scss/modules/_sections.scss */
+.address-wrapper,
+.email-wrapper,
+.form-wrapper,
+.map-wrapper,
+.footer-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* line 118, ../scss/modules/_sections.scss */
+.email-us {
+  background-color: #090909;
+}
+/* line 121, ../scss/modules/_sections.scss */
+.email-us h1 {
+  margin-bottom: 30px;
+}
+
+/*prelooader */
+/* line 3, ../scss/modules/_components.scss */
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 9999;
+  /* makes sure it stays on top */
+}
+
+/* line 14, ../scss/modules/_components.scss */
+#loader {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(../images/Preloader_1.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+
+/* banner carousel */
+/* line 34, ../scss/modules/_components.scss */
+.banner-item {
+  position: absolute;
+  top: 20%;
+}
+/* line 38, ../scss/modules/_components.scss */
+/*.banner-item img {
+  box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.2), 0px 0px 45px rgba(0, 0, 0, 0.2);
+}*/
+
+/* line 45, ../scss/modules/_components.scss */
+.carousel-control {
+  position: absolute;
+  top: 100%;
+  margin-top: -50px;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  height: 50px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+/* line 61, ../scss/modules/_components.scss */
+.carousel-control.right {
+  margin-right: 15px;
+  /*to neget the col padding to align with container*/
+  background-color: #090909;
+}
+/* line 65, ../scss/modules/_components.scss */
+.carousel-control.right i img {
+  margin-top: 12px;
+}
+/* line 70, ../scss/modules/_components.scss */
+.carousel-control.left {
+  left: 100%;
+  margin-left: -286px;
+  background-color: #090909;
+}
+/* line 75, ../scss/modules/_components.scss */
+.carousel-control.left i img {
+  margin-top: 12px;
+}
+/* line 80, ../scss/modules/_components.scss */
+.carousel-control a {
+  line-height: 0;
+}
+
+/* line 87, ../scss/modules/_components.scss */
+.carousel-indicators {
+  background-color: #090909;
+  width: 131px;
+  height: 50px;
+  bottom: 0;
+  left: 100%;
+  margin-left: -201px;
+  top: 100%;
+  margin-top: -50px;
+  padding-top: 14px;
+  border-left: 1px solid #1a1a1a;
+  border-right: 1px solid #1a1a1a;
+}
+/* line 100, ../scss/modules/_components.scss */
+.carousel-indicators li {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+/* line 106, ../scss/modules/_components.scss */
+.carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #F2013F;
+}
+
+/* =================  CAROUSEL CUSTOM FADE EFFECT ===================== */
+/* line 120, ../scss/modules/_components.scss */
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+/* line 126, ../scss/modules/_components.scss */
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+
+/* line 131, ../scss/modules/_components.scss */
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+/* line 137, ../scss/modules/_components.scss */
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 142, ../scss/modules/_components.scss */
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/* line 1, ../scss/modules/_forms.scss */
+.form-wrapper {
+  font-family: "Roboto Mono";
+  background-color: #fff;
+  color: #090909;
+  padding: 20px;
+}
+
+/* line 8, ../scss/modules/_forms.scss */
+label, input, textarea {
+  display: block;
+  width: 100%;
+  outline: none;
+}
+
+/* line 14, ../scss/modules/_forms.scss */
+label {
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+/* line 19, ../scss/modules/_forms.scss */
+input, textarea {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+}
+
+/* line 26, ../scss/modules/_forms.scss */
+textarea {
+  height: 130px;
+  margin-bottom: 20px;
+}
+
+/* line 31, ../scss/modules/_forms.scss */
+input.custom-button {
+  border: none;
+  font-family: "Roboto Mono";
+}
+
+/* line 36, ../scss/modules/_forms.scss */
+label.local-error {
+  background-color: #FCF8E3;
+  color: #C74581;
+  font-weight: 300;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  padding: 3px 20px;
+  border-radius: 2px;
+}
+
+/* line 1, ../scss/modules/_tables.scss */
+table {
+  font-family: 'Roboto Mono';
+  font-size: 12px;
+  color: #444;
+  width: 100%;
+}
+/* line 8, ../scss/modules/_tables.scss */
+table tr td {
+  padding: 15px 0;
+  border-bottom: 1px solid #d5d5d5;
+}
+/* line 12, ../scss/modules/_tables.scss */
+table tr td:first-of-type {
+  width: 30%;
+  font-weight: 700;
+}
+
+/* =================  CAROUSEL ANIMATION DELAY ===================== */
+/* line 3, ../scss/modules/_animations.scss */
+.delay-1 {
+  -webkit-animation-delay: 300ms;
+  -moz-animation-delay: 300ms;
+  animation-delay: 300ms;
+}
+
+/* line 9, ../scss/modules/_animations.scss */
+.delay-2 {
+  -webkit-animation-delay: 600ms;
+  -moz-animation-delay: 600ms;
+  animation-delay: 600ms;
+}
+
+/* line 15, ../scss/modules/_animations.scss */
+.delay-3 {
+  -webkit-animation-delay: 1200ms;
+  -moz-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+}
+
+/* line 21, ../scss/modules/_animations.scss */
+.delay-4 {
+  -webkit-animation-delay: 1500ms;
+  -moz-animation-delay: 1500ms;
+  animation-delay: 1500ms;
+}
+
+@media (min-width: 400px) {
+  /* line 2, ../scss/layout/responsive/_big-mobile.scss */
+  .banner-item {
+    top: 30%;
+  }
+
+  /* line 6, ../scss/layout/responsive/_big-mobile.scss */
+  .about-heading {
+    top: 40%;
+  }
+
+  /* line 10, ../scss/layout/responsive/_big-mobile.scss */
+  .form-wrapper {
+    padding: 30px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 3, ../scss/layout/responsive/_tablet.scss */
+  body {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  /* line 9, ../scss/layout/responsive/_tablet.scss */
+  h2 {
+    font-family: "Open sans", "Sans Serif";
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.5;
+  }
+
+  /* line 16, ../scss/layout/responsive/_tablet.scss */
+  .page {
+    padding: 80px 0;
+  }
+
+  /* line 20, ../scss/layout/responsive/_tablet.scss */
+  .navbar-default {
+    background-color: transparent;
+  }
+  /* line 22, ../scss/layout/responsive/_tablet.scss */
+  .navbar-default .navbar-brand {
+    padding: 20px 40px;
+  }
+
+  /* line 28, ../scss/layout/responsive/_tablet.scss */
+  .banner-item {
+    top: 35%;
+  }
+  /* line 31, ../scss/layout/responsive/_tablet.scss */
+  .banner-item img {
+    margin-top: -10px;
+  }
+
+  /* line 36, ../scss/layout/responsive/_tablet.scss */
+  .about-us p {
+    color: #e6e6e6;
+  }
+
+  /* line 40, ../scss/layout/responsive/_tablet.scss */
+  .service-number {
+    font-size: 140px;
+  }
+
+  /* line 48, ../scss/layout/responsive/_tablet.scss */
+  .address-wrapper,
+  .email-wrapper,
+  .form-wrapper,
+  .map-wrapper,
+  .footer-wrapper {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  /* line 53, ../scss/layout/responsive/_tablet.scss */
+  .address-table {
+    max-width: 350px;
+  }
+
+  /* line 57, ../scss/layout/responsive/_tablet.scss */
+  .form-wrapper {
+    padding: 40px;
+  }
+
+  /* line 61, ../scss/layout/responsive/_tablet.scss */
+  .email-us h1 {
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 3, ../scss/layout/responsive/_laptop.scss */
+  h1 {
+    font-size: 62px;
+  }
+
+  /* line 7, ../scss/layout/responsive/_laptop.scss */
+  .banner-item img {
+    margin-top: -25px;
+  }
+
+  /* line 11, ../scss/layout/responsive/_laptop.scss */
+  .about-us h1 {
+    margin-bottom: 60px;
+  }
+
+  /* line 15, ../scss/layout/responsive/_laptop.scss */
+  .page-top {
+    padding: 200px 0 60px;
+  }
+
+  /* line 21, ../scss/layout/responsive/_laptop.scss */
+  .navbar-default .navbar-nav > li > a {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  /* line 26, ../scss/layout/responsive/_laptop.scss */
+  .navbar-default .navbar-brand {
+    font-size: 48px;
+    padding: 40px;
+  }
+
+  /* line 32, ../scss/layout/responsive/_laptop.scss */
+  .team-member-img, .team-member-contact {
+    max-width: 350px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 2, ../scss/layout/responsive/_desktop.scss */
+  .banner-item img {
+    margin-top: -55px;
+  }
+
+  /* line 6, ../scss/layout/responsive/_desktop.scss */
+  .about-heading {
+    top: 48%;
+  }
+}
+
+.team-member-desc {
+    margin: 0px 15px;
+    text-align: justify;
+}
+
+.footer-link a:hover {
+  color: #f2013f;
+  text-decoration: none;
+}
+
+.footer-text a {
+  color: #f2013f;
+}
+
+.footer-text a:hover {
+  text-decoration: none;
+}

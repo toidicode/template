@@ -1,0 +1,148 @@
+//
+// Navbar, based on bootstrap code
+// --------------------------------------------------
+@import "3rd-party/lesshat.less";
+@import "mixins.less";
+
+// Navbar settings
+@navbar-font                         : "Open sans", Helvetica, Arial, sans-serif;
+@navbar-font-weight                  : 300;
+@navbar-font-transform               : uppercase;
+
+@navbar-default-link-color           : #454545;
+@navbar-default-link-hover-color     : #000;
+@navbar-default-link-active-color    : #000;
+@navbar-default-link-hover-bg        : #fff;
+@navbar-default-link-hover-bg-sub    : #eee;
+@navbar-default-link-active-bg       : #fff;
+@navbar-default-toggle-border-color  : @color-default;
+@navbar-default-toggle-hover-bg      : #fff;
+@navbar-default-toggle-icon-bar-bg   : @color-contrast;
+@navbar-default-border               : #ccc;
+@navbar-default-bg                   : #fff;
+
+@navbar-vivid-link-color             : lighten( #bd1550, 35% );
+@navbar-vivid-link-hover-color       : #bd1550;
+
+
+
+
+// Base class
+.navbar { border-width: 1px 0; .border-radius(0); width:100%; }
+
+// This one - for menu stickness
+.navbar.stick { position: fixed; top:0; left:0; opacity:.85; }
+
+// Navbar collapse (body)
+//
+// Group your navbar content into this for easy collapsing and expanding across
+// various device sizes. By default, this content is collapsed when <768px, but
+// will expand past that for a horizontal display.
+.navbar-collapse {
+	.border-radius(0);
+	font-family: @navbar-font;
+	font-weight: @navbar-font-weight;
+	text-transform: @navbar-font-transform;
+	.navbar-nav {
+		float:none; margin:0 auto; text-align: center;
+		> li {
+			float: none; display: inline-block;
+			> a { padding:20px 30px; }
+		}
+
+	}
+}
+
+.dropdown ul.dropdown-menu {
+	top:85%;
+	text-align: left;
+	> li > a { padding:5px 30px; }
+}
+
+
+// Default navbar
+.navbar-default {
+	background-color: @navbar-default-bg;
+	border-color: @navbar-default-border;
+
+	.navbar-nav {
+		> li > a {
+			color: @navbar-default-link-color;
+
+			&:hover,
+			&:focus {
+				color: @navbar-default-link-hover-color;
+				background-color: @navbar-default-link-hover-bg;
+			}
+		}
+		> .active > a {
+			&,
+			&:hover,
+			&:focus {
+				color: @navbar-default-link-active-color;
+				background-color: @navbar-default-link-active-bg;
+			}
+		}
+	}
+
+	.dropdown ul.dropdown-menu > li > a {
+		color: @navbar-default-link-color;
+
+		&:hover {
+			background-color: @navbar-default-link-hover-bg-sub;
+			color: @navbar-default-link-active-color;
+		}
+	}
+
+	.navbar-toggle {
+		border-color: @navbar-default-toggle-border-color;
+		&:hover,
+		&:focus {
+			background-color: @navbar-default-toggle-hover-bg;
+		}
+		.icon-bar {
+			background-color: @navbar-default-toggle-icon-bar-bg;
+		}
+	}
+
+	.navbar-collapse,
+	.navbar-form {
+		border-color: @navbar-default-border;
+	}
+
+	// Dropdown menu items
+	.navbar-nav {
+		// Remove background color from open dropdown
+		> .open > a {
+			&,
+			&:hover,
+			&:focus {
+				background-color: @navbar-default-link-active-bg;
+				color: @navbar-default-link-active-color;
+			}
+		}
+	}
+}
+
+/****************************************************************************************
+
+
+                                     Sidebar special Nav
+
+
+*****************************************************************************************/
+.nav-side {
+	.font-size(2.4); font-weight:300; margin-top:-0.37em;
+
+	> li > a {
+		padding-top:5px; padding-bottom:5px; color: @navbar-vivid-link-color;
+
+		&:hover { color: @navbar-vivid-link-hover-color; background:none; }
+	}
+
+	> li.active > a {
+		color: @navbar-vivid-link-hover-color;
+	}
+ }
+
+

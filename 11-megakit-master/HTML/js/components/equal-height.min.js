@@ -1,0 +1,1 @@
+var EqualHeight=function(){"use strict";var i=function(){$(function(i){i(".js__form-eqaul-height-v1").responsiveEqualHeightGrid(),i(".js__tab-eqaul-height-v1").responsiveEqualHeightGrid()})};return{init:function(){i()}}}();$(document).ready(function(){EqualHeight.init()});

@@ -1,0 +1,141 @@
+/*----------------------------------
+  Cubeportfolio
+------------------------------------*/
+
+.s-portfolio__filter-v1 {
+	&-item {
+		@include font($size: $font-size-13);
+		color: $color-text !important;
+		text-transform: uppercase;
+		margin-bottom: 0 !important;
+
+		@include hover {
+			color: $color-heading !important;
+		}
+
+		&.cbp-filter-item-active {
+			color: $color-primary !important;
+		}
+	}
+	
+	&.cbp-l-filters-text {
+		margin-bottom: 0;
+	}
+}
+
+/* Image Effect
+------------------------------ */
+.s-portfolio {
+	&__img-effect {
+		@include position(relative);
+		display: block;
+
+		@include after {
+			@include position(absolute, $top: 0, $left: 0, $right: 0);
+			@include size(100%);
+			background: rgba($color-primary, .95);
+			content: " ";
+			@include translate3d(0,100%,0);
+			@include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
+		}
+	}
+
+	&__item {
+		@include hover {
+			.s-portfolio__img-effect {
+				@include after {
+					@include translate3d(0,0,0);
+				}
+			}
+		}
+	}
+}
+
+/* Position
+------------------------------ */
+.s-portfolio {
+	&__caption-hover--cc {
+		@include position(absolute, $top: 50%, $left: 0, $right: 0);
+		text-align: center;
+		padding: 1.875rem;
+		opacity: 0;
+		@include translate3d(0,100%,0);
+		@include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
+	}
+
+	&__item {
+		@include hover {
+			.s-portfolio__caption-hover--cc {
+				opacity: 1;
+				@include translate3d(0,-50%,0);
+			}
+		}
+	}
+}
+
+/* Paginations v1
+------------------------------ */
+
+.s-portfolio__paginations-v1 {
+	.cbp-nav {
+		&-controls {
+			display: none;
+		}
+
+		&-pagination {
+			padding-left: .625rem;
+
+			&-item {
+				margin: 0 .9375rem;
+			}
+
+			&-active {
+				background: $color-primary;
+			}
+		}
+	}
+}
+
+/* Tab v1
+------------------------------ */
+.s-tab__filter-v1 {
+	display: block;
+	@include font($size: $font-size-28);
+	color: $color-white;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	letter-spacing: .0625rem;
+	line-height: 2rem;
+	padding: 0 0 2rem;
+	margin: 0 0 2rem;
+	@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+	@include before {
+		@include position(absolute, $bottom: 0, $left: 50%);
+		@include size(5rem, .0625rem);
+		background: rgba($color-white, .3);
+		content: " ";
+		margin-left: -2.5rem;
+	}
+
+	@include last-child {
+		padding: 0;
+		margin: 0;
+
+		@include before {
+			display: none;
+		}
+	}
+
+	&.cbp-filter-item-active {
+		color: $color-primary;
+	}
+}
+
+.s-tab__grid-v1 {
+	&-item {
+		@include font($size: $font-size-15, $weight: 300);
+		color: $color-text;
+	}
+}

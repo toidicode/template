@@ -1,0 +1,98 @@
+a, a:focus, a:hover, a:active {
+  color: #e6400c;
+}
+a:hover {
+  color: #e6400c;
+}
+::-moz-selection {
+  color: #fff;
+  background: #e6400c;
+}
+::selection {
+  color: #fff;
+  background: #e6400c;
+}
+.header-navigation a:hover,
+.header-navigation li.current a {
+  color: #e6400c;
+}
+.tb-socio .fa:hover {
+  color: #e6400c;
+  border: solid 1px #e6400c;
+}
+.carousel-indicators li.active {
+  background: #e6400c;
+}
+.go2top:hover {
+  border: solid 2px #e6400c;
+  color: #e6400c;
+}
+.content h1 strong, .content h2 strong, .content h3 strong, .content h4 strong {
+  color: #E54A1A;
+}
+.slider-item-1 .large_bold_white span,
+.slider-item-2 .large_bold_white span {
+  color: #E54A1A;
+}
+.tp-caption a {
+    color: #FF7302;
+}
+.services-block .fa {
+  background: #e85425;
+}
+.services-block .fa:after {
+  border-top: 9px solid #e85425;
+}
+.team-block em {
+  color: #E54A1A;
+}
+.portfolio-block .item > a {
+  background: rgba(229, 74, 26, 0.85);
+}
+.choose-us-block .panel-default .accordion-toggle:before {
+  background-color: #e54a1a;
+}
+.choose-us-block .panel-default .collapsed:before {
+  background-color: #495764;/* black */
+}
+.choose-us-block .panel-default .panel-title:hover .collapsed:before {
+  background-color: #e54a1a;
+}
+.btn-primary {
+  background: #E94D1C;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background: #cc3304;
+}
+.facts-block .item {
+  background: rgba(255, 99, 77, 0.92);
+}
+.pi-price strong {
+  background: #E85425;
+}
+.pi-price strong:after {
+  border-top: 9px solid #E85425;
+}
+.pricing-content .list-unstyled li i {
+  color: #E85425;
+}
+.pricing-footer .btn-default:hover,
+.pricing-footer .btn-default:active {
+  background: #E85425;
+}
+.portfolio-block .item b:hover {
+  color: #E85425;
+}
+@media (max-width: 1024px) {
+	.header-mobi-ext .header-navigation a:hover,
+	.header-mobi-ext .header-navigation li.current a{
+	  background-color: #E85425;
+	  color: #fff !important;
+	}
+}
+.header .mobi-toggler:hover {
+  background-color: #E85425;
+  border-color: #E85425;
+}

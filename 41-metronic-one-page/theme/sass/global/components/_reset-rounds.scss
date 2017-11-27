@@ -1,0 +1,37 @@
+/***
+Rounded corners reset
+***/
+
+/* Reset rounded corners for all elements */
+
+div,           
+input,      
+select,                    
+textarea,             
+span,                          
+img,               
+table,                       
+label,  
+td,                  
+th,    
+p,          
+a, 
+button, 
+ul,    
+code,
+pre,    
+li {
+    -webkit-border-radius: 0 !important;                   
+       -moz-border-radius: 0 !important;
+            border-radius: 0 !important;
+}
+
+/* except below bootstrap elements */
+
+.img-circle {
+    border-radius: 50% !important;
+}
+
+.img-rounded {
+    border-radius: 6px !important;
+}

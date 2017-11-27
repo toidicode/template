@@ -1,0 +1,51 @@
+/***
+Bootstrap Datepicker
+***/
+
+.datepicker.dropdown-menu {
+  padding: 5px;
+}
+
+.datepicker .selected {  
+  background-color:#909090 !important;
+  background-image: none !important;
+  filter: none !important;
+}
+
+.datepicker .active {  
+  background-color:#4b8df8 !important;
+  background-image: none !important;
+  filter: none !important;
+}
+
+.datepicker .active:hover {
+  background-color: #2678FC !important;
+  background-image: none !important;
+  filter: none !important;
+}
+
+.datepicker .input-daterange input {
+  text-align: left;
+}
+
+/* change z-index when opened in modal */
+.modal-open .datepicker {
+  z-index: 10055 !important;
+}
+
+.datepicker table td {
+  color: #000;
+  font-weight: 300  !important;
+  font-family: 'Open Sans' !important;
+}
+
+.datepicker table th {
+  color: #333;
+  font-family: 'Open Sans' !important;
+  font-weight: 400  !important;
+}
+
+.datepicker.dropdown-menu {
+  box-shadow: 5px 5px rgba(#666, 0.1);
+  border: 1px solid #efefef;
+}

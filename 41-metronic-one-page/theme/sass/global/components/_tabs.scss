@@ -1,0 +1,394 @@
+/***
+Customized Bootstrap Tabs 
+***/
+
+/* Tabs and pills */
+
+.nav-tabs,
+.nav-pills {
+    margin-bottom: 10px;
+
+    > li {
+        > a {
+            font-size: 14px;
+
+            > .badge { 
+                margin-top: -6px;
+            }
+
+            @include border-radius($general-border-radius $general-border-radius 0 0);
+        }
+
+        .dropdown-menu {
+            &:before,
+            &:after {
+                display: none; 
+            }
+        }
+    }   
+
+    &.nav-tabs-sm,
+    &.nav-pills-sm {
+        > li > a {
+            font-size: 13px;
+        }  
+    }
+
+    .dropdown.open {
+        > .dropdown-toggle {
+            background: #eee;
+            color: #0d638f;
+            border-color: transparent;
+        }
+    } 
+}
+
+/* Left and right tabs */
+
+.tabs-right.nav-tabs, 
+.tabs-left.nav-tabs {
+    border-bottom: 0;  
+
+    > li {
+        float: none;
+
+        > a {
+            margin-right: 0;
+            margin-bottom: 3px;
+        }
+    }  
+}
+
+/* Left tabs */
+
+.tabs-left.nav-tabs {
+  border-right: 1px solid #ddd;
+
+    > li > a {
+        display: block;
+        margin-right: -1px;
+    
+        &:hover,
+        &:focus {
+            @include border-radius($general-border-radius 0 0 $general-border-radius);
+            border-color: #eeeeee #dddddd #eeeeee #eeeeee; 
+        }
+    }
+
+    > li.active > a,
+    > li.active > a:hover
+    > li.active > a:focus {
+        @include border-radius($general-border-radius 0 0 $general-border-radius);          
+        border-color: #ddd transparent #ddd #ddd;      
+        *border-right-color: #ffffff;   
+    }
+}
+
+/* Right tabs */
+
+.tabs-right.nav-tabs {
+    border-left: 1px solid #ddd;
+
+    > li > a {
+        display: block;
+        margin-left: -1px;
+    
+        &:hover,
+        &:focus {
+            @include border-radius(0 $general-border-radius $general-border-radius 0);
+            border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+        }
+    }
+
+    > li.active > a,
+    > li.active > a:hover
+    > li.active > a:focus {
+        @include border-radius(0 $general-border-radius $general-border-radius 0);
+        border-color: #ddd #ddd #ddd transparent;
+        *border-left-color: #ffffff;
+    }
+}
+
+/* Below tabs */
+
+.tabs-below > .nav-tabs,
+.tabs-below > .nav-pills {
+    border-bottom: 0;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.tabs-below > .nav-tabs {
+    border-top: 1px solid #ddd;
+    margin-bottom: 0;
+    margin-top: 10px;
+
+    > li > a{
+        margin-top: -1px;
+        margin-bottom: 0;
+
+        &:hover,
+        &:focus {
+            border-top-color: #ddd;
+            border-bottom-color: transparent;
+        }
+
+        .dropdown-menu {
+            @include border-radius($general-border-radius); 
+        }
+    }
+
+    .active a,
+    .active a:hover
+    .active a:focus {
+        @include border-radius(0 0 $general-border-radius $general-border-radius);              
+        
+        border-color: transparent #ddd #ddd #ddd  !important;     
+    }
+}
+
+/***
+Custom tabs
+***/
+
+/* In BS3.0.0 tabbable class was removed. We had to added it back */
+
+.tabbable {
+    @include clearfix();
+}   
+
+.tabbable-custom { 
+    margin-bottom: 15px; 
+    padding: 0px;  
+    overflow: hidden;
+
+    > .nav-tabs { 
+        border: none; 
+        margin: 0px;
+
+        > li { 
+            margin-right: 2px; 
+            border-top: 2px solid transparent; 
+
+
+            > a {
+                margin-right: 0;      
+                @include border-radius(0);
+
+                &:hover {
+                    background: none;
+                    border-color:transparent;
+                }
+            }
+
+            &.active {
+                border-top: 3px solid $brand-danger; 
+                margin-top: 0; 
+                position: relative;
+
+                > a {
+                    border-top: none !important;
+                    font-weight: 400; 
+
+                    @include border-radius(0);
+
+
+                    &:hover {
+                        @include border-radius(0);  
+
+                        border-top: none; 
+                        background: #fff; 
+                        border-color: #d4d4d4 #d4d4d4 transparent; 
+                    }
+                }  
+            } 
+        }
+    }
+
+    > .tab-content { 
+        background-color: #fff;
+        border: 1px solid #ddd;  
+        padding: 10px; 
+
+        @include border-radius(0 0 $general-border-radius $general-border-radius);                  
+    }
+
+    /* justified tabs */
+
+    &.nav-justified > .tab-content {
+        margin-top: -1px;
+    }
+
+    /* boxless tabs */
+
+    &.boxless > .tab-content {
+        padding:15px 0;
+        border-left:none;
+        border-right:none;
+        border-bottom:none;
+    }
+
+    /* below justified tabs */
+
+    &.tabs-below.nav-justified .tab-content {
+        margin-top: 0px;
+        margin-bottom: -2px;
+  
+        @include border-radius($general-border-radius $general-border-radius 0 0);
+    }
+
+    /* full width tabs */
+
+    &.tabbable-full-width {
+        > .nav-tabs > li > a {
+            color:#424242;
+            font-size:15px;
+            padding:9px 15px;
+        }
+
+        > .tab-content {
+            padding:15px 0;
+            border-left:none;
+            border-right:none;
+            border-bottom:none;
+        }
+    }    
+
+    /* below tabs */
+
+    &.tabs-below .nav-tabs {
+
+        > li > a { 
+            border-top: none; 
+            border-bottom: 2px solid transparent; 
+            margin-top: -1px;         
+        }
+
+        > li.active {
+            border-top: none; 
+            border-bottom: 3px solid #d12610; 
+            margin-bottom: 0; 
+            position: relative; 
+
+            > a {
+                border-bottom: none;  
+
+                &:hover {
+                    background: #fff; 
+                    border-color: #d4d4d4 #d4d4d4 transparent; 
+                }
+            }
+        }
+    }
+}   
+
+
+.tabbable-custom.tabbable-noborder {
+    > .nav-tabs > li > a {
+        border: 0;
+    }
+
+    .tab-content {
+        border: 0;
+    }
+}
+
+
+$tabbable-line-font-color: #333 !default;
+
+.tabbable-line {
+    > .nav-tabs { 
+        border: none; 
+        margin: 0px;
+
+        > li { 
+            margin-right: 2px; 
+
+
+            > a {
+                border: 0;
+                margin-right: 0;
+                color: lighten($tabbable-line-font-color, 25%);
+
+                > i {
+                    color: lighten($tabbable-line-font-color, 45%); 
+                }
+            }
+
+            &.open,
+            &:hover {
+                border-bottom: 4px solid lighten($brand-danger, 25%);
+
+                > a {
+                    border: 0; 
+                    background: none !important;
+                    color: $tabbable-line-font-color;
+
+                    > i {
+                        color: lighten($tabbable-line-font-color, 45%);
+                    }
+                }
+
+                .dropdown-menu {
+                    margin-top: 0px;
+                }
+            }
+
+            &.active {
+                border-bottom: 4px solid $brand-danger;
+                position: relative;
+
+                > a {
+                    border: 0; 
+                    color: $tabbable-line-font-color;
+
+                    > i {
+                        color: lighten($tabbable-line-font-color, 5%);
+                    }
+                }  
+            }   
+        }
+    }  
+
+    > .tab-content { 
+        margin-top: -3px;
+        background-color: #fff;
+        border: 0;
+        border-top: 1px solid #eee;  
+        padding: 15px 0;
+
+        .portlet & {
+            padding-bottom: 0; 
+        }
+    }
+}
+
+.tabbable-line.tabs-below {
+     > .nav-tabs { 
+        > li { 
+            border-top: 4px solid transparent;
+            
+            > a {
+                margin-top: 0;
+            }
+
+            &:hover {
+                border-bottom: 0;
+                border-top: 4px solid lighten($brand-danger, 25%);
+            }
+
+            &.active {
+                margin-bottom: -2px;   
+                border-bottom: 0;
+                border-top: 4px solid $brand-danger;
+            } 
+        }
+    }  
+
+    > .tab-content { 
+        margin-top: -10px;  
+        border-top: 0;
+        border-bottom: 1px solid #eee;  
+        padding-bottom: 15px; 
+    }
+}

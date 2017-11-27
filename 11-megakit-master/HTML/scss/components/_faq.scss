@@ -1,0 +1,33 @@
+/*----------------------------------
+  FAQ
+------------------------------------*/
+
+.s-faq {
+	&__pseudo {
+		@include position(relative);
+		
+		@include before {
+			@include position(absolute, $bottom: -1rem, $left: 12.5rem);
+			z-index: -1;
+			@include font($size: $font-size-150, $family: $font-family-playfair);
+			color: rgba($color-sky-light, .8);
+			content: "\0026";
+		}		
+	}
+
+	&-grid__divider {
+		display: inline-block;
+		border-bottom: .0625rem solid rgba($color-white, .3);
+		margin: .3125rem 0;
+	}
+
+	&-grid__title {
+		@include font($size: $font-size-16);
+		color: $color-white;
+		margin: .3125rem 0 0 .5rem;
+	}
+
+	.cbp-caption {
+		border-bottom: none;
+	}
+}

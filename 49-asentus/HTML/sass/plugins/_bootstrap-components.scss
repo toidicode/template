@@ -1,0 +1,62 @@
+/*------------------------------------------------------------------
+  	[Form Control]
+------------------------------------------------------------------*/
+
+.form-control {
+	height: 50px;
+    @include font($size: 14px, $weight: 400);
+    color: $color-subtitle;
+    @include placeholder($color-subtitle);
+    background: $color-sky-light;
+    border: none;
+    box-shadow: none;
+    @include border-radius(0);
+    padding-left: 15px;
+
+    &:focus {
+    	color: $color-heading;
+        @include placeholder($color-heading);
+        box-shadow: none;
+    }
+}
+
+
+/*------------------------------------------------------------------
+    [Full Screen Carousel]
+------------------------------------------------------------------*/
+
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*------------------------------------------------------------------
+    [Carousel]
+------------------------------------------------------------------*/
+
+.carousel-indicators {
+    left: auto;
+    width: auto;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.carousel-centered {
+    @include position(absolute, $top: 50%);
+    @include translate3d(0,-50%,0);
+}
+
+.carousel-title {
+    @include font($size: 80px, $weight: 700);
+    color: $color-white;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+@media (max-width: $screen-sm-min) {
+    .carousel-title {
+        @include font($size: 60px);
+    }    
+}

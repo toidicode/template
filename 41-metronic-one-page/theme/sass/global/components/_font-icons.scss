@@ -1,0 +1,210 @@
+/***
+Fontawesome Icons
+***/
+
+[class^="fa-"]:not(.fa-stack),
+[class^="glyphicon-"],
+[class^="icon-"],
+[class*=" fa-"]:not(.fa-stack),
+[class*=" glyphicon-"],  
+[class*=" icon-"] {
+  display: inline-block; 
+  font-size: $icon-size-normal;
+  *margin-right: .3em;
+  line-height: $icon-size-normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Make font awesome icons fixed width */
+
+li [class^="fa-"],
+li [class^="glyphicon-"],
+li [class^="icon-"],
+li [class*=" fa-"],
+li [class*=" glyphicon-"],
+li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em; 
+  text-align: center;
+}
+
+li [class^="glyphicon-"],
+li [class*=" glyphicon-"] {  
+  top: 2px;
+}
+
+li [class^="icon-"],
+li [class*=" icon-"] {   
+  top: 1px;
+  position: relative;
+}
+
+li [class^="fa-"].icon-large,
+li [class^="glyphicon-"].icon-large,
+li [class^="icon-"].icon-large,
+li [class*=" fa-"].icon-large,
+li [class*=" glyphicon-"].icon-large,
+li [class*=" icon-"].icon-large {
+  /* increased font size for icon-large */
+  width: 1.5625em;
+}
+
+/* Icon sizing */
+
+.fa-sm:not(.fa-stack),
+.icon-sm {
+  font-size: 12px;
+}
+
+.fa-lg:not(.fa-stack),
+.icon-lg {
+  font-size: 16px !important;
+} 
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+/* Icon coloring */
+
+.icon-state-default {
+  color: $brand-default;
+}
+
+.icon-state-success {
+  color: $brand-success;
+}
+
+.icon-state-info {
+  color: $brand-info; 
+}
+
+.icon-state-warning {
+  color: $brand-warning;
+}
+
+.icon-state-danger {
+  color: $brand-danger;
+}
+
+/***
+Font Awesome 4.x Demo
+***/
+
+.fa-item {
+    font-size: 14px;
+    padding: 10px 10px 10px 20px;
+
+    i {
+        font-size: 16px;
+        display: inline-block;
+        width: 20px;
+        color: #333;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background: #eee;
+    }
+}
+
+/***
+Simple Line Icons Demo
+***/
+
+.simplelineicons-demo {
+  .item-box {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 -0.22em 1em 0;
+    padding-left: 1em;
+    width: 100%;
+
+    .item {
+      background-color: #fff;
+      color: #33383e;
+      border-radius: 8px;
+      display: inline-block;
+      padding: 10px;
+      width: 100%;
+
+      span {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .simplelineicons-demo  {
+      .item-box {
+        width: 33.333%;
+      }
+    }
+}
+
+/*** 
+Glyphicons Demo
+***/
+
+.glyphicons-demo ul {
+    padding-left: 0;
+    padding-bottom: 1px;
+    margin-bottom: 20px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.bs-glyphicon-class {
+  text-align: center;
+}
+
+.bs-glyphicons {
+    padding-left: 0;
+    padding-bottom: 1px;
+    margin-bottom: 20px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.glyphicons-demo ul li {
+    float: left;
+    width: 25%;
+    height: 115px;
+    padding: 10px;
+    margin: 0 -1px -1px 0;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.glyphicons-demo .glyphicon {
+    display: block;
+    margin: 5px auto 10px;
+    font-size: 24px;
+    color: #444;
+}
+
+.glyphicons-demo ul li:hover {
+    background-color: rgba(86,61,124,.1);
+}
+
+@media (min-width: 768px) {
+    .glyphicons-demo ul li {
+        width: 12.5%;
+    }
+}

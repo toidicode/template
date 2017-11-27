@@ -1,0 +1,86 @@
+/***
+Notes
+***/
+
+@mixin note-variant($text-color, $background-color, $border-color) {
+    background-color: lighten($background-color, 5%);
+    border-color: darken($border-color, 5%);
+    color: $text-color;  
+
+    &.note-bordered {
+        background-color: darken($background-color, 1%);
+        border-color: darken($border-color, 10%);
+    }
+
+    &.note-shadow {
+        background-color: darken($background-color, 0%);
+        border-color: darken($border-color, 10%);   
+        box-shadow: 5px 5px rgba(darken($border-color, 9%), 0.2);     
+    }
+}   
+
+.note {  
+  	margin: 0 0 20px 0;
+  	padding: 15px 30px 15px 15px; 
+  	border-left: 5px solid #eee;
+ 
+    @include border-radius(0 $portlet-border-radius $portlet-border-radius 0);
+
+  	h1,
+  	h2,
+  	h3,
+  	h4,
+  	h5,
+  	h6 {
+  		margin-top:0;
+
+      .close {
+        margin-right: -10px;
+      }
+  	}
+
+  	p {
+  		&:last-child {
+  			margin-bottom: 0;
+  		}
+      font-size: 13px;
+  	}
+
+  	code,
+  	.highlight {
+  		background-color: #fff;
+  	}
+
+  	&.note-default {
+  		@include note-variant($state-default-text, $state-default-bg, $state-default-border);
+  	}
+
+  	&.note-primary {
+  		@include note-variant($state-primary-text, $state-primary-bg, $state-primary-border);
+  	}
+
+  	&.note-success {
+  		@include note-variant($state-success-text, $state-success-bg, $state-success-border);
+  	}
+
+  	&.note-info {
+  		@include note-variant($state-info-text, $state-info-bg, $state-info-border);
+  	}
+
+  	&.note-warning {
+  		@include note-variant($state-warning-text, darken($state-warning-bg, 5%), darken($state-warning-border, 5%));
+  	}
+
+  	&.note-danger {
+  		@include note-variant($state-danger-text, $state-danger-bg, $state-danger-border);
+  	}
+
+}
+
+@if $theme-type == "material-design" {  
+  .note {
+    @include border-radius($general-border-radius);  
+    border: 0;  
+    @extend .md-shadow-z-1;         
+  }
+}

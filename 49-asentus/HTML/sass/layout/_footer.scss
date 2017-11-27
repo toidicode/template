@@ -1,0 +1,41 @@
+/*------------------------------------------------------------------
+  	[Footer]
+------------------------------------------------------------------*/
+
+.footer {
+	background: url(../img/1920x1080/03.jpg) no-repeat;
+    background-size: cover;
+	background-position: center center;
+
+	.footer {
+		&-seperator {
+			border-bottom: 1px solid rgba(255,255,255,.2);
+		}
+
+		&-list {
+			margin-bottom: 0;
+		}
+	
+		&-list-item {
+			color: #cbd3e1;
+			margin-bottom: 25px;
+		}
+		
+		&-list-link {
+			color: #cbd3e1;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+
+		&-input {
+			@include bg-opacity(#000, .15);
+		}
+
+		&-logo {
+			@include size(85px, auto);
+		}
+	}
+
+}

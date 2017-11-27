@@ -1,0 +1,42 @@
+.section-background{
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-attachment: fixed;
+	text-transform: uppercase;
+	background: url('../images/section-header.png');
+	text-align: center;
+	background-size: cover;
+}
+.page-header{
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 200;
+	border-bottom: none;
+    padding-top: 85px;
+    padding-bottom: 40px;
+    font-size: 34px;
+}
+.breadcrumb{
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0px;
+}
+.breadcrumb .active{
+	color: #fff;
+}
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #fff;
+    content: "\f3d3";
+    font-family: "ionicons";
+}
+.breadcrumb a{
+	color: #fff;
+	border: 1px solid transparent;
+	text-decoration: none;
+	padding: 5px;
+}
+.breadcrumb a:hover{
+	color: #fff;
+	border: 1px solid #fff;
+}

@@ -1,0 +1,50 @@
+/*----------------------------------
+  Google Map
+------------------------------------*/
+
+/* Custom Style */
+.s-google-map {
+  &,
+  .s-google-container {
+    @include position(relative);
+  }
+}
+
+/* Info Window: White background and box outline */
+.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div {
+  background-color: $color-white !important;
+  box-shadow: none !important;
+}
+
+/* Info Window: Arrow colour */
+.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div > div > div {
+  background-color: $color-white !important;
+  box-shadow: none !important;
+}
+
+.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div:first-child {
+  display: none;
+}
+
+/* Info Window: Let's remove image icon inside close button */
+.gm-style > div:first-child > div + div > div:last-child > div > div:last-child > img {
+  display: none;
+}
+
+/* Info Window: New arrow style */
+.gm-style > div:first-child > div + div > div:last-child > div > div:last-child {
+  overflow: inherit !important;
+}
+
+.gm-style > div:first-child > div + div > div:last-child > div > div:last-child:after {
+  @include position(absolute, $top: 0, $right: 0);
+  @include font($size: $font-size-12, $family: $font-family-themify);
+  color: $color-text;
+  content: "\e646";
+}
+
+/* Info Window: Positioning of infowindow */
+.gm-style-iw {
+  top: 1.375rem !important;
+  left: 1.375rem !important;
+}

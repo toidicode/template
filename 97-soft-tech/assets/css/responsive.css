@@ -1,0 +1,162 @@
+
+
+/*
+Author: XpeedStudio
+Author URI: http://themeforest.net/user/XpeedStudio/portfolio
+*/
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        font-size: 15px;
+    }
+    .home-content h1 {
+    font-size: 40px;
+	}
+	.signup-process .signup-details h5 {
+    font-size: 21px;
+	}
+	.signup-process .signup-details .number li {
+    font-size: 13px;
+
+	}
+	.community-edition{
+		margin-bottom:20px;
+	}
+}
+/* Portrait tablets and small desktops */
+@media  (max-width: 991px) {
+    html {
+        font-size: 80%;
+    }
+	.home-content h1 {
+    font-size: 36px;
+	}
+   .heading-content h1 {
+    font-size: 45px;
+	}
+	.signup-process .signup-icon {
+    float: none;
+	}
+	.community-edition{
+		margin-bottom:20px;
+	}
+	.signup-process .signup-details {
+    float:none;
+	}
+
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    html {
+        font-size: 70%;
+    }
+	.home-content h1 {
+    font-size: 22px;
+	}
+	.navbar-default .collapse .login a {
+    margin-left:0;
+    width:22%;
+	}
+	.home-contact p {
+    font-size: 14px;
+	}
+	.heading-content h1 {
+    font-size: 28px;
+	}
+	.signup-process .signup-icon {
+    float: none;
+	}
+	.community-edition{
+		margin-bottom:20px;
+	}
+	.single_right_contact p{
+	margin-top:25px;
+	}
+   
+}
+
+
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    html {
+        font-size: 60%;
+    }
+	.home-content h1 {
+    font-size:13px;
+	}
+   .navbar-default .collapse .login a {
+    margin-left: 0;
+    width: 23%;
+	}
+	.social-wrapper .social-contact a {
+    color: #fff;
+    margin-right: 20px;
+    float: left;
+    margin-top: 10px;
+	}
+	.home-contact p {
+
+    font-size: 8px;
+	}
+	.heading-content h1 {
+    font-size: 16px;
+	}
+	.signup-process .signup-icon {
+    float: none;
+	}
+	.signup-process .signup-details h5 {
+    font-size: 23px;
+    margin-left:0;
+	}
+	.signup-process .signup-details {
+    float:none;
+	}
+	.community-edition{
+		margin-bottom:20px;
+	}
+	.single_features_right h2 {
+    font-size: 22px;
+	}
+	.single_features_right p {
+    line-height: 24px;
+	}
+	.single_service_right p {
+    line-height: 24px;
+	}
+	.single_service2 .single_service_right {
+    width: 100%;
+    padding-left:0;
+	}
+	.single_service_right h2 {
+	margin-bottom: 15px;
+	}
+
+}
+
+
+
+@media (max-width: 320px) {
+
+
+    html {
+        font-size: 50%;
+    }
+	.signup-process .signup-icon {
+    float: none;
+	}
+	.community-edition{
+		margin-bottom:20px;
+	}
+	.navbar-default .collapse .login a {
+    width: 36%;
+	}
+	.social-icon{
+		margin-left: 80px;
+	}
+	.social-wrapper .social-contact {
+    margin-left: 52px;
+	}
+}
+

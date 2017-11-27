@@ -1,0 +1,17 @@
+/*----------------------------------
+  Footer
+------------------------------------*/
+
+.s-footer__logo {
+	@include position(relative);
+	z-index: 1;
+
+	@include before {
+		@include position(absolute, $top: 0, $left: .9375rem, $bottom: 0);
+		@include size(70%, auto);
+		z-index: -1;
+		background: url('../img/widgets/worldmap.png') no-repeat center center;
+		background-size: cover;
+		content: " ";
+	}
+}

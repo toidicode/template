@@ -1,0 +1,128 @@
+/***
+Custom Bootstrap Badges
+***/
+
+.badge {
+  	font-size: 11px !important;
+  	font-weight: 300;
+  	text-align: center;
+  	height: 18px;
+  	padding: 3px 6px 3px 6px;
+  	-webkit-border-radius: 12px !important;
+    -moz-border-radius: 12px !important;
+    border-radius: 12px !important;
+ 	  text-shadow:none !important;
+  	text-align: center;
+  	vertical-align: middle;
+
+  	&.badge-roundless {
+   		   -webkit-border-radius: 0 !important;
+      	 -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+	 }
+
+    &.badge-empty {
+      display: inline-block;
+      padding: 0;
+      min-width: 8px;   
+      height: 8px;
+      width: 8px;
+    }
+}
+
+/* Badge variants */
+
+@mixin badge-variant($bg-color) {
+	  background-color: $bg-color;
+  	background-image: none;
+}
+
+.badge-default  {
+    @include badge-variant($brand-default);
+}
+
+.badge-primary  {
+    @include badge-variant($brand-primary);
+}
+
+.badge-info  {
+    @include badge-variant($brand-info);
+}
+
+.badge-success  {
+    @include badge-variant($brand-success);
+}
+
+.badge-danger  {
+    @include badge-variant($brand-danger);
+}
+
+.badge-warning  {
+    @include badge-variant($brand-warning);
+}
+
+/* Fix badge position for navs */
+
+.nav.nav-pills,
+.nav.nav-stacked {
+    > li {
+        > a {
+            > .badge {
+                margin-top: -2px;
+            }
+        }
+    }     
+}
+
+/***
+Dropdown Menu Badges
+***/
+
+.dropdown-menu {
+    > li {
+        > a {
+            > .badge {
+   	            position: absolute;
+   	            margin-top: 1px;
+               	right: 3px;
+               	display: inline;
+               	font-size: 11px;
+               	font-weight: 300;
+               	text-shadow:none;
+                height: 18px;
+                padding: 3px 6px 3px 6px;
+                text-align: center;
+                vertical-align: middle;
+               	-webkit-border-radius: 12px !important;
+                -moz-border-radius: 12px !important;
+                border-radius: 12px !important;
+
+                @if $theme-type == "material-design" {
+                  padding: 4px 6px 2px 6px;
+                }
+            }
+        }
+    }
+
+    &.badge-roundless {
+   		-webkit-border-radius: 0 !important;
+      	 -moz-border-radius: 0 !important;
+              border-radius: 0 !important;
+	  }
+}
+
+
+@if $theme-type == "material-design" {
+    .badge {
+        @extend .md-shadow-z-1;  
+        text-transform: uppercase;
+        font-size: 10px; 
+        font-weight: 600;
+        padding: 4px 6px 2px 6px;
+    }
+
+    .page-sidebar .badge {
+          
+         font-size: 10px !important;
+    }
+}

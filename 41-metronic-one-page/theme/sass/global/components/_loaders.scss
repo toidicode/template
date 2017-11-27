@@ -1,0 +1,127 @@
+/***
+UI Loading
+***/
+
+.loading-message {
+    display: inline-block;
+    min-width: 125px;
+    margin-left: -60px;
+    padding: 10px;
+    margin: 0 auto;
+    color: #000 !important;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+
+    &.loading-message-boxed {
+        border: 1px solid #ddd;
+        background-color: #eee;  
+
+        @include border-radius($general-border-radius);
+
+        -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);  
+    }
+
+    > span {
+        line-height:20px;
+        vertical-align: middle;
+    }
+}
+
+.page-loading {
+    @include border-radius($general-border-radius);
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 125px;
+    margin-left: -60px;
+    margin-top: -30px;
+    padding: 7px;
+    text-align: center;
+    color: #333;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    background-color: #eee;  
+    vertical-align: middle;
+    -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);  
+
+    > span {
+        line-height:20px;
+        vertical-align: middle;
+    }
+}
+
+.page-spinner-bar {
+    position: fixed;
+    z-index: $zindex-modal + 1;
+    width: 100px;
+    top: 40%;
+    left: 50%;
+    margin-left: -55px;
+    text-align: center;
+
+    > div {
+        margin: 0 5px;
+        width: 18px;
+        height: 18px;
+        background: #eee;
+
+        border-radius: 100% !important;
+        display: inline-block;
+        
+        -webkit-animation: bounceDelay 1.4s infinite ease-in-out;
+          animation: bounceDelay 1.4s infinite ease-in-out;
+         
+         /* Prevent first frame from flickering when animation starts */
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    .bounce1 {
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+    }
+
+    .bounce2 {
+        -webkit-animation-delay: -0.16s;
+         animation-delay: -0.16s;
+    }
+}
+
+.block-spinner-bar {
+    display: inline-block;
+    width: 80px;
+    text-align: center;  
+
+    > div {
+        margin: 0 2px;
+        width: 15px;
+        height: 15px;
+        background: #eee;
+        border-radius: 100% !important;
+        display: inline-block;
+
+        -webkit-animation: bounceDelay 1.4s infinite ease-in-out;
+          animation: bounceDelay 1.4s infinite ease-in-out;
+         
+         /* Prevent first frame from flickering when animation starts */
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    .bounce1 {
+        -webkit-animation-delay: -0.32s;  
+        animation-delay: -0.32s;
+    }
+
+    .bounce2 {
+        -webkit-animation-delay: -0.16s;
+         animation-delay: -0.16s;
+    }
+}

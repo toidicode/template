@@ -1,0 +1,23 @@
+.footer {
+    background-color: $secondary-background-color;
+    font-family: $tertiary-font-family;
+    font-size: 12px;
+
+    h4 {
+    	font-family: $tertiary-font-family;
+    	text-transform: none;
+	    font-size: 14px;
+	    font-weight: 700;
+	    margin-bottom: 15px;
+	}
+
+	ul {
+	    margin-bottom: 40px;
+	}
+
+}
+
+.footer-wrapper {
+    border-top: 1px solid #222;
+    padding: 60px 0;
+}

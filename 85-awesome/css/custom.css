@@ -1,0 +1,317 @@
+/*
+Theme Name: Awesome
+Theme URI: http://themewagon.com/demo/Awesome/
+Author: ThemeWagon
+Author URI: http://themewagon.com/
+Description: A coming soon responsive theme. Built with HTML5, CSS3, Bootstrap framework. Google fonts, Font Awesome Icon integrated
+Version: 1.0.1
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.txt
+Tags: responsive layout, coming soon, special page 
+Text Domain:
+*/
+
+/**
+ * Table of Contents:
+ *
+ * 1. - Header
+        1.1 - logo
+        1.2 - counter
+ * 2. - Newsletter
+ * 3. - Social Media
+ * 4. - Footer
+ * -----------------------------------------------------------------------------
+ */
+
+ 
+
+/* ============================================
+                Global
+=============================================== */
+
+* {outline: none !important;}
+
+a:hover, a:focus{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.input-group {
+    width: 80%;
+    margin-left: 70px;
+}
+
+.input-group-addon{
+    border-radius: 0px;
+    background-color: rgba(31, 58, 66, 0.83);
+    color: #fff;
+    padding: 0px 20px;
+}
+
+input.form-control:focus {
+    box-shadow: none !important;
+    border: 1px solid #fff;
+}
+
+.form-control{
+    padding: 30px 15px;
+    background-color: rgba(31, 58, 66, 0.83);
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 0px;
+}
+
+::-webkit-input-placeholder 
+{
+    color: rgba(255,255,255,0.62) !important;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    letter-spacing: 1px !important;
+    font-weight: 300 !important;
+}
+
+:-moz-placeholder 
+{ /* Firefox 18- */
+    color: rgba(255,255,255,0.62) !important;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    letter-spacing: 1px !important;
+    font-weight: 300 !important;
+}
+
+::-moz-placeholder 
+{  /* Firefox 19+ */
+    color: rgba(255,255,255,0.62) !important;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    letter-spacing: 1px !important;
+    font-weight: 300 !important;
+}
+
+:-ms-input-placeholder 
+{  
+    color: rgba(255,255,255,0.62) !important;
+    font-weight: 300 !important;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    letter-spacing: 1px !important;
+}
+
+p{
+    margin-bottom: 0px;
+}
+
+.subsribe-btn {
+    padding: 0px 45px;
+    margin-top: 35px;
+    background-color: rgba(31, 58, 66, 0.83);
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 62px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    border: none;
+}
+
+.subsribe-btn:hover {
+    background: rgba(87, 87, 87, 0.63);
+    color: #fff;
+}
+
+.subscribe-btn:focus{
+    border: none;
+}
+
+/* 
+==================================
+            1. Header
+==================================
+ */
+
+.header{
+    background-image: url(../img/Awesome_Coming_Soon_Template_BG.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header-wrapper{
+    background-color: rgba(0, 0, 0, 0.62);
+}
+
+/* ===============================  1.1  Logo  ====================================== */
+
+.theme-name {
+    margin: 50px 0px;
+}
+
+a.title {
+    font-size: 70px;
+    border: 6px ridge #fff;
+    color: #fff;
+    padding: 14px;
+    font-family: 'Oswald',sans-serif;
+    background-color: rgba(31, 58, 66, 0.7);
+    text-shadow: -3px 5px #000;
+    font-weight: lighter;
+}
+
+.header-text{
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.service-text{
+    font-size: 27px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.coming{
+    font-size: 90px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    font-weight: 300;
+}
+/* ------------------------------  for responsiveness ------------------------------------- */
+@media (max-width: 565px) {
+    .coming {
+        font-size: 71px;
+    }
+}
+
+@media (max-width: 500px) {
+    .coming {
+        font-size: 48px;
+    }
+}
+
+
+/* ===================================    1.2 Timer      ================================== */
+
+.day, .hr, .min, .sec{
+    border-right: 1px dotted #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 40px;
+    background-color: rgba(31, 58, 66, 0.7);
+    text-shadow: -2px 3px #000;
+}
+.day{
+    border-left: 1px dotted #fff;
+}
+.counter1{
+    border-top: 1px dotted #fff;
+}
+
+.counter2{
+    border-bottom: 1px dotted #fff;
+    margin-bottom: 100px;
+}
+
+.counter1, .counter2
+{
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+/* =============================================
+                 2. News-letter
+================================================ */
+
+.newsletter{
+    background: url(../img/pixel_weave.png);
+}
+
+.newsletter-wrapper{
+    padding: 58px 0px;
+}
+
+.newsletter-text{
+    text-transform: capitalize;
+    padding-bottom: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    word-spacing: 5px;
+    color: rgba(31, 58, 66, 1);
+}
+
+p.spam {
+    font-style: italic;
+}
+
+.spam i {
+    padding-right: 8px;
+}
+
+/* =============================================
+                3. Social Media
+================================================ */
+
+.social-media{
+    background:url(../img/social-media-bg1.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.social-media-wrapper{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 58px 0px;
+}
+
+.social-media-text{
+    text-transform: capitalize;
+    padding-bottom: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    color: whitesmoke;
+    font-size: 40px;
+    word-spacing: 5px;
+}
+
+.social-links a{
+    margin: 15px;
+}
+
+.social-links a i{
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(31, 58, 66, 0.7);
+    color: #fff;
+    border-radius: 50%;
+    border: 3px double #fff;
+    padding-top: 10px;
+}
+
+/* =============================================
+                4. Footer
+================================================ */
+
+.footer{
+    background-color: rgba(0,0,0,0.89);
+}
+
+.footer-wrapper{
+    padding: 20px 0px;
+}
+
+.copy-right{
+    color: #fff;
+}
+
+.develop{
+    color: #fff;
+}
+.develop a {
+    color: cadetblue;
+}

@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "picto-foundry-household";
+  src: url("../fonts/picto-foundry-household.eot");
+  src: url("../fonts/picto-foundry-household.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/picto-foundry-household.woff") format("woff"),
+       url("../fonts/picto-foundry-household.ttf") format("truetype"),
+       url("../fonts/picto-foundry-household.svg#picto-foundry-household") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "picto-foundry-household";
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-alarm-clock:before,
+.icon-baby-monitor:before,
+.icon-bar-stool:before,
+.icon-bed:before,
+.icon-book-shelf:before,
+.icon-broom:before,
+.icon-cabinet:before,
+.icon-chair-1:before,
+.icon-chair-2:before,
+.icon-crib:before,
+.icon-dish-washer:before,
+.icon-door-key:before,
+.icon-door:before,
+.icon-fence:before,
+.icon-garbage-can:before,
+.icon-garden-rake:before,
+.icon-garden-spade:before,
+.icon-gate:before,
+.icon-globe:before,
+.icon-home-1:before,
+.icon-home-2:before,
+.icon-home-fill-1:before,
+.icon-hung-picture:before,
+.icon-lamp-1:before,
+.icon-lamp-2:before,
+.icon-lamp-3:before,
+.icon-light-bulb:before,
+.icon-light-fixture:before,
+.icon-light-switch:before,
+.icon-microwave:before,
+.icon-pain-can:before,
+.icon-paint-brush:before,
+.icon-paint-roller:before,
+.icon-plug-fill:before,
+.icon-plug:before,
+.icon-plunger:before,
+.icon-recycle:before,
+.icon-refrigerator-1:before,
+.icon-refrigerator-2:before,
+.icon-shovel:before,
+.icon-soap-bottle:before,
+.icon-sofa-chair:before,
+.icon-stove-top:before,
+.icon-stove-vent:before,
+.icon-swing:before,
+.icon-table-1:before,
+.icon-table-2:before,
+.icon-thermostat:before,
+.icon-toilet:before,
+.icon-washer-dryer:before,
+.icon-window-1:before,
+.icon-window-2:before,
+.icon-window-3:before {
+  font-family: "picto-foundry-household";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.icon-alarm-clock:before { content: "\f100"; }
+.icon-baby-monitor:before { content: "\f101"; }
+.icon-bar-stool:before { content: "\f102"; }
+.icon-bed:before { content: "\f103"; }
+.icon-book-shelf:before { content: "\f104"; }
+.icon-broom:before { content: "\f105"; }
+.icon-cabinet:before { content: "\f106"; }
+.icon-chair-1:before { content: "\f107"; }
+.icon-chair-2:before { content: "\f108"; }
+.icon-crib:before { content: "\f109"; }
+.icon-dish-washer:before { content: "\f10a"; }
+.icon-door-key:before { content: "\f10b"; }
+.icon-door:before { content: "\f10c"; }
+.icon-fence:before { content: "\f10d"; }
+.icon-garbage-can:before { content: "\f10e"; }
+.icon-garden-rake:before { content: "\f10f"; }
+.icon-garden-spade:before { content: "\f110"; }
+.icon-gate:before { content: "\f111"; }
+.icon-globe:before { content: "\f112"; }
+.icon-home-1:before { content: "\f113"; }
+.icon-home-2:before { content: "\f114"; }
+.icon-home-fill-1:before { content: "\f115"; }
+.icon-hung-picture:before { content: "\f116"; }
+.icon-lamp-1:before { content: "\f117"; }
+.icon-lamp-2:before { content: "\f118"; }
+.icon-lamp-3:before { content: "\f119"; }
+.icon-light-bulb:before { content: "\f11a"; }
+.icon-light-fixture:before { content: "\f11b"; }
+.icon-light-switch:before { content: "\f11c"; }
+.icon-microwave:before { content: "\f11d"; }
+.icon-pain-can:before { content: "\f11e"; }
+.icon-paint-brush:before { content: "\f11f"; }
+.icon-paint-roller:before { content: "\f120"; }
+.icon-plug-fill:before { content: "\f121"; }
+.icon-plug:before { content: "\f122"; }
+.icon-plunger:before { content: "\f123"; }
+.icon-recycle:before { content: "\f124"; }
+.icon-refrigerator-1:before { content: "\f125"; }
+.icon-refrigerator-2:before { content: "\f126"; }
+.icon-shovel:before { content: "\f127"; }
+.icon-soap-bottle:before { content: "\f128"; }
+.icon-sofa-chair:before { content: "\f129"; }
+.icon-stove-top:before { content: "\f12a"; }
+.icon-stove-vent:before { content: "\f12b"; }
+.icon-swing:before { content: "\f12c"; }
+.icon-table-1:before { content: "\f12d"; }
+.icon-table-2:before { content: "\f12e"; }
+.icon-thermostat:before { content: "\f12f"; }
+.icon-toilet:before { content: "\f130"; }
+.icon-washer-dryer:before { content: "\f131"; }
+.icon-window-1:before { content: "\f132"; }
+.icon-window-2:before { content: "\f133"; }
+.icon-window-3:before { content: "\f134"; }

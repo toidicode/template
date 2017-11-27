@@ -1,0 +1,94 @@
+// Buttons partial
+@import "partials/colors";
+@import "partials/typography";
+/* ==========================================================================
+Button styles
+========================================================================== */
+.btn.primary {
+    display: inline-block;
+    font-size: $font-size-button;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $teal;
+    padding: 20px;
+    text-decoration: none;
+    line-height: 1;
+    &:hover {
+        background-color: $dark-teal;
+    }
+}
+.btn.secondary {
+    display: inline-block;
+    font-size: $font-size-button;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $teal;
+    border: 2px solid $teal;
+    padding: 15px 20px;
+    text-decoration: none;
+    line-height: 1;
+    &:hover {
+        color: $white;
+        background-color: $dark-teal;
+        border-color: $dark-teal;
+    }
+    &:focus {
+        color: $white;
+        background-color: $teal;
+        border-color: $teal;
+    }
+}
+.btn.secondary-white {
+    display: inline-block;
+    font-size: $font-size-button;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: $normal;
+    border: 2px solid $white;
+    padding: 15px 20px;
+    text-decoration: none;
+    line-height: 1;
+    &:hover {
+        color: $teal;
+        background-color: $white;
+        border-color: $white;
+    }
+    &:focus {
+        color: $teal;
+        background-color: $white;
+        border-color: $white;
+    }
+}
+.view-more {
+    margin-top: 70px;
+}
+a.text-link {
+    color: $white;
+    margin-left: 30px;
+    display: inline-block;
+    font-size: $font-size-button;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    &:focus {
+        color: $white;
+    }
+    &:after {
+        font-family: FontAwesome;
+        content: "\f105";
+        opacity: 0;
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+        -ms-transition: all 300ms;
+        -o-transition: all 300ms;
+        transition: all 300ms;
+    }
+    &:hover {
+        color: $white;
+        &:after {
+            opacity: 1;
+            margin-left: 10px;
+        }
+    }
+}

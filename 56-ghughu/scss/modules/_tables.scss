@@ -1,0 +1,18 @@
+table{
+	font-family: 'Roboto Mono';
+	font-size: 12px;
+	color: #444;
+	border-top: 1px solid #d5d5d5;
+	width: 100%;
+
+	tr td{
+		padding: 15px 0;
+		border-bottom:1px solid #d5d5d5;
+
+		&:first-of-type{
+			width: 30%;
+			font-weight: 700;
+		}		
+	}
+}
+

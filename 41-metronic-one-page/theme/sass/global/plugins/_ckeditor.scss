@@ -1,0 +1,109 @@
+/***
+CKEditor css changes
+***/
+
+.cke {
+  @include border-radius($general-border-radius);
+
+  .cke-top {
+    @include border-radius($general-border-radius $general-border-radius 0 0);
+  }
+
+  .cke-bottom {
+    @include border-radius(0 0 $general-border-radius $general-border-radius);     
+  }
+}
+
+.cke_bottom, 
+.cke_inner, 
+.cke_top, 
+.cke_reset, 
+.cke_dialog_title,
+.cke_dialog_footer,
+.cke_dialog {
+  background-image: none !important;
+  filter:none ; 
+  border-top: 0 ;
+  border-bottom: 0 ;
+   -webkit-box-shadow: none !important;
+      -moz-box-shadow: none !important;
+           box-shadow: none !important;
+  text-shadow:none ;
+}
+
+.cke_dialog_ui_button,
+.cke_dialog_tab {
+  background-image: none !important;
+  filter:none ;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  text-shadow:none !important;
+}
+
+.cke_dialog_ui_button:hover,
+.cke_dialog_tab:hover {
+  text-decoration: none;
+  text-shadow:none ;
+}
+
+.cke_dialog_ui_input_text {
+  background-image: none !important;
+  filter:none ;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.cke_combo_button, 
+.cke_button, 
+.cke_toolbar, 
+.cke_toolgroup {
+  background-image: none !important;
+  filter:none !important;
+  border: 0 ;
+   -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  
+}
+
+.cke_button, 
+.cke_combo_button,
+.cke_panel_grouptitle,
+.cke_hc.cke_panel_listItem a {  
+  background-image: none !important;
+  filter:none ;
+  text-shadow:none ;
+}
+
+.cke_button:hover, 
+.cke_combo_button:hover {  
+  background-color: #ddd;
+}
+
+.cke_toolbar_break {
+  background-image: none !important;
+  filter:none !important;
+  border: 0 ;
+  box-shadow: none !important;
+  -webkit-box-shadow : none !important;
+  -moz-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  -o-box-shadow: none !important;
+}
+
+/***
+Error state for WYSIWYG Editors
+***/
+.has-error .cke {
+  border: 1px solid $state-danger-border !important;
+}
+
+.has-success .cke {
+  border: 1px solid $state-success-border !important;
+}
+
+.has-warning .cke {
+  border: 1px solid $state-warning-border !important;
+}

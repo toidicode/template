@@ -1,0 +1,18 @@
+/*----------------------------------
+  Icons
+------------------------------------*/
+
+.s-icon { @include icon; }
+
+/* Sizes
+------------------------------ */
+.s-icon--sm { @include icon-size($size: 2.5rem, $fsize: $font-size-13, $padding: .6875rem); }
+.s-icon--md { @include icon-size($size: 3.125rem, $fsize: $font-size-18, $padding: .75rem); }
+.s-icon--lg { @include icon-size($size: 3.5rem, $fsize: $font-size-26, $padding: .5625rem 1rem); }
+
+/* Styles
+------------------------------ */
+.s-icon--white-brd { @include icon-style($color: $color-white, $hvr-color: $color-white, $bg: transparent, $hvr-bg: $color-primary, $brd-width: .0625rem, $brd-style: solid, $brd-color: $color-white, $brd-hvr-color: $color-primary, $line-height: 1.4); }
+.s-icon--white-bg { @include icon-style($color: $color-dark, $hvr-color: $color-primary, $bg: $color-white, $hvr-bg: $color-white, $brd-width: .0625rem, $brd-style: solid, $brd-color: $color-white, $brd-hvr-color: $color-white, $line-height: 1.4); }
+.s-icon--primary-brd { @include icon-style($color: $color-primary, $hvr-color: $color-white, $bg: transparent, $hvr-bg: $color-primary, $brd-width: .0625rem, $brd-style: solid, $brd-color: $color-primary, $brd-hvr-color: $color-primary, $line-height: 1.4); }
+.s-icon--primary-bg { @include icon-style($color: $color-white, $bg: $color-primary, $line-height: 1.6); }

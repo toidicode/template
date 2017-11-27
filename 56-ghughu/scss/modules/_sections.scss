@@ -1,0 +1,125 @@
+.page {
+    padding: 60px 0;
+}
+
+.main-heading{
+	margin-bottom:40px;
+}
+
+/* banner section */
+
+.banner{
+	background-color: $primary-background-color;
+
+    .container{
+        position: relative;
+    }
+
+    h1{
+        margin-bottom: 20px;
+    }
+
+    p{
+        max-width: 470px;
+    }
+}
+
+
+/*who are we section*/
+
+.who-are-we{
+	background-color: $secondary-background-color;
+
+    h1{
+        margin-bottom:40px; 
+    }
+}
+
+.services{
+	background-color:$primary-background-color;
+}
+
+/*cta*/
+
+.cta{
+	background-color: $secondary-background-color;
+}
+
+
+.cta h1{
+	margin-bottom:40px;
+}
+
+/*about banner*/
+
+.about-banner{
+	background-color:$primary-background-color;
+}
+
+.about-heading {
+    position: absolute;
+    top: 35%;
+}
+
+.about-heading h3{
+	margin-bottom: 10px;
+}
+
+
+/*about-us*/
+
+.about-us{
+	background-color: $secondary-background-color;
+
+    h1{
+        margin-bottom:40px; 
+    }
+}
+
+
+/* team members */
+
+.team-members {
+    background-color: #fff;
+    color: #444;
+}
+
+/*address*/
+
+.address {
+    background-color: $primary-background-color;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+}
+
+.address-table {
+    color: #fff;
+    border-top: 1px solid #d00136;
+    margin-bottom: 60px;
+
+    td {
+        border-bottom: 1px solid #d00136;
+    }
+}
+
+/*email us*/
+
+.address-wrapper,
+.email-wrapper,
+.form-wrapper,
+.map-wrapper,
+.footer-wrapper{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.email-us{
+    background-color:$secondary-background-color;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+}
+

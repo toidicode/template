@@ -1,0 +1,405 @@
+<div class="col-md-4 col-xs-12 head-mobile">
+	<img class="img-responsive" src="assets/icon/logo.png">
+	<h4>MINDCRAFT</h4>
+	<ul>
+		<li><a class="btn btn-default login-btn btn-style" href="#">LOGIN</a></li>
+		<li><a class="btn btn-default signup-btn btn-style" href="#">SIGN UP</a></li>
+	</ul>	
+</div>
+
+.head-mobile{
+	min-height: 80vh;
+	max-width: 60vh;
+	background-image: url(../img/mobile.png);
+    position: relative;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-top: 25vh;
+    padding-bottom: 20vh;
+    background-size: 100% 100%;
+    text-align: center;
+    align-content: center;
+    color: white;
+    margin-top: 2%;
+}
+.head-mobile img{
+	margin-left: auto;
+	margin-right: auto;
+}
+.head-mobile h4{
+	margin-top: 10px;
+    margin-bottom: 15%;
+}
+.login-btn{
+	border-radius: 30px;
+	padding: 3% 18%;
+}
+.signup-btn{
+	margin-top: 10px;
+	border-radius: 30px;
+	padding: 3% 16%;
+}
+.head-mobile ul{
+	padding: 0px;
+	list-style-type: none;
+}
+
+.head-blur{  
+	min-height: 100vh;
+	background-size: 100% 100%;
+	z-index: 2;
+	background-color: rgba(0,0,0,0.4);
+	margin: 0px;
+}
+
+
+.in-line{
+	list-style-type: none;
+	padding-left: 0px;
+	padding-top: 8%;
+}
+.in-line li{
+	display: inline-block;
+	margin-right: 15px;
+}
+.btn-style{
+	background: transparent;
+	color: white;
+	border-radius: 30px;
+}
+.btn-text p{
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+.btn-para-1{
+	font-size: 15px;
+	text-align: left;
+}
+.btn-para-2{
+	font-size: 24px;
+	line-height: 15px;
+}
+.btn-text{
+	padding-left: 0px;
+	padding-right: 30px;
+}
+.btn-style:hover{
+	color: white;
+	background-color: #e1666a;
+	border:1px solid #e1666a;
+}
+
+<div class="row">
+								<div class="col-md-12 col-xs-12">
+									<ul class="in-line">
+										<li>
+											<a class="btn btn-default btn-style" href="#">
+												<div class="row">
+													<div class="col-md-4 col-xs-4">
+														<i class="fa fa-apple fa-3x"></i>
+													</div>
+													<div class="col-md-8 col-xs-8 btn-text">
+														<p class="btn-para-1">Download for</p>
+														<p class="btn-para-2">Apple iOS</p>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a class="btn btn-default btn-style" href="#">
+												<div class="row">
+													<div class="col-md-4 col-xs-4">
+														<i class="fa fa-android fa-3x"></i>
+													</div>
+													<div class="col-md-8 col-xs-8 btn-text">
+														<p class="btn-para-1">Download for</p>
+														<p class="btn-para-2">Android</p>
+													</div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+.craft-btn{
+	border-radius: 50px;
+	border-color: #fff;
+	display: inline-block;
+	font-family: 'Roboto';
+	margin-right: 15px;
+	color: #fff;
+	padding: 5px 15px;
+	margin-bottom: 30px;
+}
+.craft-btn span{
+	float: left;
+	font-size: 40px;
+}
+.craft-btn-content h6{
+	font-size: 25px;
+}
+.craft-btn-content p, .craft-btn-content h6{
+	padding: 0 0 0 40px;
+	margin: 0;
+}
+.icon-circle{
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	border: 1px solid #ff0000;
+	line-height: 100px;
+	text-align: center;
+	font-size: 40px;
+	color: #f00;
+}
+.icon{
+	color: #e1666a;
+	border:1px solid #e1666a;
+	padding: 25px 27px;
+	border-radius: 100%;
+}
+.icon:hover{
+	color: white;
+	background-color: #e1666a;
+}
+.icon-mobile{
+	padding: 25px 35px;
+}
+.block a{
+	text-decoration: none;
+	color: black;
+}
+.block a:hover{
+	color: #e1666a;
+}
+.block p{
+	font-size: 14px;
+}
+
+
+/*.explore h2{
+	margin-top: 14%;
+	margin-bottom: 3%;
+}
+.explore p{
+	font-size: 15px;
+}
+.explore-btn{
+	color:#666666; 
+}*/
+
+<div class="row menu-bar"> <!-- The menu bar -->
+						<div class="col-md-1 col-xs-1">
+							<a href="index.html"><img src="assets/icon/logo.png"></a>
+						</div>
+						<div class="col-md-10 col-xs-8"></div>
+						<div class="col-md-1 col-xs-3 menu">
+							<a href="#"><img src="assets/icon/menu.png"></a>
+						</div>
+					</div>
+
+.feature-block .icon-circle, .feature-block h3 {
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-block:hover .icon-circle {
+    background: red;
+    color: white;
+}
+
+.feature-block:hover h3 {
+    color: red;
+}
+
+$(document).ready(function(){
+        // $(".feature-block").mouseover(function(){
+        //      $(this).addClass("onHover");
+        // });
+        // $(".feature-block").mouseout(function(){
+        //     $(this).removeClass("onHover");
+        // });
+});
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "20px";
+    document.getElementById("main").style.marginLeft = "20px";
+    document.getElementById("overlay").style.width = "100%";
+    document.getElementById("overlay").style.height = "100%";
+    document.getElementById("overlay").style.backgroundColor = "rgba(0,0,0,0.4)";            
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("overlay").style.width = "0%";
+    document.getElementById("overlay").style.height = "0%";
+}
+
+
+
+It is the navbar property
+
+[[[[[[[[[[[[[
+
+
+		<div id="myNav-bar" class="nav-bar">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#mindcraft-action">Action</a></li>
+								<li><a href="#testimonial-section">Testimonial</a></li>
+								<li><a href="#newsletter">Newsletter</a></li>
+								<a href="javascript:void(0)" id="close" onclick="closeNav()">
+									<i class="fa fa-long-arrow-up fa-2x"></i>
+								</a>
+							</ul>
+						</div>
+
+
+<div  class="col-md-6 col-xs-6 menu">
+								<a href="#" id="main" onclick="openNav()">
+									<img src="assets/icon/menu.png">
+								</a>
+							</div>
+
+							
+
+		.nav-bar{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			z-index: 20;
+			background-color: black;
+			transition: 0.5s;
+			width: 800px;
+			height: 0px;
+			overflow-x: hidden;
+			overflow-y: hidden;
+			text-align: center;
+			border-bottom-left-radius: 20px;
+		}
+		.nav-bar a{
+			color: #ffffff;
+			font-size: 25px;
+			margin-right: 5px;
+			background-color: transparent;
+			border-radius: 30px;
+			padding-left: 10px;
+			padding-right: 10px;
+			border:1px solid black;
+			text-decoration: none;
+		}
+		.nav-bar a:first-child{
+			background-color: transparent;
+			border:none;
+		}
+		.nav-bar ul{
+			padding-left: 0px;
+		}
+		.nav-bar li{
+			list-style-type: none;
+			display: inline-block;
+			padding: 10px 20px;
+		}
+]]]]]]]]]]]]]]
+
+
+padding-top: 0px;
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	transition: 1s;
+	transition: all 1s ease-in-out;
+	height: 70px;
+	overflow-y: hidden;
+	z-index: 10;
+
+
+	<div>
+					<nav class="custom-menu navbar navbar-inverse navbar-fixed-top">
+			  <div class="container">
+			    <div class="navbar-header">
+			      <a href="index.html"><img src="assets/icon/logo.png"></a>
+			    </div>
+			    
+			    <ul class="nav navbar-nav navbar-right">
+
+			       <div id="mySidenav" class="sidenav text-center">
+	                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
+	                    <a href="#">Home</a><hr>
+	                    <a href="#explore">Explore</a><hr>
+						<a href="#mindcraft-action">Action</a><hr>
+						<a href="#testimonial-section">Testimonial</a><hr>
+	                    <a href="#user-interface">User-interface</a><hr>
+						<a href="#newsletter">Newsletter</a>              
+	                </div>
+
+			       <div class="main" id="main">
+	                    <a onclick="openNav()">
+							<img src="assets/icon/menu.png">
+						</a>
+	                </div>
+			    </ul>
+			  </div>
+			  </nav>
+				</div>
+
+
+<div>
+					<nav class="custom-menu navbar navbar-inverse navbar-fixed-top">
+			  <div class="container">
+			    <div class="navbar-header">
+			      <a href="index.html"><img src="assets/icon/logo.png"></a>
+			    </div>
+			    
+			    <ul class="nav navbar-nav navbar-right">
+
+			       <div id="mySidenav" class="sidenav text-center">
+	                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
+	                    <a href="#">Home</a><hr>
+	                    <a href="#explore">Explore</a><hr>
+						<a href="#mindcraft-action">Action</a><hr>
+						<a href="#testimonial-section">Testimonial</a><hr>
+	                    <a href="#user-interface">User-interface</a><hr>
+						<a href="#newsletter">Newsletter</a>              
+	                </div>
+
+			       <div class="main" id="main">
+	                    <a onclick="openNav()">
+							<img src="assets/icon/menu.png">
+						</a>
+	                </div>
+			    </ul>
+			  </div>
+			  </nav>
+				</div>
+
+
+
+<!-- <div id="menu" class="menu-zero">
+			<div class="container">
+				<div id="menu" class="row menu-bar">
+					<div class="col-md-6 col-xs-6">
+						<a href="index.html"><img src="assets/icon/logo.png"></a>
+					</div>
+					
+					<div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 text-right">
+		                <div id="mySidenav" class="sidenav text-center">
+		                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
+		                    <a href="#">Home</a><hr>
+		                    <a href="#explore">Explore</a><hr>
+							<a href="#mindcraft-action">Action</a><hr>
+							<a href="#testimonial-section">Testimonial</a><hr>
+		                    <a href="#user-interface">User-interface</a><hr>
+							<a href="#newsletter">Newsletter</a>              
+		                </div>
+		                <div class="main" id="main">
+		                  <a id="menu-click" href="#" onclick="openNav()">
+								<img src="assets/icon/menu.png">
+							</a>
+		                </div> 
+		            </div>
+				</div>
+			</div>
+		</div> -->

@@ -1,0 +1,183 @@
+
+
+/*
+Author: Bootstrapthemes
+Author URI: http://www.xpeedstudio.com
+*/
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .home-shadow img {
+        width: 65%;
+    }
+    .about_content .head_right {
+        top: -50px;
+    }
+    .portfolio_content .head_right {
+        top: -110px;
+    }
+    .choose_item .head_right {
+        top: -60px;
+    }
+    .contact_content .head_right {
+        top: -80px;
+    }
+
+
+}
+
+
+
+/* Portrait tablets and small desktops */
+/*@media (max-width: 992px) {
+
+}*/
+
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+
+    .sm-text-center{
+        text-align: center !important;
+    }
+    .sm-pull-none{
+        float: none !important;
+    }
+    .sm-m-top-10{
+        margin-top:10px;
+    }
+    .sm-m-top-20{
+        margin-top:20px;
+    }
+    .sm-m-top-30{
+        margin-top:30px;
+    }
+    .sm-m-top-50{
+        margin-top:50px;
+    }
+
+    .about_content .head_right {
+        top: -224px;
+    }
+    .portfolio_content .head_right {
+        top: -240px;
+    }
+    .choose_item .head_right {
+        top: -230px;
+    }
+    .contact_content .head_right {
+        top: -205px;
+    }
+    .home_text h1 {
+        font-size: 5rem;
+        line-height: 3.5rem;
+    }
+    .home-shadow img {
+        width: 85%;
+    }
+
+}
+
+
+
+/* Landscape phones and portrait tablets */
+@media  (max-width: 768px) {
+    h2{
+        font-size:2rem;
+    }
+    p{
+        font-size:90%;
+        line-height: 2rem;
+    }
+    .xs-pull-none{
+        float: none !important;
+    }
+    .xs-text-center{
+        text-align: center !important;
+    }
+    .xs-m-top-40{
+        margin-top:40px;
+    }
+    .xs-m-top-10{
+        margin-top:10px;
+    }
+    .xs-m-bottom-10{
+        margin-bottom:10px;
+    }
+    .xs-m-bottom-20{
+        margin-bottom:20px;
+    }
+
+    .about_content .head_right, 
+    .portfolio_content .head_right, 
+    .choose_item .head_right, 
+    .contact_content .head_right {
+        position: relative;
+        left: 0; 
+        transform: rotate(0deg);
+        top: 0; 
+    }
+    .portfolio_content .head_right, 
+    .choose_item .head_right, 
+    .contact_content .head_right,
+    .about_content .head_right {
+        top: 0px;
+    }
+    .about_content .about_content_text,
+    .portfolio_content .portfolio_content_text,
+    .choose_item .choose_item_text,
+    .contact_content .contact_content_text{
+        margin-top:0px;
+    }
+
+    .home_text h1 {
+        font-size: 4rem;
+    }
+    .home_text h4 {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+
+/* Landscape phones and smaller */
+@media (max-width: 479px) {
+    html {
+        font-size: 85%;
+    }
+
+    .client_brand ul li {
+        margin-left: 2%;
+        display: inline-block;
+    }
+    .client_brand ul li img {
+        width: 80%;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 400px) {
+
+
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 60.5%;
+    }
+
+
+}
+
+
+

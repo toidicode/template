@@ -1,0 +1,50 @@
+/***
+Charts and statistics
+***/
+.chart, 
+.pie, 
+.bars {
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    font-family: $font-family-primary !important;
+    font-size: 14px;
+}
+
+/***
+Statistic lists
+***/
+.item-list.table {
+    .percent {
+        width: 30px;
+        float: right;
+        margin-right: 10px;
+        margin-top: 3px;
+    }
+}
+
+/***
+Chart tooltips
+***/
+.chart-tooltip {
+    clear: both;
+    z-index: 100;
+    background-color: #736e6e !important;
+    padding: 5px !important;
+    color: #fff;
+    
+    .label {
+        clear: both;
+        display: block;
+        margin-bottom: 2px;
+    }
+}
+
+/***
+Mini chart containers
+***/
+
+.bar-chart,
+.line-chart {
+    display: none
+}

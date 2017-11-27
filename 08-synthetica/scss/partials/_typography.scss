@@ -1,0 +1,100 @@
+// Typography partial
+@import 'partials/colors'; // Fonts
+$sans-serif: Raleway, Verdana, Arial, sans-serif;
+$serif: Montserrat, Georgia, 'Times New Roman', serif; // Weights
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 600;
+$strong: 700; // Styles
+$italic: italic; // Sizes
+// Headings
+$font-size-h1: 45px;
+$font-size-h2: 36px;
+$font-size-h3: 20px;
+$font-size-h4: 15px;
+$font-size-h5: 13px; // Other
+$crew-h2: 15px;
+$article-h2: 20px;
+$font-size-base: 15px;
+$font-size-footer: 14px;
+$font-size-nav: 13px;
+$font-size-search-input: 13px;
+$font-size-tag: 13px;
+$font-size-smalltext: 13px;
+$font-size-button: 13px; // Responsive Sizes
+$responsive-h1: 40px; // Line height
+$line-height-h1: 68px;
+$base-line-height: 27px;
+$line-height-article-header: 30px; // Styles
+/* ==========================================================================
+Typography
+========================================================================== */
+p
+{
+    font-size: $font-size-base;
+    line-height: $base-line-height;
+
+    padding-bottom: 15px;
+
+    color: $slate;
+}
+h1
+{
+    font-size: $font-size-h1;
+    font-weight: $light;
+    line-height: $line-height-h1;
+}
+h2
+{
+    font-size: $font-size-h2;
+    font-weight: $light;
+
+    color: $white;
+}
+h3
+{
+    font-size: $font-size-h3;
+    line-height: 32px;
+
+    margin-bottom: 20px;
+
+    color: $dark-grey;
+}
+h4
+{
+    font-size: $font-size-h4;
+    font-weight: $bold;
+
+    margin: 7px 0 65px 60px;
+
+    text-transform: uppercase;
+    &:after
+    {
+        display: block;
+
+        width: 30px;
+        height: 2px;
+        margin-top: 15px;
+
+        content: '';
+
+        background-color: $teal;
+    }
+}
+h5
+{
+    font-size: $font-size-h5;
+    font-weight: $bold;
+
+    display: inline-block;
+
+    text-transform: uppercase;
+
+    color: $slate;
+}
+.bold-italic
+{
+    font-weight: $bold;
+    font-style: $italic;
+}

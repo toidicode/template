@@ -1,0 +1,44 @@
+/***
+Bootstrap  Datetimepicker
+***/
+
+.datetimepicker table td {
+  color: #000;
+  font-weight: 300  !important;
+  font-family: 'Open Sans' !important;
+}
+
+.datetimepicker table th {
+  font-family: 'Open Sans' !important;
+  font-weight: 400  !important;
+}
+
+.datetimepicker.dropdown-menu {
+  padding: 5px;
+}
+
+.datetimepicker .active {  
+  background-color:#4b8df8 !important;
+  background-image: none !important;
+  filter: none !important;
+}
+
+.datetimepicker .active:hover {
+  background-color: #2678FC !important;
+  background-image: none !important;
+  filter: none !important;
+
+}
+
+.datetimepicker .fa-angle-left:before {
+  content: "\f104";
+}
+
+.datetimepicker .fa-angle-right:before {
+  content: "\f105"; 
+} 
+
+/* change z-index when opened in modal */
+.modal-open .datetimepicker {
+  z-index: 10055;
+}

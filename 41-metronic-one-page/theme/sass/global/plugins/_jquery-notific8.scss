@@ -1,0 +1,25 @@
+/***
+jQuery Notific8 Plugin
+***/
+
+.jquery-notific8-message {
+  font-size: 13px;
+}
+
+[class*="jquery-notific8"],
+[class*="jquery-notific8"]:after,
+[class*="jquery-notific8"]:before {
+   -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+           box-sizing: content-box;
+}
+
+.right .jquery-notific8-close-sticky span,
+.left .jquery-notific8-close-sticky span {
+    font-size: 10px;  
+}
+
+.jquery-notific8-heading {
+  font-weight: 300;
+  font-size: 16px;
+}

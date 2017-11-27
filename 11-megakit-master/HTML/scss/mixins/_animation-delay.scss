@@ -1,0 +1,5 @@
+// Animation Delay
+@mixin animation-delay($animation-delay) {
+  -webkit-animation-delay: $animation-delay;
+  animation-delay: $animation-delay;
+}

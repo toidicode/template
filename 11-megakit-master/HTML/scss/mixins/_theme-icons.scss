@@ -1,0 +1,33 @@
+// Base Style
+@mixin icon {
+  @include display-center;
+  @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+  @include hover-focus {
+    text-decoration: none;
+    @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+  }
+}
+
+// Size
+@mixin icon-size($size: null, $fsize: null, $padding: null) {
+  @include size($size);
+  @include font($size: $fsize);
+  padding: $padding;
+}
+
+// Style
+@mixin icon-style($color: null, $hvr-color: null, $bg: null, $hvr-bg: null, $brd-width: null, $brd-style: null, $brd-color: null, $brd-hvr-color: null, $line-height: null) {
+  color: $color;
+  background: $bg;
+  border-width: $brd-width;
+  border-style: $brd-style;
+  border-color: $brd-color;
+  line-height: $line-height;
+
+  @include hover-focus {
+    color: $hvr-color;
+    background: $hvr-bg;
+    border-color: $brd-hvr-color;
+  }
+}

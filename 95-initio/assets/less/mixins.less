@@ -1,0 +1,8 @@
+// Font size with 100% base
+// More at http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+.font-size( @sizeValue ) {
+  @remValue: (@sizeValue * 0.625);
+  @pxValue: (@sizeValue * 10);
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
+}

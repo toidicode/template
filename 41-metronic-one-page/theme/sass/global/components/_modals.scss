@@ -1,0 +1,111 @@
+/***
+Customized Bootstrap Modal 
+***/
+
+.modal {
+    z-index: $zindex-modal;
+
+    .page-portlet-fullscreen & {
+        z-index: $zindex-modal + 10;        
+    }
+
+    outline: none;
+    overflow-y: auto !important; /* Fix content shifting to the right on modal open due to scrollbar closed */ 
+    
+    .modal-header {
+        border-bottom: 1px solid #EFEFEF;
+
+        h3 {
+            font-weight: 300;
+        }    
+
+        .close {
+            margin-top: 0px !important;
+        }
+    }
+
+    &.draggable-modal {
+        .modal-header {
+            cursor: move;
+        }
+    }
+
+    .modal-dialog {
+        z-index: $zindex-modal + 1;
+    }
+
+    > .loading {
+        position: absolute;
+        top: 50%;
+        left:50%;
+        margin-top: -22px;
+        margin-left: -22px;
+    }
+
+    &.in {
+        .page-loading {
+            display: none;
+        }
+    }
+}
+
+.modal-open {
+    overflow-y: auto !important;
+}  
+    
+.modal-open-noscroll {
+    overflow-y: hidden !important;  
+}
+
+.modal-backdrop {
+    border: 0;
+    outline: none;
+    z-index: $zindex-modal-background;
+
+    .page-portlet-fullscreen & {
+        z-index: $zindex-modal-background + 10;        
+    }
+
+    &,
+    &.fade.in {
+        background-color: #333 !important;
+    }
+}
+
+/* Full width modal */
+
+.modal-full.modal-dialog {  
+  width: 99%;
+}
+
+@media (max-width: $screen-sm-min) {
+
+  .modal-full.modal-dialog {
+    width: auto;
+  }   
+
+}
+
+@if $theme-type == "material-design" { 
+
+    .modal {
+        .modal-content {
+            @extend .md-shadow-z-3;
+            @include border-radius($general-border-radius);
+            border: 0;
+
+            .modal-title {
+                font-weight: 400;
+            }
+
+            .modal-footer {
+                border: 0;
+            }
+        }
+    }
+
+    .modal-backdrop.in {
+        @include opacity(0.2);
+    }
+
+}

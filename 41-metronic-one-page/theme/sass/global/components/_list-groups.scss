@@ -1,0 +1,41 @@
+/***
+Customized List Group
+***/
+
+/* Contextual variants */
+.list-group {
+	> li:first-child {
+		border-radius-topleft: $general-border-radius;
+		border-radius-topright: $general-border-radius;
+	}
+
+	> li:last-child {
+		border-radius-bottomleft: $general-border-radius;
+		border-radius-bottomright: $general-border-radius; 
+	}
+}
+
+.list-group {
+	@include list-group-item-variant(success, $state-success-bg, $state-success-text);
+}
+
+.list-group {
+	@include list-group-item-variant(info, $state-info-bg, $state-info-text);
+}
+
+.list-group {
+	@include list-group-item-variant(warning, $state-warning-bg, $state-warning-text);
+}
+
+.list-group {
+	@include list-group-item-variant(danger, $state-danger-bg, $state-danger-text);
+}
+
+@if $theme-type == "material-design" {
+    .list-group1 {
+    	margin-left: 5px;
+    	margin-right: 5px;
+        @extend .md-shadow-z-1;        
+        border: 0; 
+	}
+}

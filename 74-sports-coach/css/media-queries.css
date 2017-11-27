@@ -1,0 +1,96 @@
+/* ============================== */
+/* 
+	Title: Demo
+	Autor: Demo
+*/
+/* ============================== */
+
+@media screen and (min-width: 768px){
+    header .navbar{
+        /* Theoretically for IE 8 & 9 (more valid) */
+        /* ...but not required as filter works too */
+        /* should come BEFORE filter */
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"!important;
+
+        /* This works in IE 8 & 9 too */
+        /* ... but also 5, 6, 7 */
+        filter: alpha(opacity=100)!important;
+
+        /* Older than Firefox 0.9 */
+        -moz-opacity:1!important;
+
+        /* Safari 1.x (pre WebKit!) */
+        -khtml-opacity: 1!important;
+
+        /* Modern!
+        /* Firefox 0.9+, Safari 2?, Chrome any?
+        /* Opera 9+, IE 9+ */
+        opacity: 1!important;
+    }
+    footer .menu_footer ul li{
+        border-right: 1px solid #d4dce1!important;
+        display: inline!important;
+    }
+    footer .menu_footer ul li.last{
+        border-right: none!important;
+    }
+    .contact h2{
+        font-size: 72px!important;
+    }
+    .features .item{
+        width: 20%!important;
+    }
+    .information .info_text{
+        text-align: left!important;
+    }
+    .links{
+        text-align: left!important;
+    } 
+    .navbar {
+        margin-bottom: 0;
+    }
+    .navbar-nav>li {
+        margin-top: 3px;
+    }
+    .slider .container > .content_slider{
+        width: 70%!important;
+    }
+    .slider .container .content_form{
+        float: right;
+        padding-top: 3em;
+        width: 25%;
+    } 
+    .testimonial p{
+        /*line-height: 26px!important;
+        font-size: 16px!important*/
+    }  
+    .video{
+        text-align: left!important;
+    }
+    .arrow {
+        background: #FAFCFE url("../img/border.png") center repeat-x;
+    }  
+    #scroll_up{
+        background: #FAFCFE;
+        border: 1px solid #E0E0E0;
+        width: 50px;
+        height: 50px;
+        bottom: 325px;
+        margin:0 auto;
+        display: block!important;
+        border-radius: 50% 50% 50% 50%;
+        text-align: center; 
+    }
+    #scroll_up i {
+        color: #E0E0E0;
+    }
+    #scroll_up:hover {
+        background: #64CE83;
+        border: 1px solid #64CE83;
+    }
+    #scroll_up:hover i {
+        color: #fff;
+    }
+
+
+}

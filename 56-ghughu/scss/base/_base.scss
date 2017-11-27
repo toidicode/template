@@ -1,0 +1,59 @@
+body {
+    font-family:$base-font-family;
+    color:$base-font-color;
+    font-size:$base-font-size;
+    font-weight: $base-font-weight;
+    line-height: $base-line-height;
+}
+
+a{
+	color:$base-font-color;
+}
+
+span.thin{
+    font-weight:300;
+}
+
+.page {
+    padding: 60px 0;
+}
+
+.page-top {
+    padding: 110px 0 60px;
+}
+
+h1 {
+    font-family: $display-font-family;
+    font-size: 52px;
+    line-height:1;
+}
+
+h2 {
+	font-family: $secondary-font-family;
+    font-size: 24px;
+    font-weight: 800;
+    line-height:1.5;
+}
+
+h3{
+    font-family: $secondary-font-family;
+    font-size: 20px;
+    font-weight:300;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: $secondary-font-color;
+}
+
+h4 {
+    font-family: $secondary-font-family;
+    font-weight: 800;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+p{
+	margin-bottom: 15px;
+
+}

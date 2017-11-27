@@ -1,0 +1,19 @@
+// Layout variables partial
+@import "colors";
+$section-padding-regular: 125px 0;
+$section-padding-tall: 160px 0;
+.has-padding {
+    padding: $section-padding-regular;
+}
+.has-padding-tall {
+    padding: $section-padding-tall;
+}
+.alternate-bg {
+    background-color: $light-grey;
+}
+.footer-bg {
+    background-color: $slate;
+}
+.is-centered {
+    text-align: center;
+}

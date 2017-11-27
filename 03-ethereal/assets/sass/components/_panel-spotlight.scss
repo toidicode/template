@@ -1,0 +1,81 @@
+///
+/// Ethereal by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Panel (Spotlight) */
+
+	$pad: _size(pad);
+	$pad-small-tb: _size(pad-small-tb);
+	$pad-small-lr: _size(pad-small-lr);
+
+	.panel.spotlight {
+		@include vendor('align-items', 'stretch');
+		position: relative;
+
+		> * {
+			z-index: 1;
+		}
+
+		.content {
+			@include vendor('display', 'flex');
+			@include vendor('flex-direction', 'column');
+			@include vendor('justify-content', 'center');
+			@include padding($pad, $pad);
+		}
+
+		.image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 0;
+
+			img {
+				@include vendor('object-fit', 'cover');
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&.left {
+			@include vendor('justify-content', 'flex-start');
+
+			.content {
+				background-image: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.125) 30%, rgba(0,0,0,0.175) 50%);
+			}
+		}
+
+		&.right {
+			@include vendor('justify-content', 'flex-end');
+
+			.content {
+				background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.125) 30%, rgba(0,0,0,0.175) 50%);
+			}
+		}
+	}
+
+	@include breakpoint(small) {
+		.panel.spotlight {
+			.content {
+				@include padding($pad-small-tb, $pad-small-lr);
+				@include vendor('flex-direction', 'column !important');
+				background-image: linear-gradient(0deg, rgba(0,0,0,0.25) 70%, rgba(0,0,0,0.175)) !important;
+				min-height: 25rem;
+			}
+		}
+	}
+
+	@include breakpoint(xsmall) {
+		.panel.spotlight {
+			.content {
+				min-height: 30rem;
+			}
+		}
+	}

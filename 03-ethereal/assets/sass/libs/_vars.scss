@@ -1,0 +1,49 @@
+// Misc.
+	$misc: (
+		z-index-base:					10000,
+		gallery-lightbox-opacity:		0.875
+	);
+
+// Duration.
+	$duration: (
+		transition:						0.2s,
+		gallery-lightbox-fadein:		0.5s
+	);
+
+// Size.
+	$size: (
+		border-radius:					0.25rem,
+		element-height:					2.5rem,
+		element-margin:					1.5rem,
+		pad:							3.5rem,
+		pad-small-tb:					3.5rem * 0.825,
+		pad-small-lr:					3.5rem * 0.5,
+		span-fixed:						10rem,
+		span-variable:					10%
+	);
+
+// Font.
+	$font: (
+		family:							('Source Sans Pro', Helvetica, sans-serif),
+		family-heading:					(Arial, Helvetica, sans-serif),
+		family-fixed:					('Courier New', monospace),
+		weight:							300,
+		weight-bold:					400,
+		weight-heading:					700
+	);
+
+// Palette.
+	$palette: (
+		bg:								#2e2b37,
+		bg-alt:							#e1e6e1,
+		fg:								rgba(255,255,255,0.75),
+		fg-bold:						rgba(255,255,255,0.875),
+		fg-light:						rgba(255,255,255,0.5),
+		border:							rgba(255,255,255,0.25),
+		border-bg:						rgba(255,255,255,0.075),
+		border-bg-alt:					rgba(255,255,255,0.125),
+		accent1:						#726193,
+		accent2:						#e37b7c,
+		accent3:						#ffe4b4,
+		accent4:						#353865
+	);

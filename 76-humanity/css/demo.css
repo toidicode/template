@@ -1,0 +1,84 @@
+
+#wrapper {
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+
+.ads-container {
+	background:#fff;
+	width: 750px;
+	margin: 0 auto 20px;
+}
+
+
+.attribution {
+	padding: 3em 0;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.attribution a {
+	color: #fff;
+}
+
+
+/* Header Style */
+.ddn-top {
+	line-height: 60px;
+	font-size: 11px;
+	text-transform: uppercase;
+	z-index: 9999;
+	position: relative;
+	background:#ED3131;
+	-webkit-font-smoothing: antialiased;
+	-webkit-box-shadow: inset 0 0 2.75em rgba(0,0,0,.5);
+/* 300 */
+	-moz-box-shadow: inset 0 0 2.75em rgba(0,0,0,.5);
+/* 300 */
+	box-shadow: inset 0 0 2.75em rgba(0,0,0,.5);
+/* 300 */
+}
+
+.ddn-top a {
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #fff;
+	display: table;
+	margin:0 auto;
+	text-decoration: none;
+}
+
+.ddn-top a:hover {
+	background: rgba(255,255,255,0.8);
+	color: #000;
+}
+
+.ddn-top span.right {
+	float: right;
+}
+
+.ddn-top span.right a {
+	float: left;
+	display: block;
+}
+
+@media only screen and ( max-width: 32.5em ) /* 520 */
+{
+	body
+	{
+		-webkit-box-shadow: inset 0 0 9.375em rgba( 0, 0, 0, .5 ); /* 150 */
+		-moz-box-shadow: inset 0 0 9.375em rgba( 0, 0, 0, 5 ); /* 150 */
+		box-shadow: inset 0 0 9.375em rgba( 0, 0, 0, .5 ); /* 150 */
+	}
+	.container,
+	#wrapper
+	{
+		width: 100%;
+		height: auto;
+		position: static;
+		padding: 3.125em 1.25em; /* 50 20 */
+		margin: 0;
+	}
+}

@@ -1,0 +1,235 @@
+/*------------------------------------------------------------------
+  	[Header]
+------------------------------------------------------------------*/
+
+/* Navbar */
+.header {
+	.navbar {
+		margin-bottom: 0;
+	}
+}
+
+/* Navbar Toggle */
+.header {
+    .navbar-toggle {
+        @include size(25px);
+        border: none;
+        padding: 0;
+        margin: 35px 0;
+
+        .toggle-icon {
+            position: relative;
+            @include size(21px, 1px);
+            display: inline-block;
+            background: $color-heading;
+            @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+            &:before,
+            &:after {
+                @include position(absolute, $left: 0);
+                background: $color-heading;
+                content: " ";
+            }
+
+            &:before {
+                @include size(10px, 1px);
+                bottom: 10px;
+                @include rotate(0);
+                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+            }
+            
+            &:after {
+                @include size(16px, 1px);
+                top: -5px;
+                @include rotate(0);
+                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+            }
+        }
+
+        &:hover {
+            .toggle-icon {
+                background: $color-base;
+                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+
+                &:before,
+                &:after {
+            		@include size(21px, 1px);
+                    background: $color-base;
+                	@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+                }
+
+                &.is-clicked {
+                    @include bg-opacity($color-heading, 0);
+                }
+            }
+        }
+    }
+}
+
+/* Navbar Logo */
+.header {
+    .navbar-logo {
+        @include size(100px);
+        float: left;
+        max-height: 95px;
+        line-height: 65px;
+    }
+    
+    .navbar-logo-wrap {
+        display: inline-block;
+        padding: 15px 0;
+
+        &:focus,
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .navbar-logo-img {
+        display: inline-block;
+        @include size(85px, auto);
+        max-width: 100%;
+        max-height: 100%;
+        vertical-align: middle;
+    }
+}
+
+/* Navbar */
+.header {
+	.navbar-nav {
+		padding-left: 0;
+		margin-bottom: 0;
+		list-style: none;
+	}
+}
+
+/* Nav */
+.header {
+	.nav-item {
+		position: relative;
+		display: block;
+
+		&:last-child {
+			.nav-item-child {
+				padding-right: 0;
+			}
+		}
+	}
+	
+	.nav-item-child {
+		position: relative;
+		display: block;
+		@include font($size: 13px, $weight: 600, $family: $font-family-base);
+		text-transform: uppercase;
+		line-height: 55px;
+		padding: 20px;
+
+		&.active {
+			position: relative;
+
+			&:after {
+		        @include position(absolute, $top: 45px, $left: 0);
+		        @include size(9px, 2px);
+		        background: $color-base;
+		        content: " ";
+		    }
+		}
+	}
+}
+
+/* Media Queries below 991px */
+@media (max-width: $screen-sm-max) {
+    /* Bootstrap collapse of navigation with a maximum width: 991px
+    (Change it to any breakpoint you want to be collapsed) */
+    .header {
+        .navbar-toggle {
+            display: block;
+        }
+
+        .navbar-collapse {
+            &.collapse {
+                display: none !important;
+
+                &.in {
+                    display: block !important;
+                    overflow-y: auto !important;
+                }
+            }
+        }
+
+        .nav-collapse {
+        	padding-left: 0;
+        	padding-right: 0;
+        }
+
+        .navbar-nav {
+            margin: 0;
+            float: none;
+
+            .nav-item {
+                float: none;
+            }
+        }
+    }
+
+    /* Menu Container */
+    .header {
+        .menu-container {
+            @include clearfix;
+        }
+    }
+
+    /* Navbar Nav */
+    .header {
+        .nav-item-child {
+            line-height: 1.4;
+            padding: 12px 12px 12px 15px;
+
+			&.active {
+				&:after {
+			        @include position(absolute, $top: 20px);
+			    }
+			}
+        }
+    }
+}
+
+/* Media Queries below 767px */
+@media (max-width: $screen-xs-max) {
+    /* Menu Container */
+    .header {
+        .menu-container {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .navbar {
+            > .container {
+                width: auto;
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: 0;
+                margin-right: 0;
+
+                > .nav-collapse {
+                	padding-left: 0;
+                	padding-right: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Media Queries above 992px */
+@media (min-width: $screen-md-min) {
+    /* Navbar */
+    .header {
+        .navbar-nav-right {
+            float: right;
+        }
+    }
+}

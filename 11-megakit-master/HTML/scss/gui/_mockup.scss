@@ -1,0 +1,34 @@
+/*----------------------------------
+  Mockup
+------------------------------------*/
+
+/* Mockup v1 */
+.s-mockup-v1 {
+	@include position(relative);
+	@include size(55rem, auto);
+	z-index: 1;
+
+	@include media-breakpoint-down(md) {
+		@include size(100%, auto);
+	}
+}
+
+/* Mockup v2 */
+.s-mockup-v2 {
+	@include position(absolute, $bottom: 6.25rem, $left: 6.25rem);
+	@include size(25rem, auto);
+
+	@include media-breakpoint-down(xs) {
+		display: none;
+	}
+
+	@include media-breakpoint-up(sm) {
+		@include position(absolute, $bottom: .625rem, $left: .625rem);
+		@include size(18.75rem, auto);
+	}
+
+	@include media-breakpoint-up(md) {
+		@include position(absolute, $bottom: 5rem, $left: 5rem);
+		@include size(18.75rem, auto);
+	}
+}

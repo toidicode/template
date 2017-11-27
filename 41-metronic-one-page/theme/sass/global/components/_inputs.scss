@@ -1,0 +1,233 @@
+/***
+Forms
+***/
+
+/* Input placeholder font color */
+
+.form-control {
+    @include placeholder($input-color-placeholder)
+}
+
+/* Form inputs */
+
+.form-control {  
+    font-size: 14px;
+    font-weight: normal;
+    color: $input-color;
+    background-color: $input-bg;
+    border: 1px solid $input-border;
+    box-shadow: none;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+    @include border-radius($form-control-border-radius);
+
+    &:focus {
+        border-color: $input-border-focus;
+        outline: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    &[disabled],
+    &[readonly],
+    fieldset[disabled] & {
+        cursor: not-allowed;
+        background-color: $input-bg-disabled;
+    }
+
+    &.height-auto {
+        height: auto;
+    }
+
+    &.form-control-solid {
+        background-color: #F1F3F8;
+        border-color: #F1F3F8;
+        color: #A6B2BA;
+
+        &:focus {
+            border-color: darken(#F1F3F8, 4%);
+        }
+
+        @include placeholder(lighten(#A6B2BA, 2%));  
+    }
+}
+
+/* Form uneditable input */
+
+.uneditable-input {
+    padding: 6px 12px;
+    min-width: 206px;
+    font-size: 14px;
+    font-weight: normal;
+    height: 34px;
+    color: $input-color;
+    background-color: $input-bg;
+    border: 1px solid $input-border;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+/* Form input sizing */
+
+.input-mini {
+    width: 45px !important;
+}
+
+.input-xsmall {
+    width: 80px !important;
+}
+
+.input-small {
+    width: 145px !important;
+}
+
+.input-medium {
+    width: 240px !important;
+}
+
+.input-large {
+    width: 320px !important;
+}
+
+.input-xlarge {
+    width: 420px !important;
+}
+
+.input-inline {
+    display: inline-block;
+    width: auto;  
+    vertical-align: middle;
+}
+
+.input-fixed {
+   overflow: hidden; 
+}
+
+.form-group {
+    .input-inline  {
+        margin-right: 5px;
+    }
+}
+
+.input-sm {
+    height: 28px;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+select.input-sm {
+    height: 28px;
+    line-height: 28px;
+    padding: 2px 10px;
+}
+
+@media (max-width: $screen-sm-min) { /* 768px */  
+
+    .input-large {
+        width: 250px !important;
+    }
+
+    .input-xlarge {
+        width: 300px !important;   
+    }
+
+}
+
+/* Input  groups */
+
+.input-group {
+    .btn-default {
+        border-color: $input-border;
+    }
+
+    .input-group-addon {
+        border-color: $input-border;
+        background: $input-border;
+        min-width: 39px;
+
+        > i {
+         color: $input-icon-color;
+        }
+    }
+}
+
+/* Input spinner */
+
+input[type="text"].spinner,
+input[type="password"].spinner,
+input[type="datetime"].spinner,
+input[type="datetime-local"].spinner,
+input[type="date"].spinner,
+input[type="month"].spinner,
+input[type="time"].spinner,
+input[type="week"].spinner,
+input[type="number"].spinner,
+input[type="email"].spinner,
+input[type="url"].spinner,
+input[type="search"].spinner,
+input[type="tel"].spinner,
+input[type="color"].spinner {
+  background-image: url("../img/input-spinner.gif") !important;
+  background-repeat: no-repeat;
+  background-position: right 8px;
+}
+ 
+/* Form labels */
+
+label {
+ 	font-weight: 400;
+  	font-size: 14px;
+}
+
+/* Static form control */
+
+.form-control-static { 
+    margin: 2px 0;     
+    display: inline-block;
+}
+
+/* Feedback states */
+
+.has-success {
+  @include form-control-validation($state-success-text, $state-success-border, $state-success-bg);
+}
+
+.has-warning {
+  @include form-control-validation($state-warning-text, $state-warning-border, $state-warning-bg); 
+}
+
+.has-error {
+  @include form-control-validation($state-danger-text, $state-danger-border, $state-danger-bg);
+}
+
+/* Circle Inputs */
+
+.input-circle {
+  border-radius: 25px !important;  
+}
+
+.input-circle-right {
+  border-radius:  0 25px 25px 0 !important;
+}
+
+.input-circle-left { 
+  border-radius: 25px 0 0 25px !important;
+}
+
+.input-circle-bottom {
+  border-radius:  0 0 25px 25px !important;
+}
+
+.input-circle-top {
+  border-radius: 25px 25px 0 0 !important;
+}
+
+@if $theme-type == "material-design" {  
+    .input-group-btn {
+        .btn {
+            box-shadow: none;
+        }
+    }
+}

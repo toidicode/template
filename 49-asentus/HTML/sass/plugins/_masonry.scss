@@ -1,0 +1,73 @@
+/*--------------------------------------------------
+    [Masonry Grid]
+----------------------------------------------------*/
+
+.masonry-grid {
+    position: relative;
+    @include clearfix;
+    margin: 0 -2px;
+
+    .masonry-grid-item {
+        display: block;
+        float: left;
+        vertical-align: top;
+        padding: 0 2px;
+        margin-bottom: 4px;
+
+        &.col-12 { width: 100%; }
+        &.col-11 { width: 91.66666667%; }
+        &.col-10 { width: 83.33333333%; }
+        &.col-9 { width: 75%; }
+        &.col-8 { width: 66.66666667%; }
+        &.col-7 { width: 58.33333333%; }
+        &.col-6 { width: 50%; }
+        &.col-5 { width: 41.66666667%; }
+        &.col-4 { width: 33.33333333%; }
+        &.col-3 { width: 25%; }
+        &.col-2 { width: 16.66666667%; }
+        &.col-1 { width: 8.33333333%; }
+    }
+}
+/* Media Queries below 768px */
+@media (max-width: $screen-sm-min) {
+    .masonry-grid {
+        .masonry-grid-item {
+            width: 50%;
+
+            &.col-12,
+            &.col-11,
+            &.col-10,
+            &.col-9,
+            &.col-8,
+            &.col-7,
+            &.col-6,
+            &.col-5,
+            &.col-4,
+            &.col-3,
+            &.col-2,
+            &.col-1 { width: 50%; }
+        }
+    }
+}
+
+/* Media Queries below 600px */
+@media (max-width: 600px) {
+    .masonry-grid {
+        .masonry-grid-item {
+            width: 100%;
+            
+            &.col-12,
+            &.col-11,
+            &.col-10,
+            &.col-9,
+            &.col-8,
+            &.col-7,
+            &.col-6,
+            &.col-5,
+            &.col-4,
+            &.col-3,
+            &.col-2,
+            &.col-1 { width: 100%; }
+        }
+    }
+}

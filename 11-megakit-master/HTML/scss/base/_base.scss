@@ -1,0 +1,114 @@
+/*----------------------------------
+	Common HTML elements and more for easier usage
+------------------------------------*/
+
+html {
+	overflow-x: hidden;
+}
+
+html, html a, body {
+	-webkit-font-smoothing: antialiased;
+}
+
+html {
+	// Sets a specific default `font-size` for user with `rem` type scales.
+	font-size: $font-size-root;
+	// Changes the default tap highlight to be completely transparent in iOS.
+	-webkit-tap-highlight-color: rgba(#000,0);
+}
+
+body {
+	@include font($size: $font-size-16, $family: $font-family-primary);
+	color: $color-body;
+	line-height: $line-height;
+	// By default, `<body>` has no `background-color` so we set one as a best practice.
+	background-color: $bg-color-body;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  @include font($family: $font-family-secondary, $weight: $headings-font-weight);
+	line-height: $headings-line-height;
+	color: $color-heading;
+	margin-top: 0;
+	margin-bottom: .5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: capitalize;
+	margin-bottom: $headings-margin-bottom;
+
+	a {
+		color: $color-heading;
+		@include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
+
+		@include hover-focus {
+			color: $color-primary;
+			@include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
+		}
+	}
+}
+
+h1 { @include font($size: $font-size-40); }
+h2 { @include font($size: $font-size-32); }
+h3 { @include font($size: $font-size-28); }
+h4 { @include font($size: $font-size-24); }
+h5 { @include font($size: $font-size-20); }
+h6 { @include font($size: $font-size-16); }
+
+em,
+li {
+  @include font($size: $font-size-16, $weight: 300);
+  color: $color-heading;
+
+  > a {
+  	color: $color-heading;
+
+  	@include hover {
+  		color: $color-primary;
+  	}
+  }
+}
+
+small {
+	color: $color-text;
+}
+
+label {
+  @include font($size: $font-size-13, $weight: 700);
+  color: $color-heading;
+  margin-bottom: .25rem;
+}
+
+i {
+	line-height: 1;
+}
+
+/* Paragraph */
+p {
+  @include font($size: $font-size-15, $weight: 300);
+	color: $color-text;
+	line-height: $line-height;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+	color: $color-primary;
+	text-decoration: $link-hover-decoration;
+
+	@include hover-focus {
+		color: darken($color-primary, 7%);
+		text-decoration: $link-hover-decoration;
+	}
+
+	@include focus {
+		outline: none;
+	}
+}

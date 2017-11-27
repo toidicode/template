@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "picto-foundry-shopping-finance";
+  src: url("../fonts/picto-foundry-shopping-finance.eot");
+  src: url("../fonts/picto-foundry-shopping-finance.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/picto-foundry-shopping-finance.woff") format("woff"),
+       url("../fonts/picto-foundry-shopping-finance.ttf") format("truetype"),
+       url("../fonts/picto-foundry-shopping-finance.svg#picto-foundry-shopping-finance") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "picto-foundry-shopping-finance";
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add-to-cart:before,
+.icon-bank:before,
+.icon-barcode:before,
+.icon-calculator:before,
+.icon-cash-bag:before,
+.icon-cash-bands:before,
+.icon-cash-dispenser:before,
+.icon-cash-money:before,
+.icon-cash-register:before,
+.icon-cash-stack:before,
+.icon-cash:before,
+.icon-check:before,
+.icon-checkout:before,
+.icon-cogs:before,
+.icon-coins:before,
+.icon-credit-card-back:before,
+.icon-credit-card-front:before,
+.icon-diamond:before,
+.icon-dollar:before,
+.icon-euro:before,
+.icon-gift:before,
+.icon-graph-down-1:before,
+.icon-graph-down-2:before,
+.icon-graph-up-1:before,
+.icon-graph-up-2:before,
+.icon-money:before,
+.icon-open-sign:before,
+.icon-percent:before,
+.icon-pie-graph:before,
+.icon-pound:before,
+.icon-reciept-1:before,
+.icon-reciept-2:before,
+.icon-reconciled:before,
+.icon-safe:before,
+.icon-scale-1:before,
+.icon-scale-2:before,
+.icon-shippment:before,
+.icon-shopping-bag-add:before,
+.icon-shopping-bag-empty:before,
+.icon-shopping-bag-fill:before,
+.icon-shopping-bag-open:before,
+.icon-shopping-bag-sub:before,
+.icon-shopping-bag:before,
+.icon-shopping-basket:before,
+.icon-shopping-cart:before,
+.icon-stocks-down:before,
+.icon-stocks-up:before,
+.icon-store-front:before,
+.icon-tag-1:before,
+.icon-tag-2:before,
+.icon-tag-3:before,
+.icon-tag-fill-1:before,
+.icon-wallet:before,
+.icon-yen:before {
+  font-family: "picto-foundry-shopping-finance";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.icon-add-to-cart:before { content: "\f100"; }
+.icon-bank:before { content: "\f101"; }
+.icon-barcode:before { content: "\f102"; }
+.icon-calculator:before { content: "\f103"; }
+.icon-cash-bag:before { content: "\f104"; }
+.icon-cash-bands:before { content: "\f105"; }
+.icon-cash-dispenser:before { content: "\f106"; }
+.icon-cash-money:before { content: "\f107"; }
+.icon-cash-register:before { content: "\f108"; }
+.icon-cash-stack:before { content: "\f109"; }
+.icon-cash:before { content: "\f10a"; }
+.icon-check:before { content: "\f10b"; }
+.icon-checkout:before { content: "\f10c"; }
+.icon-cogs:before { content: "\f10d"; }
+.icon-coins:before { content: "\f10e"; }
+.icon-credit-card-back:before { content: "\f10f"; }
+.icon-credit-card-front:before { content: "\f110"; }
+.icon-diamond:before { content: "\f111"; }
+.icon-dollar:before { content: "\f112"; }
+.icon-euro:before { content: "\f113"; }
+.icon-gift:before { content: "\f114"; }
+.icon-graph-down-1:before { content: "\f115"; }
+.icon-graph-down-2:before { content: "\f116"; }
+.icon-graph-up-1:before { content: "\f117"; }
+.icon-graph-up-2:before { content: "\f118"; }
+.icon-money:before { content: "\f119"; }
+.icon-open-sign:before { content: "\f11a"; }
+.icon-percent:before { content: "\f11b"; }
+.icon-pie-graph:before { content: "\f11c"; }
+.icon-pound:before { content: "\f11d"; }
+.icon-reciept-1:before { content: "\f11e"; }
+.icon-reciept-2:before { content: "\f11f"; }
+.icon-reconciled:before { content: "\f120"; }
+.icon-safe:before { content: "\f121"; }
+.icon-scale-1:before { content: "\f122"; }
+.icon-scale-2:before { content: "\f123"; }
+.icon-shippment:before { content: "\f124"; }
+.icon-shopping-bag-add:before { content: "\f125"; }
+.icon-shopping-bag-empty:before { content: "\f126"; }
+.icon-shopping-bag-fill:before { content: "\f127"; }
+.icon-shopping-bag-open:before { content: "\f128"; }
+.icon-shopping-bag-sub:before { content: "\f129"; }
+.icon-shopping-bag:before { content: "\f12a"; }
+.icon-shopping-basket:before { content: "\f12b"; }
+.icon-shopping-cart:before { content: "\f12c"; }
+.icon-stocks-down:before { content: "\f12d"; }
+.icon-stocks-up:before { content: "\f12e"; }
+.icon-store-front:before { content: "\f12f"; }
+.icon-tag-1:before { content: "\f130"; }
+.icon-tag-2:before { content: "\f131"; }
+.icon-tag-3:before { content: "\f132"; }
+.icon-tag-fill-1:before { content: "\f133"; }
+.icon-wallet:before { content: "\f134"; }
+.icon-yen:before { content: "\f135"; }

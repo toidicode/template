@@ -1,0 +1,123 @@
+/* =====================
+   desktop
+   min-width: 768px;
+   max-width: 1024px;
+
+===================== */
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #latest-work .block .recent-work-pic ul li .overlay {
+    top: 12px;
+    left: 25px;
+    bottom: 12px;
+    right: 25px;
+  }
+  #team .team-overlay {
+    padding: 10px;
+  }
+}
+
+
+
+/* =====================
+
+   Tablets
+   min-width: 640px;
+   max-width: 767px;
+
+===================== */
+
+@media (min-width: 640px) and (max-width: 767px) {
+  #team .col {
+    padding: 0 137px;
+    margin-bottom: 20px;
+  }
+  #pricing-table .col {
+    margin-bottom: 20px;
+  }
+  #contact-form .col {
+    margin-bottom: 20px;
+  }
+
+  #blog-left .blog-img .col-md-6 img{
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/* =====================
+
+   Small Devices
+   min-width: 320px;
+   max-width: 479px;
+
+===================== */
+
+
+@media (min-width: 320px) and (max-width: 479px) {
+  #banner {
+    text-align: center;
+  }
+  #banner .block .buttons a:first-child {
+    margin-left: 7px;
+    margin-bottom: 10px;
+  }
+  #latest-work .block .recent-work-mixMenu ul li {
+    display: block;
+  }
+  #latest-work .block .recent-work-pic ul li .overlay {
+    top: 5px;
+    left: 20px;
+    bottom: 5px;
+    right: 20px;
+  }
+  #latest-work .block .recent-work-pic ul li .overlay h3 {
+    font-size: 14px;
+  }
+  #latest-work .block .recent-work-pic ul li .overlay i {
+    top: 34%;
+    font-size: 23px;
+  }
+  #testimonial .col {
+    padding: 20px;
+    text-align: center;
+  }
+  #testimonial .media .media-left {
+    display: block;
+    padding-right: 0;
+  }
+  #testimonial .media .media-left a {
+    height: 78px;
+    width: 78px;
+    margin: 0 auto;
+  }
+  #testimonial .media .media-body {
+    padding-right: 0;
+  }
+  #team .col {
+    margin-bottom: 20px;
+  }
+  #pricing-table .col {
+    margin-bottom: 20px;
+  }
+  #contact-form .col {
+    margin-bottom: 20px;
+  }
+
+  #blog-left .block .blog-comment .comment-img,
+  #blog-left .blog-comment-main .blog-comment .comment-img,
+  #blog-left .blog-comment-main .sub-blog-comment .comment-img{
+    float: none;
+  }
+
+  #blog-left .blog-comment-main .sub-blog-comment{
+    margin-left: 0;
+  }
+
+  #blog-left .blog-img .col-md-6 img{
+    margin-bottom: 20px;
+  }
+
+}

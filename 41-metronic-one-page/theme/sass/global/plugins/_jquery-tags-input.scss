@@ -1,0 +1,35 @@
+/***
+Modify jquery-tags-input plugin css
+***/
+
+div.tagsinput {
+  min-height: 35px;
+  height: auto !important;
+  margin: 0;
+  padding: 5px 5px 0px 5px;
+  overflow: auto;
+}
+
+div.tagsinput span.tag {
+  background: #aaa ;
+  color: #fff ;
+  border: 0 ;
+  padding: 3px 6px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+div.tagsinput input {
+  padding: 3px 6px ; 
+  width: 75px !important;
+}
+
+div.tagsinput span.tag a {
+  color: #fff ;
+}
+
+div.tagsinput .not_valid {
+  color: #fff ;
+  padding: 3px 6px ;
+  background-color: #e02222 ;
+}

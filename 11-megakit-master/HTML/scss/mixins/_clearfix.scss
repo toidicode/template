@@ -1,0 +1,10 @@
+// Clearfix
+@mixin clearfix() {
+	@include before-after {
+    content: " ";
+    display: table;
+	}
+  @include after {
+    clear: both;
+  }
+}

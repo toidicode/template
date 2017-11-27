@@ -1,0 +1,117 @@
+/***
+General typography
+***/
+
+/* Headings */
+
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: $font-family-primary;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: $font-size-h1;
+}
+h2 {
+    font-size: $font-size-h2;
+}
+h3 {
+    font-size: $font-size-h3;
+}
+h4 {
+    font-size: $font-size-h4;
+}
+h5 {
+    font-size: $font-size-h5;
+}
+h6 {
+    font-size: $font-size-h6;
+}
+
+/* Headings helper text */ 
+
+h1 small,
+h2 small,
+h3 small, 
+h4 small, 
+h5 small,
+h6 small {
+    color: $text-muted-color;
+}
+
+/* Block headings */
+
+h1.block, 
+h2.block, 
+h3.block, 
+h4.block, 
+h5.block, 
+h6.block {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Links */
+
+a {
+    text-shadow: none;
+    color: $link-color;
+
+    &:hover {
+        color: $link-hover-color;
+    }
+
+    &:focus, 
+    &:hover, 
+    &:active {
+        outline: 0;
+    }
+}
+
+/* Horizontal break */
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 0;
+}
+
+/* Unstyled List */
+
+.list-unstyled li > .list-unstyled {
+    margin-left: 25px;
+}
+
+/* Code */
+
+code { 
+  border: 1px solid #e1e1e1;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);  
+}
+
+
+/* Disabled Navigation Link */
+
+.disabled-link { 
+
+    .disable-target {  
+        opacity: 0.5 !important;
+        filter: alpha(opacity=50) !important; 
+
+        &:hover {
+            cursor: not-allowed !important;    
+        }
+    }
+
+    &:hover {
+        cursor: not-allowed !important;    
+    }
+}

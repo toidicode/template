@@ -1,0 +1,28 @@
+/*------------------------------------------------------------------
+  	[Promo Block]
+------------------------------------------------------------------*/
+
+.promo-block {
+	padding: 220px 0 130px;
+
+	.promo-block-title {
+		@include font($size: 70px);
+		color: $color-white;
+		line-height: 1;
+
+		@media (max-width: $screen-xs-min) {
+			@include font($size: 50px);
+		}
+	}
+
+	.promo-block-text {
+		@include font($size: 25px);
+		color: $color-white;
+	}
+
+	.promo-block-divider {
+		border-bottom: 1px solid rgba(255,255,255,.4);
+		padding-bottom: 20px;
+		margin-bottom: 35px;
+	}
+}
