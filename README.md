@@ -2,7 +2,7 @@
 
 _____________________________
 
-## Demo and link download.
+## Demo and download.
 
 
 |#| Name          | Demo          | Download  |
@@ -108,3 +108,5 @@ _____________________________
 |#99| mind craft   | [Demo](https://toidicode.github.io/template/98-mind-craft/) | [Download](https://github.com/toidicode/template/raw/master/src/98-mind-craft.zip/) |
 |#100| season   | [Demo](https://toidicode.github.io/template/99-season/) | [Download](https://github.com/toidicode/template/raw/master/src/99-season.zip/) |
 
+## Have issure?
+- If you have any problem about copyright, please contact me, email: **thanhtai96nd@gmail.com**
