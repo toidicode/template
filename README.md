@@ -50,7 +50,7 @@ _____________________________
 |#41| metronic shop ui   | [Demo](https://toidicode.github.io/template/40-metronic-shop-ui/) | [Download](https://github.com/toidicode/template/raw/master/src/40-metronic-shop-ui.zip/) |
 |#42| metronic one page   | [Demo](https://toidicode.github.io/template/41-metronic-one-page/) | [Download](https://github.com/toidicode/template/raw/master/src/41-metronic-one-page.zip/) |
 |#43| navigator onepage   | [Demo](https://toidicode.github.io/template/42-navigator-onepage/) | [Download](https://github.com/toidicode/template/raw/master/src/42-navigator-onepage.zip/) |
-|#44| metronic one page   | [Demo](https://toidicode.github.io/template/43-metronic-one-page/) | [Download](https://github.com/toidicode/template/raw/master/src/43-metronic-one-page.zip/) |
+|#44| metronic one page   | [Demo](https://toidicode.github.io/template/43-metronic-one-page/theme/) | [Download](https://github.com/toidicode/template/raw/master/src/43-metronic-one-page.zip/) |
 |#45| fame   | [Demo](https://toidicode.github.io/template/44-fame/) | [Download](https://github.com/toidicode/template/raw/master/src/44-fame.zip/) |
 |#46| themelight   | [Demo](https://toidicode.github.io/template/45-themelight/) | [Download](https://github.com/toidicode/template/raw/master/src/45-themelight.zip/) |
 |#47| plantilla   | [Demo](https://toidicode.github.io/template/46-plantilla/) | [Download](https://github.com/toidicode/template/raw/master/src/46-plantilla.zip/) |
