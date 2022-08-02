@@ -1,0 +1,728 @@
+/*
+Author: Rutik Bhoyar
+Index:
+1.Basic Setup
+2.header css
+3.home section css
+4.features section
+5.product section 
+6.category section
+7.review section
+8.blog section
+9.media queries
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body {
+    background: #eee;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3ren;
+    font-size: 3.5rem;
+    color: #130f40;
+}
+
+.heading span {
+    background: #ff7800;
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid #130f40;
+    color: #130f40;
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover {
+    background: #ff7800;
+    color: #fff;
+}
+
+
+/*------Header Section CSS------------------*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, 1);
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #130f40;
+}
+
+.header .logo i {
+    color: #ff7800;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: #130f40;
+}
+
+.header .navbar a:hover {
+    color: #ff7800;
+}
+
+.header .icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: #130f40;
+    font-size: 2rem;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons div:hover {
+    background: #ff7800;
+    color: #fff;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, 1);
+}
+
+.header .search-form.active {
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .search-form input {
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: #130f40;
+    padding: 0 1.5rem;
+}
+
+.header .search-form label {
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: #130f40;
+    cursor: pointer;
+}
+
+.header .search-form label:hover {
+    color: #ff7800;
+}
+
+.header .shopping-cart.active {
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .shopping-cart {
+    position: absolute;
+    width: 35rem;
+    box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, 1);
+    background: #fff;
+    padding: 1rem;
+    top: 110%;
+    right: -110%;
+    border-radius: .5rem;
+}
+
+.header .shopping-cart .box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.header .shopping-cart .box img {
+    height: 10rem;
+}
+
+.header .shopping-cart .box .fa-trash {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    cursor: pointer;
+    color: #666;
+    transform: translateY(-50%);
+}
+
+.header .shopping-cart .box .fa-trash:hover {
+    color: #ff7800;
+}
+
+.header .shopping-cart .box .content h3 {
+    color: #130f40;
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box .content span {
+    color: #666;
+    font-size: 1.6rem;
+}
+
+.header .shopping-cart .box .content .quantity {
+    padding-left: 1rem;
+}
+
+.header .shopping-cart .total {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: #130f40;
+}
+
+.header .shopping-cart .btn {
+    display: block;
+    text-align: center;
+    margin: 1rem;
+}
+
+.header .login-form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 35rem;
+    box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, 1);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+}
+
+.header .login-form h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #130f40;
+}
+
+.header .login-form .box {
+    width: 100%;
+    margin: 7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #130f40;
+    text-transform: none;
+}
+
+.header .login-form p {
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color: #666;
+}
+
+.header .login-form p a {
+    color: #ff7800;
+    text-decoration: underline;
+}
+
+
+/*----------Header Section CSS Ends-----------------*/
+
+
+/*--------Home Section CSS-------------------------*/
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../image/banner-bg.webp);
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+
+.home .content {
+    text-align: center;
+    width: 60rem;
+}
+
+.home .content h3 {
+    color: #130f40;
+    font-size: 3rem;
+}
+
+.home .content h3 span {
+    color: #ff7800;
+}
+
+.home .content p {
+    color: #666;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+
+/*-------Home Section CSS ends---------------*/
+
+
+/*---------Features section---------------------------*/
+
+.features .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.features .box-container .box {
+    padding: 3rem 2 rem;
+    background: #fff;
+    outline: .1rem solid rgba(0, 0, 0, .1);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, 1);
+}
+
+.features .box-container .box:hover {
+    outline: .1rem solid rgba(0, 0, 0, .1);
+    outline-offset: 0rem;
+}
+
+.features .box-container .box img {
+    margin: 1rem 0;
+    height: 15rem;
+}
+
+.features .box-container .box h3 {
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: #130f40;
+}
+
+.features .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #666;
+    padding: 1rem 0;
+}
+
+
+/*------------Feature Section CSs Ends--------------*/
+
+
+/*------------Product Section Css-----------------*/
+
+.products .product-slider {
+    padding: 1rem;
+}
+
+.products .product-slider:first-child {
+    margin-bottom: 2rem;
+}
+
+.products .product-slider .box {
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+}
+
+.products .product-slider .box:hover {
+    outline-offset: 0rem;
+    outline: var(--outline-hover);
+}
+
+.products .product-slider .box img {
+    height: 20rem;
+}
+
+.products .product-slider .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.products .product-slider .box .price {
+    font-size: 2rem;
+    color: var(--light-color);
+    padding: .5rem 0;
+}
+
+.products .product-slider .box .stars i {
+    font-size: 1.7rem;
+    color: var(--orange);
+    padding: .5rem 0;
+}
+
+
+/*------------Product Section Css Ends-----------------*/
+
+
+/*-------------Categories Section CSs--------------------*/
+
+.categories .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.5rem;
+}
+
+.categories .box-container .box {
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, 1);
+    outline: .1rem solid rgba(0, 0, 0, .1);
+    outline-offset: -1rem;
+    text-align: center;
+}
+
+.categories .box-container .box:hover {
+    outline: .2rem solid #130f40;
+    outline-offset: 0rem;
+}
+
+.categories .box-container .box img {
+    margin: 1rem 0;
+    height: 15rem;
+}
+
+.categories .box-container .box h3 {
+    font-size: 2rem;
+    color: #130f40;
+    line-height: 1.8;
+}
+
+.categories .box-container .box p {
+    font-size: 1.7rem;
+    color: #666;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+
+/*-------------Categories Section CSs--------------------*/
+
+
+/*--------Review Section CSS--------*/
+
+.review .review-slider {
+    padding: 1rem;
+}
+
+.review .review-slider .box {
+    background-color: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: .1rem solid rgba(0, 0, 0, .1);
+    box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, 1);
+    transition: .2s linear;
+}
+
+.review .review-slider .box:hover {
+    outline: .2rem solid #130f40;
+    outline-offset: 0rem;
+}
+
+.review .review-slider .box img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.review .review-slider .box p {
+    padding: 1rem 0;
+    line-height: 1.8;
+    color: #666;
+    font-size: 1.5rem;
+}
+
+.review .review-slider .box h3 {
+    padding-bottom: .5rem;
+    color: #130f40;
+    font-size: 2.2rem;
+}
+
+.review .review-slider .box .stars i {
+    color: #ff7800;
+    font-size: 1.7rem;
+}
+
+
+/*--------Review Section CSS Ends--------*/
+
+
+/*---------Blog Section CSS-----------*/
+
+.blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.blogs .box-container .box {
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, 1);
+}
+
+.blogs .box-container .box img {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogs .box-container .box .content {
+    padding: 2rem;
+}
+
+.blogs .box-container .box .content .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: .2rem solid rgba(0, 0, 0, .1);
+}
+
+.blogs .box-container .box .content .icons a {
+    color: #666;
+    font-size: 1.5rem;
+}
+
+.blogs .box-container .box .content .icons a:hover {
+    color: #130f40;
+}
+
+.blogs .box-container .box .content .icons a i {
+    color: #ff7800;
+    padding-right: .5rem;
+}
+
+.blogs .box-container .box .content h3 {
+    line-height: 1.8;
+    color: #130f40;
+    font-size: 2.2rem;
+    padding: .5rem 0;
+}
+
+.blogs .box-container .box .content p {
+    line-height: 1.8;
+    color: #666;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
+
+
+/*----------Blog Section CSS Ends-----------*/
+
+
+/*-------------Footer Section CSS------------------*/
+
+.footer {
+    background: #fff;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: #130f40;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i {
+    color: #ff7800;
+}
+
+.footer .box-container .box .links {
+    display: block;
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0; //1rem --16px
+}
+
+.footer .box-container .box .links i {
+    color: #ff7800;
+    padding-right: .5rem;
+}
+
+.footer .box-container .box p {
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .share a {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: #130f40;
+    margin-right: .2rem;
+    background: #eee;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+    background: #ff7800;
+    color: #fff;
+}
+
+.footer .box-container .box .email {
+    width: 100%;
+    margin: 4rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.6rem;
+    color: #130f40;
+    text-transform: none;
+}
+
+.footer .box-container .box .payment-img {
+    margin-top: 2rem;
+    height: 3rem;
+    display: block;
+}
+
+.footer .credit {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #130f40;
+    border-top: .2rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span {
+    color: #ff7800;
+}
+
+
+/*-------------Footer Section CSS Ends------------------*/
+
+
+/*-----Media Queries--------------------*/
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-wdith:768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+    .header .search-form {
+        width: 90%;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, 1);
+        border-radius: .5rem;
+        background: #fff;
+    }
+    .header .navbar.active {
+        right: 2rem;
+        transition: .4s linear;
+    }
+    .header .navbar a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    .heading {
+        font-size: 2.5rem;
+    }
+    .footer {
+        text-align: center;
+    }
+    .footer .box-container .box .payment-img {
+        margin: 2rem auto;
+    }
+}
