@@ -1,0 +1,31 @@
+<svg width="1440" height="642" viewBox="0 0 1440 642" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_26_674" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="642">
+<path d="M0 66.1228C0 66.1228 238.5 -53.6435 730 29.1949C1221.5 112.033 1440 66.1228 1440 66.1228V642H0V66.1228Z" fill="#762AD6"/>
+</mask>
+<g mask="url(#mask0_26_674)">
+<g filter="url(#filter0_f_26_674)">
+<ellipse rx="346.604" ry="264.854" transform="matrix(1 0 0 -1 1056.04 383.62)" fill="#AAEBFF"/>
+<ellipse rx="401.683" ry="307.113" transform="matrix(1 0 0 -1 1093.32 487.802)" fill="#C1BCFF"/>
+<ellipse rx="401.683" ry="307.113" transform="matrix(1 0 0 -1 178.683 416.672)" fill="#C1BCFF"/>
+<ellipse rx="312.667" ry="238.912" transform="matrix(1 0 0 -1 128.609 402.865)" fill="#FFD9DD"/>
+<ellipse rx="312.667" ry="238.912" transform="matrix(1 0 0 -1 553.66 407.885)" fill="#DEB5FF"/>
+<ellipse rx="284.85" ry="217.573" transform="matrix(1 0 0 -1 283.275 180.688)" fill="#C173FF"/>
+<ellipse rx="284.85" ry="217.573" transform="matrix(1 0 0 -1 473.544 270.228)" fill="#C173FF"/>
+<ellipse rx="103.481" ry="53.1381" transform="matrix(1 0 0 -1 163.104 383.618)" fill="#FFDA58"/>
+<ellipse rx="103.481" ry="53.1381" transform="matrix(1 0 0 -1 163.104 403.701)" fill="#FFDD65"/>
+</g>
+<ellipse opacity="0.2" cx="101" cy="180.397" rx="361" ry="360.797" fill="url(#paint0_linear_26_674)"/>
+<path opacity="0.2" d="M526.5 180.397C526.5 414.66 336.222 604.569 101.5 604.569C-133.222 604.569 -323.5 414.66 -323.5 180.397C-323.5 -53.8657 -133.222 -243.775 101.5 -243.775C336.222 -243.775 526.5 -53.8657 526.5 180.397Z" stroke="white"/>
+</g>
+<defs>
+<filter id="filter0_f_26_674" x="-506.591" y="-320.476" width="2285.18" height="1398.98" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="141.795" result="effect1_foregroundBlur_26_674"/>
+</filter>
+<linearGradient id="paint0_linear_26_674" x1="333.5" y1="-543.691" x2="101.865" y2="541.379" gradientUnits="userSpaceOnUse">
+<stop offset="0.179481" stop-color="white" stop-opacity="0.94"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
