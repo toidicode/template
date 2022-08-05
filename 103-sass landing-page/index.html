@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Assignment!</title>
+  </head>
+  <body>
+    <div class="hero-bg">
+      <header class="container-fluid py-3 px-4">
+        <nav class="navbar navbar-expand-lg mb-0 mb-lg-5">
+          <a href="/" class="navbar-brand">
+            <img src="assets/img/logo.svg" alt="logo" />
+          </a>
+  
+          <button class="navbar-toggler toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav navigation me-auto ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#article">Blog</a>
+              </li>
+            </ul>
+  
+            <div class="nav-btn">
+              <button type="button" class="login btn border-0 me-3">
+                Login
+              </button>
+              <button type="button" class="get-start btn btn-outline-primary px-4 rounded-pill">
+               Get started
+              </button>
+            </div>
+            
+          </div>
+        </nav>
+
+        <svg class="bottom-curve" viewBox="0 0 834 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M242.5 2.48937C135.3 -9.90908 37.6667 26.7931 0 51.0969V99H834V14.4651C519.5 90.5465 449 26.3726 242.5 2.48937Z" fill="white"/>
+          </svg>
+          
+        
+        <!----------------- hero ---------------->
+        <div class="row gy-5">
+          <div class="col-lg-6 text-white">
+            <h1 class="hero-header mt-5">One Place To Orgranise, Communicate And Store Work</h1>
+            <p class="hero-subheader mt-3">For bussiness who need clarity, productive communication, prioritisation and accountibility.</p>
+
+            <div class="hero-cto mt-5">
+              <button class="btn get-start btn-primary px-4 py-2 rounded-pill">Get started</button>
+              <button class="btn trial ms-2 border-0 text-white">Try free trial</button>
+            </div>
+          </div>
+  
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <img class="feature" src="assets/img/homeImage.svg" alt="hero feature image">
+            </div>
+          </div>
+        </div>
+      </header> 
+    </div>
+
+    <!-- ---------------------------task------------------------------------ -->
+    <section id="About" class="task-section mt-0 mt-md-5 px-4">
+      <div class="row align-items-lg-center task-content gx-2 gy-5  justify-content-between flex-column-reverse flex-lg-row">
+        <div class="col col-lg-6">
+          <img class="task-feature" src="assets/img/task.png" alt="task picture">
+        </div>
+        <div class="col col-lg-6">
+          <div class="taskSec-content mt-0 mt-md-5">
+            <h1 class="section-heading fs-1 mb-3">Connect With Apps You Use For Work</h1>
+            <p class="section-subhead">Tazkily integrates with the product you use, bringing all your tasks, files and communications in one place so you always know what to do next.</p>
+            <button class="btn mt-4 task-section-cto px-4 py-2 rounded-pill">Browse integrations</button>
+          </div>
+        </div>
+      </div>
+
+      <img class="round-shape" src="assets/img/round.svg" alt="round shape">
+    </section>
+
+    <!-- ---------------------------Chat------------------------------------ -->
+    <section class="chat-section mt-5 px-4">
+      <div class="row chat-content align-items-lg-center gx-2 gy-5 justify-content-between flex-lg-row">
+        <div class="col-lg-6 col-sm-12">
+          <div class="chatSec-content mt-5">
+            <h1 class="section-heading fs-1 mb-3">Easy And Familiar Reat-Time-Chat Features</h1>
+            <p class="section-subhead">Add unlimited people. Easy and familiar to use. Productive and focused chat related to a task and/or a document. Searchable content by keyword.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <img class="chat-feature" src="assets/img/chat.png" alt="chat picture">
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------- pricing ----------------------->
+    <section id="Pricing">
+      <svg class="pricing-top-curve" viewBox="0 0 822 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M822 49C509.2 -35 143.667 14 0 49V0H822V49Z" fill="white"/>
+      </svg>
+
+      <div class="pricing-wrapper m-auto">
+        <div class="pricing-header m-auto">
+          <h1 class="section-heading text-center fs-1">Your Suitable Package For Your Needs</h1>
+          <p class="section-subhead text-center">Our powerfull free plan gives you access to core Tazkily feature.</p>
+
+          <div class="m-auto mt-5 plan-switch section-subhead d-flex justify-content-center">
+            <span>Monthly</span>
+            <div class="switch-bar bg-white d-flex align-items-center rounded-pill me-2 ms-2">
+              <div class="bar-fill rounded-pill"></div>
+            </div>
+            <span>Annualy</span>
+          </div>
+        </div>
+
+        <div class="pricing-wrapper row mt-5 row-cols-1 row-cols-md-2 row-cols-lg-3 mb-3">
+          <div class="col">
+            <div class="card border-0 mb-4">
+              <div class="card-header px-5 text-white py-4">
+                <h4 class="my-0 mb-3 fs-5">Free plan</h4>
+                <p class="pricing-q mb-0">0$ <span class="ms-2">/Life time</span></p>
+              </div>
+              <div class="card-body px-5 pb-4">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li><i class="fa-solid fa-circle-check me-3"></i>Today & Planning view</li>
+                  <li><i class="fa-solid fa-circle-check me-3"></i>Checklist templates</li>
+                  <li><i class="fa-solid fa-circle-check me-3"></i>Calender integration</li>
+                  <li><i class="fa-solid fa-circle-check me-3"></i>Browser extention</li>
+                </ul>
+                <button class="btn mt-4 rounded-pill">Get Started</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 basic mb-4">
+              <div class="card-header border-0 px-5 text-white py-4">
+                <h4 class="my-0 mb-3 fs-5">Basic plan</h4>
+                <p class="pricing-q mb-0">10$ <span class="ms-2">/Per Month</span></p>
+
+                <span class="recommendad text-center text-dark">Recommendad</span>
+              </div>
+              <div class="card-body px-5 pb-4">
+                <ul class="list-unstyled mt-3 mb-4 text-white">
+                  <li><i class="fa-solid fa-circle-check me-3"></i>Everything in free</li>
+                  <li><i class="fa-solid fa-circle-check me-3"></i>Checklist templates</li>
+                  <li><i class="fa-solid fa-circle-check me-3"></i>Premium integration/li>
+                  <li><i class="fa-solid fa-circle-check me-3"></i>30-day trial</li>
+                </ul>
+                <button class="btn mt-4 bg-white rounded-pill">Get Started</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0 mb-4">
+              <div class="card-header px-5 text-white py-4">
+                <h4 class="my-0 mb-3 fs-5">Advance plan</h4>
+                <p class="pricing-q mb-0">50$ <span class="ms-2">/Per Month</span></p>
+              </div>
+              <div class="card-body px-5 pb-4">
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li><i class="fa-solid fa-circle-check me-3"></i>Everything in Basic</li>
+                  <li><i class="fa-solid fa-circle-check me-3"></i>Unlimited members</li>
+                  <li><i class="fa-solid fa-circle-check me-3"></i>Dedicated support</li>
+                  <li><i class="fa-solid fa-circle-check me-3"></i>All advance features*</li>
+                </ul>
+                <button class="btn mt-4 rounded-pill">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <svg class="bottom-curve" viewBox="0 0 834 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M242.5 2.48937C135.3 -9.90908 37.6667 26.7931 0 51.0969V99H834V14.4651C519.5 90.5465 449 26.3726 242.5 2.48937Z" fill="white"/>
+        </svg>
+    </section>
+
+    <!----------------------- article ----------------------->
+    <section id="article">
+      <div class="article-heading-wrapper flex-wrap m-auto d-flex justify-content-between align-items-center">
+          <h1 class="section-heading">Ideas To Help You Navigate Work</h1>
+          <p class="mt-2 mt-lg-0 section-subhead ">We regularly share resources on startups, productivity and the future of work</p>
+          <button class="mt-3 mt-lg-0 btn text-white text-nowrap px-4 py-2 rounded-pill">See more articles</button>
+      </div>
+
+      <!-- slider -->
+      <div class="slider-wrapper mt-5 mt-sm-4 position-relative ms-lg-5 ps-lg-5">
+        <img src="assets/img/article-bg.svg" class="article-bg-svg">
+
+        <div class="row mx-auto my-auto justify-content-center">
+          <div id="recipeCarousel" class="article-carousel carousel slide p-0" data-bs-interval="false"
+          data-bs-ride="carousel" data-bs-touch="true">
+              <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                      <div class="col-md-3">
+                        <div class="card p-sm-4 bg-white border-0 me-md-4 mb-3">
+                          <div class="row g-0">
+                            <div class="col-5">
+                              <img src="assets/img/slider-1.png" class="img-fluid rounded-start" alt="article image">
+                              <div class="post-time section-subhead fs-6 mt-3">
+                                <small class="d-block text-muted">Posted on</small>
+                                <span class="date d-block">Octobor 26, 2021</span>
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="ms-sm-3 card-body mt-3 p-0">
+                                <h5 class="card-title section-heading">What's growth hacking? 8 great books to learn more about it</h5>
+                                <p class="card-text section-subhead">How you can set personal boundaries to reduce stress and burnout</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="col-md-3">
+                        <div class="card p-sm-4 bg-white border-0 me-md-4 mb-3">
+                          <div class="row g-0">
+                            <div class="col-5">
+                              <img src="assets/img/slider-2.png" class="img-fluid rounded-start" alt="article image">
+                              <div class="post-time section-subhead fs-6 mt-3">
+                                <small class="d-block text-muted">Posted on</small>
+                                <span class="date d-block">Octobor 26, 2021</span>
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="ms-sm-3 card-body mt-3 p-0">
+                                <h5 class="card-title section-heading">3 experiments to improve your mobile funnel and reach your goal</h5>
+                                <p class="card-text section-subhead">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="col-md-3">
+                        <div class="card p-sm-4 bg-white border-0 me-md-4 mb-3">
+                          <div class="row g-0">
+                            <div class="col-5">
+                              <img src="assets/img/slider-3.png" class="img-fluid rounded-start" alt="article image">
+                              <div class="post-time section-subhead fs-6 mt-3">
+                                <small class="d-block text-muted">Posted on</small>
+                                <span class="date d-block">Octobor 26, 2021</span>
+                              </div>
+                            </div>
+                            <div class="col-7">
+                              <div class="ms-sm-3 card-body mt-3 p-0">
+                                <h5 class="card-title section-heading">6 new interesting mobile apps to grow your audience on</h5>
+                                <p class="card-text section-subhead">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <a class="rounded-circle carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon rounded-circle d-flex justify-content-center align-items-center" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
+              </a>
+              <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon rounded-circle d-flex justify-content-center align-items-center" aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
+              </a>
+          </div>
+      </div>
+    </section>
+
+    <!-------------------- customer---------------- -->
+    <section id="customer">
+      <h1 class="fs-1 text-center m-auto section-heading customer-heading">Used By Fellow Productivity Nerds At Places Like...</h1>
+      <img class="w-100 mt-5 m-auto d-block" src="assets/img/customer.png" alt="customer logo">
+    </section>
+
+    <!------------ testimonial ------------>
+    <section id="testimonial" class="position-relative">
+      
+      <div class="testimonial-wrapper px-md-0 m-auto">
+        <div class="row w-100 flex-wrap gx-0 gx-md-3">
+          <div class="col col-md-5 ms-0 ms-lg-5 ps-4 ps-lg-5">
+            <h1 class="fs-1 section-heading testimonial-header text-white">Join Other Founders, Freelancers, Makers And Many-Hat Wearers</h1>
+            <p class="section-subhead mt-3 testimonial-Subheader text-white">Join the thousand of other people just like you who started using Tazkily and took back control of their day</p>
+          </div>
+          <div class="col col-md-6 testimonial-card-wrapper-col">
+            <div class="d-flex px-3 testimonial-card-wrapper">
+              <div class="testimonial-card p-4 py-3 py-md-5 me-0 me-md-3">
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                <div class="author mt-3 d-flex align-items-center">
+                  <img src="assets/img/Avatar-2.png" alt="user profile image">
+                  <span class="ms-2">Vincen Mcmahoon</span>
+                </div>
+              </div>
+              <div class="testimonial-card p-4 py-3 py-md-5">
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                <div class="author mt-3 d-flex align-items-center">
+                  <img src="assets/img/Avatar-1.png" alt="user profile image">
+                  <span class="ms-2">Laura Mcmahoon</span>
+                </div>
+              </div>
+            </div>
+
+            <span class="testimonial-next rounded-circle d-flex justify-content-center align-items-center" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
+            <span class="testimonial-prev  bg-white rounded-circle d-flex justify-content-center align-items-center" aria-hidden="true"><i class="fa-solid fa-angle-left"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------- footer ------------>
+    <footer class="footer">
+      <div class="footer-wrapper m-auto">
+        <div class="row gy-5 row-cols-1 row-cols-lg-2  flex-wrap justify-content-between">
+          <div class="col col-md-5">
+            <img class="footer-logo" src="assets/img/logo-footer.svg" alt="footer logo">
+            <p class="footer-sub my-4 section-subhead">For bussiness who need clarity, productive communication, prioritisation and accountibility.</p>
+            <div class="socials d-flex justify-content-between">
+              <img src="assets/img/Facebook.svg" alt="Facebook logo">
+              <img src="assets/img/twitter.svg" alt="twitter logo">
+              <img src="assets/img/instagram.svg" alt="instagram logo">
+              <img src="assets/img/linkedin.svg" alt="linkedin logo">
+            </div>
+
+            <p class="d-block d-md-none mt-3">Made with <i class="fa-solid fa-heart text-danger"></i> by Tazkily team</p>
+          </div>
+      
+          <div class="col col-md-7 d-flex gy-5 flex-wrap justify-content-between row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col mb-5 mb-lg-0">
+              <h5 class="mb-4 text-white section-heading">Usefull links</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Try free trial</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing plan</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Feature updates</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Chrome ententions</a></li>
+              </ul>
+            </div>
+        
+            <div class="col mb-5 mb-lg-0">
+              <h5 class="mb-4 text-white section-heading">Our product</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Task management</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Document management</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Client management</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Integration apps</a></li>
+              </ul>
+            </div>
+      
+            <div class="col">
+              <h5 class="mb-4 text-white section-heading">About us</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">What is Tazkily</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Team of use</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Work with us</a></li>
+              </ul>
+            </div>
+          </div>
+          </div>
+
+        <div class="d-flex section-subhead mt-3 mt-sm-5 pt-3 pt-sm-5 justify-content-center justify-content-md-between">
+          <p class="d-none d-md-block">Made with <i class="fa-solid fa-heart text-danger"></i> by Tazkily team</p>
+          <p class="text-center d-block">Copywrite © Tazkily, 2021</p>
+          <span class="d-none d-md-block">Help center</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/aa08d20a7f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
