@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --white: #f9f9f9;
+    --dark: black;
+    --green-light: #00df5e;
+    --yellow: #f7df1e;
+    --gray: #828282;
+    --gray-200: #333333;
+    --gray-400: #212121;
+    --gray-400-rgb: 33, 33, 33;
+    --alpha: 0.8;
+  }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+body{
+    background-color: var(--dark);
+    color: var(--white);
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+div.container{
+    width: 80%;
+}
+
+header{
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    height: 60px;
+    margin-top: 40px;
+    top: 0;
+    margin-bottom: 83px;
+    position: sticky;
+    background-color: rgba(var(--gray-400-rgb), var(--alpha));
+}
+header .content{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+header .content span.logo{
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 10%;
+    
+
+}
+
+header .content ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    font-size: 20px;
+
+}
+header .content ul li{
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 69px;
+
+}
+
+main .left{
+    width: 377px;
+}
+main .left h1{    
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+main .left h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--gray);
+    margin-top: 18px;
+    margin-bottom: 37px;
+}
+
+main button {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+main .btn .cv {
+    width: 143px;
+    height: 42px;
+    color: var(--dark);
+    background-color: var(--yellow);
+    border: 0;
+    margin-right: 15px;
+    padding: 12px, 25px;
+}
+#pdf{
+    color: var(--dark);
+}
+main .btn .contact{
+    width: 160px;
+    height: 42px;
+    color: var(--white);
+    background-color: var(--dark);
+    border: 1px solid var(--gray-200);
+    padding: 12px, 16px;
+}
+
+main .right img{
+    max-width: 350px;
+}
+
+section.about-me{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.about-me h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+section.about-me p{
+    max-width: 745px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--gray);
+    line-height: 32px;
+    text-align: center;
+
+}
+
+section.contacts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 121px;
+    margin-bottom: 67px;
+    margin-top: 70px;
+}
+
+section.contacts div.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    height: 150px;
+}
+
+section.contacts div.contact div.icon{
+    width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-400);
+    border-radius: 31px;
+    margin-bottom: 20px;
+}
+
+section.contacts div.contact div.icon i{
+    font-size: 32px;
+    color: var(--yellow);
+}
+
+section.contacts span.title{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 5px;
+}
+
+section.contacts span.description{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+section.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 67px;
+}
+section.projects h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+section.projects div.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+section.projects div.card{
+    width: 350px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gray-400);
+    border: 1px solid var(--gray-200);
+    padding: 20px, 25px;
+}
+
+section.projects div.cards div.card div.img-project{
+    margin-top: 20px;
+    width: 300px;
+    height: 130px;
+    background-color: var(--dark);
+    margin-bottom: 23px;
+    border: 1px solid var(--gray-200);
+}
+
+section.projects div.cards div.card div.description-project{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section.projects div.cards div.card div.description-project span.title-project{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+section.projects div.cards div.card span.tag-project {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+  }
+
+section.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 185px;
+}
+section.skills h2{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 35px;
+
+}
+section.skills div.cards-skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 51px;
+  }
+  
+section.skills div.cards-skills div.card-skill {
+    width: 150px;
+    height: 150px;
+    background-color: var(--gray-400);
+    border: 1px solid var(--gray-200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+section.skills div.cards-skills div.card-skill i {
+    font-size: 5rem;
+    color: var(--yellow);
+  }
+footer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-color: var(--gray-400);
+
+}
+
+footer span{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    margin-left: 45%;
+}
+
+footer span a{
+    color: var(--yellow);
+}
+
+.card-serve i{
+    color: var(--gray);
+}
+div.goto-top{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--gray-400);
+    position: fixed;
+    bottom: 60px;
+    left: 0;
+}
+div.goto-top i {
+    font-size: 32px;
+    color: var(--yellow);
+    margin-left: 10px;
+  }
+
+.target::before {
+    content: '';
+    display: block;
+    height: 60px; /* fixed header height*/
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        margin-bottom: 30px;
+    }
+    header .content ul{
+        display: none;
+    }
+    main{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    main .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main .right{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    main .right img{
+        max-width: 70%;
+    }
+    main .left h1{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    main .left h2{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+section.about-me {
+    margin-bottom: 30px;
+  }
+
+section.contacts {
+    gap: 0px;
+    margin-bottom: 30px;
+  }
+
+section.projects {
+    margin-bottom: 30px;
+  }
+  section.skills {
+    margin-bottom: 30px;
+  }
+
+  .target::before {
+    content: '';
+    display: block;
+    height: 0px; /* fixed header height*/
+  }
+
+  section.skills div.cards-skills {
+    gap: 25px;
+  }
+
+  section.skills div.cards-skills div.card-skill {
+    width: 85px;
+    height: 75px;
+  }
+
+  section.skills div.cards-skills div.card-skill i {
+    font-size: 3rem;
+  }
+
+}
